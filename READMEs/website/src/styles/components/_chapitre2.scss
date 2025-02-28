@@ -1,0 +1,84 @@
+// Styles spécifiques au chapitre 2
+.chapter-2 {
+  // Animation du cycle de vie
+  .lifecycle-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawPath 2s ease-out forwards;
+  }
+
+  .lifecycle-point {
+    transform-origin: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  // Styles des cartes de bénéfices
+  .benefit-card {
+    @apply transition-all duration-300;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  // Animation des barres de progression
+  .progress-bar {
+    animation: growWidth 1s ease-out forwards;
+  }
+
+  // Styles du quiz
+  .quiz-question {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .quiz-option {
+    @apply transition-all duration-200;
+
+    &:hover:not(.selected) {
+      @apply bg-primary/5;
+    }
+
+    &.selected {
+      @apply bg-primary/10 border-primary;
+    }
+
+    &.correct {
+      @apply bg-success/10 border-success;
+    }
+
+    &.incorrect {
+      @apply bg-error/10 border-error;
+    }
+  }
+}
+
+// Animations
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes growWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target-width);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

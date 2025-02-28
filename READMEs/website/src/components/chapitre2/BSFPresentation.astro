@@ -1,0 +1,131 @@
+---
+const stages = [
+  {
+    name: "Œuf",
+    description: "Les œufs sont pondus en masse par les femelles adultes",
+    duration: "4-5 jours",
+    image: "/images/II_introduction/1_mouche/1/10.jpg"
+  },
+  {
+    name: "Larve",
+    description: "Phase principale de croissance et de consommation des déchets",
+    duration: "14-16 jours",
+    image: "/images/II_introduction/1_mouche/1/12.jpg"
+  },
+  {
+    name: "Pré-pupe",
+    description: "Période de transition avant la métamorphose",
+    duration: "7-10 jours",
+    image: "/images/II_introduction/1_mouche/1/13.jpg"
+  },
+  {
+    name: "Pupe",
+    description: "Stade de métamorphose en adulte",
+    duration: "10-14 jours",
+    image: "/images/II_introduction/1_mouche/1/14.jpg"
+  },
+  {
+    name: "Adulte",
+    description: "Mouche adulte responsable de la reproduction",
+    image: "/images/II_introduction/1_mouche/2.1a.webp"
+  }
+];
+
+const bsfImages = [
+  {
+    src: "/images/II_introduction/1_mouche/2.1a.webp",
+    alt: "Mouche soldat noire adulte"
+  },
+  {
+    src: "/images/II_introduction/1_mouche/2.1b.webp",
+    alt: "Larve de mouche soldat noire"
+  },
+  {
+    src: "/images/II_introduction/1_mouche/2.1c.webp",
+    alt: "Colonie de mouches soldat noires"
+  }
+];
+---
+
+<section class="mb-12">
+  <div class="prose prose-lg max-w-none">
+    <h2 class="text-2xl font-heading font-semibold text-secondary mb-6">
+      La Mouche Soldat Noire
+    </h2>
+
+    <!-- Galerie principale -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      {bsfImages.map(image => (
+        <div class="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+          <img
+            src={image.src}
+            alt={image.alt}
+            class="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      ))}
+    </div>
+
+    <!-- Taxonomie -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 class="text-xl font-heading font-medium text-accent mb-4">
+        Classification taxonomique
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Règne</p>
+          <p class="font-medium">Animalia</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Classe</p>
+          <p class="font-medium">Insecta</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Ordre</p>
+          <p class="font-medium">Diptera</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Famille</p>
+          <p class="font-medium">Stratiomyidae</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Genre</p>
+          <p class="font-medium">Hermetia</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Espèce</p>
+          <p class="font-medium">H. illucens</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stades de développement -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Stades de développement
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {stages.map(stage => (
+          <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-200">
+            <div class="aspect-w-16 aspect-h-9">
+              <img
+                src={stage.image}
+                alt={`Stade ${stage.name}`}
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <div class="p-4">
+              <h4 class="font-heading font-medium text-lg text-primary mb-2">
+                {stage.name}
+              </h4>
+              <p class="text-sm text-gray-600 mb-2">{stage.description}</p>
+              <p class="text-xs text-gray-500">
+                <span class="font-medium">Durée :</span> {stage.duration}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

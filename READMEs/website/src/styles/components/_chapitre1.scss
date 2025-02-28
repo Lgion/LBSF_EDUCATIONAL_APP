@@ -1,0 +1,48 @@
+// Styles spécifiques au chapitre 1
+.chapter-1 {
+  // Styles pour les cartes
+  .card {
+    @apply transition-all duration-300;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  // Styles pour les icônes
+  .material-icons {
+    @apply transition-colors duration-200;
+  }
+
+  // Styles pour les listes
+  ul.feature-list {
+    @apply space-y-2;
+
+    li {
+      @apply flex items-center;
+
+      &::before {
+        content: "check";
+        font-family: "Material Icons";
+        @apply mr-2 text-primary;
+      }
+    }
+  }
+
+  // Animation pour le diagramme
+  .diagram-container {
+    svg {
+      path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 2s linear forwards;
+      }
+    }
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

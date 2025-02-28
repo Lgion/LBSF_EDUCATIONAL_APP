@@ -1,0 +1,42 @@
+---
+import ChapterLayout from '../layouts/ChapterLayout.astro';
+import BSFPresentation from '../components/chapitre2/BSFPresentation.astro';
+import LifecycleViewer from '../components/chapitre2/LifecycleViewer.jsx';
+import BenefitsChart from '../components/chapitre2/BenefitsChart.astro';
+import QuizSection from '../components/chapitre2/QuizSection.jsx';
+
+const title = "Chapitre 2 : Introduction à la transformation des biodéchets par les BSF";
+const description = "Découvrez la mouche soldat noire et son rôle dans la transformation des biodéchets. Apprenez son cycle de vie et ses avantages.";
+---
+
+<ChapterLayout 
+  title={title}
+  description={description}
+  chapterNumber={2}
+>
+  <div class="space-y-12">
+    <BSFPresentation />
+    <LifecycleViewer client:load />
+    <BenefitsChart />
+    <QuizSection client:load />
+
+    <!-- Navigation -->
+    <div class="flex justify-between mt-12">
+      <a
+        href="/chapitre1"
+        class="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-md hover:bg-primary/10 transition-colors duration-200"
+      >
+        <span class="material-icons mr-2">arrow_back</span>
+        Chapitre précédent
+      </a>
+      
+      <a
+        href="/chapitre3"
+        class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200"
+      >
+        Chapitre suivant : Opérations
+        <span class="material-icons ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</ChapterLayout>

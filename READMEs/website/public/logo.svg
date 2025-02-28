@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Définition des styles et animations -->
+    <style>
+        @keyframes wingFlutter {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(-5deg); }
+        }
+        @keyframes bodyPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        @keyframes antennaeWave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(10deg); }
+        }
+        .wing {
+            animation: wingFlutter 3s ease-in-out infinite;
+            transform-origin: center right;
+        }
+        .body {
+            animation: bodyPulse 4s ease-in-out infinite;
+        }
+        .antennae {
+            animation: antennaeWave 2.5s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+    </style>
+
+    <!-- Groupe principal centré -->
+    <g transform="translate(100, 100)">
+        <!-- Corps principal -->
+        <g class="body" fill="#2E7D32">
+            <!-- Abdomen -->
+            <path d="M -30,0 C -30,30 30,30 30,0 C 30,-30 -30,-30 -30,0" 
+                  fill="#2E7D32" stroke="none"/>
+            <!-- Thorax -->
+            <circle cx="0" cy="0" r="20" 
+                    fill="#1B5E20" stroke="none"/>
+        </g>
+
+        <!-- Ailes -->
+        <g class="wing" fill="#81C784" fill-opacity="0.7">
+            <!-- Aile gauche -->
+            <path d="M -15,-5 C -40,-20 -60,-10 -65,10 C -60,30 -40,20 -15,5 Z" 
+                  stroke="#2E7D32" stroke-width="1"/>
+            <!-- Aile droite -->
+            <path d="M 15,-5 C 40,-20 60,-10 65,10 C 60,30 40,20 15,5 Z" 
+                  stroke="#2E7D32" stroke-width="1"/>
+        </g>
+
+        <!-- Antennes -->
+        <g class="antennae" stroke="#1B5E20" stroke-width="2" fill="none">
+            <!-- Antenne gauche -->
+            <path d="M -10,-10 C -20,-20 -25,-30 -20,-40"/>
+            <!-- Antenne droite -->
+            <path d="M 10,-10 C 20,-20 25,-30 20,-40"/>
+        </g>
+
+        <!-- Yeux -->
+        <g>
+            <circle cx="-8" cy="-5" r="5" fill="#4CAF50"/>
+            <circle cx="8" cy="-5" r="5" fill="#4CAF50"/>
+            <!-- Reflets des yeux -->
+            <circle cx="-6" cy="-7" r="2" fill="#FFFFFF" fill-opacity="0.6"/>
+            <circle cx="10" cy="-7" r="2" fill="#FFFFFF" fill-opacity="0.6"/>
+        </g>
+
+        <!-- Pattes -->
+        <g stroke="#1B5E20" stroke-width="2" stroke-linecap="round">
+            <!-- Pattes gauches -->
+            <path d="M -15,0 C -25,5 -30,15 -25,25"/>
+            <path d="M -15,5 C -25,10 -30,20 -25,30"/>
+            <path d="M -15,10 C -25,15 -30,25 -25,35"/>
+            <!-- Pattes droites -->
+            <path d="M 15,0 C 25,5 30,15 25,25"/>
+            <path d="M 15,5 C 25,10 30,20 25,30"/>
+            <path d="M 15,10 C 25,15 30,25 25,35"/>
+        </g>
+    </g>
+</svg>

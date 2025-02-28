@@ -1,0 +1,110 @@
+---
+const composition = [
+  { label: "Protéines", percentage: 42, color: "bg-primary" },
+  { label: "Lipides", percentage: 35, color: "bg-secondary" },
+  { label: "Chitine", percentage: 8, color: "bg-accent" },
+  { label: "Minéraux", percentage: 15, color: "bg-success" }
+];
+
+const benefits = [
+  {
+    title: "Réduction des déchets",
+    value: "80%",
+    description: "Réduction du volume des déchets organiques"
+  },
+  {
+    title: "Taux de conversion",
+    value: "15-20%",
+    description: "Conversion en biomasse de larves"
+  },
+  {
+    title: "Protéines",
+    value: "42%",
+    description: "Teneur en protéines des larves séchées"
+  }
+];
+
+const environmentalBenefits = [
+  {
+    icon: "eco",
+    title: "Réduction des GES",
+    description: "Diminution des émissions de gaz à effet de serre"
+  },
+  {
+    icon: "water_drop",
+    title: "Économie d'eau",
+    description: "Processus économe en eau comparé à d'autres sources de protéines"
+  },
+  {
+    icon: "recycling",
+    title: "Économie circulaire",
+    description: "Valorisation complète des déchets organiques"
+  }
+];
+---
+
+<section class="mb-12">
+  <div class="prose prose-lg max-w-none">
+    <h2 class="text-2xl font-heading font-semibold text-secondary mb-6">
+      Avantages de la BSF
+    </h2>
+
+    <!-- Composition des larves -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Composition des larves
+      </h3>
+      <div class="space-y-4">
+        {composition.map(item => (
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm font-medium">{item.label}</span>
+              <span class="text-sm text-gray-500">{item.percentage}%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div
+                class={`h-2.5 rounded-full ${item.color}`}
+                style={`width: ${item.percentage}%`}
+              ></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Taux de conversion -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      {benefits.map(benefit => (
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h4 class="font-heading font-medium text-lg text-primary mb-2">
+            {benefit.title}
+          </h4>
+          <div class="text-3xl font-bold text-secondary mb-2">
+            {benefit.value}
+          </div>
+          <p class="text-sm text-gray-600">{benefit.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- Bénéfices environnementaux -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Impact environnemental
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {environmentalBenefits.map(benefit => (
+          <div class="text-center">
+            <span class={`material-icons text-4xl text-primary mb-4`}>
+              {benefit.icon}
+            </span>
+            <h4 class="font-heading font-medium text-lg mb-2">
+              {benefit.title}
+            </h4>
+            <p class="text-sm text-gray-600">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
