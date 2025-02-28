@@ -32,7 +32,7 @@
                     "Unité de conversion des déchets BSFL (pré-traitement, traitement, récolte)",
                     "Unité de post-traitement (raffinage des larves et traitement des résidus)"
                 ],
-                "images": ["1.3a.png"]
+                "images": ["1.3a.webp"]
             }
         ],
         "Introduction à la transformation des biodéchets par les BSF": [
@@ -45,7 +45,7 @@
                     "Taille des larves: 2,5 cm x 0,5 cm",
                     "Alimentation: matière organique en décomposition"
                 ],
-                "images": ["2.1a.png", "2.1b.png", "2.1c.png"]
+                "images": ["2.1a.webp", "2.1b.webp", "2.1c.webp"]
             },
             {
                 "titre": "Pourquoi la Mouche Soldat Noire ?",
@@ -85,7 +85,7 @@
                     "Protection contre les agents pathogènes",
                     "Gestion des déchets contaminés"
                 ],
-                "images": ["2.4a.png"]
+                "images": ["2.4a.webp"]
             }
         ],
         "Unité d'élevage BSF": [
@@ -101,7 +101,7 @@
                 "items_": [
                     //ICI
                 ],
-                "images": ["3.1a.png", "3.1b.png", "3.1c.png", "3.1c0.png", "3.1c1.png", "3.1c2.png", "3.1c3.png", "3.1c4.png", "3.1c5.png", "3.1d.png"]
+                "images": ["3.1a.webp", "3.1b.webp", "3.1c.webp", "3.1c0.webp", "3.1c1.webp", "3.1c2.webp", "3.1c3.webp", "3.1c4.webp", "3.1c5.webp", "3.1d.webp"]
             },
             {
                 "titre": "Activités dans l'unité d'élevage de BSF",
@@ -122,7 +122,7 @@
                     "Gestion de la pupation",
                     "Maintenance des cages à mouches"
                 ],
-                "images": ["3.2a0.png", "3.2a1.png", "3.2b.png", "3.2c.png", "3.2d.png", "3.2e.png", "3.2f.png"]
+                "images": ["3.2a0.webp", "3.2a1.webp", "3.2b.webp", "3.2c.webp", "3.2d.webp", "3.2e.webp", "3.2f.webp"]
             },
             {
                 "titre": "Planification du travail et gestion des données",
@@ -156,7 +156,7 @@
                     "Fumiers et matières fécales",
                     "Critères de qualité des déchets"
                 ],
-                "images": ["4.1a0.png", "4.1a1.png", "4.1b0.png", "4.1b1.png", "4.1c0.png", "4.1c1.png", "4.1c2.png"]
+                "images": ["4.1a0.webp", "4.1a1.webp", "4.1b0.webp", "4.1b1.webp", "4.1c0.webp", "4.1c1.webp", "4.1c2.webp"]
             },
             {
                 "titre": "Activités dans l'unité de conversion des BSFL",
@@ -174,7 +174,7 @@
                     "Ajustement de l'humidité (70-80%)",
                     "Homogénéisation des déchets"
                 ],
-                "images": ["4.2a0.png", "4.2a1.png", "4.2b0.png", "4.2b1.png", "4.2c0.png", "4.2c1.png", "4.2c2.png", "4.2d.png", "4.2e0.png", "4.2e1.png"]
+                "images": ["4.2a0.webp", "4.2a1.webp", "4.2b0.webp", "4.2b1.webp", "4.2c0.webp", "4.2c1.webp", "4.2c2.webp", "4.2d.webp", "4.2e0.webp", "4.2e1.webp"]
             },
             {
                 "titre": "Planification du travail et collecte de données",
@@ -209,7 +209,7 @@
                     "Résidu composté",
                     "Analyses de qualité des produits"
                 ],
-                "images": ["5.1a0.png"]
+                "images": ["5.1a0.webp"]
             },
             {
                 "titre": "Activités dans l'unité de post-traitement",
@@ -278,7 +278,7 @@
                     "Scénario 3 : grande échelle",
                     "Analyse comparative des scénarios"
                 ],
-                "images": ["6.2a.png", "6.2b.png", "6.2c.png"]
+                "images": ["6.2a.webp", "6.2b.webp", "6.2c.webp"]
             },
             {
                 "titre": "L'outil de modèle du coût basé sur le web",
@@ -303,7 +303,7 @@
                     "Réglementations locales",
                     "Impact sur le voisinage"
                 ],
-                "images": ["6.5a.png", "6.5b.png"]
+                "images": ["6.5a.webp", "6.5b.webp"]
             },
             {
                 "titre": "Création d'un plan d'étage et planification de l'emplacement des unités pour un site BSF",
