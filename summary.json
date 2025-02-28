@@ -1,0 +1,54 @@
+{
+    "Chapitres": {
+        "Justification": [
+            {"titre": "Introduction générale", "description": "La gestion des déchets solides urbains est considérée comme l'un des problèmes environnementaux les plus immédiats et les plus graves auxquels sont confrontés les gouvernements urbains des pays à revenu faible et intermédiaire [14]."},
+            {"titre": "Portée et public cible", "description": "Ce manuel contient les informations nécessaires pour développer et exploiter une installation de traitement des déchets de larves de mouches soldats noires de taille moyenne, capable de traiter 5 tonnes de déchets par jour [24]. Il cible les lecteurs ayant peu ou pas de connaissances de base en gestion des déchets en général et en technologie de la mouche soldat noire en particulier [25]."},
+            {"titre": "Navigation dans ce guide", "description": "Le manuel est structuré selon les trois principales unités de transformation qui sont essentielles à une installation de transformation BSF : unité d'élevage BSF, unité de conversion des déchets BSFL et unité de post-traitement [26]."}
+        ],
+        "Introduction à la transformation des biodéchets par les BSF": [
+            {"titre": "La mouche soldat noire", "description": "Une mouche femelle pond environ 500 œufs, d'où de jeunes larves écloront en quatre jours [29]. Sous des conditions optimales avec une qualité et une quantité de nourriture idéales, la croissance des larves nécessitera environ deux semaines [29]."}
+        ],
+        "Unité d'élevage BSF": [
+            {"titre": "Rearing BSF in a controlled environment", "description": "Pour assurer le traitement d'une quantité définie de déchets sur une base régulière, l'unité d'élevage doit fournir un nombre défini de larves de cinq jours, appelées 5-DOL, chaque jour [39]."},
+            {"titre": "Egg deposition and egg harvest", "description": "D'un point de vue de la gestion, il est important que tous les emballages d'œufs soient concentrés dans quelques endroits spécifiques [40]."},
+            {"titre": "Activities in the BSF rearing unit", "description": "La densité des pré-nymphes dans le conteneur de nymphose influence la rapidité avec laquelle les pré-nymphes se déposent et raidissent leur corps pour commencer leur transformation en nymphes [42]."},
+            {"titre": "Pupae stage", "description": "Les conteneurs de nymphe sont placés dans une cage sombre où les mouches émergeront et finiront par se déplacer vers une cage d'amour [51]."},
+            {"titre": "Work scheduling and data management", "description": "Un calendrier de travail est disponible (voir l'annexe A) qui aide à structurer toutes les manipulations étape par étape, créant ainsi un aperçu organisé des étapes à effectuer chaque jour [54]."}
+        ],
+        "Opérations de conversion BSFL": [
+            {"titre": "Sourcing biowaste", "description": "Les larves sont généralement très tolérantes en matière de substrats d'alimentation [55]. Il est important que les biodéchets reçus à l'installation conviennent à l'alimentation des larves [56]."},
+            {"titre": "Biowaste pre-processing", "description": "La prochaine étape consiste à réduire la taille des particules de déchets [63]."},
+            {"titre": "BSF treatment unit", "description": "Le traitement des déchets à l'aide de larves de la mouche soldat noire peut être effectué de différentes manières [65]."},
+            {"titre": "Activities in the BSFL conversion unit", "description": "La plupart des matériaux peuvent être trouvés dans les quincailleries, mais certains matériaux et équipements ont été fabriqués sur mesure pour l'opération [76]."},
+            {"titre": "Pre-processing", "description": "L'objectif de l'étape de prétraitement est de réduire la taille des particules et d'homogénéiser le matériau d'entrée [77]."},
+             {"titre": "Treatment", "description": "Un nouveau lot de biodéchets à traiter chaque jour est lancé en installant des unités d'incubateur, en alimentant une quantité définie de substrat de biodéchets déchiquetés (et conditionnés) dans chacune de ces unités d'incubateur, puis en préparant et en ajoutant un nombre défini de 5-DOL sur le dessus du substrat [82]."},
+            {"titre": "Harvesting", "description": "Une fois que les larves se sont nourries du substrat et qu'il ne reste que des résidus secs, les unités de Larvero sont récoltées à l'aide d'un système de tamisage mécanique qui permet de séparer le mélange de résidus et de larves en trois fractions [87]."}
+        ],
+        "Post-traitement et commercialisation des BSFL": [
+            {"titre": "Marketable Products from BSFL Biowaste Conversion", "description": "Le traitement des déchets organiques à l'aide de BSFL se traduit par deux principaux résultats : les larves (10 à 20 % du poids humide des déchets) et le frass (20 à 40 %) [94]."},
+            {"titre": "Activities in the post-processing unit", "description": "Les larves désinfectées contiennent environ 75 % d'eau et les protéines et les graisses représentent chacune environ 10 % du poids humide [97]."},
+            {"titre": "Microwave Drying", "description": "Nous illustrons l'opération de micro-ondes avec un simple micro-ondes de cuisine [98]. Cependant, les mêmes principes que ceux décrits ici sont également applicables aux micro-ondes à plus grande échelle [98]."},
+            {"titre": "Oven Drying", "description": "Dans un four simple chauffé au gaz, comme celui présenté ici, la circulation de l'air n'est pas suffisante pour assurer une répartition uniforme de la chaleur pour le séchage [99]."},
+            {"titre": "Fractionnement", "description": "La graisse des larves séchées peut être extraite mécaniquement à l'aide d'une presse à vis [101]. Il en résulte un tourteau de presse BSF et de l'huile brute de BSF [101]."},
+            {"titre": "Surveillance, stockage et étiquetage des produits", "description": "Pour suivre vos activités de post-traitement, nous vous recommandons de remplir une feuille de suivi chaque jour de production [103]. Un modèle de feuille de suivi se trouve à l'annexe H [103]."}
+        ],
+        "Développement commercial": [
+            {"titre": "Cost-revenue analysis and financial viability", "description": "Comprendre et évaluer le coût du traitement des déchets BSF est un aspect important avant de démarrer ou pendant l'exploitation d'une installation BSF [105]."},
+            {"titre": "The scenario-based business model tool", "description": "L'outil de modèle commercial basé sur des scénarios est destiné à ceux qui souhaitent examiner une installation BSF en détail [106]. Il dissèque chaque unité de traitement individuellement en termes de coût d'investissement et de coût opérationnel [106]."},
+            {"titre": "The web-based cost model tool", "description": "Le modèle de coûts basé sur le Web est une version plus simplifiée de l'outil de modèle commercial basé sur des scénarios [113]. Il suppose une usine centrale avec toutes les unités intégrées dans une seule installation [113]."},
+            {"titre": "Siting a BSF waste processing facility", "description": "L'emplacement de l'installation avec ses composants et activités s'efforce de reproduire au mieux l'habitat naturel et les besoins de la BSF, tout en les orientant vers une efficacité et une stabilité accrues afin qu'un traitement continu des déchets puisse être assuré [115]."},
+            {"titre": "Operational scenarios and work scheduling", "description": "Les directives opérationnelles fournies dans ce livre sont basées sur une installation de traitement BSF qui a la capacité de produire suffisamment de 5-DOL pour traiter environ 35 tonnes de biodéchets par semaine [121]."}
+        ]
+    },
+    "Annexes": [
+        "Calendrier de travail pour l'unité d'élevage [127]",
+        "Calendrier d'alimentation pour le larvero de pépinière [127]",
+        "Calendrier de travail pour l'unité de conversion [127]",
+        "Fiche de suivi des paramètres de productivité dans l'unité d'élevage [128]",
+        "Fiche de suivi des paramètres de productivité dans l'étape de traitement de l'unité de conversion BSFL [128]",
+        "Fiche de suivi des paramètres de productivité dans l'étape de prétraitement et de récolte de l'unité de conversion BSFL [128]",
+        "Fiche de suivi des paramètres de productivité dans l'unité de post-traitement BSFL [128]",
+        "Dessins techniques des matériaux sur mesure et de l'équipement [128]",
+        "Liste des besoins en matériaux pour trois scénarios de fonctionnement dans une installation de traitement des biodéchets BSF [129]"
+    ]
+}

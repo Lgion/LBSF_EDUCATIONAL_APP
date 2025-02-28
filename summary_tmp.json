@@ -1,0 +1,346 @@
+{
+    "Chapitres": {
+        "Justification": [
+            {
+                "titre": "Introduction générale",
+                "description": "La gestion des déchets solides urbains est considérée comme l'un des problèmes environnementaux les plus immédiats et les plus graves auxquels sont confrontés les gouvernements urbains des pays à revenu faible et intermédiaire. Ce guide traite des déchets municipaux organiques urbains provenant des ménages, des activités commerciales et des institutions. Il décrit la conversion des biodéchets par les larves d'insectes, en utilisant l'exemple de la Mouche Soldat Noire (BSF), Hermetia illucens [1, 2].",
+                "items": [],
+                "items_": [
+                    "Gestion des déchets solides urbains",
+                    "Déchets municipaux organiques",
+                    "Conversion des biodéchets par les larves BSF"
+                ],
+                "images": []
+            },
+            {
+                "titre": "Portée et public cible",
+                "description": "Ce manuel contient les informations nécessaires pour développer et exploiter une installation de traitement des déchets de larves de mouches soldats noires de taille moyenne, capable de traiter 5 tonnes de déchets par jour [3, 4]. Il cible les lecteurs ayant peu ou pas de connaissances de base en gestion des déchets en général et en technologie de la mouche soldat noire en particulier [5].",
+                "items": [],
+                "items_": [
+                    "Installation de traitement de taille moyenne (5 tonnes/jour)",
+                    "Guide pour débutants en gestion des déchets",
+                    "Guide pour débutants en technologie BSF"
+                ],
+                "images": []
+            },
+            {
+                "titre": "Naviguer dans ce document",
+                "description": "Le manuel est structuré selon les trois principales unités de traitement qui sont essentielles à une installation de traitement BSF.",
+                "items": [],
+                "items_": [
+                    "Unité d'élevage BSF",
+                    "Unité de conversion des déchets BSFL (pré-traitement, traitement, récolte)",
+                    "Unité de post-traitement (raffinage des larves et traitement des résidus)"
+                ],
+                "images": ["1.3a.png"]
+            }
+        ],
+        "Introduction à la transformation des biodéchets par les BSF": [
+            {
+                "titre": "La Mouche Soldat Noire",
+                "description": "La Mouche Soldat Noire, *Hermetia illucens*, appartient à la famille des diptères Stratiomyidae [6]. Les larves se nourrissent de matière organique en décomposition et se développent pour atteindre environ 2,5 cm de longueur et 0,5 cm de largeur [7].",
+                "items": [],
+                "items_": [
+                    "Taxonomie: Diptères Stratiomyidae",
+                    "Taille des larves: 2,5 cm x 0,5 cm",
+                    "Alimentation: matière organique en décomposition"
+                ],
+                "images": ["2.1a.png", "2.1b.png", "2.1c.png"]
+            },
+            {
+                "titre": "Pourquoi la Mouche Soldat Noire ?",
+                "description": "Plusieurs attributs clés font des BSF des organismes prometteurs pour gérer et 'ingénierer' afin qu'ils puissent être utilisés comme une technologie de traitement intéressante pour les biodéchets du point de vue des gestionnaires de déchets et des entreprises. La biomasse des déchets est convertie en larves et en résidus. Les larves sont composées d'environ 35% de protéines et d'environ 30% de matières grasses brutes (sur la base de la masse sèche) [8].",
+                "items": [],
+                "items_": [
+                    "Conversion des déchets en biomasse",
+                    "Composition des larves: 35% protéines",
+                    "Composition des larves: 30% matières grasses",
+                    "Réduction des déchets jusqu'à 80%",
+                    "Production de résidus compostables"
+                ],
+                "images": []
+            },
+            {
+                "titre": "Ingénierie du cycle de vie de la BSF",
+                "description": "Dans une installation de transformation BSF, on peut différencier des unités de transformation distinctes, comme le montre la figure 2–4. Cela garantit qu'une quantité fiable et constante de petites larves (appelées 5-DOL) est toujours disponible pour inoculer la quantité quotidienne de biodéchets qui est reçue pour être transformée dans l'installation de traitement [9].",
+                "items": [],
+                "items_": [
+                    "Unité d'élevage BSF",
+                    "Unité de conversion BSFL",
+                    "Unité de post-traitement",
+                    "Production de larves 5-DOL",
+                    "Traitement quotidien des biodéchets"
+                ],
+                "images": []
+            },
+            {
+                "titre": "Mesures de sécurité et d'hygiène lors du travail avec la BSF et les biodéchets",
+                "description": "Pendant le fonctionnement d'une installation BSF, des mesures qui protègent la santé des travailleurs ainsi que celle des animaux sont également une nécessité [10]. Bien que le fonctionnement d'une installation BSF n'entraîne pas de risques élevés pour la santé, les employés sont néanmoins exposés à des menaces telles que le bruit, la poussière ou les émissions gazeuses, ainsi qu'à des agents pathogènes qui peuvent pénétrer dans l'installation par le biais des déchets organiques [10, 11].",
+                "items": [],
+                "items_": [
+                    "Équipements de protection individuelle",
+                    "Gestion de l'hygiène",
+                    "Contrôle des nuisibles",
+                    "Nettoyage régulier",
+                    "Protection contre les agents pathogènes",
+                    "Gestion des déchets contaminés"
+                ],
+                "images": ["2.4a.png"]
+            }
+        ],
+        "Unité d'élevage BSF": [
+            {
+                "titre": "Élevage de BSF dans un environnement contrôlé",
+                "description": "Pour assurer le traitement d'une quantité définie de déchets de façon régulière, l'unité d'élevage doit fournir un nombre défini de larves de cinq jours, appelées 5-DOL, chaque jour [9]. Il est donc important de contrôler toutes les étapes de la production pendant l'élevage et de surveiller la performance de chaque étape [9].",
+                "items": [
+                    "Ponte et récolte des œufs",
+                    "Éclosion des œufs et alimentation des larves",
+                    "Empupement",
+                    "Accouplement"
+                ],
+                "items_": [
+                    //ICI
+                ],
+                "images": ["3.1a.png", "3.1b.png", "3.1c.png", "3.1c0.png", "3.1c1.png", "3.1c2.png", "3.1c3.png", "3.1c4.png", "3.1c5.png", "3.1d.png"]
+            },
+            {
+                "titre": "Activités dans l'unité d'élevage de BSF",
+                "description": "Dans ce sous-chapitre, les étapes du processus et les matériaux à utiliser pendant ces étapes sont présentés [12]. La plupart des matériaux sont des articles courants qui peuvent être achetés dans les quincailleries locales [12, 13]. Certains matériaux et équipements ont été fabriqués sur mesure pour l'opération [12, 13].",
+                "items": [
+                    "Fly stage",
+                    "Egg Stage",
+                    "Hatchling stage",
+                    "Larval growth stage",
+                    "Pre-pupae stage",
+                    "Pupae stage"
+                ],
+                "items_": [
+                    "Gestion des œufs et des eggies",
+                    "Douche à larves (hatchling shower)",
+                    "Containers pour hatchlings",
+                    "Nourrissage des larves",
+                    "Gestion de la pupation",
+                    "Maintenance des cages à mouches"
+                ],
+                "images": ["3.2a0.png", "3.2a1.png", "3.2b.png", "3.2c.png", "3.2d.png", "3.2e.png", "3.2f.png"]
+            },
+            {
+                "titre": "Planification du travail et gestion des données",
+                "description": "Dans ce sous-chapitre, les étapes du processus et les matériaux à utiliser pendant ces étapes sont présentés [12]. La plupart des matériaux sont des articles courants qui peuvent être achetés dans les quincailleries locales [12, 13]. Certains matériaux et équipements ont été fabriqués sur mesure pour l'opération [12, 13].",
+                "items": [],
+                "items_": [
+                    "Calendrier de travail quotidien",
+                    "Suivi des performances",
+                    "Gestion des stocks",
+                    "Maintenance des équipements",
+                    "Documentation des processus"
+                ],
+                "images": []
+            }
+        ],
+        "Opérations de conversion des BSFL": [
+            {
+                "titre": "Approvisionnement en biodéchets",
+                "description": "Les larves sont généralement très tolérantes en ce qui concerne les substrats d'alimentation. Cependant, il est important que les biodéchets reçus à l'installation soient adaptés à l'alimentation des larves. Avec une teneur en eau comprise entre 60% et 90% et une taille de particules spécifique, la plupart des matières organiques seront traitées d'une manière ou d'une autre.",
+                "items": [
+                    "Biowaste pre-processing",
+                    "BSF treatment unit",
+                    "Product harvesting",
+                    "Conditioning of the harvested products"
+                ],
+                "items_": [
+                    "Déchets municipaux organiques",
+                    "Déchets alimentaires et de restaurants",
+                    "Déchets de marchés",
+                    "Déchets agro-industriels",
+                    "Fumiers et matières fécales",
+                    "Critères de qualité des déchets"
+                ],
+                "images": ["4.1a0.png", "4.1a1.png", "4.1b0.png", "4.1b1.png", "4.1c0.png", "4.1c1.png", "4.1c2.png"]
+            },
+            {
+                "titre": "Activités dans l'unité de conversion des BSFL",
+                "description": "La récolte sépare les résidus des larves. Cependant, après avoir terminé le processus, certaines particules de résidus resteront collées aux larves et l'intestin des larves contiendra encore des matières qui n'ont pas encore été excrétées [17]. Généralement, les larves de BSF récoltées sont vendues comme alimentation animale ",
+                "items": [
+                    "Pré-traitement",
+                    "Traitement",
+                    "Récolte",
+                    "Conditionnement"
+                ],
+                "items_": [
+                    "Contrôle qualité des déchets",
+                    "Retrait des contaminants",
+                    "Broyage des déchets (<1-2 cm)",
+                    "Ajustement de l'humidité (70-80%)",
+                    "Homogénéisation des déchets"
+                ],
+                "images": ["4.2a0.png", "4.2a1.png", "4.2b0.png", "4.2b1.png", "4.2c0.png", "4.2c1.png", "4.2c2.png", "4.2d.png", "4.2e0.png", "4.2e1.png"]
+            },
+            {
+                "titre": "Planification du travail et collecte de données",
+                "description": "Les activités couvertes dans ce chapitre concernent toutes la conversion des déchets par les BSFL. Bien que le système proposé ait une conception simple et peu technologique, la grande quantité de manipulations peut rendre l'opération complexe.",
+                "items": [],
+                "items_": [
+                    "Calendrier de travail",
+                    "Suivi des performances",
+                    "Documentation des processus",
+                    "Gestion des stocks",
+                    "Maintenance des équipements"
+                ],
+                "images": []
+            }
+        ],
+        "Post-traitement et Commercialisation des BSFL": [
+            {
+                "titre": "Produits commercialisables issus de la conversion des biodéchets par les BSFL",
+                "description": "La transformation des déchets organiques à l'aide de BSFL donne deux principaux résultats : les larves (10 à 20 % des déchets) et les résidus (80 à 90 %) [18]. Les larves peuvent être utilisées comme alimentation animale, tandis que les résidus peuvent être utilisés comme amendement du sol ou engrais [18, 19].",
+                "items": [
+                    "Marketing des produits BSFL",
+                    "Produits BSFL",
+                    "Séchage",
+                    "Fractionnement et raffinage",
+                    ["Marketing des produits BSFL", "Produits BSFL ", "Séchage", "Fractionnement et raffinage "]
+                ],
+                "items_": [
+                    "Larves vivantes",
+                    "Larves séchées entières",
+                    "Farine de larves",
+                    "Huile de larves",
+                    "Résidu composté",
+                    "Analyses de qualité des produits"
+                ],
+                "images": ["5.1a0.png"]
+            },
+            {
+                "titre": "Activités dans l'unité de post-traitement",
+                "description": "Le post-traitement des larves et des résidus implique plusieurs étapes pour obtenir des produits commercialisables. Pour les larves, cela peut inclure le séchage, le broyage et l'extraction d'huile. Pour les résidus, cela implique généralement un processus de compostage.",
+                "items": [
+                    "Séchage au micro-ondes",
+                    "Torréfaction",
+                    "Séchage au four",
+                    "Fractionnement",
+                    "Raffinage",
+                    ["Broyage", "Raffinage de l'huile", "A°) Filtration de l'huile", "B) Décantation de l'huile"]
+                ],
+                "items_": [
+                    "Nettoyage des larves",
+                    "Séchage des larves",
+                    "Production de farine",
+                    "Extraction d'huile",
+                    "Compostage des résidus",
+                    "Contrôle qualité"
+                ],
+                "images": []
+            },
+            {
+                "titre": "Suivi, stockage et étiquetage des produits",
+                "description": "Le suivi de la qualité des produits, leur stockage approprié et leur étiquetage correct sont essentiels pour la commercialisation. Des échantillons doivent être prélevés régulièrement pour les analyses de qualité, et les produits doivent être stockés dans des conditions appropriées.",
+                "items": [
+                    "Suivi"
+                    , "Stockage"
+                    , "Étiquetage"
+                ],
+                "items_": [
+                    "Protocoles d'échantillonnage",
+                    "Conditions de stockage",
+                    "Étiquetage des produits",
+                    "Traçabilité des lots",
+                    "Documentation qualité",
+                    "Gestion des stocks"
+                ],
+                "images": []
+            }
+        ],
+        "Développement commercial": [
+            {
+                "titre": "Analyse coûts-revenus et viabilité financière",
+                "description": "Comprendre et évaluer le coût du traitement des déchets BSF est un aspect important avant de démarrer ou pendant le fonctionnement d'une installation BSF [26]. Cela implique non seulement d'estimer les coûts d'investissement [26].",
+                "items": [],
+                "items_": [
+                    "Coûts d'investissement",
+                    "Coûts opérationnels",
+                    "Revenus potentiels",
+                    "Analyse de rentabilité"
+                ],
+                "images": []
+            },
+            {
+                "titre": "L'outil de modèle commercial basé sur des scénarios",
+                "description": "L'outil comprend trois scénarios différents pour le fonctionnement d'une installation BSF [27].",
+                "items": [
+                    "Scénario 1",
+                    "Scénario 2",
+                    "Scénario 3"
+                ],
+                "items_": [
+                    "Scénario 1 : petite échelle",
+                    "Scénario 2 : échelle moyenne",
+                    "Scénario 3 : grande échelle",
+                    "Analyse comparative des scénarios"
+                ],
+                "images": ["6.2a.png", "6.2b.png", "6.2c.png"]
+            },
+            {
+                "titre": "L'outil de modèle du coût basé sur le web",
+                "description": "",
+                "items": [],
+                "items_": [
+                    "Saisie des données",
+                    "Calcul des coûts",
+                    "Analyse de rentabilité",
+                    "Rapports financiers"
+                ],
+                "images": []
+            },
+            {
+                "titre": "Implantation d'une installation de transformation des déchets BSF",
+                "description": "Une installation de transformation des déchets BSF doit être située de manière à éviter les nuisances aux communautés voisines en raison des odeurs ou du bruit [28].",
+                "items": [],
+                "items_": [
+                    "Critères de sélection du site",
+                    "Évaluation environnementale",
+                    "Accessibilité",
+                    "Réglementations locales",
+                    "Impact sur le voisinage"
+                ],
+                "images": ["6.5a.png", "6.5b.png"]
+            },
+            {
+                "titre": "Création d'un plan d'étage et planification de l'emplacement des unités pour un site BSF",
+                "description": "Cette section décrit les besoins en espace de chacune des trois unités (élevage, conversion/traitement et post-traitement) dans une installation BSF en fonction de l'échelle d'apport de déchets [29].",
+                "items": [],
+                "items_": [
+                    "Dimensionnement des unités",
+                    "Organisation spatiale",
+                    "Flux de matériaux",
+                    "Zones de stockage",
+                    "Circulation du personnel"
+                ],
+                "images": []
+            },
+            {
+                "titre": "Scénarios opérationnels et planification du travail",
+                "description": "Les conseils opérationnels fournis dans ce livre sont basés sur une installation de traitement BSF qui a la capacité de produire suffisamment de 5-DOL pour traiter environ 35 tonnes de biodéchets par semaine [30]. Cela nécessite une présence quotidienne et un horaire de travail, sept jours par semaine [31].",
+                "items": [],
+                "items_": [
+                    "Choix du site",
+                    "Plan d'aménagement",
+                    "Organisation des unités",
+                    "Flux de travail"
+                ],
+                "images": []
+            }
+        ],
+        "Annexes": [
+            "Calendrier de travail pour l'unité d'élevage [32]",
+            "Calendrier d'alimentation pour le larvero de la pépinière [32]",
+            "Calendrier de travail pour l'unité de conversion [32]",
+            "Feuille de suivi des paramètres de productivité dans l'unité d'élevage [33]",
+            "Feuille de suivi des paramètres de productivité dans l'étape de traitement de l'unité de conversion [33]",
+            "Feuille de suivi des paramètres de productivité dans l'étape de prétraitement et de récolte de l'unité de conversion [33]",
+            "Feuille de suivi des paramètres de productivité dans l'unité de post-traitement [33]",
+            "Dessins techniques pour les matériaux et équipements fabriqués sur mesure [34]",
+            "Liste des besoins en matériaux pour trois scénarios de fonctionnement dans une installation de traitement des biodéchets BSF [6]"
+        ]
+    }
+}
