@@ -6,9 +6,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/netlify": "^6.2.2",
     "@astrojs/react": "^4.0.0",
     "@astrojs/tailwind": "^5.0.0",
     "astro": "^4.0.0",
