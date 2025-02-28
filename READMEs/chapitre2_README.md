@@ -28,34 +28,35 @@ Présenter en détail la mouche soldat noire et expliquer son rôle dans la tran
 
 ## Spécification Technique
 
-### Technologies requises
-- HTML5
-- CSS3 avec animations
-- JavaScript ES6+
-- Bibliothèque d'animation (GreenSock ou similaire)
-
-### Structure des composants
+### Composants Requis
 ```
-chapitre2/
-├── index.html
+src/
+├── pages/
+│   └── chapitre2.astro
+├── components/
+│   └── chapitre2/
+│       ├── BSFPresentation.astro
+│       ├── LifecycleViewer.jsx
+│       ├── BenefitsChart.astro
+│       └── QuizSection.jsx
 ├── styles/
-│   ├── main.css
-│   └── animations.css
-├── scripts/
-│   ├── lifecycle.js
-│   └── interactive.js
+│   └── components/
+│       └── _chapitre2.scss
 └── assets/
-    ├── images/
-    │   └── lifecycle/
-    └── animations/
+    └── chapitre2/
+        ├── lifecycle/
+        └── animations/
 ```
 
-### Animations et Transitions
-- Transitions fluides entre les sections
-- Animations du cycle de vie
-- Effets de survol sur les éléments interactifs
+### Intégration
+- Utilisation du `ChapterLayout.astro` commun
+- Animations GSAP pour le cycle de vie
+- Bibliothèque d'animation (GreenSock ou similaire)
+- Composants React pour les interactions complexes
+- Styles SCSS spécifiques au chapitre
 
-### Accessibilité
-- Support ARIA
-- Navigation au clavier
-- Alternatives textuelles pour les contenus visuels
+### Performance et SEO
+- Génération statique des pages
+- Hydratation partielle des composants interactifs
+- Meta tags générés automatiquement
+- Optimisation des images intégréees

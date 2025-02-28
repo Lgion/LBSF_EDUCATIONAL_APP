@@ -28,34 +28,28 @@ Fournir les outils et informations nécessaires pour évaluer et planifier un pr
 
 ## Spécification Technique
 
-### Technologies requises
-- HTML5
-- CSS3
-- JavaScript avec React
-- Base de données pour les modèles financiers
-
-### Structure des composants
+### Composants Requis
 ```
-chapitre5/
-├── index.html
+src/
+├── pages/
+│   └── chapitre5.astro
+├── components/
+│   └── chapitre5/
+│       ├── BusinessPlanGenerator.jsx
+│       ├── FinancialDashboard.astro
+│       ├── ROICalculator.astro
+│       └── ResourceCenter.jsx
 ├── styles/
-│   ├── financial.css
-│   └── business-plan.css
-├── scripts/
-│   ├── calculator.js
-│   ├── business-plan.js
-│   └── dashboard.js
-└── templates/
-    ├── financial-models/
-    └── business-plans/
+│   └── components/
+│       └── _chapitre5.scss
+└── data/
+    └── chapitre5/
+        ├── financial-models/
+        └── business-plans/
 ```
 
-### Sécurité des données
-- Chiffrement des données sensibles
-- Authentification utilisateur
-- Sauvegarde automatique
-
-### Performance
-- Mise en cache des calculs
-- Optimisation des requêtes
-- Compression des ressources
+### Intégration
+- Utilisation du `ChapterLayout.astro` commun
+- Outils financiers avec React
+- Export PDF avec jsPDF
+- Styles SCSS spécifiques au chapitre

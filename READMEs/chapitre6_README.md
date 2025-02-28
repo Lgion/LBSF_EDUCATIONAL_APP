@@ -28,34 +28,28 @@ Fournir des ressources complémentaires et des outils pratiques pour la gestion 
 
 ## Spécification Technique
 
-### Technologies requises
-- HTML5
-- CSS3
-- JavaScript avec FullCalendar.js
-- Base de données pour le stockage des données
-
-### Structure des composants
+### Composants Requis
 ```
-chapitre6/
-├── index.html
+src/
+├── pages/
+│   └── chapitre6.astro
+├── components/
+│   └── chapitre6/
+│       ├── Calendar.jsx
+│       ├── TrackingForms.astro
+│       ├── ResourceLibrary.astro
+│       └── SearchSystem.jsx
 ├── styles/
-│   ├── calendar.css
-│   └── tools.css
-├── scripts/
-│   ├── calendar.js
-│   ├── tracking.js
-│   └── search.js
-└── resources/
-    ├── templates/
-    └── documents/
+│   └── components/
+│       └── _chapitre6.scss
+└── data/
+    └── chapitre6/
+        ├── templates/
+        └── documents/
 ```
 
-### Gestion des données
-- Exportation en différents formats
-- Synchronisation des calendriers
-- Sauvegarde automatique
-
-### Accessibilité
-- Navigation intuitive
-- Support multilingue
-- Mode impression optimisé
+### Intégration
+- Utilisation du `ChapterLayout.astro` commun
+- Calendrier avec FullCalendar.js
+- Système de recherche avec Algolia
+- Styles SCSS spécifiques au chapitre

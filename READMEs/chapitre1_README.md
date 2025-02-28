@@ -27,32 +27,33 @@ Présenter une introduction générale au projet de gestion des déchets par les
 
 ## Spécification Technique
 
-### Technologies requises
-- HTML5
-- CSS3 avec Flexbox/Grid
-- JavaScript pour les interactions
-- SVG pour les diagrammes interactifs
-
-### Structure des composants
+### Composants Requis
 ```
-chapitre1/
-├── index.html
+src/
+├── pages/
+│   └── chapitre1.astro
+├── components/
+│   └── chapitre1/
+│       ├── Introduction.astro
+│       ├── PublicCible.astro
+│       ├── Navigation.astro
+│       └── DiagrammeUnites.jsx
 ├── styles/
-│   └── chapitre1.css
-├── scripts/
-│   └── navigation.js
+│   └── components/
+│       └── _chapitre1.scss
 └── assets/
-    └── diagrams/
+    └── chapitre1/
         └── units-diagram.svg
 ```
 
-### Responsive Design
-- Breakpoints : 
-  - Mobile : 320px - 768px
-  - Tablet : 768px - 1024px
-  - Desktop : 1024px+
+### Intégration
+- Utilisation du `ChapterLayout.astro` commun
+- Composants React pour les parties interactives
+- Styles SCSS spécifiques au chapitre
+- Optimisation des SVG avec SCSS
 
 ### Performance
-- Optimisation des images
-- Chargement différé des ressources non critiques
+- Rendu statique par défaut avec Astro
+- Hydratation partielle pour les composants interactifs
+- Optimisation automatique des images
 - Temps de chargement cible < 2s

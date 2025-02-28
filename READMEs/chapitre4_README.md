@@ -28,34 +28,29 @@ Présenter les produits finaux issus du traitement BSF et leurs applications com
 
 ## Spécification Technique
 
-### Technologies requises
-- HTML5
-- CSS3 avec Flexbox
-- JavaScript avec Vue.js
-- API REST pour les données de marché
-
-### Structure des composants
+### Composants Requis
 ```
-chapitre4/
-├── index.html
+src/
+├── pages/
+│   └── chapitre4.astro
+├── components/
+│   └── chapitre4/
+│       ├── ProductCatalog.jsx
+│       ├── MarketAnalysis.astro
+│       ├── ROICalculator.astro
+│       └── CaseStudies.jsx
 ├── styles/
-│   ├── products.css
-│   └── market.css
-├── scripts/
-│   ├── calculator.js
-│   ├── products.js
-│   └── market-analysis.js
+│   └── components/
+│       └── _chapitre4.scss
 └── data/
-    ├── products.json
-    └── market-data.json
+    └── chapitre4/
+        ├── products.json
+        └── market-data.json
 ```
 
-### Intégration e-commerce
-- Catalogue de produits
-- Système de devis
-- Gestion des contacts commerciaux
-
-### Analytics
-- Suivi des interactions utilisateur
-- Rapports de performance
-- Métriques de conversion
+### Intégration
+- Utilisation du `ChapterLayout.astro` commun
+- Collection Astro pour les produits
+- Composants React pour les parties interactives
+- Graphiques de marché avec D3.js
+- Styles SCSS spécifiques au chapitre

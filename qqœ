@@ -1,0 +1,28 @@
+[33mcommit 12f2c3604ab1add92777d6f9727fb1a17867e577[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: athena <legion.athenienne@gmail.com>
+Date:   Fri Feb 28 10:29:31 2025 +0000
+
+    WIP GENERATING THE ENTIRE WEBSITE
+    - La page web dans sa forme a été généré par cascade selon les docs générés précédement, famework astro
+    -
+
+[33mcommit bc6da7b389a5f9ce4532040c0c55cf74c5b1e4b4[m
+Author: athena <legion.athenienne@gmail.com>
+Date:   Fri Feb 28 09:58:20 2025 +0000
+
+    readmes amélioré pour inclure astro
+
+[33mcommit 7d931a55ab48fa015fb59f5da523b17742fde5ea[m
+Author: athena <legion.athenienne@gmail.com>
+Date:   Fri Feb 28 09:45:27 2025 +0000
+
+    jai converti tous les png en webp
+
+[33mcommit 737dae704f6ea80dffca53a57c16ff61576dd901[m
+Author: athena <legion.athenienne@gmail.com>
+Date:   Fri Feb 28 09:26:36 2025 +0000
+
+    IC
+    - génération du json pour pouvoir exploiter dans des pages web les informations contenus dans le pdf
+    - découpage et regroupement des images du pdf selon leur chapitre et section
+    - rédaction de plusieurs readme pour permettre une génération de sitweb par cascade

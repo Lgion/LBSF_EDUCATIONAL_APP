@@ -28,27 +28,37 @@ Détailler le processus de conversion des biodéchets par les larves BSF, de l'a
 
 ## Spécification Technique
 
-### Technologies requises
-- HTML5
-- CSS3 avec Grid
-- JavaScript avec D3.js pour les visualisations
-- Framework de graphiques (Chart.js)
-
-### Structure des composants
+### Composants Requis
 ```
-chapitre3/
-├── index.html
+src/
+├── pages/
+│   └── chapitre3.astro
+├── components/
+│   └── chapitre3/
+│       ├── ProcessMonitor.jsx
+│       ├── WasteCalculator.astro
+│       ├── OperationsGuide.astro
+│       └── DataVisualizer.jsx
 ├── styles/
-│   ├── dashboard.css
-│   └── controls.css
-├── scripts/
-│   ├── simulator.js
-│   ├── calculators.js
-│   └── monitoring.js
-└── components/
-    ├── dashboard/
-    └── controls/
+│   └── components/
+│       └── _chapitre3.scss
+└── utils/
+    └── chapitre3/
+        ├── calculations.js
+        └── dataProcessing.js
 ```
+
+### Intégration
+- Utilisation du `ChapterLayout.astro` commun
+- Visualisations D3.js pour les données en temps réel
+- Composants React pour les tableaux de bord
+- Styles SCSS spécifiques au chapitre
+
+### Optimisation
+- Rendu statique du contenu principal
+- Chargement dynamique des données
+- Mise en cache des calculs côté client
+- Optimisation automatique des assets
 
 ### Visualisation des données
 - Graphiques en temps réel
