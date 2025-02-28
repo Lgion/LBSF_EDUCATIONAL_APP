@@ -1,11 +1,13 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
-import netlify from '@astrojs/netlify/functions';
+import netlify from '@astrojs/netlify';
 
 export default defineConfig({
-  output: 'server',
-  adapter: netlify(),
+  output: 'hybrid',
+  adapter: netlify({
+    imageCDN: false
+  }),
   integrations: [
     react(),
     tailwind({
