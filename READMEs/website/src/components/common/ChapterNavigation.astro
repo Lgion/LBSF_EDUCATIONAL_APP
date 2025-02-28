@@ -1,0 +1,93 @@
+---
+interface Props {
+  currentChapter: number;
+}
+
+const { currentChapter } = Astro.props;
+
+const chapters = [
+  {
+    number: 1,
+    title: 'Justification',
+    sections: ['Introduction générale', 'Portée et public cible', 'Structure de navigation']
+  },
+  {
+    number: 2,
+    title: 'Introduction BSF',
+    sections: ['La Mouche Soldat Noire', 'Avantages de la BSF', 'Cycle de vie ingéniérisé']
+  },
+  {
+    number: 3,
+    title: 'Opérations',
+    sections: ['Approvisionnement', 'Processus de conversion', 'Suivi des opérations']
+  },
+  {
+    number: 4,
+    title: 'Post-traitement',
+    sections: ['Produits commercialisables', 'Processus de post-traitement', 'Opportunités de marché']
+  },
+  {
+    number: 5,
+    title: 'Développement',
+    sections: ['Analyse financière', 'Plan d\'affaires', 'Ressources et support']
+  },
+  {
+    number: 6,
+    title: 'Annexes',
+    sections: ['Calendriers de travail', 'Outils de suivi', 'Documentation technique']
+  }
+];
+---
+
+<nav class="sticky top-24 bg-white rounded-card shadow-card p-4">
+  <h2 class="text-lg font-heading font-semibold mb-4">Navigation du chapitre</h2>
+  
+  <div class="space-y-4">
+    <!-- Navigation entre chapitres -->
+    <div class="flex justify-between mb-6">
+      {currentChapter > 1 && (
+        <a
+          href={`/chapitre${currentChapter - 1}`}
+          class="flex items-center text-sm text-primary hover:text-primary/80"
+        >
+          <span class="material-icons mr-1">arrow_back</span>
+          Précédent
+        </a>
+      )}
+      
+      {currentChapter < 6 && (
+        <a
+          href={`/chapitre${currentChapter + 1}`}
+          class="flex items-center text-sm text-primary hover:text-primary/80"
+        >
+          Suivant
+          <span class="material-icons ml-1">arrow_forward</span>
+        </a>
+      )}
+    </div>
+
+    <!-- Sections du chapitre actuel -->
+    <div>
+      <h3 class="font-medium mb-2">Dans ce chapitre :</h3>
+      <ul class="space-y-2">
+        {chapters[currentChapter - 1].sections.map((section, index) => (
+          <li>
+            <a
+              href={`#section-${index + 1}`}
+              class="block text-sm py-1 px-2 rounded hover:bg-primary/10 transition-colors duration-200"
+            >
+              {section}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style lang="scss">
+  nav {
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+  }
+</style>

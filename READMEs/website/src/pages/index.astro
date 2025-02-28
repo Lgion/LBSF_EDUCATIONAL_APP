@@ -1,0 +1,119 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Accueil">
+  <!-- Hero Section -->
+  <section class="bg-primary text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold mb-6">
+          Formation à la Production de Larves de Mouches Soldats Noires
+        </h1>
+        <p class="text-xl mb-8">
+          Découvrez comment transformer les déchets organiques en ressources précieuses grâce aux larves BSF
+        </p>
+        <a
+          href="/chapitre1"
+          class="inline-flex items-center bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors duration-200"
+        >
+          Commencer la formation
+          <span class="material-icons ml-2">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aperçu des chapitres -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-heading font-semibold text-center mb-12">
+        Programme de la formation
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[1, 2, 3, 4, 5, 6].map(chapter => (
+          <a
+            href={`/chapitre${chapter}`}
+            class="card hover:shadow-lg transition-shadow duration-200"
+          >
+            <div class="p-6">
+              <span class="text-primary text-lg font-medium">Chapitre {chapter}</span>
+              <h3 class="text-xl font-heading font-semibold mt-2 mb-4">
+                {
+                  [
+                    'Justification',
+                    'Introduction BSF',
+                    'Opérations',
+                    'Post-traitement',
+                    'Développement',
+                    'Annexes'
+                  ][chapter - 1]
+                }
+              </h3>
+              <p class="text-gray-600">
+                {
+                  [
+                    'Comprendre l\'importance et le contexte du projet BSF.',
+                    'Découvrir la mouche soldat noire et son cycle de vie.',
+                    'Maîtriser les opérations de conversion des déchets.',
+                    'Valoriser les produits issus du traitement.',
+                    'Développer un projet BSF viable.',
+                    'Ressources et outils complémentaires.'
+                  ][chapter - 1]
+                }
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Caractéristiques -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-heading font-semibold text-center mb-12">
+        Pourquoi cette formation ?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <span class="material-icons text-4xl text-primary mb-4">
+            eco
+          </span>
+          <h3 class="text-xl font-heading font-semibold mb-2">
+            Solution écologique
+          </h3>
+          <p class="text-gray-600">
+            Transformez les déchets organiques en ressources valorisables
+          </p>
+        </div>
+
+        <div class="text-center">
+          <span class="material-icons text-4xl text-primary mb-4">
+            psychology
+          </span>
+          <h3 class="text-xl font-heading font-semibold mb-2">
+            Formation pratique
+          </h3>
+          <p class="text-gray-600">
+            Apprenez les techniques concrètes de production
+          </p>
+        </div>
+
+        <div class="text-center">
+          <span class="material-icons text-4xl text-primary mb-4">
+            trending_up
+          </span>
+          <h3 class="text-xl font-heading font-semibold mb-2">
+            Opportunité commerciale
+          </h3>
+          <p class="text-gray-600">
+            Développez une activité économique viable
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

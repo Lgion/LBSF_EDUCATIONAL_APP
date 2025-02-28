@@ -1,0 +1,24 @@
+// Variables de couleur
+$primary: #2E7D32;
+$secondary: #795548;
+$accent: #1976D2;
+$success: #81C784;
+$warning: #FB8C00;
+$error: #D32F2F;
+
+// Variables de typographie
+$font-heading: 'Montserrat', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Espacements
+$spacing-base: 1rem;
+$spacing-sm: $spacing-base * 0.5;
+$spacing-md: $spacing-base * 1.5;
+$spacing-lg: $spacing-base * 2;
+$spacing-xl: $spacing-base * 3;

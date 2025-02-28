@@ -1,0 +1,58 @@
+---
+interface Props {
+  currentChapter: number;
+}
+
+const { currentChapter } = Astro.props;
+const totalChapters = 6;
+const progress = (currentChapter / totalChapters) * 100;
+
+const chapters = [
+  { number: 1, title: 'Justification' },
+  { number: 2, title: 'Introduction BSF' },
+  { number: 3, title: 'Opérations' },
+  { number: 4, title: 'Post-traitement' },
+  { number: 5, title: 'Développement' },
+  { number: 6, title: 'Annexes' },
+];
+---
+
+<div class="mb-8">
+  <!-- Barre de progression -->
+  <div class="relative h-2 bg-gray-200 rounded-full overflow-hidden">
+    <div
+      class="absolute h-full bg-primary transition-all duration-500 ease-out rounded-full"
+      style={`width: ${progress}%`}
+    >
+    </div>
+  </div>
+
+  <!-- Points de progression -->
+  <div class="relative mt-4">
+    <div class="flex justify-between">
+      {chapters.map(chapter => (
+        <div class="flex flex-col items-center">
+          <a
+            href={`/chapitre${chapter.number}`}
+            class={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-colors duration-200 ${
+              chapter.number <= currentChapter
+                ? 'bg-primary text-white'
+                : 'bg-gray-200 text-gray-600'
+            }`}
+          >
+            {chapter.number}
+          </a>
+          <span class="text-xs mt-2 text-center hidden md:block">
+            {chapter.title}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  .progress-bar {
+    transition: width 0.5s ease-out;
+  }
+</style>

@@ -1,0 +1,85 @@
+---
+const navItems = [
+  { href: '/', text: 'Accueil' },
+  { href: '/chapitre1', text: 'Justification' },
+  { href: '/chapitre2', text: 'Introduction BSF' },
+  { href: '/chapitre3', text: 'Opérations' },
+  { href: '/chapitre4', text: 'Post-traitement' },
+  { href: '/chapitre5', text: 'Développement' },
+  { href: '/chapitre6', text: 'Annexes' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="bg-white shadow-md">
+  <nav class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="/" class="flex items-center">
+        <img src="/logo.svg" alt="BSF Formation" class="h-8 w-auto" />
+      </a>
+
+      <!-- Navigation desktop -->
+      <div class="hidden md:flex space-x-4">
+        {navItems.map(item => (
+          <a
+            href={item.href}
+            class={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+              currentPath === item.href
+                ? 'bg-primary text-white'
+                : 'text-gray-700 hover:bg-primary/10'
+            }`}
+          >
+            {item.text}
+          </a>
+        ))}
+      </div>
+
+      <!-- Bouton menu mobile -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-primary/10"
+      >
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        {navItems.map(item => (
+          <a
+            href={item.href}
+            class={`block px-3 py-2 rounded-md text-base font-medium ${
+              currentPath === item.href
+                ? 'bg-primary text-white'
+                : 'text-gray-700 hover:bg-primary/10'
+            }`}
+          >
+            {item.text}
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>
+
+<style lang="scss">
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+</style>

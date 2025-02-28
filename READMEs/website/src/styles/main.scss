@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+// Variables globales
+:root {
+  --primary: #2E7D32;
+  --secondary: #795548;
+  --accent: #1976D2;
+  --success: #81C784;
+  --warning: #FB8C00;
+  --error: #D32F2F;
+}
+
+// Styles de base
+body {
+  @apply font-body text-body;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+h1 { @apply text-h1 font-bold; }
+h2 { @apply text-h2 font-semibold; }
+h3 { @apply text-h3 font-medium; }
+
+// Composants communs
+.card {
+  @apply rounded-card shadow-card p-card bg-white;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md transition-colors duration-200;
+
+  &-primary {
+    @apply bg-primary text-white hover:bg-[#1B5E20];
+  }
+
+  &-secondary {
+    @apply border border-primary text-primary hover:bg-[#E8F5E9];
+  }
+}
+
+// Media queries
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+// Import des styles spécifiques aux composants
+@import 'components/navigation';
+@import 'components/chapitre1';
+@import 'components/chapitre2';
+@import 'components/chapitre3';
+@import 'components/chapitre4';
+@import 'components/chapitre5';
+@import 'components/chapitre6';

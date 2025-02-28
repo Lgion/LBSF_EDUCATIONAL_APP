@@ -1,0 +1,58 @@
+---
+import MainLayout from './MainLayout.astro';
+import ChapterNavigation from '../components/common/ChapterNavigation.astro';
+import ProgressBar from '../components/common/ProgressBar.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  chapterNumber: number;
+}
+
+const { title, description, chapterNumber } = Astro.props;
+---
+
+<MainLayout title={title} description={description}>
+  <div class="container mx-auto px-4 py-8">
+    <ProgressBar currentChapter={chapterNumber} />
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <!-- Sidebar de navigation -->
+      <aside class="lg:col-span-3">
+        <ChapterNavigation currentChapter={chapterNumber} />
+      </aside>
+
+      <!-- Contenu principal -->
+      <main class="lg:col-span-9">
+        <article class="prose prose-lg max-w-none">
+          <h1 class="text-h1 font-heading font-bold text-primary mb-8">{title}</h1>
+          <slot />
+        </article>
+      </main>
+    </div>
+  </div>
+</MainLayout>
+
+<style lang="scss">
+  .prose {
+    h2 {
+      @apply text-h2 font-heading font-semibold text-secondary mt-8 mb-4;
+    }
+
+    h3 {
+      @apply text-h3 font-heading font-medium text-accent mt-6 mb-3;
+    }
+
+    p {
+      @apply mb-4;
+    }
+
+    ul, ol {
+      @apply my-4 pl-6;
+    }
+
+    li {
+      @apply mb-2;
+    }
+  }
+</style>
