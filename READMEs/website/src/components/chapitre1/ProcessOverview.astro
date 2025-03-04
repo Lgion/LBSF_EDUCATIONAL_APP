@@ -1,0 +1,99 @@
+---
+const processSteps = [
+  {
+    icon: "science",
+    title: "Pré-traitement",
+    points: [
+      "Réception des déchets",
+      "Tri et préparation",
+      "Contrôle qualité"
+    ]
+  },
+  {
+    icon: "biotech",
+    title: "Traitement BSF",
+    points: [
+      "Inoculation des larves",
+      "Surveillance du processus",
+      "Gestion des conditions"
+    ]
+  },
+  {
+    icon: "recycling",
+    title: "Post-traitement",
+    points: [
+      "Récolte des larves",
+      "Transformation des produits",
+      "Valorisation des résidus"
+    ]
+  }
+];
+---
+
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-primary mb-16">
+      Un Processus en Trois Étapes
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {processSteps.map((step, index) => (
+        <div 
+          class="relative bg-white rounded-xl shadow-lg p-8 hover:transform hover:-translate-y-2 transition-transform duration-300"
+          style={`animation: slideIn 0.5s ease-out ${index * 0.2}s both`}
+        >
+          <!-- Step Number -->
+          <div class="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold">
+            {index + 1}
+          </div>
+
+          <!-- Icon -->
+          <div class="text-center mb-6">
+            <span class="material-icons text-5xl text-secondary">
+              {step.icon}
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-xl font-semibold text-primary text-center mb-6">
+            {step.title}
+          </h3>
+
+          <!-- Points -->
+          <ul class="space-y-3">
+            {step.points.map(point => (
+              <li class="flex items-start">
+                <span class="material-icons text-secondary text-sm mr-2 mt-1">check_circle</span>
+                <span class="text-gray-700">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Call to Action -->
+    <div class="mt-16 text-center">
+      <a
+        href="#en-savoir-plus"
+        class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300"
+      >
+        En savoir plus
+        <span class="material-icons ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>

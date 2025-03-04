@@ -1,0 +1,159 @@
+his chapter takes a closer look at the life cycle of the Black Soldier Fly. Understanding the life
+cycle helps to know why BSF is a suitable insect for organic waste management and to learn how
+this cycle can be “engineered” to enhance the benefits produced in terms of waste conversion
+efficiency and product harvest in quantity and quality.
+2.1 The Black Soldier Fly
+The Black Soldier Fly, Hermetia illucens, is of the dipteran family Stratiomyidae. It can be encoun-
+tered in nature worldwide in the tropical and sub-tropical areas between the latitudes of 40°S and
+45°N (Figure 2–1).
+The egg starts a BSF life cycle and at the same time marks the end of the previous life stage: a
+fly laying a cluster of eggs (also called ovipositing). The female fly lays a package of 400 to 800
+eggs close to decomposing organic matter, into small, dry, sheltered cavities. Shortly after having
+laid the eggs, the female dies. The closeness of the eggs to the decomposing organic matter
+ensures that the larvae have their first food source nearby after hatching. The sheltered cavities
+protect the eggs from predators
+and prevent dehydration of the
+egg packages by direct sunlight.
+On average, the eggs hatch after
+four days and the emerged lar-
+vae, which are barely visible, will
+search for food and start feeding
+on the organic material nearby.
+The larvae feed voraciously on
+45 ̊ N
+40 ̊ S
+Figure 2–1: Distribution area of the Black Soldier Fly, Hermetia illucens
+Figure 2–2: Drawing of a Black Soldier Fly larva (Schremmer, 1986)
+6 Black Soldier Fly Biowaste Processing
+1a: Adult, top view 1b: Adult, side view 2: Females laying eggs
+3: Larvae feeding 4: Prepupa 5: Pupae
+Figure 2–3: Life stages of the Black Soldier Fly, Hermetia illucens, Photos: Nandayure Studt Solano (1a, 1b),
+Samuel Blyth (2, 3, 4), Sandec (5)
+the decomposing organic matter and grow from less than one millimeter to around 2.5 cm length
+and 0.5 cm width, and are of cream-like colour. The different life stages are shown in Figure 2–2
+and Figure 2–3.
+Under optimal conditions with ideal food quality and quantity, the growth of the larvae will require
+a period of 14 - 16 days. However, the BSF larva is a very resilient organism and has the ability to
+extend its life cycle under unfavourable conditions. The larval stage is the only stage during which
+the BSF feeds and, therefore, it is during this time of larval development that enough fat reserves
+and protein are stored that allow the larvae to undergo pupation, emerge as flies, find mates, cop-
+ulate and (as a female) lay eggs before dying.
+After having gone through five larval stages, the larvae reach the final larval stage: the prepupa.
+When transforming into a prepupa, the larva replaces its mouthpart with a hook-shaped structure
+and becomes dark brown to charcoal grey in colour. It uses this hook to easily move out and away
+from the food source towards a nearby dry, humus-like, shaded and protected environment that it
+deems safe from predators and this is where the imago emerge from the pupa and fly off without
+significant hindrance.
+The process of pupation is the transformation from a pupa into a fly. The pupation stage is initiat-
+ed when the prepupa finds a suitable location and becomes immobile and stiff. For a successful
+pupation, it is best if the environmental conditions do not change too much or, in other words, that
+they remain warm, shaded and protected from rain. Pupation takes around two to three weeks
+and ends when the fly emerges from its pupa shell. The emerging process is a very short proce-
+dure. It takes less than five minutes for the fly to break open the part of the pupa that used to be
+the head section, crawl out, dry and then spread its wings and fly off.
+After emerging, the fly lives for about one week. During this short life, it will search for a partner,
+copulate and (for the female) lay eggs. As a fly, BSF do not feed. Only a source of water or a humid
+surface is required to stay hydrated. What is important in this life stage is an abundant amount of
+natural light and a warm temperature (25 - 32°C). A humid environment may prolong the life span
+7Black Soldier Fly Biowaste Processing
+Optimal environmental conditions and food sources for the larvae can be summarized as:
+· Warm climate: the ideal temperature is between 24 and 30°C. If too hot, the larvae will crawl
+away from the food in search of a cooler location. If too cold, the larvae will slow down their
+metabolism, eat less and develop slower.
+· Shaded environment: larvae avoid light and will always search for a shaded environment,
+away from sunlight. If their food source is exposed to light, they will move deeper into the layer
+of food to escape the light.
+· Water content of the food: the food source has to be quite moist with a water content be-
+tween 60% and 90% so that the larvae can ingest the substance. In the engineered life cycle
+we aim at 70 - 80%.
+· Nutrient requirements of the food: substrates rich in protein and easily available carbohy-
+drates result in good larval growth. Ongoing research indicates that substrate may be more eas-
+ily consumed by the larvae if it has already undergone some bacterial or fungal decomposition
+process.
+· Particle size of the food: as the larvae have no chewing mouthparts, access to nutrients is
+easier if the substrate comes in small pieces or even as a slurry.
+2.2 Why the Black Soldier Fly?
+Several key attributes make BSF promising organisms to manage and “engineer” so that they
+can be used as an attractive treatment technology for biowaste from the perspective of waste
+managers and businesses:
+· Waste biomass is converted into larvae and residue. The larvae consist of ±35% protein and
+±30% crude fat (based on dry mass). This insect protein is of high quality and is an important
+feed resource for animal feed. Feed trials have confirmed that it is a suitable alternative to fish
+meal.
+· Feeding waste to larvae has shown to inactivate disease transmitting bacteria, such as
+Salmonella spp. This implies that the risk of disease transmission between animals and be-
+tween animals and humans is reduced when using this technology at farm level or when
+treating waste of animal origin in general (e.g. chicken manure or slaughterhouse waste). How-
+ever, risk reduction is achieved mainly through material reduction (±80%) rather than through
+pathogen inactivation.
+· Waste reduction of up to 80 % on wet weight basis has been demonstrated. If BSF processing
+is applied at or close to the source of biowaste generation, the costs for waste transport and
+space requirements for landfills can, thus, be reduced drastically. Such organic waste treat-
+ment could furthermore reduce open dumping, which is still an unfortunate reality in low- and
+middle-income settings.
+· The residue, a substance similar to compost, contains nutrients and organic matter and, when
+used in agriculture, helps to improve soil conditions.
+· A high waste-to-biomass conversion rate of 15 - 20% on wet weight basis has been demon-
+strated, which is a satisfactory output quantity from a business perspective.
+· There is no need for sophisticated high-end technology to operate such a facility. Therefore, it
+is suitable for low-income settings that rely mostly on simple technology and unskilled labour.
+and, thus, enhance the chance for successful reproduction. It has been observed that the flies
+prefer to copulate in the light of the morning. After copulation, the females then search for an ideal
+location to lay their eggs as explained above.
+8 Black Soldier Fly Biowaste Processing
+2.3 Engineering the BSF life cycle
+In an engineered BSF processing facility, we can differentiate distinct processing units as shown
+in Figure 2–4.
+Figure 2–4: Units of a BSF treatment facility
+BSF rearing unit
+This ensures that a reliable and consistent amount of small larvae (called 5-DOL) is al-
+ways available to inoculate the daily amount of biowaste that is received for processing
+at the treatment facility. A certain number of larvae hatchlings are, however, kept in
+the rearing unit to grow and pupate, to ensure a stable breeding population.
+BSFL conversion unit
+It is critical that the waste received at the facility is suitable for feeding to the larvae.
+A first step involves a control of the waste to ensure it contains no hazardous materials
+and no inorganic substances. Further steps then involve a reduction of the waste parti-
+cle size and a blending of different organic waste types to create a suitable balanced diet
+and moisture content (70 - 80%) for the larvae. Then, 5-DOL from the rearing unit are fed
+with biowaste in the “incubator” and/or “larvero” containers. The young larvae feed on
+the substrate, grow into large larvae and, thus, process and reduce the waste. Shortly
+before turning into pre-pupae, the larvae are harvested from the larveros. The residue
+itself is also a product of value.
+Post-processing unit
+Both products, larvae and residue, can be further processed. We call this “post-process-
+ing”. Typically, a first step is to kill the larvae. Other steps of larvae refinement include
+drying the larvae, and separating dried larvae into larvae oil from larvae protein meal.
+A typical step for residue refinement is composting or feeding the residue into a biogas
+digester for fuel production.
+BSF treatment
+facility Rearing
+BSFL conversion
+Pre-processing Treatment Product harvesting Larvae refining
+Post-processing
+Residue refining
+9Black Soldier Fly Biowaste Processing
+2.4 Safety and hygiene measures when working with BSF and biowaste
+During operation of a BSF facility, measures that protect the health of the workers as well as the
+animals are also a necessity.
+Although operation of a BSF facility does not entail high hazards to health, employees are never-
+theless exposed to threats such as noise, dust or gaseous emissions as well as exposed to patho-
+gens that may enter the facility through the organic waste. It is therefore important that adequate
+protective clothing and equipment is always available for the workers. Even if wearing of boots or
+gloves will meet with little enthusiasm among the employees, especially in a tropical climate, it is
+the responsibility of the operator to enforce such measures and to set a good example.
+As in other livestock farms, care must be taken to maintain hygienic conditions in a BSF facility.
+The main focus is to prevent the spread of diseases and keeping pests away. For this reason,
+regular activities that guarantee hygienic conditions must be included in the work plans. This
+includes the regular cleaning of work surfaces with alcohol as well as the safe storage of animal
+feed or structural measures that prevent rats or birds from entering sensitive areas of the facility.
+Maintaining general order in all areas of the facility and daily cleaning of utensils should be stand-
+ard practice. The facility should also have its own waste concept, which ensures that potentially
+contaminated materials are stored and disposed of safely.
+The schedules used in this manual all include regular tasks to maintain hygiene and safety in the
+facility. We recommend that operators place as much emphasis on the carrying out of these tasks
+as they do on those directly related to BSF operation.
+The following equipment is part of the standard personal protective and cleaning equipment at
+any BSF facility:
+FacemaskBroom and dustpan Work coat Latex-/Lab gloves
+Face shieldRubber boots Rubber gloves Heat resistant gloves

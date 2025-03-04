@@ -1,0 +1,119 @@
+---
+import ChapterLayout from '../layouts/ChapterLayout.astro';
+import '../styles/componentschapter1.scss';
+
+const title = "BSF : Pourquoi et comment l'utiliser";
+const description = "Découvrez la technologie BSF, ses avantages environnementaux et économiques, ainsi que les aspects techniques fondamentaux pour sa mise en œuvre réussie.";
+---
+
+<ChapterLayout 
+  title={title}
+  description={description}
+  chapterNumber={1}
+>
+  <div class="chapter1-container dark:bg-gray-900">
+    <!-- Section 1.1 : Identité et objectifs -->
+    <section id="section-1" class="content-card fade-in">
+      <h2 class="section-title">Identité et objectifs</h2>
+      
+      <div class="highlight-box">
+        <p class="font-medium">La technologie BSF (Black Soldier Fly) représente une solution innovante et durable pour la gestion des déchets organiques.</p>
+      </div>
+
+      <div class="objectives-grid">
+        <div>
+          <h3 class="subsection-title">Avantages environnementaux</h3>
+          <ul class="info-list">
+            <li>Réduction significative des déchets organiques</li>
+            <li>Production de compost de haute qualité</li>
+            <li>Diminution des émissions de gaz à effet de serre</li>
+            <li>Économie circulaire locale</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="subsection-title">Avantages économiques</h3>
+          <ul class="info-list">
+            <li>Production de protéines à haute valeur ajoutée</li>
+            <li>Réduction des coûts de traitement des déchets</li>
+            <li>Création d'emplois locaux</li>
+            <li>Valorisation des sous-produits</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1.2 : Public cible -->
+    <section id="section-2" class="content-card fade-in">
+      <h2 class="section-title">Public cible</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="tech-specs">
+          <h3 class="subsection-title">Fermes rurales</h3>
+          <ul class="info-list">
+            <li>Gestion des déchets agricoles</li>
+            <li>Production d'aliments pour animaux</li>
+            <li>Autonomie en fertilisants</li>
+          </ul>
+        </div>
+        <div class="tech-specs">
+          <h3 class="subsection-title">Établissements urbains</h3>
+          <ul class="info-list">
+            <li>Hôtellerie et restauration</li>
+            <li>Cantines collectives</li>
+            <li>Marchés alimentaires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1.3 : Aspects techniques fondamentaux -->
+    <section id="section-3" class="content-card fade-in">
+      <h2 class="section-title">Aspects techniques fondamentaux</h2>
+      
+      <div class="space-y-6">
+        <div>
+          <h3 class="subsection-title">Principes de base</h3>
+          <ul class="info-list">
+            <li>Bioconversion des déchets organiques</li>
+            <li>Cycle de développement des BSF</li>
+            <li>Conditions environnementales optimales</li>
+          </ul>
+        </div>
+
+        <div class="highlight-box">
+          <h3 class="text-lg font-semibold mb-2">Paramètres clés de réussite</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <p class="font-medium">Température</p>
+              <p>27-30°C optimal</p>
+            </div>
+            <div>
+              <p class="font-medium">Humidité</p>
+              <p>60-70% recommandé</p>
+            </div>
+            <div>
+              <p class="font-medium">Aération</p>
+              <p>Ventilation contrôlée</p>
+            </div>
+            <div>
+              <p class="font-medium">Substrat</p>
+              <p>Qualité et composition adaptées</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12">
+      <a href="/" class="navigation-button">
+        <span class="material-icons mr-2">arrow_back</span>
+        Accueil
+      </a>
+      <a href="/chapter2" class="navigation-button">
+        Chapitre 2 : Gestion des déchets
+        <span class="material-icons ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</ChapterLayout>

@@ -1,0 +1,127 @@
+Chapter 1:
+Rationale
+1.1
+General introduction
+Urban solid waste management is considered one of the most immediate and serious environ-
+mental problems confronting urban governments in low- and middle-income countries. The sever-
+ity of this challenge will increase in the future given the trends of rapid urbanisation and growth
+in urban population. Due to growing public pressure and environmental concerns, waste experts
+worldwide are being called upon to develop more sustainable methods of dealing with municipal
+waste that embrace the concept of a circular economy.
+Recycling organic waste material (biowaste) is still fairly limited, especially in low- and middle-in-
+come settingsthough this is by far the largest fraction of all generated municipal waste. This
+book deals with urban organic municipal waste from households, commercial activities, and insti-
+tutions. It describes the conversion of biowaste by insect larvae, using the example of the Black
+Soldier Fly (BSF), Hermetia illucens, an approach that has obtained much attention in the past
+decade. The feeding activity of the larvae drastically reduces the amount of waste while the har-
+vested larvae can be used as valuable raw materials in the animal feed industry. This technology
+has received attention in recent years due to the business opportunities it offers, which simultane-
+ously address several challenges of modern society: hygiene issues arising from the lack of waste
+management, unemployment in urban areas, and an increased demand for sustainable feed for
+the ever-growing aquaculture and aviculture sector. Enterprises and small entrepreneurs are al-
+ready investing significant amounts of money and time into this technology and are interested in
+keeping a competitive edge on the practical aspects of operating such a facility in a cost-effective
+way. Although academic publications on BSF are on the increase, the business interest and per-
+ceived need to maintain a competitive edge has hindered open exchange about and discussion
+of the practical day-to-day working steps required to operate such a facility. Filling this gap is the
+main objective of this publication.
+This document is based largely on the experience of a treatment facility in Indonesia with the
+capacity to treat two tons of waste per day that has been in operation for over five years and the
+insights from an experimental facility in Sweden. Waste processed at the facility in Indonesia was
+mostly fruit and vegetable waste from a wholesale market. Upscaling or transferring this informa-
+tion to a larger facility might require some adaptation or adjustment of equipment. It is, however,
+our opinion that the standard procedures described are valid for a large range of scaling-up.
+Two research projects provided the basis for the writing of the second edition of these guidelines.
+FORWARD is a project located in Indonesia funded by the Swiss State Secretariat for Economic
+Affairs (SECO), under a framework agreement with the Indonesian Ministry of Public Works &
+Housing (PU-PeRa). It works in close collaboration with national and local governmental author-
+ities, with Indonesian researchers and with selected private enterprises to advance and main-
+stream implementation of BSF waste processing. SIBRE is a research project funded by SwissRe
+Foundation with the objective to generate knowledge and tools around BSF waste processing for
+use by small and medium enterprises and municipalities. Its focus was set predominantly on the
+economic perspectives and developing standard protocols for products derived from BSF larvae
+and testing these in the Indonesia context. In addition, this second edition benefited significantly
+from the close collaboration with ETH-Zürich and the Department of Health Sciences and Tech-
+nology through the research group of Prof. A. Mathys on Sustainable Food Processing with whom
+we collaborate on a variety of research projects on BSF waste processing.
+This manual was written as open source with the ambition that BSF waste processing would
+obtain widespread notice, implementation and replication. In this spirit, the authors would like
+Black Soldier Fly Biowaste Processing
+1to acknowledge all those that helped to develop, document and discuss the practical aspects of
+BSF rearing and waste treatment by larvae. Particular thanks go to Sirajuddin Kurniawan, whose
+pictures of the equipment and work steps saved us many pages of explanatory text, Bart Verstap-
+pen for his contribution to the first edition of this book, Maximillian Grau and Grégoire Virard for
+their intense work on the cost modelling, Alexander Mathys, Moritz Gold and Daniela Peguero of
+ETH-Zürich for our most inspiring and fruitful research collaboration, Cecilia Lalander and Björn
+Vinnerås of the Swedish Agricultural University SLU (Sweden) for an excellent research partner-
+ship, Tina Kusumawardhani and Teguh Rahayu for translating this book into Bahasa Indonesia and
+all their help in developing the rearing system, Longyu Zheng and Jibin Zhang of the Huazhong
+Agricultural University (China) and Michael Wu of JM Green (China) for their openness and their
+fruitful input, and finally also Waste 4 Change and Puspa Agro for their partnership and willingness
+to manage and host the BSF facility.
+1.2
+Scope and target audience
+An engineered BSF processing facility can be designed and operated to achieve certain target
+objectives based on the natural life cycle of BSF. These, for instance, can be to cost effectively
+augment larvae quality or maximize the larval mass produced within a certain time frame or based
+on a particular feedstock, similar to a typical livestock rearing system (chicken, beef, etc.).
+In this manual, however, we follow a waste management perspective. In other words, we start
+from the premise that biowaste is the substance of concern for which we suggest to use the BSF
+treatment technology as a suitable processing and recycling solution to produce larvae and waste
+residue.
+The primary goal, therefore, is to process biowaste in an efficient way with regard to investment
+and operational costs, as well as space requirements. By processing biowaste, threats to public
+health and the environment can be reduced.
+The technology solution consists of feeding segregated biowaste to BSF larvae, which have been
+reared in a nursery. Larvae grow on the waste feedstock and reduce the waste mass. At the end
+of the process, larvae are harvested and, if necessary, post-processed into a suitable animal feed
+product. The waste residue can also be further processed and potentially sold or used as soil
+amendment with fertilizing properties.
+This guide has been prepared for practical use. It explains the required materials and equipment,
+as well as each working step, similar to a cookbook with its respective recipes. It includes all
+information required to develop and operate a medium-sized Black Soldier Fly larvae
+waste processing facility, able to treat 5 tons of waste per day. The book also contains other
+scenarios of scale in which the amount of work is less. Work plans and instructions for these
+scenarios are available via web links.
+It is worth mentioning that the approach presented in this handbook is one among many. It is
+based on locally available equipment and limited automation. The operations presented here have
+proven to work, but selected steps may individually be replaced with other procedures depending
+on the given context or experience.
+Given the approach of this handbook, it targets readers with little or only some basic knowledge
+of waste management in general and Black Soldier Fly technology in particular, who have the will-
+ingness to work with waste and to implement and operate such a facility. This guidance can also
+be helpful to someone who has already started with BSF treatment and is interested in obtaining
+other viewpoints on how things could be done.
+2
+Black Soldier Fly Biowaste Processing1.3
+Navigating through this guide
+The manual is structured according to the three main processing units that are key to a BSF process-
+ing facility (Figure 1 –1).
+1. BSF rearing unit
+2. BSFL waste conversion unit (pre-processing, treatment, harvesting)
+3. Post processing unit (larvae refining and residue processing)
+BSF treatment
+facility
+Post-processing
+Rearing
+Residue refining
+BSFL conversion
+Waste sourcing
+Pre-processing
+Treatment
+Product harvesting
+Larvae refining
+Product
+marketing
+Figure 1–1: The different units of a BSF treatment system
+Although proper “waste sourcing” is of crucial importance to a well-functioning BSF facility, this
+aspect is not discussed in detail in this manual.
+Throughout the text, you will come across the following icons. They indicate issues of particular
+importance, background information or access to further information material.
+Highlights issues of high importance
+Highlights detailed information for interested readers, but is not
+required reading
+Link to more detailed information, templates and factsheets
+Link to the e-learning video series on BSF Biowaste Processing
+Black Soldier Fly Biowaste Processing
+3

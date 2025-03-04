@@ -8,33 +8,28 @@ const { currentChapter } = Astro.props;
 const chapters = [
   {
     number: 1,
-    title: 'Justification',
-    sections: ['Introduction générale', 'Portée et public cible', 'Structure de navigation']
+    title: 'BSF : Pourquoi et comment l\'utiliser',
+    sections: ['Identité et objectifs', 'Public cible', 'Aspects techniques fondamentaux']
   },
   {
     number: 2,
-    title: 'Introduction BSF',
-    sections: ['La Mouche Soldat Noire', 'Avantages de la BSF', 'Cycle de vie ingéniérisé']
+    title: 'Déchets et collecte',
+    sections: ['Types de déchets appropriés', 'Sources de collecte', 'Préparation des déchets']
   },
   {
     number: 3,
-    title: 'Opérations',
-    sections: ['Approvisionnement', 'Processus de conversion', 'Suivi des opérations']
+    title: 'Les trois unités de production',
+    sections: ['Unité de reproduction', 'Unité de croissance larvaire', 'Unité de traitement post-récolte']
   },
   {
     number: 4,
-    title: 'Post-traitement',
-    sections: ['Produits commercialisables', 'Processus de post-traitement', 'Opportunités de marché']
+    title: 'Scénarios de production',
+    sections: ['Conditions requises', 'Scénarios de production', 'Analyse économique']
   },
   {
     number: 5,
-    title: 'Développement',
-    sections: ['Analyse financière', 'Plan d\'affaires', 'Ressources et support']
-  },
-  {
-    number: 6,
-    title: 'Annexes',
-    sections: ['Calendriers de travail', 'Outils de suivi', 'Documentation technique']
+    title: 'Conclusion',
+    sections: ['Synthèse', 'Recommandations', 'Perspectives']
   }
 ];
 ---
@@ -47,7 +42,7 @@ const chapters = [
     <div class="flex justify-between mb-6">
       {currentChapter > 1 && (
         <a
-          href={`/chapitre${currentChapter - 1}`}
+          href={`/chapter${currentChapter - 1}`}
           class="flex items-center text-sm text-primary hover:text-primary/80"
         >
           <span class="material-icons mr-1">arrow_back</span>
@@ -55,9 +50,9 @@ const chapters = [
         </a>
       )}
       
-      {currentChapter < 6 && (
+      {currentChapter < 5 && (
         <a
-          href={`/chapitre${currentChapter + 1}`}
+          href={`/chapter${currentChapter + 1}`}
           class="flex items-center text-sm text-primary hover:text-primary/80"
         >
           Suivant

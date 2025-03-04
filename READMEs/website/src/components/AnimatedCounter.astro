@@ -1,0 +1,82 @@
+---
+interface Props {
+    value: number;
+    suffix?: string;
+    label: string;
+}
+
+const { value, suffix = '', label } = Astro.props;
+---
+
+<div class="counter-wrapper">
+    <div class="counter" data-target={value} data-suffix={suffix}>0{suffix}</div>
+    <div class="label">{label}</div>
+</div>
+
+<style lang="scss">
+    .counter-wrapper {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .counter {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--color-primary);
+    }
+
+    .label {
+        font-size: 1rem;
+        color: var(--color-text);
+        margin-top: 0.5rem;
+    }
+</style>
+
+<script>
+    class Counter {
+        element: HTMLElement;
+        target: number;
+        suffix: string;
+        current: number;
+        increment: number;
+        
+        constructor(element: HTMLElement) {
+            this.element = element;
+            this.target = parseInt(element.dataset.target || '0');
+            this.suffix = element.dataset.suffix || '';
+            this.current = 0;
+            this.increment = this.target / 100;
+            
+            this.animate();
+        }
+        
+        animate() {
+            if (this.current < this.target) {
+                this.current += this.increment;
+                if (this.current > this.target) {
+                    this.current = this.target;
+                }
+                this.element.textContent = Math.floor(this.current) + this.suffix;
+                requestAnimationFrame(() => this.animate());
+            }
+        }
+    }
+
+    // Initialize counters when they become visible
+    document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    new Counter(entry.target as HTMLElement);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.counter').forEach(counter => {
+            observer.observe(counter);
+        });
+    });
+</script>

@@ -1,0 +1,252 @@
+---
+import Layout from '../layouts/MainLayout.astro';
+import LifeCycleAnimation from '../components/LifeCycleAnimation.astro';
+import InteractiveCard from '../components/InteractiveCard.astro';
+import ProcessDiagram from '../components/ProcessDiagram.astro';
+import AnimatedCounter from '../components/AnimatedCounter.astro';
+import SafetyChecklist from '../components/SafetyChecklist.astro';
+import '../styles/components/_chapitre2_.scss';
+
+const pageTitle = "La Mouche Soldat Noire : Un Cycle de Vie Fascinant";
+---
+
+<Layout title={pageTitle}>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>{pageTitle}</h1>
+            <div class="bsf-card">
+                <h2>Carte d'Identité de la BSF</h2>
+                <ul>
+                    <li><strong>Nom scientifique:</strong> Hermetia illucens</li>
+                    <li><strong>Distribution:</strong> 40°S à 45°N</li>
+                    <li><strong>Rôle:</strong> Transformation des déchets organiques</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life Cycle Section -->
+    <section class="lifecycle-section">
+        <h2>Le Cycle de Vie de la BSF</h2>
+        <LifeCycleAnimation client:load stages={[
+            {
+                name: "L'Œuf",
+                icon: "🥚",
+                details: [
+                    "400-800 œufs par ponte",
+                    "Éclosion en 4 jours",
+                    "Environnement protégé et sec"
+                ]
+            },
+            {
+                name: "La Larve",
+                icon: "🐛",
+                details: [
+                    "Croissance de 1mm à 2.5cm",
+                    "Phase d'alimentation intense",
+                    "Durée: 14-16 jours"
+                ]
+            },
+            {
+                name: "La Pupe",
+                icon: "🌱",
+                details: [
+                    "Transformation en 2-3 semaines",
+                    "Environnement stable nécessaire",
+                    "Métamorphose naturelle"
+                ]
+            },
+            {
+                name: "La Mouche",
+                icon: "🦟",
+                details: [
+                    "Vie: environ 1 semaine",
+                    "Besoin uniquement d'eau",
+                    "Focus sur la reproduction"
+                ]
+            }
+        ]} />
+    </section>
+
+    <!-- Optimal Conditions Section -->
+    <section class="conditions-section">
+        <h2>Conditions Optimales</h2>
+        <div class="conditions-grid">
+            <InteractiveCard
+                title="Température"
+                icon="🌡️"
+                items={[
+                    "Idéale: 24-30°C",
+                    "Impact sur le métabolisme",
+                    "Contrôle de l'activité"
+                ]}
+            />
+            <InteractiveCard
+                title="Environnement"
+                icon="🌳"
+                items={[
+                    "Ombragé",
+                    "Protégé",
+                    "Humide (60-90%)"
+                ]}
+            />
+            <InteractiveCard
+                title="Alimentation"
+                icon="🍎"
+                items={[
+                    "Riche en protéines",
+                    "Particules adaptées",
+                    "Humidité contrôlée"
+                ]}
+            />
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <h2>Pourquoi Choisir la BSF?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Production 📈</h3>
+                <AnimatedCounter value={35} suffix="%" label="protéines" />
+                <AnimatedCounter value={30} suffix="%" label="matières grasses" />
+                <p>Alternative durable aux farines de poisson</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Traitement ♻️</h3>
+                <AnimatedCounter value={80} suffix="%" label="réduction des déchets" />
+                <AnimatedCounter value={20} suffix="%" label="taux de conversion" />
+                <p>Résidu utilisable comme compost</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Praticité 🛠️</h3>
+                <ul>
+                    <li>Technologie simple</li>
+                    <li>Main d'œuvre locale</li>
+                    <li>Coûts limités</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Process Section -->
+    <section class="industrial-section">
+        <h2>Process Industriel</h2>
+        <ProcessDiagram
+            units={[
+                {
+                    name: "Unité d'élevage BSF",
+                    icon: "🪲",
+                    type: "rearing",
+                    steps: [
+                        "Maintien d'une population stable de larves S-DOL",
+                        "Élevage des larves jusqu'à la pupaison",
+                        "Gestion du cycle de reproduction"
+                    ]
+                },
+                {
+                    name: "Unité de conversion BSFL",
+                    icon: "♻️",
+                    type: "conversion",
+                    steps: [
+                        "Contrôle qualité des déchets reçus",
+                        "Préparation du substrat équilibré",
+                        "Bioconversion par les larves (70-80% humidité)",
+                        "Récolte des larves matures"
+                    ]
+                },
+                {
+                    name: "Unité de post-traitement",
+                    icon: "⚗️",
+                    type: "processing",
+                    steps: [
+                        "Séchage et transformation des larves",
+                        "Extraction de l'huile et production de farine",
+                        "Compostage ou digestion des résidus",
+                        "Contrôle qualité des produits finaux"
+                    ]
+                }
+            ]}
+        />
+    </section>
+
+    <!-- Safety Section -->
+    <section class="safety-section">
+        <h2>Sécurité et Bonnes Pratiques</h2>
+        <div class="safety-guidelines">
+            <div class="guideline-card" data-category="personal">
+                <div class="guideline-header">
+                    <div class="icon-wrapper">👤</div>
+                    <h3>Protection Personnelle</h3>
+                </div>
+                <div class="guideline-content">
+                    <ul class="safety-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Porter des équipements de protection individuelle (EPI) appropriés</p>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Se laver les mains régulièrement et maintenir une bonne hygiène</p>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Suivre les protocoles de sécurité établis</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guideline-card" data-category="equipment">
+                <div class="guideline-header">
+                    <div class="icon-wrapper">🛠️</div>
+                    <h3>Sécurité des Équipements</h3>
+                </div>
+                <div class="guideline-content">
+                    <ul class="safety-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Vérifier régulièrement l'état des équipements</p>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Maintenir les outils propres et en bon état</p>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Signaler immédiatement tout dysfonctionnement</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guideline-card" data-category="environment">
+                <div class="guideline-header">
+                    <div class="icon-wrapper">🌱</div>
+                    <h3>Protection Environnementale</h3>
+                </div>
+                <div class="guideline-content">
+                    <ul class="safety-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Gérer les déchets de manière responsable</p>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Optimiser l'utilisation des ressources</p>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <p>Suivre les protocoles environnementaux</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    /* Les styles spécifiques à la page seront importés depuis _chapitre2_.scss */
+</style>

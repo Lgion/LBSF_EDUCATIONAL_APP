@@ -1,0 +1,63 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  description: string;
+}
+
+const { id, title, description } = Astro.props;
+---
+
+<div id={id} class="modal hidden fixed inset-0 z-50">
+  <div class="modal-overlay absolute inset-0 bg-black opacity-50"></div>
+  
+  <div style="height:80% !important"class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto fixed inset-x-0 top-20">
+    <div class="modal-content py-4 text-left px-6">
+      <!-- Title -->
+      <div class="flex justify-between items-center pb-3">
+        <p class="text-2xl font-bold">{title}</p>
+        <button class="modal-close cursor-pointer z-50">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+
+      <!-- Content -->
+      <div class="modal-body">
+        <div set:html={description} />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .modal {
+    transition: opacity 0.25s ease;
+  }
+  .modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script define:vars={{ id }}>
+  // Get modal elements
+  const modal = document.getElementById(id);
+  const closeButton = modal.querySelector('.modal-close');
+  const overlay = modal.querySelector('.modal-overlay');
+
+  // Close modal function
+  function closeModal() {
+    modal.classList.add('hidden');
+  }
+
+  // Event listeners
+  closeButton.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+
+  // Close on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+</script>

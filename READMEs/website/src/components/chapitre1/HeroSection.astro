@@ -1,0 +1,135 @@
+---
+const { title } = Astro.props;
+---
+
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Parallax Background -->
+  <div 
+    class="absolute inset-0 z-0 bg-cover bg-center bg-fixed"
+    style="background-image: url('/images/I_justification/hero-bg.webp');"
+  ></div>
+  
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/30 z-10"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 z-20">
+    <h1 
+      class="text-4xl md:text-5xl font-bold text-white text-center mb-12 animate-fade-in"
+      style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);"
+    >
+      {title}
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-up">
+      <div class="bg-white/90 p-6 rounded-lg shadow-lg hover:scale-102 transition-transform duration-300">
+        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+          <span class="material-icons mr-2">groups</span>
+          Public Cible
+        </h3>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Entrepreneurs visionnaires
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Gestionnaires municipaux
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Passionnés d'écologie
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Débutants curieux
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white/90 p-6 rounded-lg shadow-lg hover:scale-102 transition-transform duration-300">
+        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+          <span class="material-icons mr-2">track_changes</span>
+          Objectifs de Formation
+        </h3>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Comprendre le processus BSF
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Maîtriser les bases opérationnelles
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Identifier les opportunités
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Développer des projets durables
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white/90 p-6 rounded-lg shadow-lg hover:scale-102 transition-transform duration-300">
+        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+          <span class="material-icons mr-2">auto_awesome</span>
+          Points Clés
+        </h3>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Solution écologique innovante
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Technologie accessible
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Double impact positif
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Modèle économique viable
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons text-sm mr-2">arrow_right</span>
+            Bénéfices environnementaux
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hover\:scale-102:hover {
+    transform: scale(1.02);
+  }
+</style>

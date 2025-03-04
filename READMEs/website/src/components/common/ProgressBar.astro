@@ -4,16 +4,15 @@ interface Props {
 }
 
 const { currentChapter } = Astro.props;
-const totalChapters = 6;
+const totalChapters = 5;
 const progress = (currentChapter / totalChapters) * 100;
 
 const chapters = [
-  { number: 1, title: 'Justification' },
-  { number: 2, title: 'Introduction BSF' },
-  { number: 3, title: 'Opérations' },
-  { number: 4, title: 'Post-traitement' },
-  { number: 5, title: 'Développement' },
-  { number: 6, title: 'Annexes' },
+  { number: 1, title: 'BSF : Pourquoi et comment l\'utiliser' },
+  { number: 2, title: 'Déchets et collecte' },
+  { number: 3, title: 'Les trois unités de production' },
+  { number: 4, title: 'Scénarios de production' },
+  { number: 5, title: 'Conclusion' },
 ];
 ---
 
@@ -33,7 +32,7 @@ const chapters = [
       {chapters.map(chapter => (
         <div class="flex flex-col items-center">
           <a
-            href={`/chapitre${chapter.number}`}
+            href={`/chapter${chapter.number}`}
             class={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-colors duration-200 ${
               chapter.number <= currentChapter
                 ? 'bg-primary text-white'

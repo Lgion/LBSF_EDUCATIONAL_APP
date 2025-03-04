@@ -1,0 +1,152 @@
+---
+const images = {
+  processus: [
+    {
+      src: "/images/III_unite/1_elevage/3.1a.webp",
+      alt: "Vue d'ensemble de l'unité d'élevage"
+    },
+    {
+      src: "/images/III_unite/1_elevage/3.1b.webp",
+      alt: "Détails des installations"
+    },
+    {
+      src: "/images/III_unite/1_elevage/3.1c.webp",
+      alt: "Processus d'élevage"
+    }
+  ],
+  etapes: [
+    {
+      src: "/images/III_unite/1_elevage/3.1c0.webp",
+      alt: "Étape initiale"
+    },
+    {
+      src: "/images/III_unite/1_elevage/3.1c1.webp",
+      alt: "Ponte des œufs"
+    },
+    {
+      src: "/images/III_unite/1_elevage/3.1c2.webp",
+      alt: "Éclosion"
+    },
+    {
+      src: "/images/III_unite/1_elevage/3.1c3.webp",
+      alt: "Croissance larvaire"
+    },
+    {
+      src: "/images/III_unite/1_elevage/3.1c4.webp",
+      alt: "Pré-pupaison"
+    },
+    {
+      src: "/images/III_unite/1_elevage/3.1c5.webp",
+      alt: "Pupaison"
+    }
+  ]
+};
+
+const etapes = [
+  {
+    titre: "Ponte et récolte des œufs",
+    description: "Les femelles pondent leurs œufs dans des conditions contrôlées",
+    duree: "2-3 jours",
+    points: [
+      "Contrôle de la température et de l'humidité",
+      "Substrat de ponte optimal",
+      "Collecte quotidienne des œufs"
+    ]
+  },
+  {
+    titre: "Éclosion des œufs et alimentation des larves",
+    description: "Les œufs éclosent et les jeunes larves commencent à s'alimenter",
+    duree: "4-5 jours",
+    points: [
+      "Suivi de l'éclosion",
+      "Premier nourrissage",
+      "Contrôle de l'humidité"
+    ]
+  },
+  {
+    titre: "Empupement",
+    description: "Les larves matures entrent en phase de pré-pupe",
+    duree: "7-10 jours",
+    points: [
+      "Séparation des pré-pupes",
+      "Préparation du substrat sec",
+      "Surveillance de la métamorphose"
+    ]
+  },
+  {
+    titre: "Accouplement",
+    description: "Les adultes émergent et se reproduisent",
+    duree: "8-10 jours",
+    points: [
+      "Gestion des cages d'accouplement",
+      "Alimentation des adultes",
+      "Maintien des conditions optimales"
+    ]
+  }
+];
+---
+
+<section class="mb-12">
+  <div class="prose prose-lg max-w-none">
+    <h2 class="text-2xl font-heading font-semibold text-secondary mb-6">
+      Élevage de BSF dans un environnement contrôlé
+    </h2>
+
+    <!-- Vue d'ensemble -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        {images.processus.map(img => (
+          <div class="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+            <img
+              src={img.src}
+              alt={img.alt}
+              class="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        ))}
+      </div>
+      <p class="text-gray-600">
+        L'unité d'élevage est conçue pour fournir quotidiennement un nombre précis de larves de cinq jours (5-DOL).
+        Chaque étape du processus est minutieusement contrôlée pour garantir une production constante et de qualité.
+      </p>
+    </div>
+
+    <!-- Étapes détaillées -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Processus d'élevage détaillé
+      </h3>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+        {images.etapes.map(img => (
+          <div class="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+            <img
+              src={img.src}
+              alt={img.alt}
+              class="object-cover w-full h-full"
+            />
+          </div>
+        ))}
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {etapes.map(etape => (
+          <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-200">
+            <h4 class="font-heading font-medium text-lg text-primary mb-2">
+              {etape.titre}
+            </h4>
+            <p class="text-sm text-gray-600 mb-3">{etape.description}</p>
+            <p class="text-xs text-gray-500 mb-4">
+              <span class="font-medium">Durée :</span> {etape.duree}
+            </p>
+            <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+              {etape.points.map(point => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,171 @@
+---
+const planification = {
+  quotidien: [
+    "Contrôle des conditions environnementales",
+    "Alimentation des larves",
+    "Récolte des œufs",
+    "Nettoyage des installations",
+    "Enregistrement des données"
+  ],
+  hebdomadaire: [
+    "Maintenance des équipements",
+    "Inventaire des stocks",
+    "Analyse des performances",
+    "Planification de la production",
+    "Gestion des déchets"
+  ],
+  mensuel: [
+    "Révision des protocoles",
+    "Maintenance approfondie",
+    "Analyse des tendances",
+    "Formation du personnel",
+    "Mise à jour des documents"
+  ]
+};
+
+const indicateurs = [
+  {
+    categorie: "Production",
+    metriques: [
+      "Nombre d'œufs produits",
+      "Taux d'éclosion",
+      "Survie des larves",
+      "Poids moyen des larves",
+      "Taux de conversion"
+    ]
+  },
+  {
+    categorie: "Conditions d'élevage",
+    metriques: [
+      "Température",
+      "Humidité relative",
+      "Qualité de l'air",
+      "Luminosité",
+      "Densité des populations"
+    ]
+  },
+  {
+    categorie: "Qualité",
+    metriques: [
+      "Santé des colonies",
+      "Taux de contamination",
+      "Conformité aux normes",
+      "Qualité des produits",
+      "Satisfaction client"
+    ]
+  }
+];
+
+const outils = [
+  {
+    nom: "Calendrier de travail",
+    description: "Planning détaillé des tâches quotidiennes",
+    format: "Tableau Excel / Google Sheets"
+  },
+  {
+    nom: "Feuilles de suivi",
+    description: "Enregistrement des paramètres clés",
+    format: "Formulaires papier / Application mobile"
+  },
+  {
+    nom: "Base de données",
+    description: "Stockage et analyse des données historiques",
+    format: "SQL / Cloud"
+  },
+  {
+    nom: "Rapports automatisés",
+    description: "Synthèse des performances",
+    format: "PDF / Dashboard en ligne"
+  }
+];
+---
+
+<section class="mb-12">
+  <div class="prose prose-lg max-w-none">
+    <h2 class="text-2xl font-heading font-semibold text-secondary mb-6">
+      Planification du travail et gestion des données
+    </h2>
+
+    <!-- Planification temporelle -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Organisation temporelle
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-4 border border-gray-200 rounded-lg">
+          <h4 class="font-medium text-primary mb-3 flex items-center">
+            <span class="material-icons mr-2">today</span>
+            Tâches quotidiennes
+          </h4>
+          <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+            {planification.quotidien.map(tache => (
+              <li>{tache}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="p-4 border border-gray-200 rounded-lg">
+          <h4 class="font-medium text-primary mb-3 flex items-center">
+            <span class="material-icons mr-2">calendar_view_week</span>
+            Tâches hebdomadaires
+          </h4>
+          <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+            {planification.hebdomadaire.map(tache => (
+              <li>{tache}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="p-4 border border-gray-200 rounded-lg">
+          <h4 class="font-medium text-primary mb-3 flex items-center">
+            <span class="material-icons mr-2">calendar_month</span>
+            Tâches mensuelles
+          </h4>
+          <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+            {planification.mensuel.map(tache => (
+              <li>{tache}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicateurs de performance -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Indicateurs de performance clés
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {indicateurs.map(indicateur => (
+          <div class="p-4 border border-gray-200 rounded-lg">
+            <h4 class="font-medium text-primary mb-3">{indicateur.categorie}</h4>
+            <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+              {indicateur.metriques.map(metrique => (
+                <li>{metrique}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Outils de gestion -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Outils de gestion et de suivi
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {outils.map(outil => (
+          <div class="p-4 border border-gray-200 rounded-lg">
+            <h4 class="font-medium text-primary mb-2">{outil.nom}</h4>
+            <p class="text-sm text-gray-600 mb-2">{outil.description}</p>
+            <p class="text-xs text-gray-500">Format : {outil.format}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,154 @@
+---
+const activites = [
+  {
+    titre: "Fly stage",
+    description: "Gestion des mouches adultes et de la reproduction",
+    image: "/images/III_unite/2_activites/3.2a0.webp",
+    taches: [
+      "Maintenance des cages à mouches",
+      "Contrôle des conditions environnementales",
+      "Alimentation des adultes"
+    ]
+  },
+  {
+    titre: "Egg Stage",
+    description: "Collecte et gestion des œufs",
+    image: "/images/III_unite/2_activites/3.2a1.webp",
+    taches: [
+      "Récolte des œufs",
+      "Préparation des substrats de ponte",
+      "Stockage des œufs"
+    ]
+  },
+  {
+    titre: "Hatchling stage",
+    description: "Gestion de l'éclosion et des jeunes larves",
+    image: "/images/III_unite/2_activites/3.2b.webp",
+    taches: [
+      "Douche à larves",
+      "Préparation des containers",
+      "Premier nourrissage"
+    ]
+  },
+  {
+    titre: "Larval growth stage",
+    description: "Suivi de la croissance des larves",
+    image: "/images/III_unite/2_activites/3.2c.webp",
+    taches: [
+      "Alimentation régulière",
+      "Contrôle de l'humidité",
+      "Surveillance de la croissance"
+    ]
+  },
+  {
+    titre: "Pre-pupae stage",
+    description: "Gestion de la transition vers la pupaison",
+    image: "/images/III_unite/2_activites/3.2d.webp",
+    taches: [
+      "Séparation des pré-pupes",
+      "Préparation du substrat sec",
+      "Collecte des pré-pupes"
+    ]
+  },
+  {
+    titre: "Pupae stage",
+    description: "Gestion de la métamorphose",
+    image: "/images/III_unite/2_activites/3.2e.webp",
+    taches: [
+      "Stockage des pupes",
+      "Contrôle de l'émergence",
+      "Transfert vers les cages"
+    ]
+  }
+];
+
+const materiels = [
+  {
+    categorie: "Équipements de base",
+    items: [
+      "Cages d'élevage",
+      "Containers pour larves",
+      "Systèmes d'arrosage",
+      "Instruments de mesure"
+    ]
+  },
+  {
+    categorie: "Matériaux consommables",
+    items: [
+      "Substrats de ponte",
+      "Aliments pour adultes",
+      "Matériel de nettoyage",
+      "Équipements de protection"
+    ]
+  },
+  {
+    categorie: "Outils spécialisés",
+    items: [
+      "Tamis de différentes tailles",
+      "Dispositifs de collecte d'œufs",
+      "Systèmes de ventilation",
+      "Équipements de contrôle"
+    ]
+  }
+];
+---
+
+<section class="mb-12">
+  <div class="prose prose-lg max-w-none">
+    <h2 class="text-2xl font-heading font-semibold text-secondary mb-6">
+      Activités dans l'unité d'élevage de BSF
+    </h2>
+
+    <!-- Étapes du processus -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Étapes du processus d'élevage
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {activites.map(activite => (
+          <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-200">
+            <div class="aspect-w-16 aspect-h-9">
+              <img
+                src={activite.image}
+                alt={activite.titre}
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <div class="p-4">
+              <h4 class="font-heading font-medium text-lg text-primary mb-2">
+                {activite.titre}
+              </h4>
+              <p class="text-sm text-gray-600 mb-3">{activite.description}</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                {activite.taches.map(tache => (
+                  <li>{tache}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Matériels et équipements -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h3 class="text-xl font-heading font-medium text-accent mb-6">
+        Matériels et équipements nécessaires
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {materiels.map(materiel => (
+          <div class="p-4 border border-gray-200 rounded-lg">
+            <h4 class="font-medium text-primary mb-3">{materiel.categorie}</h4>
+            <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+              {materiel.items.map(item => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

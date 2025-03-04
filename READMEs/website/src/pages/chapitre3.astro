@@ -1,0 +1,40 @@
+---
+import ChapterLayout from '../layouts/ChapterLayout.astro';
+import ElevageBSF from '../components/chapitre3/ElevageBSF.astro';
+import ActivitesElevage from '../components/chapitre3/ActivitesElevage.astro';
+import PlanificationGestion from '../components/chapitre3/PlanificationGestion.astro';
+
+const title = "Chapitre 3 : Unité d'élevage BSF";
+const description = "Découvrez comment mettre en place et gérer une unité d'élevage de mouches soldats noires, depuis l'élevage jusqu'à la planification quotidienne.";
+---
+
+<ChapterLayout 
+  title={title}
+  description={description}
+  chapterNumber={3}
+>
+  <div class="space-y-12">
+    <ElevageBSF />
+    <ActivitesElevage />
+    <PlanificationGestion />
+
+    <!-- Navigation -->
+    <div class="flex justify-between mt-12">
+      <a
+        href="/chapitre2"
+        class="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-md hover:bg-primary/10 transition-colors duration-200"
+      >
+        <span class="material-icons mr-2">arrow_back</span>
+        Chapitre précédent
+      </a>
+      
+      <a
+        href="/chapitre4"
+        class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors duration-200"
+      >
+        Chapitre suivant : Opérations
+        <span class="material-icons ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</ChapterLayout>

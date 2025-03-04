@@ -1,0 +1,204 @@
+---
+interface Stage {
+    name: string;
+    icon: string;
+    details: string[];
+}
+
+interface Props {
+    stages: Stage[];
+}
+
+const { stages } = Astro.props;
+---
+
+<div class="lifecycle-animation">
+    <div class="lifecycle-circle">
+        {stages.map((stage, index) => (
+            <div 
+                class="lifecycle-stage"
+                style={`--rotation: ${(index * 360) / stages.length}deg`}
+            >
+                <div class="stage-content">
+                    <span class="stage-icon">{stage.icon}</span>
+                    <h3 class="stage-name">{stage.name}</h3>
+                    <div class="stage-details">
+                        <ul>
+                            {stage.details.map(detail => (
+                                <li>{detail}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        ))}
+        <div class="circle-center">
+            <span class="center-icon">🦟</span>
+        </div>
+    </div>
+</div>
+
+<style lang="scss">
+    .lifecycle-animation {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        position: relative;
+        aspect-ratio: 1;
+    }
+
+    .lifecycle-circle {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 50%;
+        border: 2px solid var(--color-primary);
+        animation: rotate 60s linear infinite;
+        animation-play-state: paused;
+
+        &:hover {
+            animation-play-state: running;
+        }
+    }
+
+    .lifecycle-stage {
+        position: absolute;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        transform-origin: 0 0;
+        transform: rotate(var(--rotation)) translate(calc(50% + 100px)) rotate(calc(-1 * var(--rotation)));
+    }
+
+    .stage-content {
+        background: white;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+    }
+
+    .stage-icon {
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .stage-name {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        color: var(--color-primary);
+    }
+
+    .stage-details {
+        display: none;
+        font-size: 0.9rem;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0;
+
+            li {
+                margin: 0.25rem 0;
+                color: var(--color-text);
+            }
+        }
+    }
+
+    .stage-content:hover .stage-details {
+        display: block;
+    }
+
+    .circle-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+    }
+
+    .center-icon {
+        font-size: 2.5rem;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .lifecycle-stage {
+            width: 150px;
+            transform: rotate(var(--rotation)) translate(calc(50% + 50px)) rotate(calc(-1 * var(--rotation)));
+        }
+
+        .stage-content {
+            padding: 0.75rem;
+        }
+
+        .stage-icon {
+            font-size: 1.5rem;
+        }
+
+        .stage-name {
+            font-size: 1rem;
+        }
+
+        .circle-center {
+            width: 60px;
+            height: 60px;
+        }
+
+        .center-icon {
+            font-size: 2rem;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .lifecycle-circle {
+            animation: none;
+        }
+    }
+</style>
+
+<script>
+    // Script pour gérer l'interaction avec les étapes du cycle
+    document.addEventListener('DOMContentLoaded', () => {
+        const stages = document.querySelectorAll('.stage-content');
+        
+        stages.forEach(stage => {
+            stage.addEventListener('click', () => {
+                // Arrêter la rotation pendant l'affichage des détails
+                const circle = stage.closest('.lifecycle-circle');
+                circle.style.animationPlayState = 'paused';
+                
+                // Réactiver la rotation après la fermeture des détails
+                const details = stage.querySelector('.stage-details');
+                if (details) {
+                    details.addEventListener('mouseleave', () => {
+                        circle.style.animationPlayState = 'running';
+                    }, { once: true });
+                }
+            });
+        });
+    });
+</script>

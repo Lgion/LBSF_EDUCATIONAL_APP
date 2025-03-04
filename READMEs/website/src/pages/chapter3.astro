@@ -1,0 +1,1037 @@
+---
+import ChapterLayout from '../layouts/ChapterLayout.astro';
+import Modal from '../components/common/Modal.astro';
+import '../styles/componentschapter3.scss';
+
+const title = "Les trois unités de production";
+const description = "Description détaillée des trois unités essentielles de production BSF : reproduction, croissance larvaire et traitement post-récolte.";
+
+const stages = [
+  {
+    id: "fly-stage",
+    title: "Stade mouche",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          La gestion des mouches adultes est une étape cruciale qui nécessite une attention particulière et un suivi précis de 9 étapes clés.
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation de la cage d'amour</h4>
+              <p>Accrocher une cage d'amour propre sur son support et mesurer son poids avec le support. Cette cage peut contenir jusqu'à 10 000 mouches.</p>
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Installation et connexion</h4>
+              <p>Fixer la cage sur le cadre mobile et la placer en face de la première cage sombre. Connecter les tunnels et allumer la lumière d'attraction.</p>
+              <img src="/images/III_unite/2_activites/a_steps/3.2b_step2.webp" alt="Installation de la cage" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Cycle de transfert</h4>
+              <p>Toutes les 30 minutes : déconnecter, fermer les tunnels, peser la cage, et répéter jusqu'à ce que la cage soit suffisamment remplie (les mouches couvrent les parois sans s'entasser au fond).</p>
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Finalisation du transfert</h4>
+              <p>Déconnecter la cage d'amour, éteindre la lumière et déplacer la cage vers la table dédiée.</p>
+              <img src="/images/III_unite/2_activites/a_steps/3.2b_step4.webp" alt="Pesée de la cage" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation de l'attractif</h4>
+              <p>Mélanger :</p>
+              <ul class="list-disc ml-6 mt-2">
+                <li>100g de mouches mortes</li>
+                <li>200g de résidus des conteneurs de nurserie</li>
+                <li>200g de résidus de l'ancien conteneur d'attractif</li>
+                <li>1L d'eau</li>
+              </ul>
+              <img src="/images/III_unite/2_activites/a_steps/3.2b_step5.webp" alt="Préparation de l'attractif" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation des supports de ponte</h4>
+              <p>Préparer 10 "eggies" en alternant des feuilles de bois avec et sans punaises, maintenues par des élastiques.</p>
+              <img src="/images/III_unite/2_activites/a_steps/3.2b_step6.webp" alt="Préparation des eggies" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Système d'hydratation</h4>
+              <p>Installer un conteneur d'eau avec un chiffon en coton passant par les fentes du couvercle pour assurer une hydratation continue.</p>
+            </div>
+          </div>
+
+          <!-- Étape 8 -->
+          <div class="step-card">
+            <div class="step-number">8</div>
+            <div class="step-content">
+              <h4 class="step-title">Installation du système de ponte</h4>
+              <p>Collecter 20 mouches pour échantillonnage, placer le conteneur d'attractif avec les "eggies" et le système d'hydratation.</p>
+              <img src="/images/III_unite/2_activites/a_steps/3.2b_step8.webp" alt="Installation complète" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 9 -->
+          <div class="step-card">
+            <div class="step-number">9</div>
+            <div class="step-content">
+              <h4 class="step-title">Finalisation</h4>
+              <p>Fermer la cage et ajouter une étiquette datée. S'assurer que les pieds de la table sont bien placés dans les pièges anti-fourmis.</p>
+              <img src="/images/III_unite/2_activites/a_steps/3.2b_step9.webp" alt="Cage finale installée" class="step-image mt-3">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Faire attention à la lumière d'attraction pour éviter les brûlures</li>
+            <li>Porter une blouse de laboratoire et des gants en latex lors de la manipulation de l'attractif</li>
+            <li>Peser la cage après chaque connexion pour suivre le taux d'émergence</li>
+            <li>Maintenir une température de 25-30°C et une humidité de 60-70%</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "egg-stage",
+    title: "Stade œuf",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          La collecte et la gestion des œufs est une étape délicate qui s'effectue après 4 jours d'incubation. Une cage contenant 10 000 mouches peut produire environ 75 grammes d'œufs.
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Retrait des supports de ponte</h4>
+              <p>Retirer les "eggies" de la cage d'amour après exactement 4 jours (4 x 24h) après l'installation initiale.</p>
+              <img src="/images/III_unite/2_activites/b_steps/3.2b_step1.webp" alt="Retrait des eggies" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Gestion de l'attractif</h4>
+              <p>Retirer l'ancien conteneur d'attractif. Conserver 200g de résidus pour le prochain lot et nettoyer le conteneur avec du détergent.</p>
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Collecte des mouches mortes</h4>
+              <p>Balayer les mouches mortes. Conserver 100g pour le prochain attractif et disposer du reste dans les déchets organiques.</p>
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Nettoyage de la cage</h4>
+              <p>Retourner la cage, la secouer pour enlever les dernières mouches, puis la laver en machine à 30°C avec du détergent.</p>
+              <img src="/images/III_unite/2_activites/b_steps/3.2b_step4.webp" alt="Nettoyage de la cage" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Désinfection de l'espace</h4>
+              <p>Nettoyer la table de la cage avec une solution d'alcool à 95% et retirer l'étiquette de date.</p>
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Gestion des supports d'œufs</h4>
+              <p>Retirer les supports d'œufs âgés d'une semaine de la douche d'éclosion, identifiés par leur code couleur journalier.</p>
+              <img src="/images/III_unite/2_activites/b_steps/3.2b_step6.webp" alt="Retrait des supports d'œufs" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Récolte des œufs</h4>
+              <p>Ouvrir délicatement les 10 "eggies" et gratter soigneusement les œufs des deux côtés de chaque feuille avec une pince. Collecter la masse d'œufs dans un bol.</p>
+            </div>
+          </div>
+
+          <!-- Étape 8 -->
+          <div class="step-card">
+            <div class="step-number">8</div>
+            <div class="step-content">
+              <h4 class="step-title">Distribution des œufs</h4>
+              <p>Peser la masse totale des œufs et la diviser en portions de 40g. Placer dans les supports et les suspendre dans la douche d'éclosion au-dessus des conteneurs.</p>
+              <img src="/images/III_unite/2_activites/b_steps/3.2b_step8.webp" alt="Distribution des œufs" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 9 -->
+          <div class="step-card">
+            <div class="step-number">9</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation des conteneurs d'éclosion</h4>
+              <p>Pour chaque conteneur :</p>
+              <ul class="list-disc ml-6 mt-2">
+                <li>Préparer 3kg de mélange (30% aliment poulet sec + 70% eau)</li>
+                <li>Couvrir d'une couche de cocopeat ou son de blé (0.5-1.0 cm)</li>
+                <li>Étiqueter avec le code date du jour</li>
+              </ul>
+              <img src="/images/III_unite/2_activites/b_steps/3.2b_step9.webp" alt="Préparation des conteneurs" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 10 -->
+          <div class="step-card">
+            <div class="step-number">10</div>
+            <div class="step-content">
+              <h4 class="step-title">Organisation des étagères</h4>
+              <p>Descendre tous les conteneurs d'éclosion d'un niveau. Les conteneurs du bas contiendront des larves de 5 jours. Placer les nouveaux conteneurs sur l'étagère supérieure.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Porter un masque et des lunettes pour se protéger des œufs et des petites larves</li>
+            <li>Utiliser une blouse de laboratoire et des gants en latex pour manipuler les "eggies", l'attractif et les mouches mortes</li>
+            <li>Mesurer le poids des œufs récoltés</li>
+            <li>Calculer le nombre d'œufs récoltés (1 œuf = 0.0000291 grammes)</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "hatchling-stage",
+    title: "Stade éclosion",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          À l'âge de 5 jours (5-DOL), les larves sont récoltées des conteneurs d'éclosion. À ce stade, un bac peut contenir environ 700 000 larves, soit 73 larves par cm³.
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Tamisage et séparation initiale</h4>
+              <p>Retirer les conteneurs d'éclosion les plus anciens (après 6 jours). Tamiser tout le matériau avec un tamis de 0,8 mm. Les petites particules et larves passent à travers, tandis que les plus grandes restent sur le tamis.</p>
+              <img src="/images/III_unite/2_activites/c_steps/3.2c_step1.webp" alt="Tamisage des larves" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Nettoyage des conteneurs</h4>
+              <p>Nettoyer les conteneurs d'éclosion avec un nettoyeur haute pression, une brosse à récurer et du détergent. Laisser sécher.</p>
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Échantillonnage</h4>
+              <p>Prélever un échantillon aléatoire du mélange de 5-DOL purifié et mesurer deux portions de 2 grammes chacune dans des gobelets.</p>
+              <img src="/images/III_unite/2_activites/c_steps/3.2c_step3.webp" alt="Échantillonnage des larves" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Comptage des échantillons</h4>
+              <p>Placer chaque échantillon de 2g sur une assiette et compter manuellement toutes les larves 5-DOL à l'aide de pinces et d'un compteur. Documenter le nombre de larves par 2 grammes.</p>
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Pesée totale</h4>
+              <p>Peser la masse totale des 5-DOL disponibles dans la boîte. Calculer le nombre total de larves en utilisant les résultats du comptage par 2 grammes.</p>
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation des portions</h4>
+              <p>En fonction du nombre d'unités d'incubation à mettre en place, préparer des gobelets et les remplir avec le poids nécessaire de mélange 5-DOL pour chaque larvero.</p>
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Séparation finale</h4>
+              <p>Les 5-DOL restants seront utilisés pour l'élevage des mouches ou éliminés.</p>
+            </div>
+          </div>
+
+          <!-- Étape 8 -->
+          <div class="step-card">
+            <div class="step-number">8</div>
+            <div class="step-content">
+              <h4 class="step-title">Distribution dans les unités</h4>
+              <p>Répartir les portions préparées dans les différentes unités d'incubation selon les calculs effectués (600-800 larves par kg de substrat humide).</p>
+              <img src="/images/III_unite/2_activites/c_steps/3.2c_step8.webp" alt="Distribution dans les unités" class="step-image mt-3">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Porter une blouse de laboratoire et des gants en latex pour manipuler les 5-DOL et les résidus</li>
+            <li>Calcul du nombre total de larves : <br>
+              <code class="bg-yellow-100 px-2 py-1 rounded">Nombre total = (Masse totale × Nombre dans échantillon) / Masse échantillon</code>
+            </li>
+            <li>Calcul de la masse nécessaire par larvero : <br>
+              <code class="bg-yellow-100 px-2 py-1 rounded">Masse larvero = (Nombre requis × Masse totale) / Nombre total</code>
+            </li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "nursery-stage",
+    title: "Stade nurserie",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Les conteneurs de nurserie permettent d'élever les larves jusqu'au stade pré-pupal, nécessaire pour maintenir la population adulte. Pendant environ deux semaines et demie, 10 000 larves sont élevées dans un Larvero de nurserie, soit une densité de 5 larves par cm².
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation de la nourriture</h4>
+              <p>Préparer 2 kg de nourriture composée de 30% d'aliment sec pour poulet et 70% d'eau. Mélanger jusqu'à obtention d'une mixture homogène.</p>
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Installation des larves</h4>
+              <p>Dans un Larvero de nurserie propre, ajouter la nourriture, la couvrir de cocopeat ou de son de blé (couche de 0,5-1,0 cm), puis ajouter 10 000 larves 5-DOL sur le dessus.</p>
+              <img src="/images/III_unite/2_activites/d_steps/3.2d_step2.webp" alt="Installation des larves" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation du conteneur de transfert</h4>
+              <p>Prendre un conteneur de transfert propre, ajouter du cocopeat dans les coins et le long des bords. Placer le Larvero de nurserie (35x55cm) dans le conteneur de transfert (40x60cm). Les pré-pupes pourront ainsi tomber dans le conteneur de transfert.</p>
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Étiquetage</h4>
+              <p>Placer une étiquette sur le Larvero de nurserie avec le code date et le nombre de larves ajoutées.</p>
+              <img src="/images/III_unite/2_activites/d_steps/3.2d_step4.webp" alt="Étiquetage du Larvero" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Alimentation régulière</h4>
+              <p>Pendant les deux semaines et demie d'opération, nourrir les larves avec un mélange d'aliment pour poulet et d'eau selon des concentrations variables. L'alimentation suit un calendrier précis (voir Annexe B).</p>
+              <img src="/images/III_unite/2_activites/d_steps/3.2d_step5.webp" alt="Alimentation des larves" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Récolte des pré-pupes</h4>
+              <p>Après deux semaines et demie, retirer le Larvero de nurserie et récolter les pré-pupes restantes dans le conteneur de transfert.</p>
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Nettoyage final</h4>
+              <p>Retirer les résidus du Larvero (peuvent être compostés). Nettoyer le Larvero et le conteneur de transfert avec une brosse à récurer et du détergent. Laisser sécher.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Porter une blouse de laboratoire et des gants en latex pour manipuler les larves et les résidus</li>
+            <li>Suivre rigoureusement le calendrier d'alimentation spécifié dans l'Annexe B</li>
+            <li>Maintenir la densité recommandée de 5 larves par cm²</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "prepupae-stage",
+    title: "Stade pré-pupe",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Les pré-pupes qui ont quitté les conteneurs de nurserie sont placées dans des conteneurs de pupation qui seront ensuite mis dans la cage sombre. Sur une durée de 5 jours, les pré-pupes sont ajoutées dans un substrat de pupation d'environ 5 cm d'épaisseur. Un conteneur de pupation peut accueillir jusqu'à 10 000 pré-pupes, soit environ 1 pré-pupe par cm³.
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation du substrat de pupation</h4>
+              <p>Préparer 50 kg de matériau de pupation composé de compost mature (¾) et d'eau (¼). Mélanger soigneusement avec un mélangeur à béton jusqu'à obtention d'une mixture homogène sans matériau sec visible.</p>
+              <img src="/images/III_unite/2_activites/e_steps/3.2e_step1.webp" alt="Préparation du substrat" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Remplissage des conteneurs</h4>
+              <p>Prendre 16 conteneurs de pupation propres et les remplir chacun avec 3 kg du substrat préparé. Répartir le mélange uniformément dans chaque bac.</p>
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Installation des conteneurs</h4>
+              <p>Placer les 16 conteneurs de pupation dans le rack de pupation et ajouter une étiquette avec la date d'installation.</p>
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Récolte et séparation</h4>
+              <p>Récolter les pré-pupes avec le cocopeat du conteneur de transfert et les séparer à l'aide d'un tamis de 3 mm. Réinstaller le conteneur de transfert avec du nouveau cocopeat. Noter le poids des pré-pupes récoltées pour chaque conteneur.</p>
+              <img src="/images/III_unite/2_activites/e_steps/3.2e_step4.webp" alt="Séparation des pré-pupes" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Pesée et comptage</h4>
+              <p>Regrouper toutes les pré-pupes récoltées du jour et les peser. Prélever deux échantillons de 200 pré-pupes, les peser et noter leur moyenne.</p>
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation des lots</h4>
+              <p>Préparer 16 lots de pré-pupes selon les quantités requises par la checklist (Annexe A), un lot pour chaque conteneur de pupation.</p>
+              <img src="/images/III_unite/2_activites/e_steps/3.2e_step6.webp" alt="Préparation des lots" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Distribution finale</h4>
+              <p>Transférer les 16 lots de pré-pupes dans chacun des 16 conteneurs de pupation. Les mêmes conteneurs sont remplis avec le même nombre de pré-pupes sur plusieurs jours, selon le calendrier établi (voir Annexe A).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Porter une blouse de laboratoire et des gants en latex pour manipuler les larves, pré-pupes, cocopeat et compost</li>
+            <li>Mesurer et noter le poids des pré-pupes récoltées de chaque conteneur de transfert</li>
+            <li>Mesurer le poids de 200 pré-pupes deux fois pour obtenir une valeur moyenne</li>
+            <li>Maintenir la densité recommandée d'environ 1 pré-pupe par cm³ de matériau de pupation</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "pupation-stage",
+    title: "Stade pupaison",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          La phase de pupaison est l'étape finale du développement où les pré-pupes se transforment en pupes puis en mouches adultes. Cette période dure environ 2 à 3 semaines dans des conditions optimales.
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation des cages sombres</h4>
+              <p>Nettoyer et désinfecter les cages d'émergence, puis les recouvrir de tissu noir pour créer un environnement sombre.</p>
+              <img src="/images/III_unite/2_activites/f_steps/3.2f_step1.webp" alt="Préparation des cages sombres" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation du substrat de pupaison</h4>
+              <p>Préparer un substrat adapté avec un mélange de cocopeat et de compost pour permettre aux pré-pupes de s'enfouir.</p>
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Contrôle des conditions environnementales</h4>
+              <p>Maintenir une température de 27-30°C et une humidité relative de 60-70% pour optimiser la pupaison.</p>
+              <img src="/images/III_unite/2_activites/f_steps/3.2f_step3.webp" alt="Contrôle des conditions" class="step-image mt-3">
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Transfert des pré-pupes</h4>
+              <p>Transférer délicatement les pré-pupes dans les conteneurs de pupaison avec le substrat préparé.</p>
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Protection contre les perturbations</h4>
+              <p>Placer les conteneurs dans un endroit protégé des changements environnementaux (température, humidité, mouvements d'air).</p>
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Suivi de la transformation</h4>
+              <p>Observer le processus de transformation des pré-pupes en pupes, qui dure environ 2-3 semaines.</p>
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Surveillance de l'émergence</h4>
+              <p>Surveiller l'émergence des mouches adultes qui se produit en moins de 5 minutes par individu.</p>
+            </div>
+          </div>
+
+          <!-- Étape 8 -->
+          <div class="step-card">
+            <div class="step-number">8</div>
+            <div class="step-content">
+              <h4 class="step-title">Gestion des mouches émergentes</h4>
+              <p>Laisser les mouches sécher leurs ailes et s'acclimater dans la cage sombre avant le transfert.</p>
+            </div>
+          </div>
+
+          <!-- Étape 9 -->
+          <div class="step-card">
+            <div class="step-number">9</div>
+            <div class="step-content">
+              <h4 class="step-title">Nettoyage post-émergence</h4>
+              <p>Retirer et éliminer les enveloppes pupales vides et les pupes non-écloses après la période d'émergence complète.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Vérifier régulièrement la température (27-30°C) et l'humidité (60-70%)</li>
+            <li>Éviter toute perturbation pendant la période de pupaison</li>
+            <li>Maintenir l'obscurité dans les cages d'émergence</li>
+            <li>Documenter le taux d'émergence pour chaque lot</li>
+            <li>S'assurer que le substrat reste légèrement humide mais pas détrempé</li>
+          </ul>
+        </div>
+      </div>
+    `
+  }
+];
+---
+
+<ChapterLayout 
+  title={title}
+  description={description}
+  chapterNumber={3}
+>
+  <div class="chapter3-container">
+    <!-- Introduction -->
+    <section class="content-card fade-in">
+      <div class="highlight-box">
+        <p class="font-medium">Un système de production BSF efficace repose sur trois unités distinctes mais interconnectées, chacune ayant son rôle spécifique dans le processus global.</p>
+      </div>
+    </section>
+
+    <!-- Section 3.1 : Unité de reproduction -->
+    <section id="section-1" class="content-card fade-in">
+      <h2 class="section-title">Unité de reproduction</h2>
+      
+      <div class="unit-card reproduction">
+        <h3 class="subsection-title">Configuration de l'espace</h3>
+        
+        <div class="parameter-grid">
+          <div class="parameter-card">
+            <div class="metric-box">
+              <span class="material-icons icon">thermostat</span>
+              <div>
+                <p class="font-medium">Température</p>
+                <p>25-30°C</p>
+              </div>
+            </div>
+          </div>
+          <div class="parameter-card">
+            <div class="metric-box">
+              <span class="material-icons icon">water_drop</span>
+              <div>
+                <p class="font-medium">Humidité</p>
+                <p>60-70%</p>
+              </div>
+            </div>
+          </div>
+          <div class="parameter-card">
+            <div class="metric-box">
+              <span class="material-icons icon">light_mode</span>
+              <div>
+                <p class="font-medium">Luminosité</p>
+                <p>≥ 500 lux</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div>
+              <p class="font-medium">Cage de reproduction</p>
+              <p>Volume minimum de 1m³ pour 1000 mouches</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div>
+              <p class="font-medium">Substrat de ponte</p>
+              <p>Matière organique fraîche et humide</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div>
+              <p class="font-medium">Collecte des œufs</p>
+              <p>Tous les 2-3 jours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold mb-4">Les 6 étapes de l'unité de reproduction</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {stages.map(stage => (
+              <button
+                class="stage-button p-4 bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors duration-200"
+                data-modal-target={stage.id}
+              >
+                {stage.title}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    <!-- Bouton pour afficher la section sur l'élevage BSF -->
+    <div id="more-1_btn" class="flex justify-center mt-6">
+      <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
+        Voir plus de détails sur l'élevage
+      </button>
+    </div>
+      <div id="more-1"class="space-y-8 hidden transition-all duration-300">
+        <div class="text-gray-700 mb-6">
+          Pour assurer le traitement d'une quantité définie de déchets de manière régulière, l'unité d'élevage doit fournir un nombre défini de larves de cinq jours (5-DOL) chaque jour. Il est donc important de contrôler toutes les étapes de production pendant l'élevage et de surveiller la performance de chaque étape.
+        </div>
+
+        <div class="grid gap-6">
+          <!-- Indicateurs de performance -->
+          <div class="performance-card">
+            <h3 class="text-xl font-semibold mb-4">Indicateurs de performance d'une unité d'élevage</h3>
+            <img src="/images/III_unite/1_elevage/3.1a.webp" alt="Schéma des indicateurs de performance" class="w-full rounded-lg shadow-md mb-4">
+          </div>
+
+          <!-- Dépôt et récolte des œufs -->
+          <div class="process-card">
+            <h3 class="text-xl font-semibold mb-4">Dépôt et récolte des œufs</h3>
+            <p class="mb-4">Les cages sont équipées d'un support spécial (appelé "eggies") qui satisfait les exigences des mouches pour un emplacement sûr de ponte, ainsi qu'un "attractif" qui imite la matière organique en décomposition.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <img src="/images/III_unite/1_elevage/3.1b.webp" alt="Grattage des œufs" class="w-full rounded-lg shadow-md">
+              <img src="/images/III_unite/1_elevage/3.1c0.webp" alt="Pesée des œufs" class="w-full rounded-lg shadow-md">
+              <img src="/images/III_unite/1_elevage/3.1c1.webp" alt="Support à œufs" class="w-full rounded-lg shadow-md">
+            </div>
+          </div>
+
+          <!-- Éclosion et alimentation des larves -->
+          <div class="process-card">
+            <h3 class="text-xl font-semibold mb-4">Éclosion et alimentation des larves</h3>
+            <p class="mb-4">L'unité qui accueille les supports à œufs et les boîtes de nurserie contenant la nourriture pour les nouveau-nés est appelée "douche à nouveau-nés". Les œufs éclosent sur plusieurs jours et les nouveau-nés tombent constamment dans le conteneur en dessous où ils commencent immédiatement à se nourrir.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <img src="/images/III_unite/1_elevage/3.1c2.webp" alt="Douche à nouveau-nés" class="w-full rounded-lg shadow-md">
+              <img src="/images/III_unite/1_elevage/3.1c3.webp" alt="Conteneurs de nurserie" class="w-full rounded-lg shadow-md">
+            </div>
+          </div>
+
+          <!-- Pupaison -->
+          <div class="process-card">
+            <h3 class="text-xl font-semibold mb-4">Pupaison</h3>
+            <p class="mb-4">Les pré-pupes qui ont rampé dans le conteneur de transfert sont récoltées et transférées dans un conteneur de pupaison. Les conteneurs contiennent un substrat humide de type sol (compost) dans lequel les pré-pupes peuvent s'enfouir.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <img src="/images/III_unite/1_elevage/3.1c4.webp" alt="Ajout de pré-pupes dans le conteneur de pupaison" class="w-full rounded-lg shadow-md">
+              <img src="/images/III_unite/1_elevage/3.1c5.webp" alt="Cage sombre avec conteneurs de pupaison" class="w-full rounded-lg shadow-md">
+            </div>
+          </div>
+
+          <!-- Accouplement -->
+          <div class="process-card">
+            <h3 class="text-xl font-semibold mb-4">Accouplement</h3>
+            <p class="mb-4">Les mouches dans la cage sombre ne s'accouplent pas en raison de l'obscurité et restent immobiles. Ces mouches constituent une source constante d'adultes "frais" qui, dès qu'ils sont relâchés à la lumière, commenceront à se reproduire.</p>
+            <img src="/images/III_unite/1_elevage/3.1d.webp" alt="Cage d'amour avec adultes fraîchement émergés" class="w-full rounded-lg shadow-md">
+          </div>
+        </div>
+
+        <!-- Navigation badges -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <a href="#performance" class="badge">
+            <span class="material-icons text-sm">analytics</span>
+            Indicateurs de performance
+          </a>
+          <a href="#eggs" class="badge">
+            <span class="material-icons text-sm">egg</span>
+            Dépôt et récolte des œufs
+          </a>
+          <a href="#hatching" class="badge">
+            <span class="material-icons text-sm">cruelty_free</span>
+            Éclosion et alimentation
+          </a>
+          <a href="#pupation" class="badge">
+            <span class="material-icons text-sm">bug_report</span>
+            Pupaison
+          </a>
+          <a href="#mating" class="badge">
+            <span class="material-icons text-sm">favorite</span>
+            Accouplement
+          </a>
+        </div>
+
+        <div class="grid gap-6">
+          <!-- Indicateurs de performance -->
+          <div id="performance" class="performance-card scroll-mt-20">
+            <h3 class="text-xl font-semibold mb-4">Indicateurs de performance d'une unité d'élevage</h3>
+            <img src="/images/III_unite/1_elevage/3.1a.webp" alt="Schéma des indicateurs de performance" class="w-full rounded-lg shadow-md mb-4">
+          </div>
+
+          <!-- Dépôt et récolte des œufs -->
+          <div id="eggs" class="process-card scroll-mt-20">
+            <h3 class="text-xl font-semibold mb-4">Dépôt et récolte des œufs</h3>
+            <p class="mb-4">Les cages sont équipées d'un support spécial (appelé "eggies") qui satisfait les exigences des mouches pour un emplacement sûr de ponte, ainsi qu'un "attractif" qui imite la matière organique en décomposition.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <img src="/images/III_unite/1_elevage/3.1b.webp" alt="Grattage des œufs" class="w-full rounded-lg shadow-md">
+              <img src="/images/III_unite/1_elevage/3.1c0.webp" alt="Pesée des œufs" class="w-full rounded-lg shadow-md">
+              <img src="/images/III_unite/1_elevage/3.1c1.webp" alt="Support à œufs" class="w-full rounded-lg shadow-md">
+            </div>
+          </div>
+
+          <!-- Éclosion et alimentation des larves -->
+          <div id="hatching" class="process-card scroll-mt-20">
+            <h3 class="text-xl font-semibold mb-4">Éclosion et alimentation des larves</h3>
+            <p class="mb-4">L'unité qui accueille les supports à œufs et les boîtes de nurserie contenant la nourriture pour les nouveau-nés est appelée "douche à nouveau-nés". Les œufs éclosent sur plusieurs jours et les nouveau-nés tombent constamment dans le conteneur en dessous où ils commencent immédiatement à se nourrir.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <img src="/images/III_unite/1_elevage/3.1c2.webp" alt="Douche à nouveau-nés" class="w-full rounded-lg shadow-md">
+              <img src="/images/III_unite/1_elevage/3.1c3.webp" alt="Conteneurs de nurserie" class="w-full rounded-lg shadow-md">
+            </div>
+          </div>
+
+          <!-- Pupaison -->
+          <div id="pupation" class="process-card scroll-mt-20">
+            <h3 class="text-xl font-semibold mb-4">Pupaison</h3>
+            <p class="mb-4">Les pré-pupes qui ont rampé dans le conteneur de transfert sont récoltées et transférées dans un conteneur de pupaison. Les conteneurs contiennent un substrat humide de type sol (compost) dans lequel les pré-pupes peuvent s'enfouir.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <img src="/images/III_unite/1_elevage/3.1c4.webp" alt="Ajout de pré-pupes dans le conteneur de pupaison" class="w-full rounded-lg shadow-md">
+              <img src="/images/III_unite/1_elevage/3.1c5.webp" alt="Cage sombre avec conteneurs de pupaison" class="w-full rounded-lg shadow-md">
+            </div>
+          </div>
+
+          <!-- Accouplement -->
+          <div id="mating" class="process-card scroll-mt-20">
+            <h3 class="text-xl font-semibold mb-4">Accouplement</h3>
+            <p class="mb-4">Les mouches dans la cage sombre ne s'accouplent pas en raison de l'obscurité et restent immobiles. Ces mouches constituent une source constante d'adultes "frais" qui, dès qu'ils sont relâchés à la lumière, commenceront à se reproduire.</p>
+            <img src="/images/III_unite/1_elevage/3.1d.webp" alt="Cage d'amour avec adultes fraîchement émergés" class="w-full rounded-lg shadow-md">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {stages.map(stage => (
+      <Modal 
+        id={stage.id} 
+        title={stage.title}
+        description={stage.description}
+      />
+    ))}
+
+    <!-- Section 3.2 : Unité de croissance larvaire -->
+    <section id="section-2" class="content-card fade-in">
+      <h2 class="section-title">Unité de croissance larvaire</h2>
+      
+      <div class="unit-card growth">
+        <h3 class="subsection-title">Aménagement optimal</h3>
+        
+        <div class="parameter-grid">
+          <div class="parameter-card">
+            <div class="metric-box">
+              <span class="material-icons icon">straighten</span>
+              <div>
+                <p class="font-medium">Profondeur substrat</p>
+                <p>5-10 cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="parameter-card">
+            <div class="metric-box">
+              <span class="material-icons icon">density_small</span>
+              <div>
+                <p class="font-medium">Densité larvaire</p>
+                <p>2-5 larves/cm²</p>
+              </div>
+            </div>
+          </div>
+          <div class="parameter-card">
+            <div class="metric-box">
+              <span class="material-icons icon">schedule</span>
+              <div>
+                <p class="font-medium">Durée cycle</p>
+                <p>14-16 jours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="info-list mt-4">
+          <li>Bacs de croissance avec drainage</li>
+          <li>Alimentation progressive</li>
+          <li>Contrôle quotidien</li>
+          <li>Protection contre les prédateurs</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 3.3 : Unité de traitement post-récolte -->
+    <section id="section-3" class="content-card fade-in">
+      <h2 class="section-title">Unité de traitement post-récolte</h2>
+      
+      <div class="unit-card processing">
+        <h3 class="subsection-title">Processus de récolte et transformation</h3>
+        
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div>
+              <p class="font-medium">Tamisage</p>
+              <p>Séparation des larves et du substrat</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div>
+              <p class="font-medium">Nettoyage</p>
+              <p>Rinçage à l'eau claire</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div>
+              <p class="font-medium">Transformation</p>
+              <p>Séchage, broyage ou congélation selon l'usage</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div>
+              <p class="font-medium">Conditionnement</p>
+              <p>Emballage et stockage adapté</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box mt-6">
+          <h4 class="font-medium mb-2">Points de contrôle critiques</h4>
+          <ul class="info-list">
+            <li>Température de séchage ≤ 70°C</li>
+            <li>Humidité finale ≤ 10%</li>
+            <li>Stockage hermétique</li>
+            <li>Traçabilité des lots</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12">
+      <a href="/chapter2" class="navigation-button">
+        <span class="material-icons mr-2">arrow_back</span>
+        Chapitre 2 : Gestion des déchets
+      </a>
+      <a href="/chapter4" class="navigation-button">
+        Chapitre 4 : Scénarios de production
+        <span class="material-icons ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</ChapterLayout>
+
+<style>
+  .hidden {
+    display: none;
+  }
+
+  .stage-button {
+    @apply text-left font-medium;
+  }
+
+  .step-card {
+    @apply bg-white rounded-lg shadow-sm p-4 border border-gray-100;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .step-number {
+    @apply w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold;
+  }
+
+  .step-content {
+    @apply space-y-2;
+  }
+
+  .step-title {
+    @apply font-semibold text-lg text-gray-900;
+  }
+
+  .step-image {
+    @apply rounded-lg max-w-full h-auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors duration-200;
+  }
+
+  .scroll-mt-20 {
+    scroll-margin-top: 5rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.stage-button');
+    
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-modal-target');
+        const modal = document.getElementById(modalId);
+        modal.classList.remove('hidden');
+      });
+    });
+
+    const moreBtn = document.querySelector('#more-1_btn button');
+    const moreContent = document.querySelector('#more-1');
+    
+    moreBtn.addEventListener('click', () => {
+      moreContent.classList.toggle('hidden');
+      moreBtn.textContent = moreContent.classList.contains('hidden') 
+        ? "Voir plus de détails sur l'élevage"
+        : "Masquer les détails";
+    });
+  });
+</script>

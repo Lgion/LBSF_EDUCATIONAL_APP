@@ -1,0 +1,124 @@
+---
+import ChapterLayout from '../layouts/ChapterLayout.astro';
+import '../styles/componentschapter2.scss';
+
+const title = "Déchets : collecte et traitement pour l'alimentation BSF";
+const description = "Guide détaillé sur la collecte et le traitement des déchets organiques pour l'alimentation des BSF, incluant les types de déchets appropriés et les méthodes de préparation.";
+---
+
+<ChapterLayout 
+  title={title}
+  description={description}
+  chapterNumber={2}
+>
+  <div class="chapter2-container">
+    <!-- Section 2.1 : Types de déchets appropriés -->
+    <section id="section-1" class="content-card fade-in">
+      <h2 class="section-title">Types de déchets appropriés</h2>
+      
+      <div class="highlight-box">
+        <p class="font-medium">La qualité et le type des déchets organiques sont essentiels pour le succès de l'élevage BSF.</p>
+      </div>
+
+      <div class="waste-grid">
+        <div class="process-card">
+          <h3 class="subsection-title">Déchets acceptables</h3>
+          <ul class="info-list">
+            <li>Résidus de fruits et légumes</li>
+            <li>Déchets de restauration</li>
+            <li>Sous-produits céréaliers</li>
+            <li>Marc de café et thé</li>
+          </ul>
+        </div>
+        <div class="process-card">
+          <h3 class="subsection-title">Déchets à éviter</h3>
+          <ul class="info-list">
+            <li>Viandes crues</li>
+            <li>Produits laitiers</li>
+            <li>Huiles et graisses</li>
+            <li>Déchets toxiques</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <p class="font-medium">Attention : Certains déchets peuvent compromettre la santé des larves ou la qualité du compost final.</p>
+      </div>
+    </section>
+
+    <!-- Section 2.2 : Sources de collecte -->
+    <section id="section-2" class="content-card fade-in">
+      <h2 class="section-title">Sources de collecte recommandées</h2>
+      
+      <div class="waste-grid">
+        <div class="process-card">
+          <h3 class="subsection-title">Sources urbaines</h3>
+          <ul class="info-list">
+            <li>Restaurants et cantines</li>
+            <li>Marchés alimentaires</li>
+            <li>Industries agroalimentaires</li>
+          </ul>
+        </div>
+        <div class="process-card">
+          <h3 class="subsection-title">Sources rurales</h3>
+          <ul class="info-list">
+            <li>Exploitations agricoles</li>
+            <li>Coopératives</li>
+            <li>Transformateurs locaux</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2.3 : Préparation des déchets -->
+    <section id="section-3" class="content-card fade-in">
+      <h2 class="section-title">Préparation des déchets</h2>
+      
+      <div class="space-y-6">
+        <div>
+          <h3 class="subsection-title">Protocole de traitement</h3>
+          <ul class="info-list">
+            <li>Tri et retrait des contaminants</li>
+            <li>Réduction de la taille (2-3 cm)</li>
+            <li>Contrôle de l'humidité</li>
+            <li>Stockage temporaire adapté</li>
+          </ul>
+        </div>
+
+        <div class="highlight-box">
+          <h3 class="text-lg font-semibold mb-2">Paramètres de stockage</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <p class="font-medium">Température</p>
+              <p>4-10°C recommandé</p>
+            </div>
+            <div>
+              <p class="font-medium">Durée maximale</p>
+              <p>48-72 heures</p>
+            </div>
+            <div>
+              <p class="font-medium">Humidité</p>
+              <p>65-70%</p>
+            </div>
+            <div>
+              <p class="font-medium">Ventilation</p>
+              <p>Modérée</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12">
+      <a href="/chapter1" class="navigation-button">
+        <span class="material-icons mr-2">arrow_back</span>
+        Chapitre 1 : Introduction
+      </a>
+      <a href="/chapter3" class="navigation-button">
+        Chapitre 3 : Unités de production
+        <span class="material-icons ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</ChapterLayout>

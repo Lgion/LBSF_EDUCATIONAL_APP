@@ -1,0 +1,3741 @@
+Sandec: Department of
+Sanitation, Water and Solid
+Waste for Development
+Black Soldier Fly
+Biowaste Processing
+A Step-by-Step Guide – 2 nd Edition
+Black Soldier Fly Biowaste Processing
+1Impressum
+Publisher: Eawag – Swiss Federal Institute of Aquatic Science
+and Technology
+Department of Sanitation, Water and Solid Waste for
+Development (Sandec)
+Überlandstrasse 133, 8600 Dübendorf, Switzerland
+Phone +41 58 765 52 86
+Cover picture: Sirajuddin Kurniawan
+Photos: Eawag (unless stated otherwise)
+Layout: Leanza Mediaproduktion GmbH
+Figures: Stefan Diener, Eawag
+Review: Moritz Gold
+Published: 2021
+Circulation: 200 copies printed on original recycled paper
+ISBN: 978-3-906484-75-4
+Bibliographic reference: Dortmans B.M.A., Egger J., Diener S., Zurbrügg C. (2021)
+Black Soldier Fly Biowaste Processing - A Step-by-Step Guide,
+2 nd Edition
+Eawag: Swiss Federal Institute of Aquatic Science and
+Technology, Dübendorf, Switzerland
+The content of this document is licensed under a Creative
+Commons Attribution 4.0 International license4
+Black Soldier Fly Biowaste ProcessingBlack Soldier Fly Biowaste
+Processing
+A Step-by-Step Guide –– 2 nd Edition
+Bram Dortmans
+Julia Egger
+Stefan Diener
+Christian Zurbrügg
+Written and published with financial support from the Swiss State Secretariat for Economic
+Affairs (SECO) and the Swiss Re Foundation
+Black Soldier Fly Biowaste Processing
+I6
+Black Soldier Fly Biowaste ProcessingTable of contents:
+Glossary
+Chapter 1:
+Chapter 2:
+Chapter 3:
+Chapter 4:
+Chapter 5:
+Chapter 6:
+IV
+Rationale 1
+1.1 General introduction
+1.2 Scope and target audience
+1.3 Navigating through this guide 1
+2
+3
+Introduction into BSF biowaste processing 5
+2.1
+2.2
+2.3
+2.4 5
+7
+8
+9
+The Black Soldier Fly
+Why the Black Soldier Fly?
+Engineering the BSF life cycle
+Safety and hygiene measures when working with BSF and biowaste
+The BSF rearing process 11
+3.1 Rearing BSF in a controlled environment
+3.2 Activities in the BSF rearing unit
+3.3 Work scheduling and data management 11
+16
+36
+BSFL conversion operations 39
+4.1 Sourcing biowaste
+4.2 Activities in the BSFL conversion unit
+4.3 Work schedules, monitoring and data collection 39
+45
+59
+BSFL post-processing and marketing 61
+5.1 Marketable products from BSFL biowaste conversion
+5.2 Activities in the post-processing unit
+5.3 Monitoring, storage and product labelling 61
+67
+84
+Business development 87
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6 87
+88
+90
+90
+91
+92
+Cost-revenue analysis and financial viability
+The scenario-based business model tool
+The web-based cost model tool
+Siting a BSF waste processing facility
+Creating a floorplan and planning the unit locations for a BSF site
+Operational scenarios and work scheduling
+Annexes
+97
+Annex A:
+Annex B:
+Annex C:
+Annex D:
+Annex E:
+Annex F:
+Annex G:
+Annex H:
+Annex I:
+Work schedule for rearing unit
+Feeding schedule for nursery larvero
+Work schedule for conversion unit
+Log sheet for productivity parameters in rearing unit
+Log sheet for productivity parameters in treatment step of
+conversion unit
+Log sheet for productivity parameters in pre-processing and
+harvesting stage of conversion unit
+Log sheet for productivity parameters in post-processing unit
+Technical drawings for custom-made materials and equipment
+Material requirement list for three scenarios of operation in
+a BSF biowaste processing facility
+98
+101
+102
+106
+108
+110
+112
+114
+124
+Black Soldier Fly Biowaste Processing IIIGlossary
+5-DOL:
+Abbreviation for Five-Day-Old-Larvae. Keeping the hatchlings in a controlled and
+protected environment for five days after hatching increases the survival rate and
+allows the larvae to be counted before they are added to the biowaste.
+Adult:
+The final development stage after pupation. With insects, this is usually called
+“imago”.
+Amino acids:
+Amino acids are the building blocks of proteins and therefore determine their quality.
+The amino acid profile of BSF meal is important to consider for feed formulations for
+animals.
+Anaerobic digestion:
+Degradation of organic compounds by microorganisms in the absence of oxygen,
+leading to the production of biogas.
+Ant trap:
+Protects from ant invasion. Each table leg is placed into a container filled with
+water and a drop of detergent. The detergent reduces the surface tension of
+the water.
+Attractant:
+Smelly liquid substance that attracts BSF females to lay eggs nearby. Usually, this
+contains different smelly substances like fermenting fruit, dead flies or residue.
+BSF eggs have also been found to act as an attractant. It is, therefore, advisable
+not to harvest eggs every day as the already laid eggs attract other females.
+Batch operation:
+In batch operation, a defined amount of waste and larvae are added to a container,
+which is harvested after a certain time. Batch operation is in contrast to
+continuous operation, where waste and larvae are added continuously to the
+same container. A continuous container is only emptied once it is full.
+BCR:
+Biomass Conversion Rate is the fraction of biowaste which is converted into
+larval biomass.
+Biowaste:
+Generally, all biodegradable matter. In this particular context, it does not include
+waste high in cellulose (e.g. garden waste, wood, grass clippings, leaves, etc.)
+as this cannot be easily digested by the larvae.
+Blanching:
+Blanching describes the process of dipping the larvae shortly in boiling water and
+subsequently washing them with clean and cold water.
+BSF: Black Soldier Fly, Hermetia illucens
+BSFL: The larvae of the Black Soldier Fly
+Conditioning:
+Preparation of the harvested BSFL for selling in live form or further post-
+processing. Conditioning of the larvae is a requirement to increase product
+purity and quality.
+Cocopeat:
+The powdery material resulting from processing coconut fibre. In this context,
+it is mostly used for its moisture absorbing properties. It can be replaced by
+other materials with similar moisture absorbing properties, such as wheat bran,
+for example.
+Compost:
+Organic matter that has been degraded and transformed by aerobic processes
+to a soil-like substance and can be used as a fertilizer and soil amendment.
+Crude oil:
+Fat fraction that results from pressing dried larvae with a screw press. It is called
+“crude” because besides the fat also contains solids, which mainly consist of
+proteins and fibres.
+Dark cage:
+Adult flies emerge in the dark cage where they remain until transferred to the
+love cage. The darkness keeps the flies calm and prevents mating activity.
+IV Black Soldier Fly Biowaste ProcessingDate code:
+The date code allows for calculating the duration of the ongoing process and is
+applied to cages and containers. It consists of the calendar week of the year and
+the day of the week (for example: Tuesday of week 8 is coded as 8.2).
+Decanting:
+Process to purify BSF crude oil. Gradual pouring of separated BSF oil from one
+container into another without disturbing the settled solids.
+Desiccant:
+Dry matter:
+A substance that is absorbing water and thereby sustains a state of dryness.
+The mass of the matter after all water has been removed. It is usually
+determined by keeping a sample in an oven at 105°C for at least 12 hours.
+Egg:
+A female fly lays around 500 eggs from which young larvae will hatch within
+four days. One egg weighs about 29μg.
+Eggie:
+The media used in an engineered BSF-system to collect eggs. It provides
+sheltered cavities for egg deposition.
+Engineered biosystem: A biological process that has been optimised for a practical use.
+Expiry date: A previously set date after which the product should no longer be used.
+Fatty acids:
+Major components of oil. The fatty acid composition determines the quality
+and application of BSF oil.
+Feeding station:
+A designated area where waste is added to the larveros. It is advisable that it
+can be cleaned easily (tiled or sealed floor) as biowaste may be spilled during
+the feeding operation.
+Fishmeal:
+Fishmeal is a nutrient-rich feed ingredient used in the diets of farmed animals.
+It is manufactured from wild-caught small marine fish and is a powder obtained
+after grinding, cooking and defatting the fish. Fishmeal production is a significant
+contributor to over-fishing.
+Food and restaurant Biowaste from restaurants consists of kitchen scraps and food waste.
+waste: It typically has a higher nutritional value and a lower water content than
+market waste or food processing waste.
+Food processing waste:
+Biowaste from the food processing industry. It varies from fruit and vegetable
+bits to bread crumbs and/or dairy products. It is usually a homogenous and
+uniform waste source.
+Fractioning:
+Process in which BSFL are split into a protein fraction (BSF meal) and a fat
+fraction (BSF oil).
+Frass/Residue:
+The leftovers after the treatment process. This substance can be a crumbly,
+soil-like substrate or a wet slurry. It requires a subsequent composting step to
+stabilize, before it can be used as solid amendment and/or fertilizer.
+Hammer mill:
+Crushes and shreds material into smaller pieces by repeated strikes of small
+hammers. It does not cut material. The particle size is defined by the diameter
+of the outlet screen.
+Hatching: The process of young larvae (hatchlings) emerging from the egg.
+Hatchling: Larvae that have just hatched from the eggs. Sometimes also called “neonates”.
+Hatchling container: Hatchlings fall into the hatchling container after hatching where they remain and
+feed for five days on nutritious feed (chicken feed) to become 5-DOL.
+Hatchling shower:
+Harvested eggies are placed on a rack called a hatchling shower, which is placed
+over a hatchling container. When young larvae hatch, they fall into the hatchling
+container, which is replaced regularly (every one to three days).
+Black Soldier Fly Biowaste Processing
+VIncubator unit:
+Instar:
+Container for first phase of BSFL conversion stage (from 5-DOL to 8-DOL).
+A phase of larval growth. The BSFL pass through 5 instars before reaching the
+final instar which is the pre-pupae stage.
+Lab oven:
+An oven which provides a uniform temperature. In BSF biowaste processing, it
+is mostly used to obtain dry matter samples from waste, residue and larvae, and
+operates at 105°C.
+Larva:
+The juvenile stadium of holometabolous insects. There are six larval stages,
+so-called instars, in the life cycle of the Black Soldier Fly before metamorphosis
+(transforming into an adult fly).
+Larvero:
+The larvero is the container where larvae feed on biowaste after being
+transferred from the incubator unit. The larvae stay here from 8-DOL up to
+17-DOL when they are harvested.
+Love cage:
+The love cage is a netted enclosure with a cohort of same-aged flies received
+from the dark cages. In the love cage, adult flies mate and females lay their eggs
+into eggies. After a week, the love cage is removed and emptied.
+Low- and middle- Although BSF biowaste treatment can be applied all around the globe, the
+income setting: set-up and operation presented in this book focuses on low- and middle-income
+countries (GNI up to 10,000 EUR). This context is characterized by low labour
+costs, and a high organic fraction of the municipal solid waste.
+Market waste:
+Consists mostly of fruits and vegetables. It has a high water content (up to 95%)
+and is subject to seasonal variation. The outer parts of leafy vegetables may have
+been exposed to pesticides.
+Municipal organic
+waste:
+The organic fraction of waste generated by settlements, which includes hous
+holds, commercial and industrial premises, institutions (schools, health care
+centres, prisons, etc.) and public spaces (streets, bus stops, parks and gardens).
+Net present value It is the difference between current amount of cash inflows and the current
+(NPV): amount of cash outflows over a period of time. In this guide the NPV was
+calculated over a period of five years
+Nursery container:
+In the nursery container, 5-DOL are fed a defined amount of nutritious feed
+(e.g. wet chicken feed) until they transform into pre-pupae. They are transferred
+to the pupation containers where the pre-pupae pupate and eventually emerge
+as adults to maintain the colony.
+Pop-larvae:
+One type of dried BSFL, which have a puffed shape and a crispy texture.
+Microwave drying or roasting results in pop-larvae.
+Post-processing:
+Includes all processes to convert sanitised larvae into products like dried BSFL,
+BSF meal and BSF oil.
+Poultry manure:
+Manure from broiler production or layer hens. BSF larvae grow well on this rather
+homogenous biowaste, but tend to remain quite small.
+Pre-pupa:
+The last larval stage that crawls out of the waste to search a dry pupation site.
+In comparison to the larvae, pre-pupae have a higher chitin content and are,
+therefore, less easy for fish and chicken to digest.
+Press cake: Solid protein fraction after pressing BSFL using a screw press.
+Press liquid: Liquid fat fraction after pressing BSFL using a screw press.
+Pupa:
+During pupation, the metamorphosis from larva to adult fly happens. Black Sol-
+dier Fly larvae pupate within their last larval skin and pupation lasts around 20
+days.
+VI Black Soldier Fly Biowaste ProcessingPupation container:
+The pupation container is filled with a moist pupation substrate (e.g. compost, moist coco
+peat, pot soil, etc.) into which pre-pupae bury to pupate.
+Purging:
+Process to condition larvae before selling them alive. Larvae are washed with clean water
+and then left in dry cocopeat for a few hours.
+Rearing:
+The rearing facility contains the whole life cycle of the Black Soldier Fly and produces the
+5-DOL in sufficient numbers to treat the incoming biowaste.
+Residue/Frass: See “Frass”.
+Sanitising: Process to condition larvae before processing them into products. Larvae are killed rapidly
+by dipping them in boiling water for 60 seconds and are then cleaned with cold and clean
+water.
+Shaking sieve:
+A sieve which vibrates or shakes, that is powered by an eccentric drive. It is used with
+two layer meshes of 3 and 7 mm in size during harvest to separate grown larvae from the
+residue.
+Shelf life: Is the length of time that a BSFL product may be used before its quality decreases.
+Slaughterhouse waste: It includes bones, organs, hooves, blood and other inedible animal parts leftover after
+all the edible parts of the animal have been removed. It can also include the gut content
+of the slaughtered animals.
+Spent grains:
+The main waste product from beer production. The leftover malt and adjuncts after the
+mash has extracted most of the sugars, proteins, and nutrients.
+Substrate:
+The material made up of various biowaste streams after pre-processing and conditioning
+which is fed to the BSFL
+Transfer container:
+Collects the pre-pupae which crawl out of the nursery container. It contains cocopeat
+or another dry substance to prevent the pre-pupae from escaping.
+TS:
+Total solids. It is the dry matter portion of a material. It normally relates to analysing
+the water content of a material (see "Dry matter").
+Ventilation frame:
+Provides a space between the layers of larveros. It ensures the exchange of air and,
+thus, the removal of moisture from the larveros
+Waste reduction:
+The waste reduction is measured, either based on wet weight or dry weight, and
+compares the biowaste going into the treatment with the remaining biomass (residue).
+Depending on the type of biowaste, one can expect a waste reduction between 60%
+and 85% dry weight
+Waste sourcing:
+Proper waste sourcing is of crucial importance for a complete waste treatment chain.
+It relies on a well-organised waste collection scheme that takes into account efficient
+collection routes and adequate means of transport.
+Water activity:
+Is a measure for free water in a product that is available for microorganisms. Water
+activity lower than 0.6 inhibits growth of any bacteria and yeasts.
+Water content:
+When a sample (substrate, larvae, residue, etc.) is dried at 105°C in a lab oven, all the
+water that is evaporated is referred to as “water content”. Together with the remaining
+solids (“total solids”), both are expressed as percentages of wet weight; it equals to 100%
+Black Soldier Fly Biowaste Processing VII12 Black Soldier Fly Biowaste ProcessingChapter 1:
+Rationale
+1.1
+General introduction
+Urban solid waste management is considered one of the most immediate and serious environ-
+mental problems confronting urban governments in low- and middle-income countries. The sever-
+ity of this challenge will increase in the future given the trends of rapid urbanisation and growth
+in urban population. Due to growing public pressure and environmental concerns, waste experts
+worldwide are being called upon to develop more sustainable methods of dealing with municipal
+waste that embrace the concept of a circular economy.
+Recycling organic waste material (biowaste) is still fairly limited, especially in low- and middle-in-
+come settings, although this is by far the largest fraction of all generated municipal waste. This
+book deals with urban organic municipal waste from households, commercial activities, and insti-
+tutions. It describes the conversion of biowaste by insect larvae, using the example of the Black
+Soldier Fly (BSF), Hermetia illucens, an approach that has obtained much attention in the past
+decade. The feeding activity of the larvae drastically reduces the amount of waste while the har-
+vested larvae can be used as valuable raw materials in the animal feed industry. This technology
+has received attention in recent years due to the business opportunities it offers, which simultane-
+ously address several challenges of modern society: hygiene issues arising from the lack of waste
+management, unemployment in urban areas, and an increased demand for sustainable feed for
+the ever-growing aquaculture and aviculture sector. Enterprises and small entrepreneurs are al-
+ready investing significant amounts of money and time into this technology and are interested in
+keeping a competitive edge on the practical aspects of operating such a facility in a cost-effective
+way. Although academic publications on BSF are on the increase, the business interest and per-
+ceived need to maintain a competitive edge has hindered open exchange about and discussion
+of the practical day-to-day working steps required to operate such a facility. Filling this gap is the
+main objective of this publication.
+This document is based largely on the experience of a treatment facility in Indonesia with the
+capacity to treat two tons of waste per day that has been in operation for over five years and the
+insights from an experimental facility in Sweden. Waste processed at the facility in Indonesia was
+mostly fruit and vegetable waste from a wholesale market. Upscaling or transferring this informa-
+tion to a larger facility might require some adaptation or adjustment of equipment. It is, however,
+our opinion that the standard procedures described are valid for a large range of scaling-up.
+Two research projects provided the basis for the writing of the second edition of these guidelines.
+FORWARD is a project located in Indonesia funded by the Swiss State Secretariat for Economic
+Affairs (SECO), under a framework agreement with the Indonesian Ministry of Public Works &
+Housing (PU-PeRa). It works in close collaboration with national and local governmental author-
+ities, with Indonesian researchers and with selected private enterprises to advance and main-
+stream implementation of BSF waste processing. SIBRE is a research project funded by SwissRe
+Foundation with the objective to generate knowledge and tools around BSF waste processing for
+use by small and medium enterprises and municipalities. Its focus was set predominantly on the
+economic perspectives and developing standard protocols for products derived from BSF larvae
+and testing these in the Indonesia context. In addition, this second edition benefited significantly
+from the close collaboration with ETH-Zürich and the Department of Health Sciences and Tech-
+nology through the research group of Prof. A. Mathys on Sustainable Food Processing with whom
+we collaborate on a variety of research projects on BSF waste processing.
+This manual was written as open source with the ambition that BSF waste processing would
+obtain widespread notice, implementation and replication. In this spirit, the authors would like
+Black Soldier Fly Biowaste Processing
+1to acknowledge all those that helped to develop, document and discuss the practical aspects of
+BSF rearing and waste treatment by larvae. Particular thanks go to Sirajuddin Kurniawan, whose
+pictures of the equipment and work steps saved us many pages of explanatory text, Bart Verstap-
+pen for his contribution to the first edition of this book, Maximillian Grau and Grégoire Virard for
+their intense work on the cost modelling, Alexander Mathys, Moritz Gold and Daniela Peguero of
+ETH-Zürich for our most inspiring and fruitful research collaboration, Cecilia Lalander and Björn
+Vinnerås of the Swedish Agricultural University SLU (Sweden) for an excellent research partner-
+ship, Tina Kusumawardhani and Teguh Rahayu for translating this book into Bahasa Indonesia and
+all their help in developing the rearing system, Longyu Zheng and Jibin Zhang of the Huazhong
+Agricultural University (China) and Michael Wu of JM Green (China) for their openness and their
+fruitful input, and finally also Waste 4 Change and Puspa Agro for their partnership and willingness
+to manage and host the BSF facility.
+1.2
+Scope and target audience
+An engineered BSF processing facility can be designed and operated to achieve certain target
+objectives based on the natural life cycle of BSF. These, for instance, can be to cost effectively
+augment larvae quality or maximize the larval mass produced within a certain time frame or based
+on a particular feedstock, similar to a typical livestock rearing system (chicken, beef, etc.).
+In this manual, however, we follow a waste management perspective. In other words, we start
+from the premise that biowaste is the substance of concern for which we suggest to use the BSF
+treatment technology as a suitable processing and recycling solution to produce larvae and waste
+residue.
+The primary goal, therefore, is to process biowaste in an efficient way with regard to investment
+and operational costs, as well as space requirements. By processing biowaste, threats to public
+health and the environment can be reduced.
+The technology solution consists of feeding segregated biowaste to BSF larvae, which have been
+reared in a nursery. Larvae grow on the waste feedstock and reduce the waste mass. At the end
+of the process, larvae are harvested and, if necessary, post-processed into a suitable animal feed
+product. The waste residue can also be further processed and potentially sold or used as soil
+amendment with fertilizing properties.
+This guide has been prepared for practical use. It explains the required materials and equipment,
+as well as each working step, similar to a cookbook with its respective recipes. It includes all
+information required to develop and operate a medium-sized Black Soldier Fly larvae
+waste processing facility, able to treat 5 tons of waste per day. The book also contains other
+scenarios of scale in which the amount of work is less. Work plans and instructions for these
+scenarios are available via web links.
+It is worth mentioning that the approach presented in this handbook is one among many. It is
+based on locally available equipment and limited automation. The operations presented here have
+proven to work, but selected steps may individually be replaced with other procedures depending
+on the given context or experience.
+Given the approach of this handbook, it targets readers with little or only some basic knowledge
+of waste management in general and Black Soldier Fly technology in particular, who have the will-
+ingness to work with waste and to implement and operate such a facility. This guidance can also
+be helpful to someone who has already started with BSF treatment and is interested in obtaining
+other viewpoints on how things could be done.
+2
+Black Soldier Fly Biowaste Processing1.3
+Navigating through this guide
+The manual is structured according to the three main processing units that are key to a BSF process-
+ing facility (Figure 1 –1).
+1. BSF rearing unit
+2. BSFL waste conversion unit (pre-processing, treatment, harvesting)
+3. Post processing unit (larvae refining and residue processing)
+BSF treatment
+facility
+Post-processing
+Rearing
+Residue refining
+BSFL conversion
+Waste sourcing
+Pre-processing
+Treatment
+Product harvesting
+Larvae refining
+Product
+marketing
+Figure 1–1: The different units of a BSF treatment system
+Although proper “waste sourcing” is of crucial importance to a well-functioning BSF facility, this
+aspect is not discussed in detail in this manual.
+Throughout the text, you will come across the following icons. They indicate issues of particular
+importance, background information or access to further information material.
+Highlights issues of high importance
+Highlights detailed information for interested readers, but is not
+required reading
+Link to more detailed information, templates and factsheets
+Link to the e-learning video series on BSF Biowaste Processing
+Black Soldier Fly Biowaste Processing
+34
+Black Soldier Fly Biowaste ProcessingChapter 2:
+Introduction into BSF
+biowaste processing
+This chapter takes a closer look at the life cycle of the Black Soldier Fly. Understanding the life
+cycle helps to know why BSF is a suitable insect for organic waste management and to learn how
+this cycle can be “engineered” to enhance the benefits produced in terms of waste conversion
+efficiency and product harvest in quantity and quality.
+2.1
+The Black Soldier Fly
+The Black Soldier Fly, Hermetia illucens, is of the dipteran family Stratiomyidae. It can be encoun-
+tered in nature worldwide in the tropical and sub-tropical areas between the latitudes of 40°S and
+45°N (Figure 2–1).
+45 ̊ N
+40 ̊ S
+Figure 2–1: Distribution area of the Black Soldier Fly, Hermetia illucens
+The egg starts a BSF life cycle and at the same time marks the end of the previous life stage: a
+fly laying a cluster of eggs (also called ovipositing). The female fly lays a package of 400 to 800
+eggs close to decomposing organic matter, into small, dry, sheltered cavities. Shortly after having
+laid the eggs, the female dies. The closeness of the eggs to the decomposing organic matter
+ensures that the larvae have their first food source nearby after hatching. The sheltered cavities
+protect the eggs from predators
+and prevent dehydration of the
+egg packages by direct sunlight.
+On average, the eggs hatch after
+four days and the emerged lar-
+vae, which are barely visible, will
+search for food and start feeding
+on the organic material nearby.
+The larvae feed voraciously on
+Figure 2–2: Drawing of a Black Soldier Fly larva (Schremmer, 1986)
+Black Soldier Fly Biowaste Processing
+5the decomposing organic matter and grow from less than one millimeter to around 2.5 cm length
+and 0.5 cm width, and are of cream-like colour. The different life stages are shown in Figure 2–2
+and Figure 2–3.
+Under optimal conditions with ideal food quality and quantity, the growth of the larvae will require
+a period of 14 - 16 days. However, the BSF larva is a very resilient organism and has the ability to
+extend its life cycle under unfavourable conditions. The larval stage is the only stage during which
+the BSF feeds and, therefore, it is during this time of larval development that enough fat reserves
+and protein are stored that allow the larvae to undergo pupation, emerge as flies, find mates, cop-
+ulate and (as a female) lay eggs before dying.
+After having gone through five larval stages, the larvae reach the final larval stage: the prepupa.
+When transforming into a prepupa, the larva replaces its mouthpart with a hook-shaped structure
+and becomes dark brown to charcoal grey in colour. It uses this hook to easily move out and away
+from the food source towards a nearby dry, humus-like, shaded and protected environment that it
+deems safe from predators and this is where the imago emerge from the pupa and fly off without
+significant hindrance.
+1a: Adult, top view 1b: Adult, side view 2: Females laying eggs
+3: Larvae feeding 4: Prepupa 5: Pupae
+Figure 2–3: Life stages of the Black Soldier Fly, Hermetia illucens, Photos: Nandayure Studt Solano (1a, 1b),
+Samuel Blyth (2, 3, 4), Sandec (5)
+The process of pupation is the transformation from a pupa into a fly. The pupation stage is initiat-
+ed when the prepupa finds a suitable location and becomes immobile and stiff. For a successful
+pupation, it is best if the environmental conditions do not change too much or, in other words, that
+they remain warm, shaded and protected from rain. Pupation takes around two to three weeks
+and ends when the fly emerges from its pupa shell. The emerging process is a very short proce-
+dure. It takes less than five minutes for the fly to break open the part of the pupa that used to be
+the head section, crawl out, dry and then spread its wings and fly off.
+After emerging, the fly lives for about one week. During this short life, it will search for a partner,
+copulate and (for the female) lay eggs. As a fly, BSF do not feed. Only a source of water or a humid
+surface is required to stay hydrated. What is important in this life stage is an abundant amount of
+natural light and a warm temperature (25 - 32°C). A humid environment may prolong the life span
+6
+Black Soldier Fly Biowaste Processingand, thus, enhance the chance for successful reproduction. It has been observed that the flies
+prefer to copulate in the light of the morning. After copulation, the females then search for an ideal
+location to lay their eggs as explained above.
+Optimal environmental conditions and food sources for the larvae can be summarized as:
+· Warm climate: the ideal temperature is between 24 and 30°C. If too hot, the larvae will crawl
+away from the food in search of a cooler location. If too cold, the larvae will slow down their
+metabolism, eat less and develop slower.
+· Shaded environment: larvae avoid light and will always search for a shaded environment,
+away from sunlight. If their food source is exposed to light, they will move deeper into the layer
+of food to escape the light.
+· Water content of the food: the food source has to be quite moist with a water content be-
+tween 60% and 90% so that the larvae can ingest the substance. In the engineered life cycle
+we aim at 70 - 80%.
+· Nutrient requirements of the food: substrates rich in protein and easily available carbohy-
+drates result in good larval growth. Ongoing research indicates that substrate may be more eas-
+ily consumed by the larvae if it has already undergone some bacterial or fungal decomposition
+process.
+· Particle size of the food: as the larvae have no chewing mouthparts, access to nutrients is
+easier if the substrate comes in small pieces or even as a slurry.
+2.2
+Why the Black Soldier Fly?
+Several key attributes make BSF promising organisms to manage and “engineer” so that they
+can be used as an attractive treatment technology for biowaste from the perspective of waste
+managers and businesses:
+· Waste biomass is converted into larvae and residue. The larvae consist of ±35% protein and
+±30% crude fat (based on dry mass). This insect protein is of high quality and is an important
+feed resource for animal feed. Feed trials have confirmed that it is a suitable alternative to fish
+meal.
+· Feeding waste to larvae has shown to inactivate disease transmitting bacteria, such as
+Salmonella spp. This implies that the risk of disease transmission between animals and be-
+tween animals and humans is reduced when using this technology at farm level or when
+treating waste of animal origin in general (e.g. chicken manure or slaughterhouse waste). How-
+ever, risk reduction is achieved mainly through material reduction (±80%) rather than through
+pathogen inactivation.
+· Waste reduction of up to 80 % on wet weight basis has been demonstrated. If BSF processing
+is applied at or close to the source of biowaste generation, the costs for waste transport and
+space requirements for landfills can, thus, be reduced drastically. Such organic waste treat-
+ment could furthermore reduce open dumping, which is still an unfortunate reality in low- and
+middle-income settings.
+· The residue, a substance similar to compost, contains nutrients and organic matter and, when
+used in agriculture, helps to improve soil conditions.
+· A high waste-to-biomass conversion rate of 15 - 20% on wet weight basis has been demon-
+strated, which is a satisfactory output quantity from a business perspective.
+· There is no need for sophisticated high-end technology to operate such a facility. Therefore, it
+is suitable for low-income settings that rely mostly on simple technology and unskilled labour.
+Black Soldier Fly Biowaste Processing
+72.3
+Engineering the BSF life cycle
+In an engineered BSF processing facility, we can differentiate distinct processing units as shown
+in Figure 2–4.
+BSF treatment
+facility
+Post-processing
+Rearing
+Residue refining
+BSFL conversion
+Pre-processing
+Treatment
+Product harvesting
+Larvae refining
+BSF rearing unit
+This ensures that a reliable and consistent amount of small larvae (called 5-DOL) is al-
+ways available to inoculate the daily amount of biowaste that is received for processing
+at the treatment facility. A certain number of larvae hatchlings are, however, kept in
+the rearing unit to grow and pupate, to ensure a stable breeding population.
+BSFL conversion unit
+It is critical that the waste received at the facility is suitable for feeding to the larvae.
+A first step involves a control of the waste to ensure it contains no hazardous materials
+and no inorganic substances. Further steps then involve a reduction of the waste parti-
+cle size and a blending of different organic waste types to create a suitable balanced diet
+and moisture content (70 - 80%) for the larvae. Then, 5-DOL from the rearing unit are fed
+with biowaste in the “incubator” and/or “larvero” containers. The young larvae feed on
+the substrate, grow into large larvae and, thus, process and reduce the waste. Shortly
+before turning into pre-pupae, the larvae are harvested from the larveros. The residue
+itself is also a product of value.
+Post-processing unit
+Both products, larvae and residue, can be further processed. We call this “post-process-
+ing”. Typically, a first step is to kill the larvae. Other steps of larvae refinement include
+drying the larvae, and separating dried larvae into larvae oil from larvae protein meal.
+A typical step for residue refinement is composting or feeding the residue into a biogas
+digester for fuel production.
+Figure 2–4: Units of a BSF treatment facility
+8
+Black Soldier Fly Biowaste Processing2.4
+Safety and hygiene measures when working with BSF and biowaste
+During operation of a BSF facility, measures that protect the health of the workers as well as the
+animals are also a necessity.
+Although operation of a BSF facility does not entail high hazards to health, employees are never-
+theless exposed to threats such as noise, dust or gaseous emissions as well as exposed to patho-
+gens that may enter the facility through the organic waste. It is therefore important that adequate
+protective clothing and equipment is always available for the workers. Even if wearing of boots or
+gloves will meet with little enthusiasm among the employees, especially in a tropical climate, it is
+the responsibility of the operator to enforce such measures and to set a good example.
+As in other livestock farms, care must be taken to maintain hygienic conditions in a BSF facility.
+The main focus is to prevent the spread of diseases and keeping pests away. For this reason,
+regular activities that guarantee hygienic conditions must be included in the work plans. This
+includes the regular cleaning of work surfaces with alcohol as well as the safe storage of animal
+feed or structural measures that prevent rats or birds from entering sensitive areas of the facility.
+Maintaining general order in all areas of the facility and daily cleaning of utensils should be stand-
+ard practice. The facility should also have its own waste concept, which ensures that potentially
+contaminated materials are stored and disposed of safely.
+The schedules used in this manual all include regular tasks to maintain hygiene and safety in the
+facility. We recommend that operators place as much emphasis on the carrying out of these tasks
+as they do on those directly related to BSF operation.
+The following equipment is part of the standard personal protective and cleaning equipment at
+any BSF facility:
+Broom and dustpan Facemask Work coat Latex-/Lab gloves
+Rubber boots Face shield Rubber gloves Heat resistant gloves
+Scrubbing brush Washing machine Cleaning alcohol
+Black Soldier Fly Biowaste Processing
+910 Black Soldier Fly Biowaste ProcessingChapter 3:
+The BSF rearing process
+3.1
+Rearing BSF in a controlled environment
+To ensure the treatment of a defined amount of waste on a regular basis, the rearing unit needs
+to provide a defined number of five day old larvae, so-called 5-DOL, every day. It is, therefore,
+important to control all single production steps during rearing and to monitor the performance
+of each step. In a well-engineered BSF nursery, it is possible and easy to control the number of
+pre-pupae that are allowed to pupate. This helps estimate the number of flies that shall emerge,
+which in turn provides an indication of how many egg packages will be deposited, how many
+larvae will hatch and how many of these larvae are available for biowaste treatment. Monitoring
+of the survival rates at every step in this cycle keeps track of the colony’s overall performance and
+indicates problems at any particular step. Survival rates may differ from one nursery to another.
+Data provided here are based on a rearing unit in Indonesia (Figure 3–1) and serve as an example.
+9,300
+85%
+11,000
+Flies
+Pupae
+250 eggs/fly
+85%
+Prepupae
+13,000
+Eggs
+2,3 million
+5-DOL
+90%
+60%
+Residue
+14,000
+5-DOL
+1,4 million
+400 kg
+Waste
+Treatment
+1 ton (25% DM)
+Fresh larvae Dried larvae
+170 kg 45 kg
+Figure 3–1: Performance indicators of a BSF rearing facility in Indonesia
+Egg deposition and egg harvest
+From a management perspective, it is important that all egg packages are concentrated in few
+specific locations. This will significantly facilitate harvesting of the eggs.
+For this, we supply the cages with a suitable medium (called “eggies”) that satisfies the flies’
+requirements regarding a safe location (i.e. sheltered cavities) for egg deposition, as well as an
+“attractant” which mimics decomposing organic matter that attracts the female to lay eggs close
+by. Once the egg packages are deposited into the eggies, they are harvested before any larvae
+hatch. After the eggs are harvested, they are removed from the eggies and placed into egg hold-
+ers which are then placed over some feed so that the hatchlings can directly start to feed once
+they hatch and drop from the egg holders into the feed (see Figure 3–2).
+Black Soldier Fly Biowaste Processing 11Scraping off eggs from the Weighing of egg mass on a Egg holder placed in the
+egg media precision balance hatchling shower
+Figure 3–2: Handling of the egg harvest
+Egg hatching and larvae feeding
+The unit which accommodates the egg holders and the nursery boxes containing the feed for the
+hatchlings is called the “hatchling shower” (Figure 3–3). The eggs will hatch over a period of sev-
+eral days and the hatchlings will constantly fall into the hatchling container below where they will
+immediately start feeding. This hatchling container is exchanged on a regular basis. This allows
+cohorts of young larvae of the same age to be together in each container. Placing recently harvest-
+ed eggies together with the older eggies guarantees a constant “shower” of hatchlings into the
+hatchling container. A high quality food source in the hatchling container consists of chicken feed
+for starter broiler chicks, mixed with water. This feed seems to be the most readily available nu-
+tritious material to ensure fast growth of the larvae although it is costly. Alternative materials that
+can be used, often available free of charge, are soy-based (e.g. soy milk), dairy-based (e.g. expired
+milk powder) and/or grain-based (e.g. expired bread) waste products. It is important though that
+the nutritional content of the mixture remains stable given the strict and regular feeding schedule.
+This mixture of feed should have a water content of around 70 % which results in the ideal sub-
+strate texture for the larvae to feed on.
+Figure 3–3: Hatchling shower: harvested egg mass is placed in holders
+above a feed source for the newly hatched larvae. Each paperclip colour
+represents a different day of the week when egg were harvested
+Waste management with BSF larvae is easiest
+with uniform larvae (same age and size). This
+allows for better planning of the waste input,
+conversion rate and harvesting time. By using
+the hatchling shower, the number and age of
+young larvae in one hatchling container can be
+controlled and determined. The frequency of
+replacing the hatchling container determines
+the uniformity of the batch of larvae. The high-
+er the frequency of replacement, the higher the
+uniformity of the young larvae. After hatching,
+larvae remain in the same hatchling container
+for five days to feed. Then the 5-DOL are har-
+vested from the hatchling containers, counted
+and a main share is then transferred to the BSF
+treatment unit where these 5-DOL are added to
+the substrate.
+As counting all these small larvae is too much work, the number of 5-DOL is estimated by count-
+ing the number of larvae in a small sample (~2g), which then is extrapolated based on the total
+weight of all 5-DOL.
+12 Black Soldier Fly Biowaste ProcessingThe hatchling container below the hatchling shower is replaced with a new hatchling con-
+tainer at regular intervals (every one to three days). The frequency determines the uniform-
+ity of the batch of larvae.
+A small fraction of the 5-DOL (1- 2 %) is kept in
+the rearing unit depending on the amount of sub-
+strate to be processed and the performance of
+the nursery. High survival rates and many eggs
+per female will require that less 5-DOL are kept
+in the rearing unit. The retained larvae are placed
+into a nursery container where they are continu-
+ously fed with a well-defined feed mixture until
+they transform into pre-pupae within about three
+weeks after hatching. All larvae in one nursery
+container will transform around the same time
+as they are of the same age. The pre-pupae
+will leave the food source in search for a more
+suitable dry location to pupate. To collect these
+migrating larvae, the nursery container is placed
+into a transfer container with a dry, water ab-
+sorbing material (Figure 3–4).
+Figure 3–4: Nursery containers standing in transfer containers
+Pupation
+Pre-pupae that have crawled into the transfer container are harvested and transferred into a pu-
+pation container. As pre-pupae are disturbed when too close to other pre-pupae, the containers
+contain a moist soil-like substrate (compost) into which the pre-pupae can bury (Figure 3–5).
+Figure 3–5: Pre-pupae being added onto the pupation
+Figure 3–6: Pupation boxes in pupation rack
+material in the pupation crate
+Black Soldier Fly Biowaste Processing 13The density of pre-pupae in the pupation container influences how quickly the pre-pupae settle
+down and stiffen their bodies to start their transformation into pupae. To facilitate the pupation
+process, the pupation containers are first placed in a pupation rack (Figure 3–6) where pre-pupae
+are continuously added in smaller amounts into the pupation crates over a period of 5 days. For
+the pupation process, the pupae are placed inside a pupation cage, which is completely dark in-
+side (Figure 3–7). We call these “dark cages”. In addition to the dark environment, this cage also
+provides the pupae with sufficient protection from the changing outside environmental conditions
+(i.e. moisture, temperature, movement of air, etc.). After two to three weeks, the pupation mate-
+rial has slightly dried out, making it easier for the flies to crawl out of the pupal skin to the top of
+the material and fly out of the pupation containers. But they still remain contained in the dark cage.
+Due to the darkness inside the cage, the emerged flies will not mate, but will remain motionless.
+The flies in the dark cage, thus, are a constant source of “fresh” adult flies which, as soon as they
+are released into the light, will start to reproduce.
+Figure 3–7: Dark cage with pupation containers Figure 3–8: A love cage is being filled with freshly
+stacked within emerged adults
+Emergence of the adults starts twelve days after they were put into the pupation box, and the
+frequency of emergence then follows a bell-shaped curve and ends with a few latecomers after
+25 days (Figure 3–9).
+Dismanteling
+of dark cage
+5 days 7 days 14 days
+Pupation container
+is filled-up with
+prepupae Filled pupation
+container in
+pupation rack Pupation container in
+dark cage
+Figure 3–9: Dynamics of pupation and emergence of black soldier flies
+14 Black Soldier Fly Biowaste Processing
+TimeMating
+Love
+cage 1
+Love
+cage 2
+Love
+cage 3
+Emerged
+Emerged flies are collected from the dark
+cage and transferred to the love-cage. This
+is done by connecting the dark cage with
+a tunnel to a cage that is not darkened and
+is hanging in a mobile frame. Because this
+is the place where mating will take place,
+we call it the “love cage” (Figure 3–8). The
+light set at the love-cage end of the tunnel
+will attract the flies towards the light to fly
+from the dark cage into the love cage. A love
+cage is consecutively connected to three to
+four dark cages to collect the most recently
+emerged flies from all these cages (Figure
+3–10). This method allows for a constant and
+stable density of flies within the love cages.
+Moreover, the flies harvested are all of a very
+similar age. Same-aged-flies in the love cage
+has an important benefit: the flies will copu-
+late and lay eggs around the same time and
+are, thus, predictable, and allow for a more
+efficient nursery operation. The love cages
+are equipped with a wet cloth to allow the
+flies to hydrate and with eggies and a box
+with a smelly attractant. The rearing cycle
+has, thus, been closed.
+Filling Filling
+Filling
+Figure 3–10: Composition of three love cages filled at intervals of two days
+from four different dark cages
+Let there be light
+For successful reproduction, Black Soldier Flies require a certain type and intensity of light.
+Ideally, this is natural sunlight. In cases where this is not possible, either because of seasonal
+variations due to latitude or because the plant must be operated in a room without windows,
+sunlight must be replaced (or supported) by artificial light.
+When selecting the lamp, attention must be paid to both the spectral composition of the light
+and the intensity. The light spectrum with high values in the blue (~440 nm) and green range
+(~540 nm) showed good reproduction rates. In addition to the wavelength, however, the pow-
+er of the lamp also plays a major role. This is measured in μW/cm 2 and is given in relation to
+the distance to the light source. We achieved good results with a light power in the UV range
+of 210 μW/cm 2 and an illuminance of about 3,000 – 6,000 lx at a distance of 60 cm 1 .
+It is important to ensure a day-night rhythm, with the duration of illumination between 6
+and 18 hours per day.
+1
+Macavei L, Benassi G, Stoian V, et al. (2020) Optimization of Hermetia illucens (L.) egg laying under different nu-
+trition and light conditions. PloS ONE 15: and Liu Z, Najar-Rodriguez A, Minor M, et al. (2020) Mating success of
+the black soldier fly, Hermetia illucens (Diptera: Stratiomyidae), under four artificial light sources. Journal of Photo-
+chemistry and Photobiology B: Biology 205: 111815.
+Black Soldier Fly Biowaste Processing 153.2
+Activities in the BSF rearing unit
+In this subchapter, the process steps and the materials to use during these steps are presented.
+Most of the materials are so called off-the-shelf items which can be purchased at local hardware
+stores. Some materials and equipment have been custom-made for the operation. The dimen-
+sions of these items are provided in the description under each item.
+The technical drawings for the custom-made materials
+and equipment used in the operational steps of the BSF rearing
+unit can be found through this link.
+3.2.1
+Fly stage
+A love cage is filled with freshly emerged flies from the dark cages. In the love cage, the flies are
+provided water to drink and a place to lay their eggs. The love cage presented here can hold up
+to 10,000 flies which equals around 84cm 3 per fly. The flies will stay in the love cage for 4 days
+where they mate and lay eggs.
+Materials and equipment needed:
+Love cage
+(75 x 75 x 150 cm) Cage hanger and
+tunnel clips Mobile cage frame with
+attractant light Attractant light
+Shade basket Water container Egg media Attractant box
+16 Black Soldier Fly Biowaste ProcessingCage moving stick Love cage table Ant trap Precision scale
+(max 35 kg, acc 0.5 g)
+Ethyl Acetate Flask Precision balance
+(max 2 kg, acc 0.01 g) Attractant media
+Tasks:
+Step 1:
+Step 2:
+Hang a clean love cage onto its hanger using the loops and measure weight of the love cage with
+hanger.
+Attach the cage onto the mobile frame and move the frame opposite the first dark cage. Connect
+the two tunnels of the cages, using four binder clips. Turn on the attractant light and gently shake
+the cage to rouse the flies.
+Step 1: Attaching cage to hanger
+Step 2: Using the cage moving stick to
+hang love cage into mobile frame
+Step 3:
+Step 4:
+After 30 minutes, disconnect and close the tunnels, measure the weight of the love cage and
+hanger, attach the hanger with cage onto the mobile frame again and repeat the same process
+of connecting, disconnecting and weighing after 30 minutes until the love cage is full (flies are
+covering most of the sides but are not piling up on the bottom).
+Disconnect the love cage from the last dark cage and turn off the light. Close the tunnels with rope
+and measure weight of love cage and hanger. Move the love cage with hanger to the love cage
+table using the long stick with a hook and hang up.
+Black Soldier Fly Biowaste Processing 17Step 2: Attaching dark cage to love cage Step 3: Light lures flies from
+from inside dark cage into love cage
+Step 5:
+Step 6:
+Step 4: Weighing of love cage after filling
+Prepare attractant container: fill an empty attractant container with 100 grams of dead flies, 200
+grams of residue from the nursery containers, 200 grams of residue from the old attractant con-
+tainer and one litre of water. Mix thoroughly.
+Prepare 10 clean eggies: Take clean wooden sheets and separate them between the sheets with
+pushpins on both sides and sheets without pushpins. Build up the egg media alternating between
+a sheet with and without pushpins until five sheets are stacked. Add two rubber bands on both
+ends of the bundle. Prepare 10 of these bundles (eggies) for each love cage.
+Step 5: Ingredients of the attractant container
+Step 6: Wooden sheets with pushpins to create a gap, allowing space for egg packages. The eggies are held together with two
+rubber bands
+18 Black Soldier Fly Biowaste ProcessingStep 7:
+Step 8:
+Prepare water container: Fill a clean container with tap water until it is almost full. Take the lid and
+a clean cotton cloth and push the cloth on both side through the incision slits made into the lid.
+The towel should lie flat on top of the lid, while its ends pass through the incision slits and are
+immersed in the water in the container. Sprinkle the towel with water.
+Open the love cage. Collect 20 flies in a jar. Then place the attractant container with 10 clean
+eggies cross-stacked on top into the love cage. Cover the attractant container and eggies with the
+shading basket. Place the water container onto the shading basket and close the love cage.
+Step 7: Adding water onto water container to moisturise
+Step 8: The whole eggie-set-up
+the cloth
+Step 9:
+After closing the love cage, add a sticker on the table under the cage labelling the date of place-
+ment. The cage should now be fixed as displayed in the figure below.
+Step 9: Leg of love cage table is placed in ant trap
+Step 9: Newly set-up love cage
+Black Soldier Fly Biowaste Processing 19PROTECTIVE MEASURES FOR WORKERS:
+· Pay attention to the light attached to the mobile frame and avoid burns.
+· Use lab coat and latex gloves when handling attractant.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Weighing the love cage after every connection to a dark cage (Step 3) allows for the
+monitoring of the emergence rate from dark cages and yields the total number of flies in
+a love cage. A reference sample of 20 flies is taken from the filled cage with a cylindrical
+container. The flies in the cylindrical container are brought to the laboratory where the
+container is quickly turned upside down on a smaller cylindrical container with cork chips
+sprinkled with 10 - 15 drops of ethyl acetate. This is left for 30 seconds to paralyze the
+flies, so that they can then be easily weighed with a precision balance. Divide difference
+of empty and full love cage by the average weight of one fly to obtain the number of flies
+in the love cage.
+The fly stage module from the e-learning video series on
+BSF Biowaste Processing is available through this link.
+20 Black Soldier Fly Biowaste Processing3.2.2
+Egg Stage
+Love cages are removed after four days of use. No more eggs will be laid after this period as
+most females die within one week. Eggies are removed from the love cage and the eggs are then
+scraped off the eggies. The eggs are placed in a holder which is hung up in the hatchling shower
+where newly hatched larvae fall into the hatchling container. 10,000 flies in a cage produce around
+75 grams of eggs. The capacity of one egg holder is 40 grams which means around two egg
+holders are filled with the eggs from one love cage. The hatchling container is replaced regularly
+and the same age cohort of larvae feed in the same container until they are used for the waste
+treatment. Each hatchling container can receive the equivalent of 40 grams of hatched eggs.
+Materials and equipment needed:
+Tweezers
+Hatchling Shower Rack
+(150 x 90 x 65)
+Precision balance
+(max 2 kg, acc 0.01 g) Egg holder and
+coloured paperclips Hatchling container
+(60 x 40 x 12 cm)
+Water Chicken feed
+(Protein 23%, Water 13%,
+Fat 5%, Fibers: 5%
+& ash 7%.) Cocopeat
+Tasks:
+Step 1:
+Step 2:
+Step 3:
+Remove the eggies from the love cage, 4 days
+(4 x 24 h) after the love cage was setup.
+Remove the old attractant container. Use
+200 grams of old attractant residue for filling a
+new attractant container. Empty the remainder
+of the residue into the organic waste bin. Clean
+the attractant container with detergent and let
+it dry.
+Sweep the dead flies from the love cage you are
+dismantling. Keep 100 grams of dead flies for
+filling the new attractant container and dispose
+of the others into the organic waste bin.
+Step 1: Removing eggies from love cage
+Black Soldier Fly Biowaste Processing 21Step 4:
+Disconnect the hanger with love cage from the love cage table, remove the hanger and turn
+the love cage inside out, shake it to remove the last (dead) flies and place the love cage into the
+washing machine, add detergent and wash it on a 30°C program. Remove the love cage from the
+washing machine and let it dry.
+Step 4: Dismantling the love cage
+Step 5:
+Step 4: Wash Love cage after every use in washing machine
+Clean the love cage table where the old cage was attached. Spray the same space with a 95%
+alcohol solution, spread it out with a cloth and let the alcohol dry. Remove the date label of this
+love cage from the table.
+Step 6: Remove one week old egg holders from hatchling shower
+Step 6:
+Step 7:
+From the hatchling shower frame, remove all the egg media holders with the colour coded clip of
+the current weekday. Egg media holders are marked with a paper clip in a particular colour accord-
+ing to the day they were put onto the hatchling shower (e.g. Monday = Yellow, Tuesday = Purple,
+Wednesday = Grey, etc.). Egg media holders with today’s colour-code have been hanging in the
+hatchling shower for one week and all the eggs have already hatched.
+Take the 10 eggies removed from the dismantled love cage and carefully open the wooden sheets
+of the first eggie by removing the two rubber bands on each end. Use a tweezer to carefully
+scrape off the eggs on both sides of each of the five sheets making up one eggies. Collect the
+egg mass in a small bowl. Repeat the process for the other 9 eggies and then for the other love
+cages dismantled on the same day.
+22 Black Soldier Fly Biowaste ProcessingStep 8:
+Weigh the total collected egg mass from all eggies removed from one love cage. Divide the egg
+mass up in portions of 40 grams, open the first egg media holder and add the first batch of 40
+gram egg mass. Repeat this process ensuring that the amount of egg mass is max 40 grams per
+holder and the amount added to each holder is the same. Then hang the holders in the hatchling
+shower ensuring that at least one holder is hung over a hatchling container each day
+Step 8: Fill egg holders with egg mass
+Step 9:
+Step 8: Attach color coded paperclip to egg holder
+Prepare the hatchling container. Each hatchling container replaces the previously setup hatchling
+container in the shower rack. For each hatchling container produce a 3kg mixture of 30% dry
+chicken (broiler) feed and 70% water. Stir the mixture until it has become a homogeneous sub-
+stance. Fill the hatchling containers each with the 3kg mixture. Cover each hatchling container
+with dry and sieved cocopeat or wheat bran (0.5-1.0 cm thickness) to avoid loss of moisture. Add
+labels to each hatchling container with the date code of the current day.
+Step 9: Hatchling container is filled with 3kg of Step 9: The nursery feed is covered with a thin layer of
+fresh larva feed cocopeat to avoid moisture loss
+Step 10: Move all existing hatchling containers in the shelves down by one shelve. The lowest hatchling
+containers will have five day old larvae. In the now empty top-most shelve, add the new hatchling
+containers.
+Black Soldier Fly Biowaste Processing 23PROTECTIVE MEASURES FOR WORKERS:
+· Mask and glasses to protect face from eggs and small larvae.
+· Use lab coat and latex gloves for handling eggies, attractant, dead flies and detergent.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Measure weight of the eggs in the removed egg media. See Step 7 for details.
+· Calculate the number of eggs harvested:
+· Total number of eggs harvested: E total (number)
+· Total mass of eggs harvested: M total (gram)
+· Mass of one egg: M egg (gram) = 0.0000291 grams per egg
+E total = M total / M egg
+The egg stage module from the e-learning video series on
+BSF Biowaste Processing is available through this link.
+24 Black Soldier Fly Biowaste Processing3.2.3
+Hatchling stage
+The 5-DOL are harvested from the hatchling container. At the age of 5 days old, this crate has the
+capacity to hold around 700,000 larvae or 73 larvae per cm 3 . The 5-DOL are then separated from
+the residue and their total number is determined.
+Materials and equipment needed:
+Sieve
+(mesh size 0.8 mm) Cup Residue container
+(60 x 40 x 12 cm) Scoop
+Precision balance
+(max 2 kg, acc 0.01 g) Plate Tweezers and click
+counter Cups and tray
+Tasks:
+Step 1:
+Remove the oldest (after 6 days) hatchling con-
+tainers from the shower rack. If you have multi-
+ple containers, mix them together. Use a manual
+sieve (mesh size 0.8 mm) to sieve all the material
+in the hatchling containers. The small residual
+particles together with the small larvae will fall
+through the sieve into a container, while larger
+residue particles and larvae stay on the sieve.
+The larger residue and larvae that stay on the
+sieve are placed in a plastic box. From this box,
+the larger residual particles are scooped off with
+a spoon as much as possible and stored else-
+where until lumps of 5-DOL are clearly visible
+(while some residue will still also remain). Tap-
+ping on the wall of the plastic box will help to
+separate larvae from residue as the vibrations
+make the larvae aggregate.
+Step 1: Scooping off residue from the 5-DOL to create a
+pure fraction
+Black Soldier Fly Biowaste Processing 25Step 2:
+Step 3:
+Clean the hatchling containers with the pressure washer, a scrubbing brush and detergent and let
+dry.
+Take a random scoop from the purified 5-DOL mixture and measure two grams each of the mix-
+ture into two cups.
+Step 3: After mixing to homogenize the purified section Step 4 : The 5-DOL contained in the 2 gram samples (including
+of 5-DOL, a random scoop is taken the unavoidable remaining residue) are counted
+Step 4:
+Step 6:
+Step 7:
+Step 8:
+Place these two grams of 5-DOL mixture from the cup onto a plate. On the plate, manually count
+all the 5-DOL using tweezers and a click counter, by pushing them into a bowl. Repeat the process
+for the second cup as well. Document the result as number of 5-DOL per two grams.
+Weigh the total mass of all 5-DOL available in the box. Using the results of the count per two
+grams, calculate the total number of larvae in that box. See calculation below.
+Based on the number of incubator units to be set-up (which depends on the substrate amount),
+prepare cups and fill each cup with the weight of 5-DOL mixture from the box, as needed for each
+larvero. See calculation below.
+The remaining 5-DOL will then be used for rearing flies or discarded (see Fly stage)
+Step 6: Portioning of 5-DOL for the preparation of
+the incubator units
+26 Black Soldier Fly Biowaste ProcessingPROTECTIVE MEASURES FOR WORKERS:
+· Use lab coat and latex gloves for handling 5-DOL and residue.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Calculating the number of larvae in the box:
+· Total number of larvae in box: L total (number)
+· Total mass of larvae in box: M total (gram)
+· Number of larvae in sample: L sample (number)
+· Mass of sample: M sample (gram)
+L total = M total * L sample / M sample
+POINTS OF MONITORING AND DATA COLLECTION:
+· Calculating the mass of larvae needed per larvero
+· Mass of larvae needed per larvero: M larvero (gram)
+· Number of larvae required per larvero: L larvero (number)
+(we calculate with 600-800 larvae per kg of wet substrate fed during the
+whole treatment period)
+· Total mass of larvae in box: M total (gram)
+· Total number of larvae in box: L total (number)
+M larvero = L larvero * M total / L total
+The hatchling stage module from the e-learning
+video series on BSF Biowaste Processing is available
+through this link.
+Black Soldier Fly Biowaste Processing 273.2.4
+Larval growth stage
+The nursery containers provide the pre-pupae which go into the pupation containers to maintain
+the necessary adult population. The required number of 5-DOL are fed for approximately two and
+a half weeks until they turn into pre-pupae. During this time, 10,000 larvae are kept in one nursery
+Larvero or at a density of 5 larvae per cm 2 .
+Materials and equipment needed:
+Nursery Larvero rack
+(150 x 45 x 65 cm) Nursery Larvero
+(55 x 35 x 14) and transfer
+container (60 x 40 x 12 cm) Precision scale
+(max 35 kg, acc 0.5 g) Spade
+Beaker
+(3 L) Bulk scale
+(max 150 kg, acc 50 g) Bin
+(80 L) Water
+Chicken feed
+(Protein 23%, Water 13%,
+Fat 5%, Fibers 5%
+& ash 7%.) Cocopeat
+28 Black Soldier Fly Biowaste ProcessingTasks:
+Step 1:
+Step 2:
+Step 3:
+Step 4:
+Step 5:
+Step 6:
+Step 7:
+Prepare 2 kg of food made up of 30% dry chicken feed and 70% water. Stir it until it is a homoge-
+neous mixture.
+Take a clean nursery larvero and add this food to it, cover it with cocopeat or wheat bran (layer of
+0.5-1.0 cm) and then add 10,000 5-DOL on top of the coco peat.
+Step 3: Put cocopeat in the corners of the transfer Step 3: Place the nursery container with the 10,000 5-DOL into
+box to hinder the pre-pupae from escaping the transfer container
+Take a clean transfer container and add cocope-
+at into the corners and along the edges of the
+container and place the nursery larveros into
+it. Since pre-pupae will eventually crawl out of
+the nursery larveros and fall into the transfer
+crate, the nursery larveros (35x55cm) needs to
+be slightly smaller than the transfer container
+(40x60cm). Put the two on the nursery shelf.
+Place a sticker with the date code and the
+amount of larvae that have been added on the
+nursery larvero.
+During the two and a half weeks of operation,
+the nursery larveros receive a mixture of chick-
+en feed and water in different concentrations.
+This mixture is fed on specific days within the
+time period according to feeding schedules (see
+Annex B).
+After two and a half weeks (see Annex B), the
+nursery larvero is removed and the remaining
+pre-pupae in the transfer container are har-
+vested (see also the activities in the pre-pupae
+stage)
+Remove the residue in the old nursery larveros.
+The residue can be composted. Clean the nurs-
+ery larvero and transfer container with a scrub-
+bing brush and detergent and let dry.
+Step 4: Place sticker on nursery larvero
+Step 5: Add feed to nursery larveros during weeks of
+feeding
+Black Soldier Fly Biowaste Processing 29PROTECTIVE MEASURES FOR WORKERS:
+· Use lab coat and latex gloves for handling larvae and residue.
+POINTS OF MONITORING AND DATA COLLECTION:
+· None.
+The larval growth stage module from the e-learning
+video series on BSF Biowaste Processing is available through
+this link.
+30 Black Soldier Fly Biowaste Processing3.2.5
+Pre-pupae stage
+The pre-pupae, which have crawled out from the nursery containers, are placed into the pupation
+containers which later are put into the dark cage. Over a duration of 5 days, the pre-pupae are
+added into the pupation substrate which has a thickness of around 5 cm in the pupation crates. Up
+to 10,000 pre-pupae fit in one pupation crate or around 1 pre-pupa per cm 3 of pupation material.
+Materials and equipment needed:
+Mixer
+(max cap. 300 kg) Compost or other
+soil-like material Water Pupation containers
+(60 x 40 x 12 cm)
+Pupation rack
+(190 x 45 x 60 cm) Precision scale
+(max 35 kg, acc 0.5 g) Precision balance
+(max 2 kg, acc 0.01 g) Cup
+Bin
+(80 L) Sieve
+(60 x 40 x 10, mesh
+size 3 mm) Collection container
+(30 x 20 x 12) Bulk scale
+(max 150 kg, acc 50 g)
+Tasks:
+Step 1:
+Prepare pupation material: 50 kg of pupation material is made of mature compost (3⁄4) and water
+(1⁄4). Mix it thoroughly with a concrete mixer until no dry material is visible and the mixture is ho-
+mogeneous.
+Black Soldier Fly Biowaste Processing 31Step 1: Mixing dry compost with water
+Step 2:
+Step 3:
+Step 4:
+Step 1: Stir the materials into a moist pupation substrate
+Take 16 clean pupation containers and fill them each with 3 kg of the prepared pupation material.
+Spread the mixture equally over each crate.
+Place the 16 pupation containers in the pupation rack and add a sticker with the date of setup.
+Harvest the pre-pupae together with the cocopeat from the transfer container and separate the
+pre-pupae from the cocopeat with a sieve. The empty transfer container is then filled again with
+cocopeat and the nursery container is placed in it again. This same process is repeated for each
+transfer container assigned to be harvested that day. Note the weight of the harvested pre-pupae
+for each individual container for monitoring purposes.
+Step 4: The pre-pupae are separated from the cocopeat Step 5: Counting of 200 pre-pupae to assess the average weight
+by sieving it with a 3 mm sieve for portioning them to the pupation containers
+Step 5:
+Step 6:
+Step 7:
+Pool all harvested pre-pupae from each transfer container harvested this day and weigh the har-
+vested pre-pupae on a bulk balance. From these pooled pre-pupae, two samples of 200 pre-pu-
+pae are weighed, counted and its average is noted down.
+Prepare 16 batches of pre-pupae according to the amount required by the checklist (Annex A), one
+batch for each pupation crate that will receive pre-pupae.
+Transfer the 16 batches of pre-pupae into each of the 16 pupation boxes. The same pupation box-
+es are filled with the same number of pre-pupae over several days, according to the respective
+schedule (see Annex A).
+32 Black Soldier Fly Biowaste ProcessingStep 6: Prepare batches of pre-pupae in cups
+PROTECTIVE MEASURES FOR WORKERS:
+· Use lab coat and latex gloves for handling larvae, pre-pupae, coco-peat and compost.
+POINTS OF MONITORING AND DATA COLLECTION:
+· The weight of pre-pupae harvest from each transfer container is measured.
+· The weight of 200 pre-pupae is measured. This is repeated twice to obtain
+an average value.
+The pre-pupae stage module from the e-learning video
+series on BSF Biowaste Processing is available through this
+link.
+Black Soldier Fly Biowaste Processing 333.2.6
+Pupae stage
+Pupation containers are placed into a dark cage where flies will emerge and eventually move to a
+love cage. The dark cage can hold 16 pupation crates with each 10,000 pupae (10 cm 3 per pupa).
+Materials and equipment needed:
+Dark cage
+(150 x 150 x 75 cm)
+Dark cage frame
+(170 x 155 x 80 cm)
+Ant trap
+Tasks:
+Step 1:
+Hang a clean dark cage onto the dark cage frame using four ropes to tie it in the top corners to the
+frame. Open the zipper door in the front of the cage and close the round tunnel opening.
+Step 1: Hanging up new dark cage
+Step 2:
+Step 3:
+Ensure that the bottom of the dark cage lies on the dark cage frame table which has its table legs
+placed in ant traps.
+Fill the new dark cage with 16 pupation containers as prepared following the activities in the
+pre-pupae stage. Cross-stack the pupation containers. Make sure that enough open space re-
+mains between the containers so that the emerged flies can exit the containers.
+34 Black Soldier Fly Biowaste ProcessingStep 3: Filling dark cage with pupation containers and closing the zipper/tunnel so flies can’t escape and the cage is dark
+Step 4:
+Step 5:
+Step 6:
+Step 7:
+Step 8:
+Step 9:
+Label the dark cage on the frame with the date of its set-up.
+Remove the 16 pupation containers from the cage that needs to be dismantled today according
+to the schedule. Empty them into a dustbin. Use the pressure washer, a scrubbing brush and
+detergent to clean the 16 crates and store them to dry.
+If present, remove dead flies from the dark cage with a brush and dispose of them in a dustbin.
+Detach the dark cage from the frame and turn the dark cage inside out and wash with detergent in
+a washing machine using a 30°C program. Then, remove the dark cage from the washing machine
+and let dry.
+Clean the dark cage frame. Spray the frame with a 95% alcohol solution, spread it out with a cloth
+and let the alcohol dry.
+Remove the date label from the frame.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use lab coat and latex gloves for handling pupation containers, dirty dark
+cages and detergent.
+POINTS OF MONITORING AND DATA COLLECTION:
+· None required.
+The pupae stage module from the e-learning video series
+on BSF Biowaste Processing is available through this link.
+Black Soldier Fly Biowaste Processing 353.3
+Work scheduling and data management
+The activities covered in this chapter all relate to the rearing of the Black Soldier Fly. Although
+the system proposed has a simple and low-tech design, the large amount of handlings can make
+the operation complex. A work schedule is available (see Annex A) that helps structure all the
+handlings in a step-by-step approach thereby creating an organised overview of which steps must
+be performed each day. The steps are organised according to the order in which they have to be
+executed on the given days. The operator should therefore always start at the top of the checklist
+and work down the list after completing each task. This will ensure that a later step will not be
+hindered by a previous step that has not been completed. Working through the list systematically
+from top to bottom ensures a smoother flow of the process and increases the performance of
+the operators.
+At different moments during the operational steps and as shown in the work schedule, data
+needs to be collected and entered to ensure monitoring and a good overview of the rearing cycle
+performance. Digital systems may be available to assist with direct input of the data to produce
+overviews of performance. However, if digital tools and software are not available, we recom-
+mend a simple paper log sheet that is available in Annex D. The log sheet allows entry of data on
+egg mass, 5-DOL count, pre-pupae mass, pupae input and fly mass. How to collect this data is
+explained in the respective stages of this chapter.
+36 Black Soldier Fly Biowaste ProcessingBlack Soldier Fly Biowaste Processing 3738 Black Soldier Fly Biowaste ProcessingChapter 4:
+BSFL conversion operations
+4.1
+Sourcing biowaste
+Larvae are generally very tolerant when it comes to feeding substrates. Yet, it is important that
+the biowaste received at the facility is suitable as larva feed. With a water content between 60%
+to 90% and a specific particle size, most organic materials will be treated in one way or the other.
+A list of biowastes known to result in satisfactory growth and biomass conversion is shown in
+Table 4–1. The larvae strongly rely on symbiotic microorganisms which degrade cell structures
+and make nutrients available for the larvae to take up. With suboptimal feed, development time
+will be extended and the final larval weight will be lower. It is important to keep this in mind when
+looking at the BSF facility from an economic perspective.
+Table 4–1: Different types of biowaste found suitable for BSF treatment
+Municipal waste Agro-industrial waste Manure and faeces
+· Municipal organic waste
+· Food and restaurant waste
+· Market waste · Food processing waste
+· Spent grains
+· Slaughterhouse waste · Poultry manure
+· Pig manure
+· Human faeces
+This guide assumes that “waste sourcing” for the facility has been arranged and secured. The bio-
+waste should be purely organic and biodegradable, and meet the criteria of appropriate biowaste
+types as mentioned above.
+Waste sourcing
+In order to guarantee a reliable operation of the BSF facility, a constant waste source of con-
+sistent quality is of utmost importance. It is therefore advisable to negotiate long-term con-
+tracts with local waste producers once an appropriate waste source has been identified. Cri-
+teria to identify a suitable waste source are:
+1. Substrate availability and costs: Is the material available in regular sufficient quantity
+and quality and what are the costs (purchase, transport, separation)?
+2. BSFL process performance: Is the material suitable as a food source for the larvae and to
+what extent does this affect the time spent in the larveros until harvesting?
+3. Product safety: Does the waste contain substances (pathogens, heavy metals, pesticides,
+etc.) that could have a negative impact on the health of personnel and/or larvae or ulti-
+mately affect the quality of the final product?
+4. Waste recovery hierarchy: Does access to a specific waste source affect an existing waste
+system? How has this waste been disposed of or used in the past and who benefited from
+it (animal feed, biodigester)?
+4.1.1
+Biowaste pre-processing
+A first step upon arrival of the waste involves a waste quality control to ensure that it contains no
+hazardous materials and no inorganic substances. A few plastic bags in the waste may not pose
+a significant problem and can be sorted and removed manually. However, it is critical to keep
+Black Soldier Fly Biowaste Processing 39hazardous contaminants out of the waste as these may affect all the living organisms: the larvae,
+associated bacteria and, of course, the workers. Acids, solvents, pesticides, detergents and heavy
+metals fall into this category and it is especially critical to keep them out when they are in a liquid
+or dissolved form, as this can easily contaminate the whole batch of waste material. If such con-
+tamination is suspected, the waste should be refused.
+Figure 4–1: Hammer mill for waste pre-processing
+With the waste quality ensured, the next required step
+then involves a reduction of the waste particle size.
+This can be achieved by using a shredder or hammer
+mill (Figure 4–1). Whatever type of technology is used,
+the equipment should shred the waste to particles of
+smaller than 1-2 cm in diameter. This helps speed-up
+BSF processing as BSF larvae do not have appropriate
+mouthparts to break apart large chunks of waste, and
+increasing the surface area fosters the growth of the
+associated bacteria. Efficient shredding of the waste
+also increases the homogeneity of the residue, which
+improves its quality and then later simplifies the separa-
+tion of larvae and residual material.
+Greenhouse gas emissions
+Given the continuing efforts of nations and local governments towards reducing greenhouse
+gas emissions, and the commitments taken by all states that are parties to the United Nations
+Framework Convention on Climate Change, decision-makers increasingly evaluate the Glob-
+al Warming Potential (GWP) of different treatment options when choosing biowaste man-
+agement approaches. For the more conventional approaches such as composting or anaerobic
+digestion this information is well established and simplified methodologies are available
+under the Clean Development Mechanism (CDM) framework. However for more recent tech-
+nologies, such as BSF waste treatment, to-date such information is scarce. However first re-
+sults indicate that gaseous emissions from the degradation process, such as carbon dioxide
+(CO 2 ), methane (CH 4 ) and nitrous oxide (N 2 O), are not a concern in BSF treatment. The studies
+show lower emissions compared to the other treatment methods 2,3 .
+2
+3
+Ermolaev E, Lalander C and Vinnerås B. (2019) Greenhouse gas emissions from small-scale fly larvae composting
+with Hermetia illucens. Waste Management 96: 65-74.
+Mertenat A, Diener S and Zurbrügg C. (2019) Black Soldier Fly biowaste treatment – Assessment of global warm-
+ing potential. Waste Management 84: 173-181.
+Shredded waste with a water content above 80% (Figure 4–2) will need to be mixed together with
+another, dryer waste source to obtain a resulting moisture content of the mixture below 80%. At
+80% water content the shredded waste will have a consistency of a fruit mix (smoothie) from your
+kitchen blender.
+If the water content is below 70% (Figure 4–4), then water needs to be added. Suitable water con-
+tent can be determined by squeezing a handful of substrate in your closed fist. If less than a few
+drops of water emerge between your fingers, then the substrate is too dry. When moistening the
+substrate with water, make sure the water is clean and not contaminated with pathogens, heavy
+metals or other anti-nutritional elements. A substrate with a moisture content between 70 and
+80% usually has a moist look but will firmly stay as a pile when added into the larvero unit (Figure
+4–3)
+40 Black Soldier Fly Biowaste ProcessingFigure 4–2: Biowaste with water Figure 4–3: Biowaste with water Figure 4–4: Biowaste with water
+content >80% content 70-80% content <70%
+When the organic waste is accepted at the facility, the weight should be measured. This al-
+lows to keep record of the daily waste intake of the facility. The best moment to measure
+the weight of the total incoming waste is after it has been shredded as then it is likely to be
+temporarily stored in containers. If dewatering of waste is practiced, then weigh the waste
+before and after the dewatering process.
+4.1.2
+BSF treatment unit
+Waste treatment using larvae of the Black Soldier Fly can be conducted in many different ways.
+Here we describe a batch wise treatment with manual harvesting. Using this approach, a defined
+number of same-aged young larvae (5-DOL) are put in a container (incubator unit) with a defined
+amount of substrate. While the 5-DOL feed and grow, the incubator unit becomes too small to
+allow further growth and the larvae are then moved into a larger container (larvero unit) and more
+substrate is added.
+As a rule of thumb, we work with the following numbers: 10,000 larvae are fed with a total
+of 12 kg of substrate (75% water content) and harvested after a total of 12 days. Initially the
+10’000 5-DOL are kept in an incubator unit (30x20x10 cm) and left to feed on a single load of
+1kg for 3 days, thereafter the larvae are transferred to a larvero unit (40x60x15cm) and left to
+feed on a single load of 11 kg for 9 days.
+We propose to use the combination of incubator units and larvero units as this has shown to
+increase the amount of substrate that can be converted per unit of space available and also con-
+tributes to reducing the number of handlings. This approach involves starting with a larger num-
+ber of smaller incubator units which are operated for 3 days and each receive small amounts of
+substrate. These smaller units allow easier handling without negatively affecting the growth of
+the young 5-DOL. We observed that using this “incubator” approach reduces overall labour time
+requirements and when harvesting at the end of the treatment process, the mixture of larvae and
+residue is dry enough so that it can be easily sieved.
+Black Soldier Fly Biowaste Processing 41For the second feeding, when the larger amount of substrate is added to the larvero units, two
+approaches are possible. Either bring the substrate to the larvero units or else move the larvero
+units to a central substrate feeding station. Installing a central substrate feeding station has the
+advantage of keeping the large bulk of waste concentrated in one location therefore keep the
+potentially filthy area in one spot (which can then be cleaned regularly) and avoiding movement of
+loose bulk waste around the facility. An additional advantage is that when moving the larvero units
+to the substrate feeding station each unit can be inspected and checked for irregularities. This
+book describes the feeding system when using a central feeding station.
+The origin of BSF waste treatment
+BSF research started in the mid-20th century in chicken barns. It was observed that the pres-
+ence of BSF larvae in the manure underneath the chicken cages reduced housefly breeding
+and manure accumulation. Researchers, thus, started to put this new insight into practice
+by planning BSF friendly manure pits (ramps for prepupa self-harvesting, access for cleaning
+machinery and attached greenhouses for adults). Most of the attempts of taking BSF treat-
+ment to a professional level have been established around a continuously fed system based
+on prepupa self-harvesting. However, experience has shown that harvest losses and hygienic
+challenges are very high in a continuous system, making it difficult to operate it in an eco-
+nomically viable way.
+As the larvae feed on the biowaste in the incubator and larvero unit, they will break down the
+organic matter and metabolize the nutrients into larval biomass. If too much biowaste is fed to the
+larvae, an unprocessed waste layer will build up and start to generate heat through its bacterial
+activity. This heat build-up is unfavourable for the larvae. The unprocessed waste layer will also
+attract vermin. On the other hand, if not enough waste is provided the larvae will starve and slow
+their growth. As a result the facility will have a lower waste treatment capacity and also lower
+yield of grown larvae. The amount of waste that can be fed per larvero unit is also limited by the
+resulting layer thickness of waste in the larvero. If the layer thickness of the waste in the larvero
+unit is thicker than 5cm, larvae will have difficulties to feed through this whole layer and the waste
+at the lower part of the layer will remain unprocessed.
+42 Black Soldier Fly Biowaste ProcessingThe table manners of the larvae
+The morphology of the mouthparts suggest that the larvae of Hermetia illucens specialize
+in liquid and small-grained foods. However, the larva also has a mechanism reminiscent of
+modern tunnel boring machines with which it can reduce coarse material with moving discs
+grinders going up and down four times per second and thus make larger particles accessible
+for digestion 4,5 .
+Following ingestion, the food passes through the food pipe into the midgut, the longest and
+most important part of the larva digestive tract. Along the midgut, through the combined
+action of the gut environment, enzymes, and microbes, the diet is broken down into smaller
+molecules for absorption through the gut cells into the haemolymph, the “blood” of insects 6 .
+Microbes in the biowaste and larval gut have multiple functions that are important for the
+process performance. In the biowaste, microbes are important for the hydrolysis of biowaste
+macronutrients, especially fibres that typically cannot be decomposed by BSF larvae. After
+ingestion, some of these microbes are used by the larvae as food providing additional nutri-
+ents to those found in the diet.
+4
+5
+6
+Shishkov O, Hu M, Johnson C, et al. (2019) Black soldier fly larvae feed by forming a fountain around food. Journal
+of The Royal Society Interface 16.
+Bruno D, Bonacci T, Reguzzoni M, et al. (2020) An in-depth description of head morphology and mouthparts in
+larvae of the black soldier fly Hermetia illucens. Arthropod Structure & Development 58.
+Gold M, Egger J, Scheidegger A, et al. (2020) Estimating black soldier fly larvae biowaste conversion performance
+by simulation of midgut digestion. Waste Management 112.
+Incubator and larvero units can be stacked upon each other to further reduce surface area require-
+ments (Figure 4–5 and Figure 4–6). However, if stacked, it is suggested to keep enough open
+space between the stacked treatment units to allow for aeration. The gap between the units is
+necessary to secure air ventilation and to allow the moisture-saturated air above the units to be
+replaced. Ventilation also provides oxygen, which is crucial for the well-being of the larvae.
+For the incubator units, the single unit biowaste processing footprint is 33.3 kg/m 2 /d when stack-
+ing six units on top of each other (Figure 4–5). For the larvero units, the single unit biowaste
+processing footprint is 30.6 kg/m 2 /d when stacking six units on top of each other (Figure 4–6).
+When combining the system which uses incubator units for the first 3 days of feeding biowaste
+and stacking the units while the larvae are feeding, the combined biowaste conversion footprint
+of this system is 31.25 kg of biowaste treated per m 2 per day.
+Figure 4–5: Rack with incubator containers Figure 4–6: Stack of larveros with ventilation
+(4 containers per crate) frames in-between levels
+Black Soldier Fly Biowaste Processing 434.1.3
+Product harvesting
+After 12 days of waste treatment by BSF larvae, each larvero unit is harvested. At this stage, the
+larvae have reached an age of 17 days and their maximum weight, but have not yet transformed
+into pre-pupae. Their nutritional value is, therefore, at its maximum. If this ideal moment is after
+12 days of treatment, or a few days less or more, depends strongly on external influences such
+as the ambient temperature or the quality of the feed. Operators of a facility therefore need to
+remain vigilant and observe the larvae and their growth and change to identify the ideal moment
+of harvest specific to their local context and situation.
+In the harvesting step, the two products larvae and residue need to be separated from each
+other. Depending on the water content of the input material, the residue will show as a crumbly
+dry mass or as a wet slurry. We do not recommend the wet slurry residue as the harvesting
+process becomes quite cumbersome. Therefore we recommend to take measures during the
+treatment step to ensure that the resulting residue will be a crumbly dry mass. When receiving
+waste substrates that are high in water content that would likely result in a wet slurry residue, we
+recommend adding a dry material such as cocopeat, palm kernel meal or milk powder during the
+treatment stage so that the residue has dried out by the time the larvero units are harvested. Dry
+crumbly residue can be harvested using a shaking sieve with two sieve layers, one with a mesh
+size of 3 mm and one with a mesh size of 7 mm. Shaking sieves can be manual or automated.
+Automated shaking sieves can achieve higher shaking frequencies than manual sieves and are,
+therefore, favoured (Figure 4–7). Sieving the larvae residue mixture with two sieve layers will
+result in a total of three fractions, one fraction of larvae and two fractions of residue (Figure 4–7).
+The first fraction of residue which has a dark soil-like colour can be bagged and stored until the
+material has matured and can then be used as a compost or soil amendment. The second fraction
+of residue, which is typically made up of leaves, seeds and other residual material, should be
+composted for a longer time, ideally using a windrow composting system.
+To learn more about how to compost the BSF residue or in
+general organic matter, a composting guide can be found
+through this link
+During the shaking of the sieve, the coarse parts of the
+residue will remain on top of this first sieve layer with
+a mesh size of 7 mm. The larvae and the fine parts of
+the residue will fall through this first sieve layer onto
+the second layer with a mesh size of 3 mm. The larvae
+will remain on this sieve without falling through while
+the fine residue will fall through the second sieve lay-
+er. Given the inclination and the shaking of this type of
+sieve, all fractions move down the slope to the end of
+the sieve. Here, at each sieve layer level a funnel con-
+nects to a bucket where the fractions are collected for
+further processing. Other horizontal sieve systems use
+a vibrator engine to guide the material towards a funnel
+where it is collected in a bucket.
+Figure 4–7: Shaking sieve to separate larvae from dry residue
+44 Black Soldier Fly Biowaste ProcessingFigure 4–8: Three fractions of materials after sieving: 1 fraction of larvae and two fractions of residue
+4.1.4
+Conditioning of the harvested products
+Harvesting separates the residue from the larvae. However, after completing the process some
+residue particles will remain stuck to the larvae and the gut of the larvae will still contain material
+which has not been excreted yet. Typically, the harvested BSF larvae are sold as animal feed
+products either alive or in a post-processed form. For both cases conditioning of the larvae is
+a requirement to increase the product purity and quality. Two ways of larvae conditioning are
+suggested here, which both aim to clean the larvae from remaining residue particles and partly
+reduce the larval gut content: purging and sanitising. While the purging operation cleans the live
+larvae, the sanitising operation kills the larvae in a blanching step prior to cleaning. Nevertheless,
+both described procedures do not necessarily fully free the larvae from microorganisms or any
+contamination which was in the waste source and might be transmitted to the larvae during their
+growth or contact with the waste substrate.
+4.2
+Activities in the BSFL conversion unit
+In this subchapter, the process steps and the materials to use during these steps are presented.
+As with the BSF rearing operations, most materials can be found in hardware stores but some
+materials and equipment have been custom-made for the operation. The dimensions of these
+items are provided in the description under the item.
+The technical drawings for the custom-made materials and
+equipment used in the operational steps of the BSFL conver-
+sion unit can be found through this link
+Black Soldier Fly Biowaste Processing 454.2.1
+Pre-processing
+The goal of the pre-processing step is to reduce particle size and homogenise the input material.
+The waste can then easily be distributed and fed to the larvae and the nutrients are made easily
+accessible to the larvae and the associated bacteria.
+Materials and equipment needed:
+Hammer-mill shredder
+(Cap 1 ton/h) Bin
+(80 L)
+Dry matter/TS oven Dry matter analysis cup
+Bulk scale
+(max 150 kg, acc 50 g)
+Mixer
+(max cap 300 kg)
+Tasks:
+After a quality check and acceptance,
+remove the organic waste from the
+collection vehicle and place the waste
+near the shredder. While emptying
+the vehicle, remove non-organics con-
+tained in the waste (rough sorting).
+Step 2 : Place a labelled bucket under the shred-
+der outlet and turn on the shredder.
+Step 3: While filling the hopper to shred the
+waste, manually remove non-organic
+components in the waste. When the
+waste receiving bucket is full, exchange
+it with a labelled empty new bucket.
+Step 1: Removing baskets with waste from the market.
+Step 4: Weigh and document each full bucket
+Baskets are checked one by one on content
+of shredded waste using a bulk scale.
+Step 5: After all waste is shredded, use the high-pressure washer to clean the inside, outside and around
+the shredder. All the wastewater needs to be discharged for treatment.
+Step 1:
+46 Black Soldier Fly Biowaste ProcessingStep 6:
+Step 7:
+Step 8:
+Step 3: Reducing particle size of biowaste by shredding Step 6 + 7: Conditioning of substrate by adding dry material if water
+the material content is too high and adding water if water content is too low
+If the waste substrate is still too moist (water content >80%) a dry bulk material has to be added
+to balance the water content and allow for the residue to be dry by the end of the process. You can
+mix the materials in with the substrate before feeding it into the conversion units using a mixer or
+simply add the dry material to the crates first and then add the wet substrate on top.
+If the substrate is too dry (water content <70), you can mix it in with a wet substrate or simply add
+water. Ensure that the dry material is always on the bottom and the wet material on top in case
+the material is not mixed before adding it into the larvero units.
+To find out what the water content of a waste material is, a Total Solids (TS) sample has to be
+prepared in a specifically designed oven. Normally these ovens are called ‘’dry matter ovens’’ or
+‘’TS ovens’’.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, protective clothing, eye and ear protection when using the shredder.
+· Make use of the protective measures available for the shredder/hammer mill, i.e
+feeding hopper, flap and other safety features, to avoid any risk of direct contact
+between workers’ hands and moving parts.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Weight of waste received
+· Weight of separated fractions of waste for various destinations
+· Before adding substrate to the larvero units, it is important to obtain substrate samples to
+determine the moisture content. For this purpose, thoroughly mix the substrate in each
+substrate holding container and place one large scoop from each substrate container into
+a bucket. Mix the content in the sampling container thoroughly and remove one sample of
+about 50g and place it onto a sample tray. The tray with the sample is weighed and then
+dried in an oven at 105 °C for 24 hours before weighing the tray again. Calculate the water
+content of the sample by: Water content [%] = (Wet weight-Dry weight)/Wet weight*100
+Black Soldier Fly Biowaste Processing 47The pre-processing stage module from the e-learning
+video series on BSF Biowaste Processing is available through
+this link.
+4.2.2
+Treatment
+A new batch of biowaste for processing each day is initiated by setting up incubator units, feeding
+a defined amount of shredded (and conditioned) biowaste substrate into each of these incubator
+units, and then preparing and adding a defined number of 5-DOL on top of the substrate. Each
+incubator unit will receive 1kg of substrate and 10,000 5-DOL which results in a density of 3.3
+larvae per cm 3 . Setting up larvero units involves preparing the empty larvero units by adding 11kg
+of fresh substrate and the content of a 3-day old incubator unit. This results in a density of 0.8 lar-
+vae per cm 3 . Layers of 6 larvero units are stacked on a palette alternating with ventilation frames.
+Materials and equipment needed:
+Incubator unit rack
+(150 x 180 x 65 cm) Incubator unit
+(30 x 20 x 10 cm) Larvero unit
+(60 x 40 x 15) Larvero unit pallet
+(129x122x20 cm)
+Ventilation Frame
+(129 x 122 x 12 cm) Biowaste conversion unit
+(129 x 122 x 170 cm) Pallet trolley
+(cap. 2 ton) Bin
+(80 L)
+Spade Bulk scale
+(max 150 kg, acc 50 g) Trolley
+48 Black Soldier Fly Biowaste ProcessingTasks:
+Step 1:
+Step 2:
+Step 3:
+Step 4:
+Step 5:
+Step 6:
+Step 7:
+Step 8:
+Prepare 36 empty incubator units and fill each with 1 kg of substrate
+Add one cup containing 10,000 5-DOL onto the substrate in each incubator unit
+Step 1: Add 1 kg substrate to each Step 2: Add the portioned 5-DOL
+incubator unit on top of the substrate
+Step 3: Incubator units in crates
+Add the 36 incubator units into larger crates and add these crates into the incubator rack
+Take the oldest group of 36 incubator units from the incubator rack and place them near the feed-
+ing station
+Get a pallet and a pallet trolley. Prepare 36 larvero units and 5 open ventilation frames. Place these
+close to the feeding station.
+Place 6 larvero units on the pallet, feed them
+with 9 kg of substrate each and empty one in-
+cubator unit into one Larvero unit on top of the
+fresh substrate. Place an open ventilation frame
+over the six crates. Now stack the next layer of
+six larvero units on the ventilation frame and re-
+peat this process until a stack of six layers with
+a total of 36 crates is complete.
+Label the pallet with the pallet date code. Then,
+use the pallet trolley to bring the pallet to its des-
+tination in the building.
+Wash the substrate holding containers which
+have been emptied using a high-pressure wash-
+er and leave to dry.
+Step 6: Stacking of the larvero units on the pallets
+Black Soldier Fly Biowaste Processing 49PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves and protective clothing during feeding activities
+POINTS OF MONITORING AND DATA COLLECTION:
+· Weight of substrate added to incubator units
+· Weight of substrate added to larvero units
+The treatment stage module from the e-learning video
+series on BSF Biowaste Processing is available through this
+link.
+50 Black Soldier Fly Biowaste Processing4.2.3
+Harvesting
+After the larvae have fed on the substrate and only dry residue remains, the Larvero units are
+harvested using a mechanical sieving system which allows for the mixture of residue and larvae
+to be separated into three fractions. The larvae can then be removed and further processed. The
+residue streams undergo further treatment before being applied to soils.
+Materials and equipment needed:
+Conveyor (custom made) and separation system (Guan-Yu, GY-1000-2S). Sieve with dimensions of
+100 x 100 x 106 cm, 2HP dynamo with voltage of 380 (3-phase) and 1440 rpm
+Bin
+(80 L) Spade
+Dry matter/TS oven Dry matter analysis cup
+Bulk scale
+(max 150 kg, acc 50 g)
+Trolley
+Black Soldier Fly Biowaste Processing 51Tasks:
+Step 1:
+Prepare the harvesting area by placing empty material bins under the outlets of the sieving ma-
+chine and placing the bulk balance near the hopper of the conveyor belt.
+Step 1: Harvesting station with sieving system, collection bins and residue bags
+Step 2:
+Step 3:
+Step 4:
+Select the pallet or pallets that will be harvested on this day, by checking the set-up/harvesting
+schedule, and move it/them to the harvesting area using the pallet trolley
+Turn on the bulk balance, conveyor belt and sieving machine
+Take three empty conversion crates and tare their weight on the bulk balance. Then take the first
+three larvero units with a mixture of residue and larvae from the pallet and place them on the bulk
+balance. Note down the mass in the log sheet.
+Step 4: Weighing crates from the biowaste conversion
+unit on a scale
+Step 5:
+Step 6:
+Step 7:
+Empty the three larvero units one-by-one into the hopper so that the material gradually is transport-
+ed into the top of the sieve by the conveyor.
+Repeat the processes of weighing, noting down the weight and emptying the units until one pallet
+is harvested. Then repeat the process for the other pallets that are scheduled to be harvested
+today
+While harvesting the pallets: ensure you keep each of the three output fractions separate for each
+pallet to obtain harvesting yield per pallet. Switch bins with empty ones when full.
+52 Black Soldier Fly Biowaste ProcessingStep 8:
+Step 9:
+One output fraction will have larger particles,
+the content of this bin is weighed and noted
+down and the material is composted. Another
+output stream is the fine residue, the content
+of this bin is weighed and noted down and the
+material is bagged for maturing.
+The third fraction are the larvae which are still
+mixed with some residue with a particle size
+similar to the size of the larvae. The residue is
+removed by skimming it off (by hand) from the
+top of the bin as larvae are pushing up the resi-
+due to get away from the light. After no clusters
+of residue can be observed, the bin with larvae
+can be weighed and the weight noted down.
+Step 7: Larvae and residue on transport belt before being
+separated into the different fractions
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing during harvesting activities.
+POINTS OF MONITORING AND DATA COLLECTION:
+· It is critical to measure the weight of the “harvest” of the residue and the larvae. These
+data are used to calculate performance indicators that allow the operator to monitor the
+performance of the treatment facility, namely waste reduction, bioconversion ratio and
+larval yield. For this purpose, we measure the net weight of the larvero content as well
+as the larvae harvest. The difference between net larvero content and larvae harvest is
+the weight of the residue. Furthermore, we analyse the residue with regard to its water
+content.
+· Document the weight of each larvero before emptying. Subtracting the weight of
+the empty larvero container will result in the net weight of the larvero content.
+· Document the total weight of harvested larvae.
+· After harvesting the larvero units, it is important to obtain samples from the residue and
+the larvae to determine the mass and moisture content. For this purpose, remove batch-
+es from three random Larvero units and place the samples in cups. Put the sampling
+bowl onto a plate and pick out all the larvae. Make sure to not spill the liquid as this is part
+of the wet weight measurement.
+Black Soldier Fly Biowaste Processing 53Once you take out all the larvae, put the residue into a sampling tray. Take 20 of the larvae and
+dry them with a tissue before putting them onto a sampling tray. Repeat this three times for the
+three samples. Put the rest of the larvae back to the harvested crates or directly on the harvesting
+screen. Weigh the samples (larvae and residue) and dry them in an oven at 105 °C for 24 hours
+before weighing each tray again. By doing this, you will obtain the water content of the larvae and
+the residue. Calculate the water content of the sample by: Water content [%] = (Wet weight-Dry
+weight)/Wet weight*100
+Separating residue from larvae and taking random Triplet samples of substrate in, residue out and larvae
+larvae for triples samples out are placed in the TS oven
+The harvesting stage module from the e-learning video
+series on BSF Biowaste Processing is available through this
+link.
+54 Black Soldier Fly Biowaste Processing4.2.4
+Conditioning
+Harvested BSF larvae should either be purged or sanitised, depending on the intended use of the
+larvae.
+Purging:
+Purging starts with a washing step to remove the remaining residue attached to the larvae. Then
+the washed larvae are left in a purging bed containing a dry material for a period of three to four
+hours. During this time, larvae will start emptying their gut content. After purging, larvae are still
+alive and therefore this process is good practice when selling live larvae.
+Materials and equipment needed:
+Bin for washing Washing net Plastic tube rack Water
+Bulk scale
+(max 150 kg, acc 50 g) Dry cocopeat Purging bed Sieve
+(mesh size: 3 mm)
+Tasks:
+Step 1:
+Step 2:
+Step 3:
+Step 4:
+Prepare the washing bin. Place the plastic tube rack inside the waste bin. Place the washing net
+inside the waste bin and fix it on the side.
+Washing. Add 10 kg of freshly harvested larvae on the net. Wash the larvae with clean water until
+all remaining dirt and residue is washed of. This may take 5 to 10 minutes.
+Purging. Place the wet larvae on the purging bed. Add for every 10 kg of wet larvae 1 kg of dry
+material, e.g cocopeat. Mix the cocopeat with the larvae and leave the larvae for three to four
+hours.
+After few hours you will see that the larvae have dried off and started to separate from the coco-
+peat. Remove the remaining cocopeat by sieving the larvae.
+Black Soldier Fly Biowaste Processing 55Step 1: Preparation of washing bin. Step 2: Washing of larvae
+Step 3: Larvae in a purging bed. Step 4: Larvae separated from cocopeat.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing during grinding activities.
+On sanitising larvae
+It is obvious that insect larvae fed with organic waste may pose a health risk when fed to live-
+stock if they are left untreated. Thermal treatments such as boiling, roasting, (deep-)frying,
+blanching and microwave treatment, even for short times, have proven to be very effective
+to reduce the amount of vegetative bacteria and fungi. The application of heat to whole in-
+sects after harvesting allows most microbial counts to be reduced to below detection limit.
+However, it was also found that at least some of the bacterial endospores can survive a heat
+treatment and thus it can lead to recontamination in the further process 7 . The traditional
+processing techniques of solar drying seem to have little effect on the reduction of bacteria,
+yeast and mould 8 . Therefore, regardless of the treatment method, care must be taken to min-
+imise the risk of recontamination by maintaining a hygienic working environment during
+further processing.
+7
+8
+Vandeweyer D. (2018) Microbiological quality of raw edible insects and impact of processing and preservation. 197.
+Nyangena D, Mutungi C, Imathiu S, et al. (2020) Effects of Traditional Processing Techniques on the Nutritional and
+Microbiological Quality of Four Edible Insect Species Used for Food and Feed in East Africa. Foods 9: 574.
+56 Black Soldier Fly Biowaste ProcessingSanitising:
+For the sanitising step the larvae are dipped in boiling water (blanching) for 60 seconds. Blanching
+kills the larvae quickly and as a reaction to the sudden increase in temperature – due to the dipping
+in the boiling water - larvae empty part of their gut content. Thereafter the following washing step,
+washes off remaining residue and gut content from the larvae. After this step, we recommend to
+further process the larvae as fast as possible, as the dead larvae spoil quickly. Sanitising facilitates
+subsequent drying, as larvae have thus already been killed and do not move around anymore dur-
+ing the drying step. Moreover, the quicker the killing, the better for the animal and also for the end
+product, as stress can negatively influence the product quality.
+Materials and equipment needed:
+Bin for washing Washing net Plastic tube rack
+Pot for hot water Stove setup Dipping spoon
+Water
+Tasks:
+Step 1:
+Step 2:
+Step 3:
+Step 4:
+Preparations. Heat up the water until you see bubbles rising or until it reaches a temperature of
+90°C. In the meantime prepare the washing bin, by placing the plastic tube rack inside the bin and
+fixing the washing net on top.
+Sanitising. Fill the dipping spoon with freshly harvested larvae and dip them into the hot water for
+around 60 seconds. Then transfer the larvae on to the prepared washing net. Repeat this step
+until the washing net is full of larvae (approximately 10 kg). Exchange the dirty water with clean
+water every 50 kg of larvae.
+Washing. Clean the blanched larvae with clean water until the remaining residue is washed off.
+Directly start post-processing the larvae, as in this state the larvae will decompose very fast. If
+post-processing is not possible, store the sanitised larvae in the freezer.
+Black Soldier Fly Biowaste Processing 57Step 1: Preparation of washing bin.
+Step 2: Dipping of larvae in hot water.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing.
+The conditioning module from the e-learning video series
+on BSF Biowaste Processing is available through this link.
+58 Black Soldier Fly Biowaste Processing4.3
+Work schedules, monitoring and data collection
+The activities covered in this chapter all relate to the conversion of the biowaste using the Black
+Soldier Fly Larvae. As with the rearing unit, the amount of handlings can make this system com-
+plex to operate. A work schedule is available (see Annex C) which structures all the handlings in
+a step-by-step way and thereby creates an organised overview of which steps have to be passed
+through each day.
+In the described operations as well as in the work schedule, there are moments when data needs
+to be collected and recorded in order to create an overview of the rearing cycle performance.
+The rearing operations used one log sheet for all operations in the rearing unit. However, as the
+treatment unit is much larger and the different operations are quite far spread out over the site,
+separate log sheets are prepared and placed at the different locations so that the operator can fill
+out the data log sheets close to where the tasks are being conducted. The log sheets are available
+in Annexes E and F. The log sheets allow recording of data on waste in, waste to treatment, waste
+in units, larvae out and residue out of units and dry matter sample results. The way to collect this
+data is explained in the respective stages in the chapters above.
+Black Soldier Fly Biowaste Processing 5960 Black Soldier Fly Biowaste Processin
+ProcessingChapter 5:
+BSFL post-processing and
+Marketing
+5.1
+Marketable Products from BSFL Biowaste Conversion
+Processing organic waste using BSFL results in two main outputs: Larvae (10-20% of the waste’s
+wet weight) and frass (20-40%). The frass can be further processed by composting into soil-en-
+hancing compost. Similarly, the larvae can be directly sold as fresh larvae or they can undergo
+further processing into products like dried larvae (pop larvae), BSF meal, BSF oil or BSF pellets
+(Figure 5–1). All of these products are potential revenue streams for a BSF biowaste conversion
+facility.
+Figure 5–1: BSFL waste conversion products. Conversion percentages describe the estimated yield from the pervious product.
+Values are based on wet weight.
+Another revenue stream could be from products of the BSF rearing unit, e.g. BSF eggs, 5-DOLs
+or BSF pupae. BSF rearing products are interesting for other BSF facilities or BSF newcomers.
+These are usually sold at low sales volumes due to the limited market opportunities but are
+sold at high sales prices.
+Black Soldier Fly Biowaste Processing 61The use of frass
+In comparison to the application of maggots as animal feed, research around the use of
+the frass is not so advanced. However, growth trials with various agricultural crops show
+promising results when frass is used as a soil amendment. Whether as a soil conditioner,
+substitute for synthetic fertilizer or to replace peat in horticulture, frass seems to be suitable
+regardless of the initial feedstock and whether it underwent a composting process before ap-
+plication or not 9,10,11 . The suitability of fresh frass has also been tested for biogas production
+where results show that biomethane potentials similar to conventional substrates used in
+anaerobic digestion, with slightly higher levels than expected from cattle manure but lower
+than expected values from food waste 12 .
+Studies show that frass can also be used as a substitute for the plant-based ingredients in
+fish feed. Good growth rates were achieved in feeding trials with catfish or tilapia. The in-
+itial feedstock is of course of great importance in this case. Use of frass in tilapia diets may
+even prove beneficial by improving innate immune components and the resistance of tilapia
+against bacterial infection 13 .
+9
+10
+11
+12
+13
+Menino R, Felizes F, Castelo-Branco M, et al. (2021) Agricultural value of Black Soldier Fly larvae frass as organic fertilizer on ryegrass. Heliyon
+7: e05855.
+Setti L, Francia E, Pulvirenti A, et al. (2019) Use of black soldier fly (Hermetia illucens (L.), Diptera: Stratiomyidae) larvae processing residue
+in peat-based growing media. Waste Management 95: 278-288.
+Beesigamukama D, Mochoge B, Korir NK, et al. (2020) Exploring Black Soldier Fly Frass as Novel Fertilizer for Improved Growth, Yield, and
+Nitrogen Use Efficiency of Maize Under Field Conditions. Frontiers in Plant Science 11.
+Elissen HJH, Hol S and van der Weide R. (2019) Methane production from insect, worm and mushroom waste streams and combinations.
+Wageningen University & Research.
+Yildirim Aksoy M, Eljack R, Schrimsher C, et al. (2020) Use of dietary frass from black soldier fly larvae, Hermetia illucens, in hybrid tilapia (Nile
+x Mozambique, Oreocromis niloticus x O. mozambique) diets improves growth and resistance to bacterial diseases. Aquaculture Reports 17:
+100373.
+Marketing of BSFL products
+One option is direct marketing of fresh larvae to customers. As the larvae will continue to develop
+even after harvest and quickly turn into pre-pupae and pupae, immediate transport and feeding
+is required. No additional processing costs are required. Thus the sales price is lower but may
+include additional delivery costs. Potential clients are for example chicken or fish farmers that
+are located in proximity of the BSF biowaste treatment facility. To have a steady income, a good
+network and organisation with farmers is essential, so larvae are picked up (or delivered) on a daily
+basis and losses are minimized.
+Replacing up to 30% of commercial
+chicken feed or up to 50% of commer-
+cial catfish feed results in a similar or
+better growth performance of the ani-
+mals. Based on BSFL and commercial
+feed prices in 2021, replacing com-
+mercial feed with BSFL is cost saving.
+For the details, check our fact sheets.
+Chicken
+Catfish
+Post-processing facilitates storage and transport and hence, marketing activities of BSFL prod-
+ucts. These benefits raise the sales prices of BSFL products and fluctuating demand can be buff-
+ered. At the same time, post-processing raises the operational costs. Therefore, for a successful
+business, selecting the right target market is crucial.
+62 Black Soldier Fly Biowaste ProcessingIf your main revenue stream is from selling larvae, we recommend to perform a market assess-
+ment before you start with your BSF business. Typically there are two main market directions: the
+farmed animal feed and the pet food sector. It helps to investigate potential markets by performing
+the following tasks:
+1.
+2.
+3.
+4.
+5.
+Define potential substitute products
+Quantify the market size of these substitute products (sales volume in kg per month)
+Quantify the market value of substitute products (sales volume in USD per month)
+Check the price range of most popular products in the market
+Check for regulations that apply for products
+Potential substitute products are products which are similar to BSFL products such as other insect
+based products or pellets containing soy or fishmeal, which could be replaced by BSF meal. De-
+pending on the market environment, a lot of information can be found online. For more informal
+markets, it can help to directly talk to retailers in the market.
+We performed a market assessment for East Java, Indonesia,
+where we were looking at the poultry and aquaculture feed
+sector as well as the local pet food market. Methodology and
+results are described in a detailed report.
+Gate fee as an additional income
+One source of possible income for organic waste treatment facilities in general and for BSF fa-
+cilities in particular is by collection of a “treatment” fee. This is comparable to the tipping fee
+at a landfill, where a fee is charged for accepting waste. Depending on the level of the fee, this
+can have a strong impact on the competitiveness and financial viability of the BSF plant, as it
+can subsidize production costs. Nevertheless, the quality of the delivered waste must still be
+guaranteed and ensured in order to avoid significant contamination or the additional costs
+of a necessary waste sorting step. The rates of such treatment fees or gate fees vary greatly
+from region to region. Composting facilities in low- and middle income countries for example
+charge between 5.– and 50.– USD/ton of waste they accept at the gate. Increased demand for a
+particular waste material can also have a strong impact on prices. In Germany, gate fees have
+fallen from 50.– USD/ton to zero in regions where some waste management sites compete for
+organic waste.
+A case study for Surabaya shows the market potential of var-
+ious BSFL products in the pet food market. Find all details in
+our factsheet.
+Black Soldier Fly Biowaste Processing 63Various BSFL products have been tested on ornamental fish
+and ornamental birds. Results indicate that BSFL products
+can compete with conventional pet food products in terms of
+quality and price. Find all details in our factsheet.
+BSFL products
+Based on the market study, several BSFL products may have the potential to create revenue. The
+quality and use of BSFL products depends on the extent of further processing. Whereas fresh
+larvae are not further processed, dried larvae require a drying step and BSF meal and oil require
+a fractioning and refining step in addition to the drying step. Table 5–1 gives an overview of BSFL
+products, post-processing steps required, application and quality parameters including water ac-
+tivity, shelf life and nutritional parameters. Water activity is a measure for the free water in the
+product that is available for microorganisms. A water activity lower than 0.6 inhibits growth of
+any bacteria and yeasts. Low water activities and low fat contents prolong the shelf life of BSFL
+products. BSFL mainly consist of proteins and fats, which is why only these nutritional parameters
+are listed in the table. For protein and fat content a range is given, as these parameters depend
+on the waste source used to feed the larvae. Especially the fat content can vary greatly between
+20 and 40% in dried larvae, which then also has an effect on the protein percentage of the dried
+larvae. Fresh larvae and dried larvae can be applied directly as feed products, whereas BSF meal
+and BSF oil are ingredients for, for example, feed pellets.
+Table 5–1: Overview of BSFL products
+Product Fresh larvae Dried larvae BSF meal BSF oil
+Process None Drying Drying + Fractioning Drying + Fractioning
+Protein %* 6 – 10 30 – 40 50 – 65 0
+Fat %* 6 – 10 20 – 40 8 – 15 100
+Water activity 0.9 0.4 0.3 -
+Expected shelf life 1– 2 days 4 month 6 month 2 month
+Transport/Storage Open box Sealed packaging Sealed packaging Sealed packaging
+Application Direct feed Direct feed Raw material Raw material
+* values are based on wet weight
+64 Black Soldier Fly Biowaste ProcessingDrying
+Removal of water and thereby reducing water activity to 0.4 (which is well below the upper limit
+of 0.6 as mentioned above) inhibits microbial and enzymatic activity and makes the product stor-
+able for up to 4 months. By evaporation of water, the remaining nutrients in the product become
+more concentrated, which means dried larvae have a higher protein content per sellable weight
+compared to fresh larvae.
+Dried larvae can be sold directly as a feed product. Visual aspect of dried larvae is one key aspect
+that can determine its market value, especially for the pet food market. Characteristic colour,
+texture and shape of dried larvae depend on the drying technique applied. Here, four different
+drying methods are introduced, which can be categorized into rapid and slow drying. During rapid
+drying, the water within the larvae evaporates quickly, which leads to a pressure build-up within
+the larvae and ultimately to an instantaneous pressure release resulting in puffed and crispy lar-
+vae or so called “pop-larvae”. Microwave drying or roasting are rapid dehydration methods and
+result in pop-larvae. Roasted larvae typically show a darker colour (see Figure 5–2). The darker
+colour results from heat induced reactions in the roasting process which include colour chang-
+es. In contrast, microwaving is gentler and only minimal heat induced reactions take place and
+pop-larvae maintain a pale yellow colour. During slow dehydration processes like oven drying, the
+water evaporates slowly and the larvae shells shrink steadily until a constant weight is reached.
+The product is less voluminous, and its texture is hard and stiff (see Figure 5–2). The more bulky
+and voluminous product obtained by rapid dehydration has proved to look more appealing to most
+customers and thus has a higher market value.
+Microwaved BSFL
+Roasted BSFL
+Oven dried BSFL
+Figure 5–2: Dried larvae products
+Besides the different visual appearance of the dried products, drying methods are also distin-
+guishable in terms of process parameters, which are listed in Table 5–2. Microwave heating re-
+quires an electricity connection but is an energy efficient and simple process. Here we describe
+the process of microwave heating using a simple kitchen microwave, which is good for small scale
+applications as it requires minimal investment and space. However, also industrial microwaves
+are available, which require a larger investment but allows processing of larger batches. Similar
+to coffee beans or nuts, BSFL can be roasted in a drum dryer. A drum dryer is fitted with a well
+heat insulated drum, an exhaust-fan, a fin structure inside the drum to flip the larvae as well as
+an efficient burner to heat the drum from the bottom. A small-scale alternative to a drum dryer is
+sand roasting in a wide wok pan, similar to the widely used sand-roasting technique of street food
+vendors in Asian and Sub-Saharan countries making value-added snacks from cereals or nuts. The
+sand prevents burning and facilitates even heating as it functions as a heat transfer medium. Com-
+pared to roasting in a drum, energy usage is less efficient when roasting in open wok pan. When
+using an oven, larvae are slowly dehydrated at 65°C. This rather low temperature drying prevents
+the loss of valuable nutrients and avoids baking or burning of the larvae. A benefit of oven drying
+is its passive operation, which reduces labour requirements.
+Black Soldier Fly Biowaste Processing 65Table 5–2: Process related parameters of different drying methods
+Parameter Microwave
+drying Roasting
+(drum) Roasting
+(pan) Oven
+drying
+Energy source Electricity Gas Gas Gas
+Heat medium Electromagnetic waves Hot air Sand Hot air
+Material temperature Max. 180°C Max. 140°C Max. 180°C Max. 65°C
+Batch size 0.25 kg 5 kg 1 kg 30 kg
+Drying time 15 minutes 40 minutes 20 minutes 24 hours
+Throughput 1.0 kg/h 7.5 kg/h 3.0 kg/h 1.3 kg/h
+Space usage 0.4 m 2.5 m 0.4 m 2 m 2
+Energy usage/kg dried larvae * 3.7 kWh
+2
+2
+8.2 kWh
+2
+12.2 kWh
+10.9 kWh
+* Energy usage is presented as kWh. 1 kg gas equals 13.6 kWh.
+Fractioning and refining
+The high fat content of dried larvae may be unfavourable, since standardized animal feeds usually
+require a fat content below 10%. Moreover, a high fat content makes the product more suscepti-
+ble to lipid oxidation, which can result in unpleasant flavours and textures. Also, further processing
+of dried BSFL into pellets or other processed products may be difficult, as high amounts of fat can
+cause smearing and blocking of machines. The fat in the dried larvae can be extracted mechanical-
+ly using a screw press typically used for nuts and seeds. This process is called fractioning, as the
+larvae are split into a protein fraction (BSF meal) and fat fraction (BSF oil). In a first step, the screw
+press squeezes the fat out of the larvae and produces a press cake and a press liquid. A second
+refining step then yields BSF meal from the press cake and BSF oil from the press liquid. Because
+of its high protein content, BSF meal is a potential substitute for fish meal or soybean meal. BSF
+oil contains valuable fatty acids and can be a potential alternative for coconut or palm kernel oil.
+Fractioning further enhances the shelf life of the BSF meal by up to 6 months. Both BSF meal
+and BSF oil are raw materials, which can be used for different end-products and can be further
+processed via pelletizing or saponification.
+Wet-processing is when BSFL are pressed without prior dry-
+ing, using a nut screw press. Find details for this process in
+our factsheet.
+66 Black Soldier Fly Biowaste ProcessingFor feed formulation with BSF meal, it is especially the protein quality that is important to consid-
+er. The protein quality depends on the amino acid content. Amino acids are the building blocks
+of proteins and each animal requires specific amounts of certain amino acids in their feed for a
+healthy development. Protein sources such as fish meal or soybean meal have different amino
+acid contents than the amino acid profile of BSF meal. When formulating feed using BSF meal it
+helps to analyse amino acid contents and compare it to commonly used protein sources like fish
+meal.
+The quality and application of BSF oil depends on its fatty acid composition, as each type of oil
+consists of different fatty acids. BSF oil typically contains high amounts of lauric acid, which
+makes it comparable to palm kernel oil or coconut oil. The fatty acid composition is influenced by
+the waste source used to feed the larvae. These differences in fatty acid composition can become
+visible in the oil consistency. Thus, BSF oil may be in solid or liquid form at room temperature
+depending on the fatty acid composition.
+An example of an amino acid and fatty acid analysis and how
+they compare to other protein sources, and other oils respec-
+tively, are described in our factsheet.
+Due to the similarities of BSF oil to coconut oil, it could be
+used as an ingredient to make a soap bar. Find all the details
+on how to make a soap bar in our factsheet.
+5.2
+Activities in the post-processing unit
+Figure 5–3 illustrates the flow diagram of the post-processing options and the mass balances
+for each processing step. Sanitised larvae contain around 75% water and protein and fat account
+each for around 10% of the wet weight. In the drying step, the water is evaporated, which results
+in a mass reduction of around 70%. Remaining nutrients become more concentrated resulting in
+a protein content between 30 and 40% and a fat content between 20 and 40% of dry weight. By
+fractioning, the dried larvae are pressed into a press cake (around 70%) and crude BSF oil (around
+20%). During hot pressing some remaining water evaporates (around 10%). The press cake is then
+grinded to a fine meal. During this refining step the mass balance does not change, as only the
+particle size is reduced. Refining of BSF crude oil further reduces the oil mass by 40%, as solids
+in the oil are filtered out. Each of the processing steps are further explained in detail within this
+chapter.
+Black Soldier Fly Biowaste Processing 67Figure 5–3: Process flow diagram and mass balance of post-processing BSF larvae.
+68 Black Soldier Fly Biowaste Processing5.2.1
+Microwave Drying
+We illustrate the microwaving operation with a simple kitchen microwave. However, the same
+principles as described here are also applicable for larger scale microwaves.
+Materials and equipment needed:
+Microwave
+32 L, 1000 W
+Capacity: 1 kg/h Ceramic
+plate
+Storage
+container Flipping
+spoon
+Bulk balance
+Max. capacity: 35 kg
+Accuracy: ± 0.5 g
+Heat resistant
+gloves
+Tasks:
+Step 1:
+Weigh 250 g of sanitized BSFL on to a ceramic microwave save plate and distribute the larvae
+evenly.
+Step 1: Larvae evenly distributed on the plate.
+Step 2: Timer set to 5 min.
+Black Soldier Fly Biowaste Processing 69Step 2:
+Step 3:
+Step 4:
+Place the plate into the microwave and start to dry in 3 cycles of 5 minutes - at the highest power
+(1000 Watt). In between each 5 minute cycle open the microwave for 30 seconds, let the steam
+escape and flip the larvae with the flipping spoon. Too much steam in the microwave can cause
+damp and moist larvae, and also drying takes longer if you do not let the steam out. During the last
+cycle you will hear the typical «popping» sound.
+Check if the product quality matches the following 2 indicators:
+· Indicator 1: the larvae have a puffed shape
+· Indicator 2: the larvae have a crispy and dry texture. When you crush the larvae with your
+fingers, it breaks easily apart into fine crumbles.
+If these indicators are not met, and your larvae are still moist or damp just re-start the microwave
+for an additional cycle of 2-3 minutes – at highest power. When both indicators are achieved, re-
+move larvae from the microwave.
+Weigh the dried larvae of each batch and note down the weight in the log sheet (see Annex F).
+Let the pop-larvae cool before you store them in a closed container. Label the container with the
+production date.
+Step 3: Checking the larvae texture.
+Step 4: Weighing and storing the dried larvae.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing during microwaving activities.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Measure the weight of the larvae per batch before and after drying and note it down on the
+log sheet.
+The microwave drying module from the e-learning video
+series on BSF Biowaste Processing is available through this
+link.
+70 Black Soldier Fly Biowaste Processing5.2.2
+Roasting
+The roasting operation is described based on a coffee roasting machine produced in Surabaya, In-
+donesia. The process will work similarly for other rotating dryers. When buying or building a drum
+dryer it is important that the machine is fitted with a good heat insulated drum, an exhaust-fan, a
+fin structure inside the drum to flip the larvae as well as an efficient burner.
+Materials and equipment needed:
+Coffee Roaster
+Motor: 350 W
+Exhaust fan: 700 W
+Drum volume: 0.46 m 3
+Capacity: 7.5 kg/h Gas
+cylinder
+Container
+(60 x 40 x 12 cm) Storage
+container
+Heat resistant
+gloves
+Bulk scale
+Max. capacity: 150 kg
+Accuracy: ± 50 g
+Tasks:
+Step 1:
+Step 2:
+Get the drum dryer ready for operation. For that, attach the gas cylinder to the burner of the drum
+dryer and connect the machine to electricity. Switch on the control panel of the machine and start
+the rotation, the exhaust fan and the heating. Set the temperature to 140°C, and preheat the drum
+while it is rotating and the exhaust fan is on.
+As soon as the temperature has reached 140°C, add 5 kg of larvae to the drum via the inlet funnel.
+Let the larvae roast for approximately 40 minutes in total. You will notice that the temperature will
+drop at the beginning to around 80-90°C. As more and more water then evaporates, the temper-
+ature will start to rise again – this is when the actual roasting process starts. You can check the
+process, by removing a sample from time to time.
+Black Soldier Fly Biowaste Processing 71Step 2: Adding larvae to the
+Step 3: Emptying drum via front flap door.
+drum via funnel.
+Step 3:
+Step 4:
+Stop the process when the following two indicators are met:
+· Indicator 1: the larvae need to have a puffed shape
+· Indicator 2: the larvae need to have a crispy and dry texture. When you crush the larvae with
+your fingers, it breaks easily apart into fine crumbles
+These indicators are usually met after the dryer has been operating for 5-10 min after the temper-
+ature has reached 140°C again. Remove the larvae from the dryer by opening the front flap door.
+Weigh the dried larvae per batch and note down the weight on the log sheet. Let the pop-larvae
+cool before you store them in a closed container. Label the container with the production date.
+The drum roasting module from the e-learning video
+series on BSF Biowaste Processing is available through this
+link.
+A small scale alternative to drum roasting, which also considers very limited resources available,
+is the sand roasting technique using a wok pan. The ideal sand for this method is washed beach
+sand with a particle size from 0.8-1.5 mm. We recommend changing the sand after 5 cycles of
+drying. Burned and dark sand results in burned and dark larvae.
+72 Black Soldier Fly Biowaste ProcessingMaterials and equipment needed:
+Wok pan setup
+Diameter pan: 30 cm
+Capacity: 3 kg/h Mesh spatula Spatula Heat resistant
+gloves
+Storage
+container Washed beach sand
+Particle size: 0.8 -1.5 mm Bulk balance
+Max. capacity: 35 kg
+Accuracy: ± 0.5 g Lighter
+Tasks:
+Step 1:
+Step 2:
+Add 1 kg of sand to the wok pan, turn on the gas stove and pre-heat the sand for 15 min.
+Add 1 kg sanitised BSFL to the sand and roast the larvae for 15 to 20 minutes while you are contin-
+uously stirring. During the last 5 minutes you will see the larvae puff and you will hear the typical
+popping sound. You will notice the end of the process when the «popping sound» is less frequent.
+Step 1: Preheating 1 kg sand in a wok pan.
+Step 3:
+Step 2: Adding 1 kg of BSFL to the hot sand.
+Stop the process when the following two indicators are met:
+· Indicator 1: the larvae need to have a puffed shape
+· Indicator 2: the larvae need to have a crispy and dry texture. When you crush the larvae with
+your fingers, it breaks easily apart into fine crumbles
+If these indicators are not met and your larvae are still moist or damp, continue stirring and roasting
+Black Soldier Fly Biowaste Processing 73Step 4:
+Remove the larvae from the pan using the mesh spatula and weigh the dried larvae per batch
+and note down the weight in log sheet. Let the pop-larvae cool before you store them in a closed
+container. Label the container with the production date.
+Step 4: Removing dried larvae from wok pan using a mesh
+spatula. Shaking the mesh spatula removes sand attached
+to the larvae.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use oven gloves, eye protection and protective clothing during roasting activities.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Measure the weight of the larvae per batch before and after drying and note it down on the
+log sheet.
+The sand roasting module from the e-learning video
+series on BSF Biowaste Processing is available through
+this link.
+74 Black Soldier Fly Biowaste Processing5.2.3
+Oven Drying
+In a simple gas heated oven, as shown here, air circulation is not enough to ensure even heat
+distribution for drying. Therefore, it is important to shuffle trays inside the oven as this helps to
+ensure even drying. Typically, BSFL on the trays close to the bottom and top dry faster than on the
+trays in the middle. Therefore, shuffle the trays from top or bottom towards the centre of the oven.
+Ideally it would be even better to install a fan inside the oven, which ensures even heat distribution
+throughout all areas inside the oven.
+Materials and equipment needed:
+Oven with thermostat
+Thermostat: TGW IL-80EM
+Heating: Stove (RI 511A)
+Capacity: 1.3 kg/h Bulk scale
+Max. capacity: 150 kg
+Accuracy: ± 50 g
+Heat resistant
+gloves Storage
+container
+Mesh trays
+Mesh size: 4 mm
+Dimensions: 65 x 45 x 3.5 mm
+Gas
+cylinder
+Tasks:
+Step 1:
+Step 2:
+Start the oven by connecting the gas cylinder to the stove of the oven, start heating the oven and
+set the thermostat to 65°C.
+Add 3 kg of sanitized larvae to each of the 10 mesh trays and insert them into the pre-heated oven.
+The larvae are dried during one first and long night session of 16 hours, a morning session of 4
+hours and a last afternoon session of 4 hours. In between these three sessions trays are shuffled.
+Black Soldier Fly Biowaste Processing 75Step 1: Setting the thermostat to 65°C.
+Step 3:
+Step 4:
+Step 2: Adding the mesh trays with sanitised BSFL to the oven.
+Stop the process after 24 hours of drying and check if the following indicators are met:
+· larvae have a hard and dry texture
+· larvae have a flat and shrunken shape
+Weigh the dried larvae per batch (sum of all trays) and note down the weight in the log sheet. Let
+the larvae cool before you store them in a closed container. Label the container with the produc-
+tion date.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use oven gloves, eye protection and protective clothing during oven drying activities.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Measure the weight of the larvae per batch (sum of all trays) before and after drying and
+note it down on the log sheet.
+The oven drying module from the e-learning video series
+on BSF Biowaste Processing is available through this link.
+76 Black Soldier Fly Biowaste Processing5.2.4
+Fractioning
+The fat of the dried larvae can be extracted mechanically using a screw press. This results in a
+BSF press cake and BSF crude oil. The BSF press cake is a dry but rough material high in protein.
+The BSF crude oil is called “crude” because besides the fat it also contains solids, which mainly
+consist of proteins and fibres.
+Materials and equipment needed:
+Screw press
+Model: Vevor DL-ZYJ10B
+Capacity: 5 kg/h Container for
+press cake
+Plastic box: 55 x 35 x 12 mm
+Allen key Bulk balance
+Max. capacity: 35 kg
+Accuracy: ± 0.5 g
+Container for
+press liquid
+5 L, stainless steel
+Sieve
+Mesh size: 0.5 mm,
+Stainless steel
+Tasks:
+Step 1:
+Step 2:
+Step 3:
+Prepare the screw press for operation. Turn on the screw press and heat it up to 100°C and place
+the containers under the respective openings: the container for collecting the press cake under
+the big outlet of the press, the oil collecting container under the small crevice openings at the
+screw outlet. Place a sieve on top of the oil collection container. Start the screw turning by press-
+ing the squeeze button.
+Weigh the dried larvae you are planning to press using a bulk balance. Add larvae to the hopper,
+little by little. Avoiding overloading the hopper prevents blocking of the screw press and therefore
+increases the throughput per hour.
+After all larvae have been added to the hopper, wait a few more minutes until no press cake and
+no liquid is exiting the machine and then stop the screw (pressing the stop button). Empty the
+remaining material from the press by reversing the screw turning direction (cleaning button).
+Black Soldier Fly Biowaste Processing 77Step 1: Setup of screw press.
+Step 4:
+Step 5:
+Step 2: Adding little by little dried Step 3: Wait until no press cake is coming
+larvae to the hopper. out anymore.
+Weigh the obtained press cake and weigh the press liquid and note it down on the log sheet.
+Proceed directly with the refining step or else store the press cake and press liquid (crude oil)
+temporarily in suitable closed containers. Label the containers with the production date.
+We recommend a cleaning step after each use of the screw press, as this ensures product quality
+and safety, avoiding remains of an older pressing contaminating a new batch. Regular cleaning
+after each batch also prolongs the life time of the equipment. For cleaning, wait until the machine
+has cooled down and then simply loosen and remove the screws in the tube using an Allen key,
+and clean all parts with water and detergent.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use oven gloves, eye protection and protective clothing during oven drying activities.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Measure the weight of the dried larvae per batch before pressing and measure the weight
+of press cake and BSF crude oil after pressing the whole batch. Note down the weights in
+the log sheet.
+The fractioning module from the e-learning video series
+on BSF Biowaste Processing is available through this link.
+78 Black Soldier Fly Biowaste Processing5.2.5
+Refining
+Both products from fractioning, the BSF press cake and the BSF crude oil should be further re-
+fined. The BSF press cake needs a grinding step to reduce its particle size. As the BSF crude oil
+contains solids, it should be further refined by filtering or decanting to increase its purity.
+Grinding
+To ensure a fine and homogenous particle size of the BSFL protein meal, the dry press cake has to
+be grinded to a mesh size of 100 to 200 μm. Dry press cake has a rough texture, but if you intend
+to use extruders and pelletizers these require a fine input material. That is why the grinding step
+is an essential refining step to obtain a high quality raw material.
+Materials and equipment needed:
+Coffee grinder
+Motor: 350 W
+Exhaust fan: 700 W
+Dust collecting
+fabrics
+Container for
+press cake
+Plastic box: 55 x 35 x 12 mm
+Storage
+container
+Bulk balance
+Max. capacity: 35 kg
+Accuracy: ± 0.5 g
+Black Soldier Fly Biowaste Processing 79Tasks:
+Step 1:
+Prepare the grinder for operation. Place containers under the two outlets of the grinder: The main
+outlet and the exhaust outlet. Cover the two outlets with a fabric bag and start the grinder.
+Step 1: Grinder setup.
+Step 2: Adding of press cake to the
+Step 3: BSF meal collection
+grinder.
+Step 2 : Continuously add dry press cake to the hopper until all press cake has been grinded.
+Step 3: Stop the grinder and remove the fabric bag from the grinder.
+Step 4: Weigh the BSF meal and note it down on the log sheet. Store the meal in a closed container and
+label it with the production date.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing during grinding activities.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Measure the weight of BSF meal.
+80 Black Soldier Fly Biowaste ProcessingOil refining
+Solids can account for up to 40% of the total BSF crude oil mass. The solids consist mainly of
+fibres and protein and can be separated from the BSF oil by a filtration or decanting step. As BSF
+oil can be solid at room temperature, refining should be performed directly after pressing, when
+the crude oil is still warm. If the oil is solid then it is not possible to use filtration or decanting for
+separation. You would then need to heat the oil slightly so that is becomes liquid. The oil refining
+process is important when you want to include the BSF oil in other products like BSF pellets, or
+also BSF soap.
+A) Oil filtering
+Filtration recovers all solids whereby oil passes through a filter. A simple and passive setup using
+e.g. coffee filters can separate the solids from the oil. The filtration process can be supported by a
+vacuum pump, which can increase the filtration speed. Filtration is a slow process, which can take
+up to 15 hours per kg crude BSF oil. Therefore, filtration is only recommended for small batches.
+For larger batches the oil might become solid after a while, which then stops the filtration process.
+Materials and equipment needed:
+Coffee filter Plastic funnel Oil storage container
+Light tight
+Filter paper
+Pore size 120 μm Erlenmeyer Buchner funnel
+Vaccum pump
+Cast DOA-P504-BN
+Black Soldier Fly Biowaste Processing 81Tasks:
+Step 1:
+Prepare the filtration setup using a vacuum pump by placing the funnel on top of the Erlenmeyer
+and connect it via tube to the vacuum pump. Place a fresh filter paper on top of the funnel and turn
+on the vacuum pump.
+Step 1: Vacuum pump setup.
+Step 2:
+Step 3:
+Step 4:
+Step 2: Pouring of BSF oil on top of the filter.
+Pour the crude BSF oil into the funnel and let the crude oil filter through.
+Stop the vacuum pump and collect the refined BSF oil. Discard the filter paper and the filtered
+solid residue. Note down the weight of the oil collected.
+Store the BSF oil in a light tight container and label it with the production date.
+If you do not have a vacuum pump set up:
+→
+Adaptation step 1:
+Use a coffee filter instead of filter paper. Place
+the funnel on top of any kind of container and let
+the fat passively filter through the coffee filter
+by gravity.
+B) Oil decanting
+If you have larger quantities of crude BSF oil,
+filtering is not feasible. If you do not have access
+to more sophisticated equipment like an oil de-
+canter centrifuge, you can also use the simple
+method of decanting. With time the solids will
+settle as sediment at the bottom of the crude
+oil container. The BSF oil can then be separated
+from the solids by decanting. The oil is collect-
+ed by inserting a tube into the oil fraction at the
+top of the container. After an initial suction with
+the aid of a syringe the oil automatically flows
+through the tube into the second collection con-
+Adaptation step 1: Simple setup using a
+tainer. This process is quicker compared to fil-
+coffee filter and funnel.
+tration. However, suspended solids that do not
+settle to the bottom will not be separated using this method, therefore resulting in a less pure
+product.
+82 Black Soldier Fly Biowaste ProcessingMaterials and equipment needed:
+Plastic syringe
+Plastic tube
+Oil storage container
+Light tight
+Cylindrical
+container
+Tasks:
+Step 1:
+Step 2:
+Oil preparation. Leave the crude oil for a few hours in a cylindrical container. If your crude oil gets
+hard, place the container in a warm water bath. The solids are heavier than the oil, therefore they
+will settle at the bottom of container and you can decant the oil on top. Make sure you handle the
+container with care in order to prevent settled solids from being suspended again.
+Setup preparation. Place the cylindrical container on top of an empty box or container, so it’s on a
+higher level compared to the storage container. Attach the syringe to one end of the plastic tube.
+Insert the other end of the plastic tube into the upper oil fraction.
+Step 3: Pulling the syringe to start the decanting process.
+Step 3:
+Step 4:
+Start decanting by pulling the syringe so the oil is sucked from the crude oil container. Remove
+the syringe and let the oil flow into the lower storage container by gravity. Make sure the tube is
+constantly immersed in the top oil fraction and does not suck up the solids at the bottom of the
+container.
+Stop the process as soon as the tube touches the solids at the bottom of the container.
+Black Soldier Fly Biowaste Processing 83PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing during oil refining activities.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Measure the weight of collected refined BSF oil. .
+The refining module from the e-learning video series on
+BSF Biowaste Processing is available through this link.
+5.3
+Monitoring, Storage and Product Labelling
+Monitoring
+To keep track of your post-processing activities we recommend filling a log sheet on each produc-
+tion day. A template log sheet can be found in the Appendix H. The data recorded in the log sheet
+allows checking on process control parameters. The mass balance is an important process control
+parameter, as it gives an indication if the process is completed. A simple way to check the mass
+balance is to calculate the output yield by dividing output mass by input mass:
+Total mass OUT
+Yield %
+x 100
+=
+Total mass IN
+With this percentage, you can control your drying or fractioning process, as the yield remains con-
+stant within a range. However, the waste source and harvesting time point will have an influence
+on the yields, as water and fat contents vary. Average values calculated at a pilot site are noted in
+the mass flow diagram in Figure 5–3.
+Storage
+Spoilage of BSFL products is influenced by various factors which include temperature, humidity,
+water activity, oxygen and light exposure. High temperature and humidity can lead to an increase
+in water activity and hence, to spoilage through microorganism activity. However, the initial con-
+84 Black Soldier Fly Biowaste Processingtamination with microorganisms in the BSFL product will depend on the waste source as well as
+cleaning and drying processes applied to the BSFL. Light and oxygen exposure can promote lipid
+oxidation, which results in off-flavours, colour and form changes.
+Choosing the right storage container and packaging helps to avoid rapid spoilage of BSFL prod-
+ucts. Storage containers should be air and light tight as well as water proof. Similarly, packaging
+material should be water proof and for high fat products like BSF oil or dried BSFL they should
+also be light tight. Adding pre-packed desiccants to packed products sustains a low humidity level
+inside the package and thereby keeps the water activity low. All products should be sealed before
+selling as a guarantee for the customer that the product was not opened before. All products
+should be stored in a place protected from high temperatures, weather and direct sun light.
+Labelling
+Your final packed BSF product requires a label, which holds relevant product information, is able
+to ensure traceability and invites customers to buy your product. Figure 5–4 shows an example of
+a product label designed for the microwave dried BSFL, called pop-larvae.
+1
+6
+3
+2
+7
+8
+5
+9
+4
+Figure 5–4: Example label for microwave dried BSFL, called pop-larvae
+The different information shown in the example label above are listed and explained in Table 5–3.
+Table 5–3: Items to add to a product label
+# Labelling info
+Description
+1 Nutritional content Include at least protein, fat and water content.
+2 Production date Important for traceability of your products
+2 Expiry date This is important usage information and helps to
+avoid complaints.
+3 Product description e.g dried BSF larvae or BSF meal, your brand name
+(pop-larvae) may be unclear
+4 Netto weight Amount of product per pack
+5 Pictures of target animals To visually indicate the intended use of the product.
+6 General information / benefits This can help to catch interest of customers.
+7 Usage instructions Indicate how to feed the animals with the product.
+8 Storage instructions Mention where and how to store the product.
+9 Company / brand name and address Information where customers can find you.
+This could be a website, social media or a location.
+Black Soldier Fly Biowaste Processing 8586 Black Soldier Fly Biowaste ProcessinChapter 6:
+Business development
+A business model for your BSF facility should be in place before starting your venture especially if
+the intention is to run it as a business. This chapter provides some tools to support your business
+model with numbers and to help identify what preconditions must be met before opening a BSF
+facility.
+6.1
+Cost-revenue analysis and financial viability
+Understanding and assessing the cost of BSF waste processing is an important aspect before
+starting or while operating a BSF facility. This involves not only estimating the capital costs re-
+quired for construction but also appraising the expected operational costs for a specific local
+context and monitoring cost units during operations. Here we present two tools to help with
+cost-revenue assessments and allow judgement on the financial viability of a BSF biowaste pro-
+cessing facility.
+The “scenario based business model tool” is for those that want to look at a BSF facility in detail.
+It dissects each processing unit individually in terms of capital and operational cost. It provides
+material lists required but also allows for individual adjustments if the user has experience and is
+familiar with the specific local conditions at the location of interest. Analysis of each processing
+unit separately allows to appraise different business models, for instance different degrees of de-
+centralization and management of supply chains. After choosing a desired scenario, and entering
+other input variables, the tool then calculates key financial parameters such as Net Present Value
+(NPV), to determine the value of such a potential investment project.
+Another tool is the “web-based cost model tool”, that provides a much more simple overview of
+the costs involved in developing a BSF facility, based on the amount and type of waste conceived.
+The tool utilizes data from the existing site and design in Indonesia, and provides default process-
+ing conversions values, to calculate costs of capital expenditure and cost of production per unit.
+The user then can assess the local market and potential sales prices of BSF products to judge if
+a profit margin is possible.
+Assessing potential revenue flows derived from BSF waste processing and comparing these to
+cost items of a BSF facility, depending on scale of operation, gives a good indication if financial
+viability might be achieved. Although experience and data from existing facilities can give a good
+indication of space, equipment and labour requirements there are nevertheless variables that will
+affect this data which depend very much on the local specific context and conditions:
+· CAPEX or capital costs of the facility (e.g. local cost for constructing custom-made materials,
+local availability of equipment, etc.
+· OPEX or operational cost of the facility (e.g. local utilities cost, local labour wages, etc.)
+· Climate and other environmental impacts (e.g. temperature, humidity, odour prevention, waste
+water management, etc.)
+· Potential revenues from waste processing (gate fees)
+· Potential sales revenue from larvae derived products (e.g. whole larvae, dried BSFL, BSF meal
+and BSF oil)
+· Sales revenue from BSF rearing products such as 5-DOL sold for the use of converting waste
+at other locations
+· Sales of the waste residue as soil amendment or sales of related products such as biogas from
+treating residue.
+Black Soldier Fly Biowaste Processing 876.2
+The scenario-based business model tool
+The scenario-based business model tool was developed to differentiate each processing unit of
+the facility based on “Activity Based Costing”. This allows the user to compare different scenarios
+of business models and implementation. Three distinct scenarios are made available in the tool
+which are described by the following figures below:
+· Scenario 1: This scenario assumes one full-fledged centralised plant which includes all pro-
+cessing units at one location. This central BSF facility, receives organic waste, processes this
+waste with BSF to obtain grown larvae and then converts (post-processing) these larvae into
+BSFL products such as fresh larvae, dried larvae and/or larvae meal and oil. This same facility
+also runs a rearing unit that closes the lifecycle to ensure pupae, flies and eggs and continuous-
+ly provides 5-DOL for the treatment unit (Figure 6–1).
+Centralised integrated plant
+Products to
+market
+Figure 6–1: Scenario 1: Centralised integrated plant
+· Scenario 2: This scenario consists of two separate business units not located at the same
+premises. First, a centralised rearing facility that focuses exclusively on closing the life cycle to
+continuously produce 5-DOL for use at different treatment facilities. Then, individual treatment
+facilities located at different locations throughout the city, ideally close to the source of waste
+generation. These decentralised treatment facilities process organic waste using the 5-DOL
+from the rearing facility to obtain grown larvae and also convert these grown larvae into BSFL
+products such as fresh larvae, dried larvae and/or larvae meal and oil (Figure 6–2)
+Centralised nursery
+Decentralised waste treatment and post-processing
+5-DOL
+Products to
+market
+Figure 6–2: Scenario 2: Centralised nursery, decentralised treatment and post-processing
+· Scenario 3: This scenario is similar to scenario 2 with decentralised treatment facilities. In this
+case however the treatment facilities also obtain 5-DOL to conduct waste treatment but then
+do not process the grown larvae into products but instead sell the fresh grown larvae back to
+the central facility. This central facility therefore does not only rear 5-DOL for the treatment
+facilities but also receives grown larvae from them to convert these larvae into BSFL products
+such as fresh larvae, dried larvae and/or larvae meal and oil (Figure 6–3).
+88 Black Soldier Fly Biowaste Processing5-DOL
+Decentralised waste treatment
+3
+Centralised nursery and post-processing
+Products to
+market
+Figure 6–3: Scenario 3: Centralised nursery and post-processing, decentralised treatment
+As described in the scenarios 2 and 3, these models require a supply chain and an exchange of
+crucial goods between the centralised and decentralised facilities. For both scenarios 2 and 3 the
+regular supply of 5-DOL is vital. This is a source of income for the rearing facility and is a raw ma-
+terial for the treatment facility besides the waste they receive. For scenarios 3, the exchange of
+goods goes in both directions. 5-DOL are transferred from the rearing/post-processing facility to
+the treatment facility and then grown larvae are transferred back from the treatment facility back
+to the rearing/post-processing facility. In this exchange, it is important to find a pricing scheme
+for these products that is beneficial for all parties. If the rearing facility charges too high prices
+for their 5-DOL, then the decentralised treatment facility might run into a deficit and go out of
+business. Similarly, if the decentralised treatment facility charges a too high price for the grown
+larvae, then nursery/post-processing facility may go out of business.
+The scenario-based business model tool helps identify pricing schemes for such product exchang-
+es while also considering the scale of operation of each facility given the impact of economies of
+scale.
+Furthermore, the tool gives insights into the cost structure of each processing unit and provides
+financial performance indicators as well as key capital budgeting indicators such as net present
+value (NPV), payback period (PB) and internal rate of return (IRR) based on a period of 5 years with
+a discount rate of 11%.
+The scenario-based business model tool is an excel based tool.
+Each scenario has its own excel file where the user can fill in
+the required data. All the excel models as well as a manual can
+be downloaded for free through this link.
+Black Soldier Fly Biowaste Processing 896.3
+The web-based cost model tool
+The web-based cost model is a more simplified version of the “scenario-based business model
+tool”. It assumes a central plant with all units integrated in one facility. It estimates operational
+cost to provide the user with the production cost per unit of BSF product (i.e. costs incurred from
+manufacturing a BSF product). This can then be compared with current sales prices of similar
+competing products on the market. The user selects a scale of operation based on the amount
+of waste that shall be treated, what BSF products shall be sold, and enters some additional unit
+costs given the local context (labour costs, utility costs, etc.). Default conversion values based on
+the experience from Indonesia are provided, but these can be individually adjusted by the user if
+other information is available. The benefit of using this web-based cost model tool is that you do
+not need to be a BSF expert. It is enough to be a BSF enthusiast that wants to explore what it
+means to operate a BSF facility, how much product and what production cost you might expect.
+The tool output is shown as a flowchart including mass flows through the different processing
+units besides the costs.
+The web-based cost model is an online tool which focusses
+on calculating the operational cost per unit of a selected BSF
+product.
+6.4
+Siting a BSF waste processing facility
+Understanding the natural life-cycle is the basis for setting up an efficient and reliable BSF waste
+processing facility. At the facility, with its infrastructure, equipment and workers with their skill
+sets, the operator takes control over the natural life cycle of BSF to thus, create and operate an
+engineered biosystem.
+The facility location with its components and activities strives to best mimic the natural habitat
+and the needs of the BSF, while steering them towards increased efficiency and stability so that
+a continuous waste treatment can be ensured. The following aspects should be taken into consid-
+eration when selecting an appropriate site for a BSF processing facility:
+· Nearby sources of good quality biowaste in regular and/or predictable amounts. The closer the
+facility is to the waste, the lesser is the need for transport and logistics of waste sourcing.
+· Nearby customers for larvae and their conversion products. The closer the distance to your
+customers the easier it is to maintain suitable market channels and enhance customer relation-
+ships while also reducing transport costs.
+· Appropriate location in the city or neighbourhood that does not incur conflicts with or obstruc-
+tion by residents or adjacent land users.
+· Adequate green zones that can buffer the facility from the surrounding area (e.g. open areas,
+trees, fences, etc.)
+· Availability of water, a wastewater system and connection to a power grid
+· Adequate building infrastructure and quality. The treatment area should have a roof and a con-
+crete base to provide shelter and provide a clean workspace. An office, toilet facilities and lab
+space should also be available.
+When the location has been selected and construction plans are being developed the following
+specific aspects need to be considered:
+90 Black Soldier Fly Biowaste Processing· The site should be protected from infestation of pests and vermin. Ant traps are required for
+·
+·
+·
+·
+·
+6.5
+contact points between the equipment and the floor. Ensure that there is no contact between
+equipment and the walls. Mesh wire protection may be required for all essential components
+of the rearing operation to avoid birds, rats and lizards from accessing the larvae.
+Treatment units need to be placed away from direct sunlight, maintained at temperatures of
+around 25 degrees and without impact of rain and ideally kept at low humidity.
+Rearing stages of egg, pre-pupae and pupae need high humidity and temperatures of around
+28 degrees with full shading from the sun.
+Rearing stage of the larvae need to kept at a low humidity, temperatures of around 25 degrees
+and with full shading from the sun.
+Rearing of the fly and mating stages need high humidity a temperature of around 28 degrees
+and abundance of indirect sunlight.
+Post-processing unit needs to have sufficient ventilation, comfortable temperature for manual
+labour and very low humidity levels.
+Creating a floorplan and planning the unit locations for a BSF site
+One of the outputs of both cost model tools, as described above, is the space requirements for
+each of the three units (rearing, conversion/treatment and post-processing) at a BSF facility de-
+pending of the scale of waste input. Figure 6–4 shows an example of a floorplan for the selected
+facility of 5 tons of biowaste per day.
+Employee
+facilities
+Storage
+Office
+Waste pre-
+processing
+Laboratory
+Waste treatment
+Post-
+processing
+678 m 2
+Rearing unit
+Harvesting
+121 m 2
+105 m 2
+Figure 6–4: Floorplan for BSF biowaste processing plant with a capacity of 5 tons biowaste input per day
+When comparing different scales (see Table 6–1) and the respective space requirements at
+these scales, it becomes clear that this does not increase or decrease linearly with the increase
+or decrease in waste input. Especially the rearing unit shows the least dependency between
+scale and space requirement. Here the equipment, for instance the racks, come with a fixed
+Black Soldier Fly Biowaste Processing 91scale of design. In that sense smaller scale does not affect space requirements but indicates that
+the equipment is not used at full capacity. In contrast, the waste treatment unit shows a strong
+dependency between scale and space. This is the result of a small unit size of equipment. For every
+small change of scale the total number of these small pieces of equipment increases immediately
+requiring more space to accommodate. Lastly, the post-processing unit, show a similar pattern as
+the rearing unit. The capacity of most installed equipment is often not the limiting factor and there-
+fore a decrease or even increase of scale can be accommodated with the same piece of equip-
+ment. This is shown in Table 6–1 when comparing scale of 1 ton and 2 tons of waste processed per
+day. Although the scale has doubled there is almost no effect on the floorspace required.
+Table 6–1: Overview of site scale and effect on size of the different operational units
+Amount of waste
+processed per day
+Area Rearing
+Area Conversion
+Area Processing
+Total Area
+5 ton/d 121 m 2 678 m 2 105 m 2 ±900 m 2
+2 ton/d 71 m 2 286 m 2 47 m 2 ±400 m 2
+1 ton/d 47 m 2 160 m 2 44 m 2 ±250 m 2
+6.6
+Operational scenarios and work scheduling
+The operational guidance as provided in this book is based on a BSF treatment facility that has the
+capacity to produce enough 5-DOL to treat around 35 tons of biowaste per week. This requires a
+daily presence and work schedule, seven days a week.
+Depending on waste, space and labour availability, one could however also choose a reduced
+work schedule that can be managed working only half of the days in a week or even less with an
+alternate Monday-Wednesday-Friday work schedule (see Table 6–3).
+Table 6–2: Capacity of the described BSF facility depending on work schedule
+Work schedule
+Waste
+capacity
+Output of
+5-DOL
+workers
+required
+Area
+Daily 5-DOL output
+fluctuation
+1 Every day 35 ton / wk ±50 million / wk 23 900 m 2 Stable
+2 Every other day 14 ton / wk ±20 million / wk 12 400 m 2 Small fluctuation
+3 Mon-Wed-Fri 7 ton / wk ±8 million / wk 9 250 m 2 Large fluctuation
+The work schedules and log sheets presented in the annexes are developed for an every day work
+schedule. This setup has shown to be the most stable in the production of young larvae and is the
+most reliable for converting a daily continuous flow of biowaste arriving at the site. For all three
+work schedules, different task lists and feeding schedules have been designed and are available
+for download.
+92 Black Soldier Fly Biowaste ProcessingBesides the “every day” work schedule as provided in the
+Annex, this link provides access to two different operational
+scenarios with respective work schedules. The manual ex-
+plains the impact of these different work scenarios and how to
+prepare these schedules.
+The work schedules use a date code
+format: XX.Y. This allows for easy date
+calculations and tagging of cages and
+containers. The XX-value indicates the
+calendar week of the year (week 01-52/53).
+The Y-value indicates the day of the
+week (Monday-Sunday = 1-7).
+Date:
+Code:
+Tuesday, February 21
+8.2
+Week 8 of the year
+Day 2 of the week
+Work schedules are only available for the rearing (Annex A) and conversion (Annex C) units, as the
+post-processing unit uses “Standard Operating Procedures” (SOP) files related to the operational
+steps at each operational station. In the work schedules, a short explanation is provided for each
+task and the columns to the right are left white when the task has to be performed on that day or
+shaded black when this task does not need to be performed. Work schedules should be placed
+clearly visible and accessible somewhere close to where the staff is working so that the personnel
+following the checklist can check off each task when completed. Each work schedule covers a
+period of four weeks which is then replaced with new schedules by the facility manager for the
+next period.
+The rearing unit requires one additional schedule for the feeding of the nursery larveros (Annex
+B). In the nursery larveros, 5-DOL are fed about 2-3 weeks until they transform into pre-pupae.
+The pre-pupae are then put into pupation containers to eventually become flies. Nursery larveros
+are fed a nutrient rich feed. The harvesting of pre-pupae relies on crawl-off. Towards the end of
+the feeding phase, the water content of the feed is increased, which allows pre-pupae to increase
+traction to then be able to crawl out of the nursery container. The feeding schedule for the nursery
+container informs the operator which feed mixture has to be applied to which nursery container.
+Black Soldier Fly Biowaste Processing 93Date
+Set-up
+1 KG 2 KG
+2 KG
+2 KG
+2 KG 2 KG 2 KG
+1 KG
+1 KG Dism.
+8.1 8.1 7.6 7.5 7.3 7.2 6.7 6.6 6.5 6.3 6.1 5.5
+8.2 8.2 7.7 7.6 7.4 7.3 7.1 6.7 6.6 6.4 6.2 5.6
+8.3 8.3 8.1 7.7 7.5 7.4 7.2 7.1 6.7 6.5 6.3 5.7
+Indicate the IDs of the
+nursery containers to be
+fed today
+Today’s code
+Number and colour
+indicate the amount and
+type of feed to be fed
+ID of the nursery
+container to be
+dismantled today
+The left white column indicates the current date. The second column indicates the date code for
+the nursery larvero that will be set-up on that day. The other cells along the row indicate the ID of
+the nursery larveros to be fed at the date as shown in column 1. The colour indicates the amount
+and type of feed they receive. The feed differs in terms of the amount of water added to the chick-
+en feed (CF) and ranges from 70 - 100% water.
+1kg / 30% CF / 70% H 2 O
+2kg / 30% CF / 70% H 2 O
+2kg / 15% CF / 85% H 2 O
+1kg / 100% H 2 O
+The table presented in the Annex is meant to serve as a template for an Excel-sheet; an operator
+can easily update a schedule in Excel according to formulas.
+Annexes D, E, F, and G present the respected log sheets which were prepared as a template for a
+recording file to enter all the data that will be collected on each day of operation. All the monitoring
+data to assess productivity of the unit can be entered on this sheet.
+94 Black Soldier Fly Biowaste ProcessingBlack Soldier Fly Biowaste Processing 9596 Black Soldier Fly Biowaste ProcessingAnnexes
+Overview of available schedules and log sheet templates.
+Annex A Work schedule for rearing unit in the
+every day-full capacity setting
+Annex B Feeding schedule nursery larvero for
+every day-full capacity setting
+Annex C Work schedule for conversion unit in the
+every day-full capacity setting
+Annex D Log sheet for daily data input of productivity
+parameters in BSF rearing unit
+E Log sheet for daily data input of
+productivity parameters in treatment step
+of BSFL conversion unit
+Annex F Log sheet for daily data input of productivity
+parameters in pre-processing and harvesting
+stage BSFL conversion unit
+Annex G Log sheet for daily data input of productivity
+parameters in BSFL post-processing unit
+Annex
+Black Soldier Fly Biowaste Processing 9798 Black Soldier Fly Biowaste Processing
+5
+ABlack Soldier Fly Biowaste Processing 99
+7
+Time
+min100 Black Soldier Fly Biowaste Processing
+7
+Time
+minB
+Feeding schedule for the nursery larveros in the every day setting. “xx” marks the calendar
+week. The “+1” indicates the following week, the “-1” indicated the previous week and “-2” the
+week before that, etc. The colours are related to an amount of feed in a certain ratio of chicken
+feed (CF) to water.
+Annex B:
+Date Set-up
+xx.1 xx.1
+2 KG 2 KG 2 KG 2 KG 2 KG 2 KG 1 KG 1 KG Dism.
+xx-1.5 xx-1.3 xx-1.2 xx-2.7 xx-2.6 xx-2.5 xx-2.3 xx-2.1 xx-3.5
+xx.2 xx.2 xx-1.6 xx-1.4 xx-1.3 xx-1.1 xx-2.7 xx-2.6 xx-2.4 xx-2.2 xx-3.6
+xx.3 xx.3 xx-1.7 xx-1.5 xx-1.4 xx-1.2 xx-1.1 xx-2.7 xx-2.5 xx-2.3 xx-3.7
+xx.4 xx.4 xx.1 xx-1.6 xx-1.5 xx-1.3 xx-1.2 xx-1.1 xx-2.6 xx-2.4 xx-2.1
+xx.5 xx.5 xx.2 xx-1.7 xx-1.6 xx-1.4 xx-1.3 xx-1.2 xx-2.7 xx-2.5 xx-2.2
+xx.6 xx-1.1 xx-2.6 xx-2.3
+xx-1.2 xx-2.7 xx-2.4
+xx+1.1 This xx.3
+is how the xx.1
+feeding schedule
+nursery larveros
+xx.6
+xx-1.7 for the xx-1.5
+xx-1.4 is built xx-1.3
+up: Every day, you set up a new nursery larvero and feed the
+xx.7
+xx.4 larvero xx.2
+xx-1.6
+xx-1.5
+xx-1.4
+nursery
+whose date xx.1
+codes can be
+found in the
+same row
+with
+the
+corresponding
+amount
+and
+type
+of
+feed
+xx+1.1
+xx.5
+xx.3
+xx.2
+xx-1.7
+xx-1.6
+xx-1.5 xx-1.3 xx-1.1 xx-2.5
+xx+1.2 xx+1.2 xx.6 xx.4 xx.3 xx.1 xx-1.7 xx-1.6 xx-1.4 xx-1.2 xx-2.6
+etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc.
+etc. etc. etc. etc. etc. etc. etc. etc. etc. etc. etc.
+Date Set-up 6.1 6.1 5.5 5.3 5.2 4.7 4.6 4.5 4.3 4.1 3.5
+6.2 6.2 5.6 5.4 5.3 5.1 4.7 4.6 4.4 4.2 3.6
+6.3 6.3 5.7 5.5 5.4 5.2 5.1 4.7 4.5 4.3 3.7
+xx.7
+2 KG
+2 KG
+2 KG
+2 KG
+2 KG
+2 KG
+1 KG
+1 KG
+Dism.
+6.4 6.4 6.1 5.6 5.5 5.3 5.2 5.1 4.6 4.4 4.1
+6.5 6.5 6.2 5.7 5.6 5.4 5.3 5.2 4.7 4.5 4.2
+6.6 6.6 6.3 6.1 5.7 5.5 5.4 5.3 5.1 4.6 4.3
+6.7 6.7 6.4 6.2 6.1 5.6 5.5 5.4 5.2 4.7 4.4
+7.1 7.1 6.5 6.3 6.2 5.7 5.6 5.5 5.3 5.1 4.5
+7.2 7.2 6.6 6.4 6.3 6.1 5.7 5.6 5.4 5.2 4.6
+7.3 7.3 6.7 6.5 6.4 6.2 6.1 5.7 5.5 5.3 4.7
+7.4 7.4 7.1 6.6 6.5 6.3 6.2 6.1 5.6 5.4 5.1
+7.5 7.5 7.2 6.7 6.6 6.4 6.3 6.2 5.7 5.5 5.2
+7.6 7.6 7.3 7.1 6.7 6.5 6.4 6.3 6.1 5.6 5.3
+5.7 5.4
+7.7 7.7 7.4 7.2 7.1 6.6 6.5 6.4 6.2 8.1 8.1 7.5 7.3 7.2 6.7 6.6 6.5 8.2 8.2 7.6 7.4 7.3 7.1 6.7 6.6 8.3 8.3 7.7 7.5 7.4 7.2 7.1 6.7 8.4 8.4 8.1 7.6 7.5 7.3 7.2 7.1 6.3
+6.1
+5.5
+This is how the sheet
+will be hanging
+6.4
+6.2 on the 5.6
+wall of your colony.
+6.5
+6.3
+5.7
+This example starts on
+Monday of week
+6.6
+6.4 6
+6.1
+8.5 8.5 8.2 7.7 7.6 7.4 7.3 7.2 6.7 6.5 6.2
+8.6 8.6 8.3 8.1 7.7 7.5 7.4 7.3 7.1 6.6 6.3
+8.7 8.7 8.4 8.2 8.1 7.6 7.5 7.4 7.2 6.7 6.4
+9.1 9.1 8.5 8.3 8.2 7.7 7.6 7.5 7.3 7.1 6.5
+9.2 9.2 8.6 8.4 8.3 8.1 7.7 7.6 7.4 7.2 6.6
+9.3 9.3 8.7 8.5 8.4 8.2 8.1 7.7 7.5 7.3 6.7
+9.4 9.4 9.1 8.6 8.5 8.3 8.2 8.1 7.6 7.4 7.1
+9.5 9.5 9.2 8.7 8.6 8.4 8.3 8.2 7.7 7.5 7.2
+9.6 9.6 9.3 9.1 8.7 8.5 8.4 8.3 8.1 7.6 7.3
+9.7 9.7 9.4 9.2 9.1 8.6 8.5 8.4 8.2 7.7 7.4
+30% CF 15% CF 0% CF
+30% CF
+Black Soldier Fly Biowaste Processing 101102 Black Soldier Fly Biowaste Processing
+5
+CBlack Soldier Fly Biowaste Processing 103
+7
+Time
+min104 Black Soldier Fly Biowaste Processing
+7
+Time
+minBlack Soldier Fly Biowaste Processing 105
+7
+Time
+minD
+log sheet for daily data input of productivity parameters
+in BSF rearing unit
+Annex D:
+Name responsible
+Date code
+Egg Data
+Date code of today
+Mass harvested eggs (g)
+Data love cage
+12.2
+Date code of love cage
+11.7
+managed
+67.3
+73.5
+–
+11.5
+Commets
+Weight of egg mass from
+the specific love cage
+5-DOL Data
+Date nursery box
+# 5-DOL in 2 grams
+11.4
+971
+953
+Average (#)
+Mass 5-DOL (g)
+962
+1,558
+# of 5-DOL
+750,000
+Total mass x Average / 2
+Prepupal Data
+Date nursery larvero
+10.6
+Mass pre-pupae (g)
+Date nursery larvero
+Mass pre-pupae (g)
+113
+Keeps track of the
+number of prepupae
+harvested from the
+nursery containers
+10.4 145
+10.2 67
+9.7 105
+Mass 100 PP (samples
+from all PP) 2x
+1:
+Weight of random sample
+of 200 prepupae taken
+from today’s pooled nursery
+container harvest
+26.3 g
+2:
+25.5 g
+Average:
+25.9 g
+Prepupae in pupation box
+# of boxes
+Date of dark cage for
+pupation container
+12.4
+PP added per box today (g)
+16
+500
+1500
+Future date code of the dark
+cage that will be set up with
+these pupation containers
+Love cage filling
+Setting
+Empty
+ID of dark cage
+Mass of love cage
+IDs of dark cages to
+which the love cage
+Comments
+is connected
+to
+914
+106 Black Soldier Fly Biowaste Processing
+1 st setting
+9.3
+921
+2 nd setting 3 rd setting
+10.3
+1,144 11.3
+1,634
+Weight of empty
+love cage (including
+hanger)
+Total PP (g)
+4 th setting
+Cumulated prepupae per
+pupation container. See
+yesterday’s log sheet for
+previous number
+5 th setting
+mass 20 flies
+1.68 g
+Cumulated weight love cage
+after every connection to a
+dark cage (including hanger)D
+Annex D:
+Master copy of log sheet for BSF rearing unit
+Name responsible
+Date code
+Egg Data
+Mass harvested eggs (g)
+Data love cage
+Comments
+5-DOL Data
+Date nursery box
+# 5-DOL in 2 grams
+Average (#)
+Mass 5-DOL (g)
+# of 5-DOL
+Prepupal Data
+Date nursery larvero Mass pre-pupae (g) Date nursery larvero Mass pre-pupae (g)
+Mass 100 PP (sample
+from all PP) 2x 1: 2: Average:
+PP added per box today (g) Total PP (g)
+Prepupae in pupation box
+Date of dark cage for
+pupation container
+# of boxes
+Love cage filling
+Setting
+Empty
+1 st setting
+2 nd setting
+3 rd setting
+4 th setting
+5 th setting
+mass 20 flies
+ID of dark cage
+Mass of love cage
+Comments
+Black Soldier Fly Biowaste Processing 107108 Black Soldier Fly Biowaste Processing
+residue
+pallet
+EBlack Soldier Fly Biowaste Processing 109
+EF
+log sheet for daily data input in pre-processing and
+harvesting stage of BSFL conversion unit
+Annex F:
+Name responsible
+Date code
+Waste sorting and pre-processing
+Types of substrate and
+waste fractions
+Received (kg)
+Waste source
+To processing (kg)
+Type:
+Note down origin of
+different biowaste
+streams arriving at
+the site
+Note down the different
+types of substrates going
+into the BSF treatment
+(e.g. fruits, restaurant
+waste, bakery products,
+...)
+Type:
+Type:
+Type:
+Type:
+Composting
+Inorganics Recycling
+Pallet harvesting
+Pallet code:
+Pallet code:
+Pallet code:
+Weight (kg)
+Weight (kg)
+Weight (kg)
+Crate 1 + 2 + 3 Crate 1 + 2 + 3 Crate 1 + 2 + 3
+Crate 4 + 5 + 6 Crate 4 + 5 + 6 Crate 4 + 5 + 6
+Crate 7 + 8 + 9 Crate 7 + 8 + 9 Crate 7 + 8 + 9
+Crate 10 + 11 + 12 Crate 10 + 11 + 12 Crate 10 + 11 + 12
+Crate 13 + 14 + 15 Crate 13 + 14 + 15 Crate 13 + 14 + 15
+Crate 16 + 17 + 18 Crate 16 + 17 + 18 Crate 16 + 17 + 18
+Crate 19 + 20 + 21 Crate 19 + 20 + 21 Crate 19 + 20 + 21
+Crate 22 + 23 + 24 Crate 22 + 23 + 24 Crate 22 + 23 + 24
+Crate 25 + 26 + 27 Crate 25 + 26 + 27 Crate 25 + 26 + 27
+Crate 28 + 29 + 30 Crate 28 + 29 + 30 Crate 28 + 29 + 30
+Crate 31 + 32 + 33 Crate 31 + 32 + 33 Crate 31 + 32 + 33
+Crate 34 + 35 + 36 Crate 34 + 35 + 36 Crate 34 + 35 + 36
+Total weight (kg) Total weight (kg) Total weight (kg)
+Larvae Larvae Larvae
+Manually
+separated residue
+Manually
+Weight of all larvae
+separated residue
+from the pallet after
+Residue mechanical separation
+(calculated)
+Results after subtraction of larval
+weight and manually sorted
+material from total weight
+Manually
+separated residue
+Residue
+(calculated) Residue
+(calculated)
+Weight of manually
+separated residue
+Sampling for substrate in, residue out and larvae
+Pallet code: DATE + Pallet CODE:
+Type 50g
+Subtrate
+Tray 1
+20 in pallet 50g
+Fill
+code
+BSFL on schedule
+Subtrate
+based
+from Annex E
+50g
+Residue
+DATE + Pallet CODE:
+20
+BSFL
+50g
+Subtrate
+Fill in exact mass of
+samples with ±50g
+of substrate, ±50g
+of residue and 20
+counted BSFL
+Wet+T1
+Dry+T1
+Tray 2
+Wet+T2
+Dry+T2
+Tray 3
+Wet+T3
+Dry+T3
+50g
+Residue
+DATE + Pallet CODE:
+Fill in weight of empty
+tray, then tray + wet
+material and then after
+drying the tray + dry
+material
+110 Black Soldier Fly Biowaste Processing
+50g
+Residue
+20
+BSFLF
+Master copy of log sheet for pre-processing and harvesting
+stage of BSFL conversion unit
+Annex F:
+Name responsible
+Date code
+Waste sorting and pre-processing
+Types of substrate and
+waste fractions
+Received (kg)
+Waste source
+To processing (kg)
+Type:
+Type:
+Type:
+Type:
+Type:
+Composting
+Inorganics Recycling
+Pallet harvesting
+Pallet code:
+Pallet code:
+Pallet code:
+Weight (kg)
+Weight (kg)
+Weight (kg)
+Crate 1 + 2 + 3 Crate 1 + 2 + 3 Crate 1 + 2 + 3
+Crate 4 + 5 + 6 Crate 4 + 5 + 6 Crate 4 + 5 + 6
+Crate 7 + 8 + 9 Crate 7 + 8 + 9 Crate 7 + 8 + 9
+Crate 10 + 11 + 12 Crate 10 + 11 + 12 Crate 10 + 11 + 12
+Crate 13 + 14 + 15 Crate 13 + 14 + 15 Crate 13 + 14 + 15
+Crate 16 + 17 + 18 Crate 16 + 17 + 18 Crate 16 + 17 + 18
+Crate 19 + 20 + 21 Crate 19 + 20 + 21 Crate 19 + 20 + 21
+Crate 22 + 23 + 24 Crate 22 + 23 + 24 Crate 22 + 23 + 24
+Crate 25 + 26 + 27 Crate 25 + 26 + 27 Crate 25 + 26 + 27
+Crate 28 + 29 + 30 Crate 28 + 29 + 30 Crate 28 + 29 + 30
+Crate 31 + 32 + 33 Crate 31 + 32 + 33 Crate 31 + 32 + 33
+Crate 34 + 35 + 36 Crate 34 + 35 + 36 Crate 34 + 35 + 36
+Total weight (kg) Total weight (kg) Total weight (kg)
+Larvae Larvae Larvae
+Manually
+separated residue Manually
+separated residue Manually
+separated residue
+Residue
+(calculated) Residue
+(calculated) Residue
+(calculated)
+Sampling for substrate in, residue out and larvae
+Pallet code: DATE + Pallet CODE:
+Type 50g
+Subtrate
+50g
+Residue
+DATE + Pallet CODE:
+20
+BSFL
+50g
+Subtrate
+50g
+Residue
+DATE + Pallet CODE:
+20
+BSFL
+50g
+Subtrate
+50g
+Residue
+20
+BSFL
+Tray 1
+Wet+T1
+Dry+T1
+Tray 2
+Wet+T2
+Dry+T2
+Tray 3
+Wet+T3
+Dry+T3
+Black Soldier Fly Biowaste Processing 111G
+log sheet for daily data input of parameters in BSFL
+post-processing unit
+Annex G:
+Name responsible
+Date code
+Today’s operator
+Date code of today
+Drying method
+Drying equipment used
+Drum dryer (roasting)
+Drying data
+Mass IN (kg)
+5
+5
+5
+5
+Amount of larvae
+added to dryer
+Total IN (kg)
+20
+At the end of the day,
+summarise total mass IN
+Mass OUT (kg)
+1.5
+1.5
+1.5
+1.5
+Drying time (minutes)
+Amount of larvae
+removed from dryer
+35
+35
+35
+35
+Comments
+Time larvae spent
+in the dryer
+TOTAL OUT (kg)
+4.6
+At the end of the day,
+summarise total mass OUT
+Larvae data for fractioning
+Production date code Comments
+19.2 Roasted larvae
+Production date code
+of dried larvae
+Type of dried
+larvae
+Fractioning
+Larvae IN (kg)
+20
+Total amount of
+larvae added to the
+screw press
+Press cake OUT (kg)
+14
+Crude oil OUT (hours)
+4
+Total amount of
+press cake and BSF
+crude oil obtained
+Cake grinding
+Dry press cake IN (kg) Meal OUT (kg)
+14 14
+Comments
+Amount of meal
+collected
+Oil refining
+Crude oil IN (kg) Oil OUT (kg)
+4 2.5
+112 Black Soldier Fly Biowaste Processing
+Comments
+Amount of oil
+collected
+CommentsG
+Annex G:
+log sheet for daily data input of parameters in BSFL
+post-processing unit
+Name responsible
+Date code
+Drying method
+Drying equipment used
+Drying data
+Mass IN (kg) Mass OUT (kg)
+Total IN (kg) TOTAL OUT (kg)
+Drying time (minutes)
+Comments
+Larvae data for fractioning
+Production date code
+Comments
+Fractioning
+Larvae IN (kg)
+Press cake OUT (kg)
+Crude oil OUT (hours)
+Comments
+Cake grinding
+Dry press cake IN (kg)
+Meal OUT (kg) Comments
+Oil OUT (kg) Comments
+Oil refining
+Crude oil IN (kg)
+Black Soldier Fly Biowaste Processing 113H
+Annex H:
+Technical drawings of custom-made materials used in the BSF
+biowaste processing plant
+Ventilation frame for stacking larveros units
+114 Black Soldier Fly Biowaste ProcessingFrame for stacking incubator units
+Black Soldier Fly Biowaste Processing 115H
+Annex H:
+Frame for stacking pupation crates
+116 Black Soldier Fly Biowaste ProcessingFrame for stacking nursery larveros
+Black Soldier Fly Biowaste Processing 117H
+Annex H:
+Hatchling shower frame
+118 Black Soldier Fly Biowaste ProcessingMobile love cage transfer frame
+Black Soldier Fly Biowaste Processing 119H
+Annex H:
+Love cage table frame
+120 Black Soldier Fly Biowaste ProcessingDark cage table frame
+Black Soldier Fly Biowaste Processing 121H
+Annex H:
+Love Cage
+Dark Cage
+122 Black Soldier Fly Biowaste ProcessingBlack Soldier Fly Biowaste Processing 123I
+Annex I:
+Item name
+Overview of equipment required for a BSF biowaste processing
+plant with a capacity of 5 ton/d
+Dimensions Units
+required
+Capacity / unit
+BSF rearing unit
+Pupation crates
+Pupation frame
+Dark cage
+Dark cage frame
+Cement mixer
+Love cage
+Egg media
+Fly harvester
+Love cage frame
+Hatchling crate
+Hatching shower frame
+Egg holder
+Nursery Larvero
+Collection container
+Nursery larvero frame
+Bulk storage bins
+Working table
+Bulk scale
+Bulk balance
+Precision balance
+Washing machine 60 × 40 × 12
+243 × 48.5 × 61
+140 × 140 × 70
+145 × 75 × 190
+Max 350 kg
+140 × 70 × 70
+25 × 5 × 3
+290 × 73 × 85
+289 × 240 × 70
+60 × 40 × 12
+165 × 94.5 × 61
+D4.5
+55x35 × 14
+60 × 40 × 12
+155 × 48.5 × 61
+80 L
+180 × 70 × 60
+Max 150 kg
+Max 35 kg
+Max 2 kg
+Max 5 kg 186
+5
+8
+8
+1
+29
+290
+1
+10
+63
+4
+40
+75
+75
+12
+6
+1
+1
+2
+4
+1 7,500
+16
+16
+1
+512
+8,000
+10
+12
+3
+665,000
+10
+10
+10,000
+1
+6
+5,000,000
+6
+10,000,000
+4,000,000
+2,000,000
+16
+BSFL conversion unit
+Incubator units
+Incubator holding crate
+Incubator frame
+Larvero units
+Pallet
+Ventilation frames
+Pallet trolley
+Shredder
+Shaking sieve
+High pressure cleaner
+Bulk scale 30 × 20 × 10
+60 × 40 × 15
+155 × 141 × 61
+60 × 40 × 15
+129 × 122 × 15
+129 × 122 × 12
+Max 2 ton
+1 ton/hour
+1 ton/hour
+-
+Max 150 kg 3,875
+969
+39
+3,875
+108
+540
+2
+1
+1
+2
+3 1
+4
+18
+11
+36
+5
+2,520
+8,000
+3,150
+2,520
+2,000
+Prepupae/crate
+Crates/frame
+Crates/cage
+Cage/frame
+Crates/day/mixer
+Flies/cage
+Media/cage
+Dark cages/harvester
+Cages/frame
+5-DOL/crate
+Crates/frame
+Holders/frame
+Larvae/Larvero
+Container/Larvero
+Larvero+container/frame
+5-DOL/triple set of bins
+Larvero frames/table
+5-DOL/scale
+5-DOL/balance
+5-DOL/balance
+cages/washing machine
+kg waste/crate
+Incubator units/crate
+Holding crates/frame
+kg waste/crate
+Crates/pallet
+Frames per pallet
+kg waste/trolley
+kg waste/shredder/day
+kg residue/sieve/day
+kg waste/unit/day
+kg waste/unit/day
+BSFL post-processing unit (only capacity provided, because quantity depends on product choice)
+Sanitising set
+Custom made
+120
+kg fresh larvae / day
+Kitchen microwave
+32 L
+8
+kg fresh larvae / day
+Industrial microwave
+Max-30B
+210
+kg fresh larvae / day
+Wok pan for sand roasting
+Custom made
+24
+kg fresh larvae / day
+Drum dryer for roasting
+Custom made
+60
+kg fresh larvae / day
+Oven
+Custom made
+30
+kg fresh larvae / day
+Screw press
+DL-ZYJ10B
+40
+kg dried larvae / day
+Industrial screw press
+ZX80
+160
+kg dried larvae / day
+Grinder
+AGR-GRP-180
+480
+kg press cake / day
+124 Black Soldier Fly Biowaste ProcessingBlack Soldier Fly Biowaste Processing 125Eawag
+Überlandstrasse 133
+8600 Dübendorf
+Switzerland
+Phone +41 (0)58 756 52 86
+www.eawag.ch
+www.sandec.ch
+This book deals with urban organic municipal waste from households, commercial activities, and
+institutions. It describes the approach of biowaste conversion by insect larvae, using the example
+of the Black Soldier Fly (BSF), Hermetia illucens.
+This engineered biosystem consists of feeding segregated biowaste to BSF larvae, which are
+reared in a nursery. Larvae grow on the waste feedstock and reduce its biomass. At the end of the
+process, larvae are harvested and, if necessary, post-processed to a suitable animal feed product.
+This guide is for practical use, explaining the required materials and equipment, as well as each
+working step similar to a cookbook with its respective recipes and materials required. It includes
+all information necessary to develop and operate a BSF waste processing facility, able to treat five
+tons of waste per day. This second edition of 2021 builds on the first version published in 2017. It
+includes our more recent experiences and describes developments and our updated suggestions.
+In particular, this second edition has new chapters on larvae post-processing and marketing of
+larvae products, on cost-analysis of BSF operations and respective facilities, and on information on
+site design and options of business models for BSF waste processing.
+This second edition has benefited significantly from two projects. FORWARD is a R&D project
+located in Indonesia funded by the Swiss State Secretariat for Economic Affairs (SECO), under a
+framework agreement with the Indonesian Ministry of Public Works & Housing (PU-PeRa). It works
+in close collaboration with national and local governmental authorities, with Indonesian researchers
+and with selected private enterprises to advance and mainstream implementation of BSF waste
+processing. SIBRE is a research project funded by SwissRe Foundation with the objective to gen-
+erate knowledge and tools around BSF waste processing for use by small & medium enterprises
+and municipalities. Its focus was set predominantly on the economic perspectives and developing
+standard protocols for products derived from BSF larvae and testing these in the Indonesia context.

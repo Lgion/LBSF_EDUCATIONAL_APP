@@ -1,0 +1,183 @@
+---
+interface ChecklistItem {
+    title: string;
+    checks: string[];
+}
+
+interface Props {
+    items: ChecklistItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="safety-checklist">
+    {items.map(item => (
+        <div class="checklist-item">
+            <div class="item-header">
+                <h3>{item.title}</h3>
+                <span class="progress-indicator">0/{item.checks.length}</span>
+            </div>
+            <div class="checks">
+                {item.checks.map(check => (
+                    <label class="check">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="check-text">{check}</span>
+                    </label>
+                ))}
+            </div>
+        </div>
+    ))}
+</div>
+
+<style lang="scss">
+    .safety-checklist {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .checklist-item {
+        background: white;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--color-secondary);
+
+        h3 {
+            margin: 0;
+            color: var(--color-primary);
+            font-size: 1.25rem;
+        }
+    }
+
+    .progress-indicator {
+        background: var(--color-secondary);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .checks {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+    }
+
+    .checkmark {
+        width: 20px;
+        height: 20px;
+        border: 2px solid var(--color-primary);
+        border-radius: 4px;
+        position: relative;
+        transition: all 0.2s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    input[type="checkbox"]:checked + .checkmark {
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+
+        &::after {
+            display: block;
+        }
+    }
+
+    .check-text {
+        flex: 1;
+        font-size: 1rem;
+        color: var(--color-text);
+    }
+
+    @media (max-width: 768px) {
+        .checklist-item {
+            padding: 1rem;
+        }
+
+        .item-header h3 {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .checklist-item {
+            transition: none;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const checklistItems = document.querySelectorAll('.checklist-item');
+
+        checklistItems.forEach(item => {
+            const checks = item.querySelectorAll('input[type="checkbox"]');
+            const indicator = item.querySelector('.progress-indicator');
+            const total = checks.length;
+
+            function updateProgress() {
+                const checked = Array.from(checks).filter(check => (check as HTMLInputElement).checked).length;
+                if (indicator) {
+                    indicator.textContent = `${checked}/${total}`;
+                }
+                
+                // Ajouter une classe si tous les éléments sont cochés
+                if (checked === total) {
+                    item.classList.add('completed');
+                } else {
+                    item.classList.remove('completed');
+                }
+            }
+
+            checks.forEach(check => {
+                check.addEventListener('change', updateProgress);
+            });
+        });
+    });
+</script>

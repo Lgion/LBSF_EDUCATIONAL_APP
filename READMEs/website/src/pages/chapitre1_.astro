@@ -1,0 +1,433 @@
+---
+import ChapterLayout from '../layouts/ChapterLayout.astro';
+import '../styles/components/_chapitre1_.scss';
+
+const title = "La Technologie BSF : Transformer nos Déchets en Ressources";
+const description = "Découvrez comment la technologie des mouches soldats noires (BSF) révolutionne la gestion des déchets organiques en les transformant en ressources précieuses.";
+
+const sections = [
+  { id: "hero", label: "Introduction" },
+  { id: "context", label: "Contexte" },
+  { id: "solution", label: "Solution BSF" },
+  { id: "applications", label: "Applications" }
+];
+
+const benefices = {
+  environnementaux: [
+    "Réduction significative des déchets",
+    "Processus 100% naturel",
+    "Économie circulaire"
+  ],
+  economiques: [
+    "Production d'aliments pour animaux",
+    "Création d'emplois locaux",
+    "Opportunités entrepreneuriales"
+  ],
+  sociaux: [
+    "Amélioration de l'hygiène urbaine",
+    "Développement local",
+    "Formation et expertise"
+  ]
+};
+
+const installation = {
+  exemple: {
+    capacite: "2 tonnes/jour",
+    experience: "5+ années d'exploitation",
+    modele: "Modèle reproductible"
+  },
+  unites: [
+    {
+      titre: "Unité d'Élevage",
+      points: [
+        "Reproduction contrôlée",
+        "Gestion des cycles de vie",
+        "Optimisation de la production"
+      ]
+    },
+    {
+      titre: "Unité de Conversion",
+      points: [
+        "Traitement des déchets",
+        "Surveillance du processus",
+        "Contrôle qualité"
+      ]
+    },
+    {
+      titre: "Post-traitement",
+      points: [
+        "Récolte des larves",
+        "Transformation des produits",
+        "Valorisation des résidus"
+      ]
+    }
+  ]
+};
+---
+
+<ChapterLayout title={title} description={description} chapterNumber={1}>
+  <!-- Progress Indicator -->
+  <div class="progress-indicator hidden lg:block">
+    <div class="progress-indicator__container">
+      <ul class="progress-indicator__list">
+        {sections.map(section => (
+          <li>
+            <a href={`#${section.id}`} class="progress-indicator__item">
+              <div class="progress-indicator__dot"></div>
+              {section.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-section__background">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+      <div class="shape shape--4"></div>
+      <div class="shape shape--5"></div>
+      <div class="animated-gradient"></div>
+    </div>
+    <div class="hero-section__overlay"></div>
+    <div class="hero-section__content">
+      <div class="hero-section__controls">
+        <button class="auto-play-button">
+          <span class="material-icons">pause</span>
+        </button>
+      </div>
+      <h2 class="hero-section__title">Informations générales</h2>
+      <div class="hero-section__cards">
+        <div class="accordion-card">
+          <div class="accordion-card__header">
+            <h3 class="accordion-card__title">
+              <span class="material-icons">groups</span>
+              Public Cible
+            </h3>
+            <span class="material-icons accordion-card__icon">expand_more</span>
+          </div>
+          <div class="accordion-card__content">
+            <ul class="accordion-card__list">
+              <li class="accordion-card__item">
+                <span class="material-icons icon">person_outline</span>
+                Entrepreneurs visionnaires
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">apartment</span>
+                Gestionnaires municipaux
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">eco</span>
+                Passionnés d'écologie
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">school</span>
+                Débutants curieux
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-card">
+          <div class="accordion-card__header">
+            <h3 class="accordion-card__title">
+              <span class="material-icons">track_changes</span>
+              Objectifs
+            </h3>
+            <span class="material-icons accordion-card__icon">expand_more</span>
+          </div>
+          <div class="accordion-card__content">
+            <ul class="accordion-card__list">
+              <li class="accordion-card__item">
+                <span class="material-icons icon">psychology</span>
+                Comprendre le processus BSF
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">build</span>
+                Maîtriser les bases opérationnelles
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">lightbulb</span>
+                Identifier les opportunités
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">trending_up</span>
+                Développer des projets durables
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-card">
+          <div class="accordion-card__header">
+            <h3 class="accordion-card__title">
+              <span class="material-icons">auto_awesome</span>
+              Points Clés
+            </h3>
+            <span class="material-icons accordion-card__icon">expand_more</span>
+          </div>
+          <div class="accordion-card__content">
+            <ul class="accordion-card__list">
+              <li class="accordion-card__item">
+                <span class="material-icons icon">eco</span>
+                Solution écologique innovante
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">touch_app</span>
+                Technologie accessible
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">sync</span>
+                Double impact positif
+              </li>
+              <li class="accordion-card__item">
+                <span class="material-icons icon">paid</span>
+                Modèle économique viable
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Context Section -->
+  <section id="context" class="context-banner">
+    <div class="context-banner__pattern"></div>
+    <div class="context-banner__content">
+      <h2 class="context-banner__title">La Gestion des Déchets : Un Défi Global</h2>
+      <div class="context-banner__grid">
+        <div class="challenge-card">
+          <span class="material-icons challenge-card__icon">delete</span>
+          <h3 class="challenge-card__title">Déchets Croissants</h3>
+          <p class="challenge-card__description">
+            La production mondiale de déchets augmente exponentiellement
+          </p>
+        </div>
+        <div class="challenge-card">
+          <span class="material-icons challenge-card__icon">eco</span>
+          <h3 class="challenge-card__title">Impact Environnemental</h3>
+          <p class="challenge-card__description">
+            Les méthodes traditionnelles polluent notre environnement
+          </p>
+        </div>
+        <div class="challenge-card">
+          <span class="material-icons challenge-card__icon">location_city</span>
+          <h3 class="challenge-card__title">Défis Urbains</h3>
+          <p class="challenge-card__description">
+            Les villes manquent d'espace pour la gestion des déchets
+          </p>
+        </div>
+        <div class="challenge-card">
+          <span class="material-icons challenge-card__icon">trending_up</span>
+          <h3 class="challenge-card__title">Coûts Élevés</h3>
+          <p class="challenge-card__description">
+            Les solutions actuelles sont souvent très coûteuses
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section id="solution" class="solution-section">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title">Une Solution Naturelle et Innovante</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="solution-card">
+          <h3 class="solution-card__title">Comment ça marche ?</h3>
+          <ul class="solution-card__list">
+            <li>Réduction drastique du volume des déchets organiques</li>
+            <li>Transformation des déchets en ressources valorisables</li>
+            <li>Processus écologique complet</li>
+          </ul>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h4 class="benefit-card__title">Environnementaux</h4>
+            <ul class="benefit-card__list">
+              {benefices.environnementaux.map(point => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </div>
+          <div class="benefit-card">
+            <h4 class="benefit-card__title">Économiques</h4>
+            <ul class="benefit-card__list">
+              {benefices.economiques.map(point => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </div>
+          <div class="benefit-card">
+            <h4 class="benefit-card__title">Sociaux</h4>
+            <ul class="benefit-card__list">
+              {benefices.sociaux.map(point => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Section -->
+  <section id="applications" class="applications-section">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title">De la Théorie à la Pratique</h2>
+      
+      <!-- Exemple de Réussite -->
+      <div class="success-story">
+        <h3 class="success-story__title">Exemple de Réussite : Indonésie</h3>
+        <div class="success-metrics">
+          <div class="metric">
+            <span class="metric__value">{installation.exemple.capacite}</span>
+            <span class="metric__label">Capacité</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value">{installation.exemple.experience}</span>
+            <span class="metric__label">Expérience</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value">{installation.exemple.modele}</span>
+            <span class="metric__label">Adaptabilité</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Structure Installation -->
+      <div class="installation-structure">
+        <h3 class="installation-structure__title">Structure d'une Installation BSF en <u>3 activités distincts</u>: </h3>
+        <div class="unit-cards">
+          {installation.unites.map((unite, index) => (
+            <div class="unit-card">
+              <div class="unit-card__number">{index + 1}</div>
+              <h4 class="unit-card__title">{unite.titre}</h4>
+              <ul class="unit-card__list">
+                {unite.points.map(point => (
+                  <li>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <div class="container mx-auto px-6 py-12">
+    <div class="flex justify-between items-center">
+      <a href="/" class="nav-button nav-button--outline">
+        <span class="material-icons mr-2">home</span>
+        Accueil
+      </a>
+      
+      <a href="/chapitre2" class="nav-button nav-button--solid">
+        Chapitre suivant
+        <span class="material-icons ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</ChapterLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const accordionCards = document.querySelectorAll('.accordion-card');
+    const autoPlayButton = document.querySelector('.auto-play-button');
+    const autoPlayIcon = autoPlayButton.querySelector('.material-icons');
+    let currentIndex = 0;
+    let isPlaying = true;
+    let autoPlayInterval;
+
+    // Fonction pour activer un accordéon
+    const activateAccordion = (index) => {
+      accordionCards.forEach(card => card.classList.remove('active'));
+      accordionCards[index].classList.add('active');
+    };
+
+    // Fonction pour passer à l'accordéon suivant
+    const nextAccordion = () => {
+      currentIndex = (currentIndex + 1) % accordionCards.length;
+      activateAccordion(currentIndex);
+    };
+
+    // Fonction pour démarrer l'animation automatique
+    const startAutoPlay = () => {
+      isPlaying = true;
+      autoPlayIcon.textContent = 'pause';
+      autoPlayButton.classList.remove('paused');
+      autoPlayInterval = setInterval(nextAccordion, 3000); // Change toutes les 3 secondes
+    };
+
+    // Fonction pour arrêter l'animation automatique
+    const stopAutoPlay = () => {
+      isPlaying = false;
+      autoPlayIcon.textContent = 'play_arrow';
+      autoPlayButton.classList.add('paused');
+      clearInterval(autoPlayInterval);
+    };
+
+    // Gestionnaire de clic pour le bouton play/pause
+    autoPlayButton.addEventListener('click', () => {
+      if (isPlaying) {
+        stopAutoPlay();
+      } else {
+        startAutoPlay();
+      }
+    });
+
+    // Gestionnaire de clic pour les en-têtes d'accordéon
+    accordionCards.forEach((card, index) => {
+      const header = card.querySelector('.accordion-card__header');
+      
+      header.addEventListener('click', () => {
+        stopAutoPlay(); // Arrête l'animation automatique
+        currentIndex = index;
+        activateAccordion(index);
+      });
+    });
+
+    // Démarrer l'animation automatique
+    activateAccordion(0);
+    startAutoPlay();
+
+    // Arrêter l'animation quand l'utilisateur quitte la page
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden && isPlaying) {
+        stopAutoPlay();
+      }
+    });
+  });
+</script>
+
+<script>
+  // Intersection Observer pour l'indicateur de progression
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        const dot = document.querySelector(`a[href="#${id}"] .progress-indicator__dot`);
+        
+        if (entry.isIntersecting) {
+          dot?.classList.add('progress-indicator__dot--active');
+        } else {
+          dot?.classList.remove('progress-indicator__dot--active');
+        }
+      });
+    },
+    {
+      rootMargin: '-50% 0px -50% 0px'
+    }
+  );
+
+  // Observer chaque section
+  document.querySelectorAll('section[id]').forEach((section) => {
+    observer.observe(section);
+  });
+</script>
