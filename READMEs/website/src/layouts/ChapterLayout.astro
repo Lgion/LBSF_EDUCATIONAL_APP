@@ -13,7 +13,7 @@ const { title, description, chapterNumber } = Astro.props;
 ---
 
 <MainLayout title={title} description={description}>
-  <div class="container mx-auto px-4 py-8">
+  <div class="mx-auto px-4 py-8">
     <ProgressBar currentChapter={chapterNumber} />
     
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">

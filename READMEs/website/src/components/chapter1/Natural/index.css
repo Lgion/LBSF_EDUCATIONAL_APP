@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles globaux pour le composant */
+.lifecycle-section {
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.section2-bsf_life {
+  position: relative;
+}
+
+.swiper-container {
+  padding: 60px 0;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  z-index: 1;
+}
+
+.swiper-slide {
+  transition: all 0.5s ease;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+/* Effet d'arc de cercle pour les slides */
+.swiper-slide-prev {
+  transform: translateY(30px) rotate(-5deg);
+  opacity: 0.7;
+}
+
+.swiper-slide-next {
+  transform: translateY(30px) rotate(5deg);
+  opacity: 0.7;
+}
+
+.swiper-slide-active {
+  transform: scale(1.15);
+  z-index: 2;
+}
+
+/* Slides non actifs plus loin dans l'arc */
+.swiper-slide-prev ~ .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev) {
+  transform: translateY(50px) rotate(-10deg);
+  opacity: 0.5;
+}
+
+.swiper-slide-next ~ .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev) {
+  transform: translateY(50px) rotate(10deg);
+  opacity: 0.5;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.7;
+}
+
+.slide-content {
+  transition: all 0.5s ease;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Chiffres en filigrane pour chaque slide */
+.swiper-slide:nth-child(5n+1) .slide-content::before {
+  content: '1';
+  position: absolute;
+  font-size: 300px;
+  font-weight: bold;
+  opacity: 0.05;
+  color: #000;
+  z-index: 0;
+  right: -20px;
+  bottom: -40px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+}
+
+.swiper-slide:nth-child(5n+2) .slide-content::before {
+  content: '2';
+  position: absolute;
+  font-size: 300px;
+  font-weight: bold;
+  opacity: 0.05;
+  color: #000;
+  z-index: 0;
+  right: -20px;
+  bottom: -40px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+}
+
+.swiper-slide:nth-child(5n+3) .slide-content::before {
+  content: '3';
+  position: absolute;
+  font-size: 300px;
+  font-weight: bold;
+  opacity: 0.05;
+  color: #000;
+  z-index: 0;
+  right: -20px;
+  bottom: -40px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+}
+
+.swiper-slide:nth-child(5n+4) .slide-content::before {
+  content: '4';
+  position: absolute;
+  font-size: 300px;
+  font-weight: bold;
+  opacity: 0.05;
+  color: #000;
+  z-index: 0;
+  right: -20px;
+  bottom: -40px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+}
+
+.swiper-slide:nth-child(5n+5) .slide-content::before {
+  content: '5';
+  position: absolute;
+  font-size: 300px;
+  font-weight: bold;
+  opacity: 0.05;
+  color: #000;
+  z-index: 0;
+  right: -20px;
+  bottom: -40px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+}
+
+.slide-title,
+.slide-description {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.text-primary {
+  color: #2563eb;
+}
+
+.slide-title {
+  transform: translateY(-20px);
+}
+
+.swiper-slide-active .slide-title,
+.swiper-slide-active .slide-description {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.swiper-nav-btn {
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.swiper-nav-btn:hover {
+  transform: scale(1.1);
+}
+
+.swiper-nav-btn:active {
+  transform: scale(0.95);
+}
+
+.swiper-slide:not(.swiper-slide-active) .slide-title,
+.swiper-slide:not(.swiper-slide-active) .slide-description {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-pagination {
+  position: relative;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 6px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #2563eb;
+  transform: scale(1.3);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
+
+/* Styles pour les cartes */
+.image-container {
+  transition: transform 0.5s ease;
+}
+
+.swiper-slide-active .image-container {
+  transform: translateY(-10px);
+}
+
+/* Effet de perspective 3D */
+.wheel-slider::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, rgba(241, 245, 249, 0.8), transparent);
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Ajustement pour créer un effet d'arc de cercle */
+.swiper-container {
+  padding: 100px 0 60px;
+  overflow: visible;
+}
+
+/* Amélioration de l'effet 3D */
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  background-image: linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 16px;
+}
+
+/* Assurer que les images sont bien positionnées par rapport au filigrane */
+.image-container {
+  position: relative;
+  z-index: 1;
+}

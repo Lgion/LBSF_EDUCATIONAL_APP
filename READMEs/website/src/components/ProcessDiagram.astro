@@ -1,53 +1,96 @@
 ---
-interface ProcessUnit {
-    name: string;
-    icon: string;
-    steps: string[];
-    type: 'rearing' | 'conversion' | 'processing';
-}
+// interface ProcessUnit {
+//     name: string;
+//     icon: string;
+//     steps: string[];
+//     type: 'rearing' | 'conversion' | 'processing';
+// }
 
-interface Props {
-    units: ProcessUnit[];
-}
+// interface Props {
+//     units: ProcessUnit[];
+// }
 
-const { units } = Astro.props;
+// const { units } = Astro.props;
+const units = [
+    {
+        name: "Unité d'élevage BSF",
+        icon: "🪲",
+        type: "rearing",
+        steps: [
+            "Maintien d'une population stable de larves S-DOL",
+            "Élevage des larves jusqu'à la pupaison",
+            "Gestion du cycle de reproduction",
+        ],
+    },
+    {
+        name: "Unité de conversion BSFL",
+        icon: "♻️",
+        type: "conversion",
+        steps: [
+            "Contrôle qualité des déchets reçus",
+            "Préparation du substrat équilibré",
+            "Bioconversion par les larves (70-80% humidité)",
+            "Récolte des larves matures",
+        ],
+    },
+    {
+        name: "Unité de post-traitement",
+        icon: "⚗️",
+        type: "processing",
+        steps: [
+            "Séchage et transformation des larves",
+            "Extraction de l'huile et production de farine",
+            "Compostage ou digestion des résidus",
+            "Contrôle qualité des produits finaux",
+        ],
+    },
+];
 ---
 
 <div class="process-diagram">
     <div class="process-flow">
-        {units.map((unit, index) => (
-            <div class="process-unit" data-unit={unit.type}>
-                <div class="unit-header">
-                    <span class="unit-icon">{unit.icon}</span>
-                    <h3 class="unit-title">{unit.name}</h3>
-                </div>
-                <div class="unit-content">
-                    {unit.steps.map((step, stepIndex) => (
-                        <div class="step">
-                            <span class="step-number">{stepIndex + 1}</span>
-                            <p class="step-text">{step}</p>
-                        </div>
-                    ))}
-                </div>
-                {index < units.length - 1 && (
-                    <div class="connector">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
+        {
+            units.map((unit, index) => (
+                <div class="process-unit animate-in" data-unit={unit.type} style={`--delay: ${index * 0.5}s`}>
+                    <div class="unit-header">
+                        <span class="unit-icon">{unit.icon}</span>
+                        <h3 class="unit-title">{unit.name}</h3>
                     </div>
-                )}
-            </div>
-        ))}
+                    <div class="unit-content">
+                        {unit.steps.map((step, stepIndex) => (
+                            <div class="step" style={`--step-delay: ${stepIndex * 0.2}s`}>
+                                <span class="step-number">{stepIndex + 1}</span>
+                                <p class="step-text">{step}</p>
+                            </div>
+                        ))}
+                    </div>
+                    {index < units.length - 1 && (
+                        <div class="connector animate-pulse">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </div>
+                    )}
+                </div>
+            ))
+        }
     </div>
 </div>
 
-<style lang="scss">
+<style>
     .process-diagram {
-        width: 100%;
         max-width: 1200px;
         margin: 2rem auto;
-        padding: 1rem;
+        padding: 2rem;
+        overflow: hidden;
     }
 
     .process-flow {
@@ -58,37 +101,20 @@ const { units } = Astro.props;
         @media (min-width: 768px) {
             flex-direction: row;
             align-items: flex-start;
+            justify-content: space-between;
         }
     }
 
     .process-unit {
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-
-    .process-unit.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .unit-content {
         background: white;
         border-radius: 1rem;
         padding: 1.5rem;
-        width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-        &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-        }
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideIn 0.5s ease-out forwards;
+        animation-delay: var(--delay);
     }
 
     .unit-header {
@@ -96,8 +122,6 @@ const { units } = Astro.props;
         align-items: center;
         gap: 1rem;
         margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid var(--color-secondary);
     }
 
     .unit-icon {
@@ -105,12 +129,12 @@ const { units } = Astro.props;
     }
 
     .unit-title {
-        margin: 0;
-        color: var(--color-primary);
         font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--color-primary);
     }
 
-    .unit-steps {
+    .unit-content {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -118,8 +142,11 @@ const { units } = Astro.props;
 
     .step {
         display: flex;
-        align-items: flex-start;
         gap: 1rem;
+        align-items: flex-start;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-out forwards;
+        animation-delay: calc(var(--delay) + var(--step-delay));
     }
 
     .step-number {
@@ -131,13 +158,13 @@ const { units } = Astro.props;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.9rem;
+        font-size: 0.875rem;
         flex-shrink: 0;
     }
 
     .step-text {
-        margin: 0;
-        font-size: 1rem;
+        font-size: 0.95rem;
+        color: var(--color-text);
         line-height: 1.4;
     }
 
@@ -147,60 +174,87 @@ const { units } = Astro.props;
         right: -1.5rem;
         top: 50%;
         transform: translateY(-50%);
+        color: var(--color-primary);
+        width: 3rem;
+        height: 3rem;
         
         @media (min-width: 768px) {
             display: block;
         }
     }
 
-    .arrow {
-        width: 24px;
-        height: 24px;
-        stroke: var(--color-primary);
-        stroke-width: 2;
-        fill: none;
+    .animate-pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
 
-    @media (max-width: 768px) {
-        .process-unit {
-            &:not(:last-child)::after {
-                content: "↓";
-                font-size: 2rem;
-                color: var(--color-primary);
-                margin: 1rem 0;
-            }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
         }
     }
 
     @media (prefers-reduced-motion: reduce) {
-        .process-unit {
-            transition: none;
+        .process-unit,
+        .step {
+            animation: none;
             opacity: 1;
             transform: none;
         }
-        .unit-content {
-            transition: none;
+        .animate-pulse {
+            animation: none;
         }
     }
 </style>
 
 <script>
-    // Animation des unités au scroll
+    // Add intersection observer for animation on scroll
     document.addEventListener('DOMContentLoaded', () => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.2,
-            rootMargin: '50px'
-        });
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        const steps = entry.target.querySelectorAll('.step');
+                        steps.forEach((step) => {
+                            step.style.animationPlayState = 'running';
+                        });
+                    }
+                });
+            },
+            {
+                threshold: 0.2,
+            }
+        );
 
-        document.querySelectorAll('.process-unit').forEach((unit, index) => {
-            unit.style.transitionDelay = `${index * 0.2}s`;
+        document.querySelectorAll('.process-unit').forEach((unit) => {
+            unit.style.animationPlayState = 'paused';
+            const steps = unit.querySelectorAll('.step');
+            steps.forEach((step) => {
+                step.style.animationPlayState = 'paused';
+            });
             observer.observe(unit);
         });
     });

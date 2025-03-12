@@ -1,5 +1,12 @@
 # Application de Formation BSF (Black Soldier Fly)
 
+## LIENS GLANÉS SUR LE WEB
+- https://fr.wikipedia.org/wiki/Hermetia_illucens
+- https://www.compagniedesinsectes.com/fr/about-bsf
+- https://www.echocommunity.org/fr/resources/86a8212a-a048-41c6-ab31-536c111e75ac
+- https://wiki.lowtechlab.org/wiki/Elevage_de_Mouches_Soldats_Noires/fr
+- https://fractiondinstant.fr/hermetia-illucens/
+- https://animalia.bio/fr/hermetia-illucens
 ## Structure du Projet
 
 ### Technologies Principales

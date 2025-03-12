@@ -1,0 +1,495 @@
+---
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const slides = [
+  {
+    id: 'eggs',
+    title: 'Oeufs',
+    description: 'Les femelles pondent entre 700 et 900 œufs. Ils éclosent 2 à 3 jours après la ponte.',
+    image: 'https://cdn.prod.website-files.com/653a76422b6123098f5a86a1/665731a00421a889315d13e8_Bsf_Eggs.png',
+    number: '1'
+  },
+  {
+    id: 'larvae',
+    title: 'Larves',
+    description: 'Le stade larvaire dure 17 à 19 jours et comprend 4 stades (P0 à P3).',
+    image: 'https://cdn.prod.website-files.com/653a76422b6123098f5a86a1/6634fa66655554e281156a45_Design%20sans%20titre%20(49).png',
+    number: '2'
+  },
+  {
+    id: 'prepupae',
+    title: 'Pré-Pupe',
+    description: 'Le stade pré-pupaire dure entre 6 et 8 jours. La pré-pupe devient marron et cherche un endroit sec pour se transformer.',
+    image: 'https://cdn.prod.website-files.com/653a76422b6123098f5a86a1/6634fa78782f8c89d29c6220_Design%20sans%20titre%20(50).png',
+    number: '3'
+  },
+  {
+    id: 'pupae',
+    title: 'Pupe',
+    description: "Le stade pupaire dure entre 11 et 13 jours. L'insecte se métamorphose à l'intérieur de son cocon et émerge sous forme de mouche adulte.",
+    image: 'https://cdn.prod.website-files.com/653a76422b6123098f5a86a1/6634fa8e9909fd6d7a0efba5_Design%20sans%20titre%20(51).png',
+    number: '4'
+  },
+  {
+    id: 'fly',
+    title: 'Mouche',
+    description: "Les adultes vivent entre 7 et 12 jours. Ils s'abreuvent, se reproduisent et pondent.",
+    image: 'https://cdn.prod.website-files.com/653a76422b6123098f5a86a1/6634fb2e206d409c97175c4b_Design%20sans%20titre%20(52).png',
+    number: '5'
+  }
+];
+---
+
+<div class="lifecycle-section py-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section2-bsf_life">
+      <div class="wheel-slider relative">
+        <!-- Swiper container -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            {slides.map((slide) => (
+              <div class="swiper-slide" data-id={slide.id}>
+                <div class="slide-content cursor-pointer">
+                  <div class="relative aspect-square overflow-hidden rounded-xl bg-white shadow-2xl transform transition-transform duration-300 hover:scale-105">
+                    <div class="slide-title absolute top-0 left-0 w-full text-center py-4 z-10">
+                      <h2 class="text-2xl font-bold text-primary">
+                        {slide.title}
+                      </h2>
+                    </div>
+                    <div class="image-container flex items-center justify-center h-full">
+                      <img
+                        src={slide.image}
+                        alt={slide.title}
+                        class="w-4/5 h-4/5 object-contain p-4"
+                      />
+                    </div>
+                    <div class="slide-description absolute bottom-0 left-0 w-full text-center py-4 z-10">
+                      <p class="text-gray-700 text-sm max-w-xs mx-auto px-4 font-medium">
+                        {slide.description}
+                      </p>
+                    </div>
+                    <div class="number-watermark absolute w-full h-full flex justify-center items-center z-0">
+                      <span class="watermark-number">{slide.number}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <!-- Navigation buttons -->
+          <div class="swiper-navigation absolute w-full top-1/2 -translate-y-1/2 z-20 flex justify-between pointer-events-none px-4">
+            <button class="swiper-nav-btn prev pointer-events-auto bg-white rounded-full p-3 shadow-xl hover:bg-gray-50 transition-all duration-300 hover:scale-110 active:scale-95">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary">
+                <path d="m15 18-6-6 6-6"/>
+              </svg>
+            </button>
+            <button class="swiper-nav-btn next pointer-events-auto bg-white rounded-full p-3 shadow-xl hover:bg-gray-50 transition-all duration-300 hover:scale-110 active:scale-95">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary">
+                <path d="m9 18 6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+          
+          <!-- Pagination -->
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .lifecycle-section {
+    /* background: linear-gradient(to bottom, #f8fafc, #f1f5f9); */
+    padding: 2rem 0;
+    overflow: hidden;
+  }
+  
+  .section2-bsf_life {
+    position: relative;
+  }
+  
+  .swiper-container {
+    padding: 0px 0 60px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: visible;
+    list-style: none;
+    z-index: 1;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition-property: transform;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    margin: 0 auto;
+  }
+  
+  .swiper-slide {
+    transition: all 0.5s ease;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    perspective: 1000px;
+    flex-shrink: 0;
+    transform-style: preserve-3d;
+  }
+  
+  /* Arc effect for slides */
+  .swiper-slide:nth-child(1) {
+    transform: translateY(50px) rotate(-10deg);
+    opacity: 0.5;
+  }
+  
+  .swiper-slide:nth-child(2) {
+    transform: translateY(30px) rotate(-5deg);
+    opacity: 0.7;
+  }
+  
+  .swiper-slide:nth-child(3) {
+    transform: scale(1.15);
+    z-index: 2;
+    opacity: 1;
+  }
+  
+  .swiper-slide:nth-child(4) {
+    transform: translateY(30px) rotate(5deg);
+    opacity: 0.7;
+  }
+  
+  .swiper-slide:nth-child(5) {
+    transform: translateY(50px) rotate(10deg);
+    opacity: 0.5;
+  }
+  
+  .slide-content {
+    transition: all 0.5s ease;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .slide-title,
+  .slide-description {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .text-primary {
+    color: #2563eb;
+  }
+  
+  .swiper-nav-btn {
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .swiper-nav-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .swiper-nav-btn:active {
+    transform: scale(0.95);
+  }
+  
+  .swiper-pagination {
+    position: relative;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  /* Pagination bullets */
+  .pagination-bullet {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #ccc;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination-bullet-active {
+    background: #2563eb;
+    transform: scale(1.3);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+  }
+  
+  /* Wheel slider gradient effect */
+  .wheel-slider::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, rgba(241, 245, 249, 0.8), transparent);
+    z-index: 5;
+    pointer-events: none;
+  }
+  
+  /* Ensure images are positioned correctly relative to watermark */
+  .image-container {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.5s ease;
+  }
+  
+  .swiper-slide:nth-child(3) .image-container {
+    transform: translateY(-10px);
+  }
+  
+  /* Number watermark styling */
+  .number-watermark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .watermark-number {
+    font-size: 320px;
+    line-height: 0.8;
+    font-weight: 800;
+    font-family: 'Georgia', serif;
+    opacity: 0.2;
+    color: #2563eb;
+    text-shadow: 
+      -1px -1px 0 rgba(255,255,255,0.7),
+      1px -1px 0 rgba(255,255,255,0.7),
+      -1px 1px 0 rgba(255,255,255,0.7),
+      1px 1px 0 rgba(255,255,255,0.7),
+      0 0 15px rgba(37, 99, 235, 0.3);
+    transform: rotate(-5deg) skew(-5deg);
+    filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.2));
+    user-select: none;
+  }
+  .swiper-slide-active .watermark-number{
+    opacity: .5;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Simulate Swiper functionality with basic navigation
+    const slides = document.querySelectorAll('.swiper-slide');
+    const wrapper = document.querySelector('.swiper-wrapper');
+    const prevBtn = document.querySelector('.swiper-nav-btn.prev');
+    const nextBtn = document.querySelector('.swiper-nav-btn.next');
+    let currentIndex = 0; // Start with "Oeufs" slide active
+    
+    // Total number of slides
+    const totalSlides = slides.length;
+    
+    // Calculate slide width and spacing for horizontal movement
+    const slideWidth = 300; // Width of each slide
+    const slideSpacing = 20; // Space between slides
+    const totalSlideWidth = slideWidth + slideSpacing;
+    
+    // Create a circular array of slides for infinite loop effect
+    function getCircularIndex(index) {
+      // Handle negative indices (for left side of active slide)
+      if (index < 0) {
+        return totalSlides + index;
+      }
+      // Handle indices beyond array length (for right side of active slide)
+      if (index >= totalSlides) {
+        return index - totalSlides;
+      }
+      // Return the actual index if within bounds
+      return index;
+    }
+    
+    // Get position for a slide relative to active slide (accounting for circular arrangement)
+    function getRelativePosition(index) {
+      // Calculate shortest distance in circular array
+      let distance = index - currentIndex;
+      
+      // Adjust for circular wrapping
+      if (Math.abs(distance) > totalSlides / 2) {
+        if (distance > 0) {
+          distance = distance - totalSlides;
+        } else {
+          distance = distance + totalSlides;
+        }
+      }
+      
+      return distance;
+    }
+    
+    function updateSlides() {
+      // Reset classes
+      slides.forEach(slide => {
+        slide.classList.remove(
+          'swiper-slide-active', 
+          'swiper-slide-prev', 
+          'swiper-slide-next'
+        );
+      });
+      
+      // Apply appropriate classes (with circular logic)
+      slides[currentIndex].classList.add('swiper-slide-active');
+      slides[getCircularIndex(currentIndex - 1)].classList.add('swiper-slide-prev');
+      slides[getCircularIndex(currentIndex + 1)].classList.add('swiper-slide-next');
+      
+      // Apply transforms for arc effect with circular logic
+      slides.forEach((slide, index) => {
+        const relativePosition = getRelativePosition(index);
+        
+        // Reset all transforms first
+        slide.style.transform = '';
+        slide.style.opacity = '';
+        slide.style.zIndex = '';
+        slide.style.visibility = '';
+        
+        // Apply position-specific styles
+        if (relativePosition === 0) {
+          // Active slide
+          slide.style.transform = 'scale(1.15)';
+          slide.style.opacity = '1';
+          slide.style.zIndex = '5';
+          slide.style.visibility = 'visible';
+        } else if (relativePosition === -1 || relativePosition === -2) {
+          // Left slides
+          slide.style.transform = `translateY(${relativePosition === -1 ? 30 : 50}px) rotate(${relativePosition === -1 ? -5 : -10}deg)`;
+          slide.style.opacity = relativePosition === -1 ? '0.7' : '0.5';
+          slide.style.zIndex = relativePosition === -1 ? '4' : '3';
+          slide.style.visibility = 'visible';
+        } else if (relativePosition === 1 || relativePosition === 2) {
+          // Right slides
+          slide.style.transform = `translateY(${relativePosition === 1 ? 30 : 50}px) rotate(${relativePosition === 1 ? 5 : 10}deg)`;
+          slide.style.opacity = relativePosition === 1 ? '0.7' : '0.5';
+          slide.style.zIndex = relativePosition === 1 ? '4' : '3';
+          slide.style.visibility = 'visible';
+        } else {
+          // Hide slides that are too far away (beyond ±2)
+          slide.style.opacity = '0';
+          slide.style.visibility = 'hidden';
+        }
+      });
+      
+      // Arrange slides in horizontal order for proper visual flow
+      const visibleSlides = [-2, -1, 0, 1, 2];
+      
+      visibleSlides.forEach((offset, displayIndex) => {
+        const slideIndex = getCircularIndex(currentIndex + offset);
+        const slide = slides[slideIndex];
+        
+        // Calculate horizontal position for each visible slide
+        const position = (displayIndex - 2) * totalSlideWidth;
+        slide.style.transform = `${slide.style.transform.replace('translateX', '')} translateX(${position}px)`;
+      });
+      
+      // Update pagination indicators
+      updatePagination();
+    }
+    
+    function updatePagination() {
+      const pagination = document.querySelector('.swiper-pagination');
+      pagination.innerHTML = '';
+      
+      slides.forEach((_, index) => {
+        const bullet = document.createElement('span');
+        bullet.classList.add('pagination-bullet');
+        if (index === currentIndex) {
+          bullet.classList.add('pagination-bullet-active');
+        }
+        bullet.addEventListener('click', () => {
+          currentIndex = index;
+          updateSlides();
+        });
+        pagination.appendChild(bullet);
+      });
+    }
+    
+    // Set initial styles for wrapper
+    if (wrapper) {
+      wrapper.style.display = 'flex';
+      wrapper.style.justifyContent = 'center';
+      wrapper.style.alignItems = 'center';
+      wrapper.style.position = 'relative';
+      
+      // Position slides with proper spacing
+      slides.forEach((slide) => {
+        slide.style.margin = `0 ${slideSpacing/2}px`;
+        slide.style.flexShrink = '0';
+        slide.style.width = `${slideWidth}px`;
+        slide.style.position = 'absolute';
+        slide.style.transition = 'all 0.5s ease';
+      });
+    }
+    
+    // Initialize slides
+    updateSlides();
+    
+    // Add event listeners for navigation
+    prevBtn.addEventListener('click', () => {
+      // Circular navigation - go to last slide if at first slide
+      currentIndex = getCircularIndex(currentIndex - 1);
+      updateSlides();
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      // Circular navigation - go to first slide if at last slide
+      currentIndex = getCircularIndex(currentIndex + 1);
+      updateSlides();
+    });
+    
+    // Add keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        currentIndex = getCircularIndex(currentIndex - 1);
+        updateSlides();
+      } else if (e.key === 'ArrowRight') {
+        currentIndex = getCircularIndex(currentIndex + 1);
+        updateSlides();
+      }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      updateSlides();
+    });
+  });
+</script>

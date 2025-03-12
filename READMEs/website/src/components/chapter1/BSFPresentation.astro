@@ -1,0 +1,372 @@
+---
+import InteractiveCard from "../InteractiveCard.astro";
+const stages = [
+  {
+    name: "Œuf",
+    description: "Les œufs sont pondus en masse par les femelles adultes",
+    duration: "4-5 jours",
+    image: "/images/lifeCycle/eggs.webp",
+  },
+  {
+    name: "Larve",
+    description:
+      "Phase principale de croissance et de consommation des déchets",
+    duration: "14-16 jours",
+    image: "/images/lbsf.jpg",
+  },
+  {
+    name: "Pré-pupe",
+    description: "Période de transition avant la métamorphose",
+    duration: "7-10 jours",
+    image: "/images/prepupes.png",
+  },
+  {
+    name: "Pupe",
+    description: "Stade de métamorphose en adulte",
+    duration: "10-14 jours",
+    image: "/images/pupes_.jpg",
+  },
+  {
+    name: "Adulte",
+    description: "Mouche adulte responsable de la reproduction",
+    image: "/images/mouche.jpg",
+  },
+];
+
+const bsfImages = [
+  {
+    src: "/images/II_introduction/1_mouche/2.1a.webp",
+    alt: "Mouche soldat noire adulte",
+    caption: "On peut la rencontrer dans la nature partout dans le monde dans les zones tropicales et subtropicales entre les latitudes 40°S et 45°N",
+  },
+  {
+    src: "/images/bsf_all_profils.png",
+    alt: "Mouche soldat noire adulte",
+    caption: "Cycle biologique et dimorphismes sexuels des antennes et des organes génitaux abdominaux du BSF adulte. (a) Œuf unique pondu ; (b–g) séquence temporelle des stades larvaires L1–L6 (prénymphe) ; (h) nymphe ; (i) vue complète du corps de la femelle adulte (à gauche) et du mâle (à droite) BSF ; (j, k) vue dorso-crânienne des antennes du mâle et de la femelle ; (l, m) vue ventrocaudale des structures génitales du mâle et de la femelle (barres d'échelle : blanc = 1 mm, noir = 5 mm).",
+  },
+  {
+    src: "/images/naturalLifeCycle.png",
+    alt: "Colonie de mouches soldat noires",
+    caption: "La croissance des larves nécessite une période 14 à 16 jours, et s'étalant sur 5 stades larvaires.",
+  },
+  {
+    src: "/images/different_stages.png",
+    alt: "Colonie de mouches soldat noires",
+    caption: "Observation naturelle montre parfaitement la progression du cycle biologique de la BSF, depuis l'insecte adulte jusqu'aux différents stades larvaires, illustrant ainsi le processus complet utilisé dans la bioconversion des déchets organiques.",
+  },
+  {
+    src: "/images/image_affiche_pdf_mouche_ponte.png",
+    alt: "Mouche soldat noire adulte",
+    caption: "Peu après la ponte, la femelle meurt. La mouche femelle pond un paquet de 400 à 800 œufs à proximité de matières organiques en décomposition dans de petites cavités sèches et abritées qui protègent les œufs des prédateurs et empêchent la déshydratation des paquets d'œufs sous l'effet de la lumière directe du soleil. ",
+  },
+  {
+    src: "/images/image_pour_eclosion.png",
+    alt: "Stade de l'éclosion",
+    caption: "En moyenne, les œufs éclosent au bout de quatre jours et les larves émergées, qui sont à peine visibles. Ils se développent de moins d'un millimètre à environ 2,5 cm de long et 0,5 cm de large.",
+  },
+  {
+    src: "/images/pupes.jpg",
+    alt: "Colonie de mouches soldat noires",
+    caption: "Le 6eme est \"prepupa\", et ce stade qui consiste à se diriger vers un environnement sec, humifère, ombragé et protégé, qu'elle juge à l'abri des prédateurs.",
+  },
+  {
+    src: "/images/dark_2_love_cage.webp",
+    alt: "De la cage sombre à la cage d'amour",
+    caption: "cage sombre avec des conteneurs de nymphose empilés à l'intérieur (pour pouvoir se transformer en mouche dans un lieu à l'abrit des aléas environnementaux). Et à droite la cage d'amour, entrain d'être rempli de mouches fraîchements adultes (où on y introduit directement les mouches de la cage sombre à l'aide d'un passage connectant les 2 cages et d'une lampe pour attiré les mouches)",
+  },
+  {
+    src: "/images/fly_adult.jpg",
+    alt: "Transformation de larve en mouche",
+    caption: "La nymphose dure environ deux à trois semaines et se termine lorsque la mouche sort de sa coquille. Les mouches fraîchement écloses atteignent leur maturité sexuelle au bout de 2 à 3 jours; les femelles éclosent environ 1à 2 jours après les mâles, la copulation a donc lieu environ 3 jours après l’émergence hors de la nymphe.",
+  },
+  {
+    src: "/images/bsf_accouplement.jpg",
+    alt: "Accouplement",
+    caption: "Après avoir émergé, la mouche vit environ une semaine. Au cours de cette courte vie, elle cherche un partenaire, copule et (pour la femelle) pond des œufs. Il a été observé que les mouches préfèrent copuler à la lumière du matin. Au plus tôt 2 jours après la copulation, les femelles cherchent un endroit idéal pour pondre leurs œufs (de 200 à 1300 œufs).",
+  },
+  {
+    src: "/images/fly_state_condition.png",
+    alt: "Condition de vie à l'état de mouche",
+    caption: "En tant que mouche, la BSF ne se nourrit pas. Seule une source d'eau ou une surface humide est nécessaire pour rester hydraté. Ce qui est important à ce stade de la vie, c'est une lumière naturelle abondante et une température chaude (25 - 32°C). Un environnement humide peut prolonger la durée de vie, et augmentent ainsi les chances de réussite de la reproduction.",
+  },
+];
+---
+
+<section class="BSFpresentation mb-12">
+  <div class="taxonomie prose prose-lg max-w-none">
+    <!-- Taxonomie -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 class="text-xl font-heading font-medium text-accent mb-4">
+        Classification taxonomique
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Règne</p>
+          <p class="font-medium">Animalia</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Embranchement</p>
+          <p class="font-medium">Arthropoda</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Classe</p>
+          <p class="font-medium">Insecta</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Sous-classe</p>
+          <p class="font-medium">Pterygota</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Ordre</p>
+          <p class="font-medium">Diptera</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Sous-ordre</p>
+          <p class="font-medium">Brachycera</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Famille</p>
+          <p class="font-medium">Stratiomyidae</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Genre</p>
+          <p class="font-medium">Hermetia</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded">
+          <p class="text-sm text-gray-500">Espèce</p>
+          <p class="font-medium">H. illucens</p>
+        </div>
+        <div class="p-3 border border-gray-200 rounded col-span-2 md:col-span-3">
+          <p class="text-sm text-gray-500">Nom vernaculaire</p>
+          <p class="font-medium">Black soldier fly ou mouche soldat noir</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Diaporama BSF -->
+  <div class="BSFslider slider slideshow-container bg-white rounded-lg shadow-md p-6 mb-8">
+    <h3 class="text-xl font-heading font-medium text-accent mb-4">
+      Galerie BSF
+    </h3>
+    <div class="slides-wrapper relative">
+      {
+        bsfImages.map((image, index) => (
+          <figure class={`slide fade ${index === 0 ? 'active' : ''}`}>
+            <div class="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+              <img
+                src={image.src}
+                alt={image.alt}
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <figcaption class="text-center mt-4 text-gray-700 px-4">
+              {image.caption}
+            </figcaption>
+          </figure>
+        ))
+      }
+      
+      <!-- Navigation buttons -->
+      <button class="prev-button">❮</button>
+      <button class="next-button">❯</button>
+      
+      <!-- Dots -->
+      <div class="dots-container text-center mt-4">
+        {bsfImages.map((_, index) => (
+          <span class={`dot ${index === 0 ? 'active' : ''}`} onclick={`currentSlide(${index + 1})`}></span>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Stades de développement -->
+  <div class="BSFdevelopment bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-heading font-medium text-accent mb-6">
+      Stades de développement
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        stages.map((stage) => (
+          <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-200">
+            <div class="aspect-w-16 aspect-h-9">
+              <img
+                src={stage.image}
+                alt={`Stade ${stage.name}`}
+                class="object-cover w-full h-full"
+                height="300"
+              />
+            </div>
+            <div class="p-4">
+              <h4 class="font-heading font-medium text-lg text-primary mb-2">
+                {stage.name}
+              </h4>
+              <p class="text-sm text-gray-600 mb-2">{stage.description}</p>
+              <p class="text-xs text-gray-500">
+                <span class="font-medium">Durée :</span> {stage.duration}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Optimal Conditions Section -->
+<section class="conditions-section">
+  <h2 class="text-2xl font-heading font-semibold text-secondary mb-6">
+    Conditions Optimales
+  </h2>
+  <div class="conditions-grid">
+    <InteractiveCard
+      title="Température"
+      icon="🌡️"
+      items={[
+        "Idéale: 24-30°C",
+        "Impact sur le métabolisme",
+        "Contrôle de l'activité",
+      ]}
+    />
+    <InteractiveCard
+      title="Environnement"
+      icon="🌳"
+      items={["Ombragé", "Protégé", "Humide (60-90%)"]}
+    />
+    <InteractiveCard
+      title="Alimentation"
+      icon="🍎"
+      items={[
+        "Riche en protéines",
+        "Particules adaptées",
+        "Humidité contrôlée",
+      ]}
+    />
+  </div>
+</section>
+
+<style>
+  .slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .slide {
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .prev-button,
+  .next-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+  }
+
+  .next-button {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev-button {
+    left: 0;
+  }
+
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .dots-container {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dot.active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function changeSlide(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    slides[slideIndex - 1].classList.add('active');
+    dots[slideIndex - 1].classList.add('active');
+  }
+
+  // Add event listeners for keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      changeSlide(-1);
+    } else if (e.key === 'ArrowRight') {
+      changeSlide(1);
+    }
+  });
+  document.querySelector('.prev-button')?.addEventListener('click', (e) => {
+    changeSlide(-1);
+  })
+  document.querySelector('.next-button')?.addEventListener('click', (e) => {
+    changeSlide(1);
+  })
+</script>
