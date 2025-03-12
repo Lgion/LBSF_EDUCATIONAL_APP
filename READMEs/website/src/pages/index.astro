@@ -14,7 +14,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           Découvrez comment transformer les déchets organiques en ressources précieuses grâce aux larves BSF
         </p>
         <a
-          href="/chapitre1"
+          href="/chapter1"
           class="inline-flex items-center bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors duration-200"
         >
           Commencer la formation
@@ -32,9 +32,9 @@ import MainLayout from '../layouts/MainLayout.astro';
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {[1, 2, 3, 4, 5, 6].map(chapter => (
+        {[1, 2, 3, 4].map(chapter => (
           <a
-            href={`/chapitre${chapter}`}
+            href={`/chapter${chapter}`}
             class="card hover:shadow-lg transition-shadow duration-200"
           >
             <div class="p-6">
