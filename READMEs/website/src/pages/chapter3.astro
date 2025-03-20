@@ -6,7 +6,7 @@ import '../styles/componentschapter3.scss';
 const title = "Les trois unités de production";
 const description = "Description détaillée des trois unités essentielles de production BSF : reproduction, croissance larvaire et traitement post-récolte.";
 
-const stages = [
+const stages_reproduction = [
   {
     id: "fly-stage",
     title: "Stade mouche",
@@ -632,9 +632,1115 @@ const stages = [
     `
   }
 ];
+
+const stages_post = [
+  {
+    id: "microwave-drying",
+    title: "Séchage par micro-ondes",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Le séchage par micro-ondes est une méthode efficace pour le traitement initial des larves. Les principes décrits ici s'appliquent aussi bien à un micro-ondes de cuisine qu'à des installations plus grandes.
+        </div>
+        
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/A1CnpJDVL5Q?si=9eK-hkwim1yIVFTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/V_post-traitement/2_activites/a_steps/5.2a0.webp" alt="Préparation de la presse" class="step-image mt-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Micro-ondes :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Capacité : 32 L</li>
+                <li>Puissance : 1000 W</li>
+                <li>Capacité de traitement : 1 kg/h</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Balance :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Capacité max : 35 kg</li>
+                <li>Précision : ± 0.5 g</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Autres équipements :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Plat en céramique</li>
+                <li>Gants résistants à la chaleur</li>
+                <li>Conteneur de stockage</li>
+                <li>Spatule pour mélanger</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étapes du processus -->
+        <div class="process-steps space-y-6">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Pesage et répartition</h4>
+              <p>Peser exactement 250g de larves BSF désinfectées sur le plat en céramique. Répartir les larves uniformément sur le plat.</p>
+              <img src="/images/V_post-traitement/2_activites/a_steps/5.2a_step1.webp" alt="Préparation de la presse" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Réglage du temps</h4>
+              <p>Régler la minuterie du micro-ondes sur 5 minutes.</p>
+              <img src="/images/V_post-traitement/2_activites/a_steps/5.2a_step2.webp" alt="Préparation de la presse" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Traitement</h4>
+              <p>Lancer le cycle de traitement. Surveiller le processus pour éviter toute surchauffe.</p>
+              <img src="/images/V_post-traitement/2_activites/a_steps/5.2a_step3.webp" alt="Préparation de la presse" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Contrôle qualité</h4>
+              <p>Vérifier l'état des larves après le traitement. S'assurer qu'elles sont uniformément séchées.</p>
+              <img src="/images/V_post-traitement/2_activites/a_steps/5.2a_step4.webp" alt="Préparation de la presse" class="step-image mt-3">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Poids exact des larves (250g par lot)</li>
+            <li>Répartition uniforme sur le plat</li>
+            <li>Durée du cycle (5 minutes)</li>
+            <li>Aspect final des larves</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "roasting-1",
+    title: "Torréfaction (1) - Torréfacteur à café",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          La torréfaction est réalisée avec un torréfacteur à café fabriqué à Surabaya, Indonésie. Le processus est similaire pour d'autres séchoirs rotatifs. Il est important que la machine soit équipée d'un tambour bien isolé, d'un ventilateur d'échappement et d'ailettes intérieures.
+        </div>
+        
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mjei68FHLb8?si=9eK-hkwim1yIVFTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/V_post-traitement/2_activites/b_steps/5.2b0.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Torréfacteur à café :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Moteur : 350 W</li>
+                <li>Ventilateur : 700 W</li>
+                <li>Volume du tambour : 0.46 m³</li>
+                <li>Capacité : 7.5 kg/h</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Autres équipements :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Cylindre de gaz</li>
+                <li>Gants résistants à la chaleur</li>
+                <li>Balance (max 150 kg, précision ± 50g)</li>
+                <li>Conteneur de stockage (60x40x12 cm)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étapes du processus -->
+        <div class="process-steps space-y-6">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation du torréfacteur</h4>
+              <p>Connecter le cylindre de gaz au brûleur et brancher la machine. Activer le panneau de contrôle, la rotation, le ventilateur et le chauffage.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Préchauffage</h4>
+              <p>Régler la température à 140°C et préchauffer le tambour pendant qu'il tourne avec le ventilateur en marche.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Chargement et torréfaction</h4>
+              <p>Une fois la température atteinte, ajouter 5 kg de larves via l'entonnoir d'entrée.</p>
+              <img src="/images/V_post-traitement/2_activites/b_steps/5.2b_step2+3.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Durée de torréfaction</h4>
+              <p>Laisser torréfier pendant environ 40 minutes au total. La température va fluctuer pendant le processus.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Température de torréfaction (140°C)</li>
+            <li>Rotation continue du tambour</li>
+            <li>Fonctionnement du ventilateur</li>
+            <li>Durée totale (40 minutes)</li>
+          </ul>
+        </div>
+        <img src="/images/V_post-traitement/2_activites/b_steps/5.2b1.webp" alt="Préparation et réglage du four" class="step-image mt-3">
+      </div>
+    `
+  },
+  {
+    id: "roasting-2",
+    title: "Torréfaction (2) - Four à gaz",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          La torréfaction au four à gaz est une alternative au torréfacteur à café. La circulation d'air étant moins efficace, il est important de bien gérer la position des plateaux pour assurer un séchage uniforme.
+        </div>
+        
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hPM_e0H7CdI?si=9eK-hkwim1yIVFTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/V_post-traitement/2_activites/c_steps/5.2c0.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Four à gaz :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Thermostat : TGW IL-80EM</li>
+                <li>Chauffage : Stove (RI 511A)</li>
+                <li>Capacité : 1.3 kg/h</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Plateaux et équipements :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Plateaux en maille (4 mm)</li>
+                <li>Dimensions : 65 x 45 x 3.5 mm</li>
+                <li>Gants résistants à la chaleur</li>
+                <li>Cylindre de gaz</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étapes du processus -->
+        <div class="process-steps space-y-6">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation du four</h4>
+              <p>Connecter le cylindre de gaz au four, démarrer le chauffage et régler le thermostat à 65°C.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Chargement des plateaux</h4>
+              <p>Ajouter 3 kg de larves désinfectées sur chacun des 10 plateaux en maille.</p>
+              <img src="/images/V_post-traitement/2_activites/c_steps/5.2c_step1+2.webp" alt="Chargement et torréfaction des larves" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Sessions de séchage</h4>
+              <p>Effectuer trois sessions : nuit (16h), matin (4h) et après-midi (4h).</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Rotation des plateaux</h4>
+              <p>Entre chaque session, mélanger la position des plateaux pour assurer un séchage uniforme.</p>
+              <img src="/images/V_post-traitement/2_activites/c_steps/5.2c_step4.webp" alt="Chargement et torréfaction des larves" class="step-image mt-3">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Température du four (65°C)</li>
+            <li>Durée de chaque session</li>
+            <li>Position des plateaux</li>
+            <li>Uniformité du séchage</li>
+          </ul>
+        </div>
+        <img src="/images/V_post-traitement/2_activites/c_steps/5.2c1.webp" alt="Chargement et torréfaction des larves" class="step-image mt-3">
+      </div>
+    `
+  },
+  {
+    id: "oven-drying",
+    title: "Séchage au four",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Le séchage au four est une méthode alternative qui permet de traiter de plus grandes quantités de larves simultanément. Cette méthode nécessite une attention particulière à la rotation des plateaux pour assurer un séchage uniforme.
+        </div>
+        
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4CvlmePGIQs?si=9eK-hkwim1yIVFTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/V_post-traitement/2_activites/d_steps/5.2d0.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Four industriel :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Thermostat : TGW IL-80EM</li>
+                <li>Chauffage : Stove (RI 511A)</li>
+                <li>Température : 65°C</li>
+                <li>Capacité : 30 kg par cycle</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Plateaux et accessoires :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>10 plateaux en maille (4 mm)</li>
+                <li>Dimensions : 65 x 45 x 3.5 cm</li>
+                <li>Gants résistants à la chaleur</li>
+                <li>Balance de précision</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étapes du processus -->
+        <div class="process-steps space-y-6">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préchauffage et démarrage</h4>
+              <p>Démarrer le four et le préchauffer à 65°C. Vérifier que la température est stable avant de commencer.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Chargement des plateaux</h4>
+              <p>Répartir 3 kg de larves désinfectées sur chacun des 10 plateaux en maille (total 30 kg). Assurer une répartition uniforme sur chaque plateau.</p>
+              <img src="/images/V_post-traitement/2_activites/d_steps/5.2d_step1+2.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Sessions de séchage</h4>
+              <p>Effectuer trois sessions de séchage distinctes :
+                <ul class="list-disc ml-6 mt-2">
+                  <li>Session de nuit : 16 heures</li>
+                  <li>Session du matin : 4 heures</li>
+                  <li>Session de l'après-midi : 4 heures</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Rotation des plateaux</h4>
+              <p>Entre chaque session, mélanger les larves sur les plateaux et échanger la position des plateaux dans le four pour assurer un séchage uniforme.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Maintien constant de la température à 65°C</li>
+            <li>Respect des durées de chaque session (16h + 4h + 4h)</li>
+            <li>Rotation systématique des plateaux entre les sessions</li>
+            <li>Répartition uniforme des larves (3 kg par plateau)</li>
+            <li>Vérification de l'uniformité du séchage</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "grinding",
+    title: "Broyage",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Le broyage est une étape préparatoire essentielle qui permet de réduire les larves séchées en poudre fine pour optimiser le processus de fractionnement ultérieur.
+        </div>
+        
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1Nn0W-FWgME?si=9eK-hkwim1yIVFTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/V_post-traitement/2_activites/e_steps/5.2e0.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>Broyeur à marteaux ou à couteaux</li>
+            <li>Tamis (maille < 1mm)</li>
+            <li>Conteneurs pour la poudre</li>
+            <li>Balance de précision</li>
+          </ul>
+        </div>
+
+        <!-- Étapes du processus -->
+        <div class="process-steps space-y-6">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation du broyeur</h4>
+              <p>Vérifier la propreté du broyeur et installer le tamis avec la taille de maille appropriée (< 1mm).</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Broyage progressif</h4>
+              <p>Introduire progressivement les larves séchées dans le broyeur. Ne pas surcharger pour maintenir une granulométrie homogène.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Tamisage</h4>
+              <p>Tamiser la poudre obtenue pour garantir une granulométrie uniforme. Rebroyer les particules trop grosses si nécessaire.</p>
+              <img src="/images/V_post-traitement/2_activites/e_steps/5.2e_step1+2+3.webp" alt="Préparation et utilisation du broyeur" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Conditionnement</h4>
+              <p>Peser et stocker la poudre dans des conteneurs hermétiques étiquetés pour le fractionnement ultérieur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Granulométrie finale (< 1mm)</li>
+            <li>Température du broyeur</li>
+            <li>Homogénéité de la poudre</li>
+            <li>Propreté du matériel</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "fractionation",
+    title: "Fractionnement",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Le fractionnement des larves séchées permet d'obtenir deux produits distincts : un tourteau riche en protéines et une huile brute qui nécessite un raffinage ultérieur.
+        </div>
+        
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c9VAffBMCP0?si=9eK-hkwim1yIVFTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/V_post-traitement/2_activites/f_steps/5.2f0.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Presse à vis :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Modèle : Vevor DL-ZYJ10B</li>
+                <li>Capacité : 5 kg/h</li>
+                <li>Température : 100°C</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Conteneurs et accessoires :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Conteneur pour tourteau (55x35x12 mm)</li>
+                <li>Conteneur inox pour huile (5L)</li>
+                <li>Balance (max 35 kg, ± 0.5g)</li>
+                <li>Clé Allen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étapes du processus principal -->
+        <div class="process-steps space-y-6">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation de la presse</h4>
+              <p>Allumer la presse et la chauffer à 100°C. Placer les conteneurs sous les sorties respectives : conteneur pour tourteau sous la grande sortie, conteneur avec tamis pour l'huile sous les fentes latérales.</p>
+              <img src="/images/V_post-traitement/2_activites/f_steps/5.2g_step1+2.webp" alt="Préparation de la presse" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Pesage des larves</h4>
+              <p>Peser les larves séchées à presser sur la balance de précision.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Pressage progressif</h4>
+              <p>Ajouter progressivement les larves dans la trémie. Éviter la surcharge pour prévenir le blocage de la presse.</p>
+              <img src="/images/V_post-traitement/2_activites/f_steps/5.2f_step1+2+3.webp" alt="Pressage des larves" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Finalisation du pressage</h4>
+              <p>Après l'ajout de toutes les larves, attendre quelques minutes jusqu'à ce qu'il n'y ait plus de sortie de produit.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Nettoyage final</h4>
+              <p>Arrêter la vis (bouton stop). Vider le reste de matière en inversant le sens de rotation (bouton nettoyage).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Température constante à 100°C</li>
+            <li>Alimentation régulière de la trémie</li>
+            <li>Qualité du tourteau et de l'huile</li>
+            <li>Propreté des conteneurs</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "oil-refining-1",
+    title: "Raffinage (1) - Filtration sous vide",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          La filtration sous vide est une méthode efficace pour purifier l'huile brute de BSF, particulièrement adaptée aux petits volumes.
+        </div>
+        
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c9VAffBMCP0?si=9eK-hkwim1yIVFTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/V_post-traitement/2_activites/g_steps/5.2g0.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>Pompe à vide</li>
+            <li>Entonnoir Buchner</li>
+            <li>Erlenmeyer</li>
+            <li>Papier filtre</li>
+            <li>Conteneur pour huile raffinée</li>
+          </ul>
+        </div>
+
+        <!-- Étapes du processus -->
+        <div class="process-steps space-y-6">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Installation du système</h4>
+              <p>Placer l'entonnoir sur l'Erlenmeyer et le connecter à la pompe à vide. Mettre un papier filtre neuf sur l'entonnoir et démarrer la pompe.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Filtration</h4>
+              <p>Verser l'huile brute dans l'entonnoir et laisser filtrer sous vide.</p>
+              <img src="/images/V_post-traitement/2_activites/g_steps/5.2g_step1+2.webp" alt="Installation du système de filtration" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Collecte</h4>
+              <p>Arrêter la pompe et récupérer l'huile raffinée. Jeter le papier filtre et les résidus solides.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Stockage</h4>
+              <p>Stocker l'huile dans un conteneur opaque et étiqueter avec la date de production.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">1 (adaptation)</div>
+            <div class="step-content">
+              <h4 class="step-title">Méthode alternative de filtration</h4>
+              <p>Une méthode plus simple consiste à :</p>
+              <ul class="list-disc ml-6 text-gray-700 mt-2">
+                <li>Utiliser un filtre à café à la place du papier filtre</li>
+                <li>Placer l'entonnoir sur n'importe quel type de conteneur</li>
+                <li>Laisser la graisse filtrer passivement à travers le filtre à café par gravité</li>
+              </ul>
+              <p class="mt-2 text-gray-600 italic">Cette méthode est plus lente mais ne nécessite pas de pompe à vide.</p>
+            </div>
+            <img src="/images/V_post-traitement/2_activites/g_steps/5.2g_step1bis.webp" alt="Installation du système de filtration" class="step-image mt-3">
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Qualité du papier filtre</li>
+            <li>Efficacité de la pompe à vide</li>
+            <li>Clarté de l'huile filtrée</li>
+            <li>Propreté du matériel</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "oil-refining-2",
+    title: "Raffinage (2) - Décantation",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          La décantation est une méthode alternative de raffinage, particulièrement adaptée aux grands volumes d'huile brute de BSF.
+        </div>
+        
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c9VAffBMCP0?si=9eK-hkwim1yIVFTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/V_post-traitement/2_activites/h_steps/5.2h.webp" alt="Four à gaz et matériel de torréfaction" class="step-image mt-3">
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>Conteneur cylindrique</li>
+            <li>Tube plastique</li>
+            <li>Seringue</li>
+            <li>Support ou boîte pour surrélévation</li>
+            <li>Conteneur de stockage</li>
+          </ul>
+        </div>
+
+        <!-- Étapes du processus -->
+        <div class="process-steps space-y-6">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation de l'huile</h4>
+              <p>Laisser reposer l'huile brute pendant quelques heures dans le conteneur cylindrique. Si nécessaire, placer dans un bain-marie pour liquifier l'huile.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Installation du système</h4>
+              <p>Placer le conteneur cylindrique en hauteur. Fixer la seringue à une extrémité du tube plastique et insérer l'autre extrémité dans la fraction huileuse supérieure.</p>
+              <img src="/images/V_post-traitement/2_activites/h_steps/5.2h_step3.webp" alt="Installation du système de filtration" class="step-image mt-3">
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Décantation</h4>
+              <p>Amorcer le siphon en tirant sur la seringue. L'huile s'écoulera ensuite par gravité dans le conteneur de stockage.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Arrêt du processus</h4>
+              <p>Stopper dès que le tube atteint les solides au fond du conteneur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Temps de repos suffisant</li>
+            <li>Position du tube dans l'huile</li>
+            <li>Débit de décantation</li>
+            <li>Qualité de la séparation</li>
+          </ul>
+        </div>
+      </div>
+    `
+  }
+];
+
+const stages_croissance = [
+  {
+    id: "preprocessing",
+    title: "Pré-traitement",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Le pré-traitement des déchets vise à réduire la taille des particules et homogénéiser le matériau d'entrée. Les déchets peuvent alors être facilement distribués aux larves et les nutriments sont rendus plus accessibles aux larves et aux bactéries associées.
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Contrôle qualité initial</h4>
+              <p>Après le contrôle qualité et l'acceptation, retirer les déchets organiques du véhicule de collecte et les placer près du broyeur. Pendant le déchargement, retirer les éléments non-organiques (tri grossier).</p>
+              <img src="/images/IV_operations/2_activites/a_steps/4.2a_step1.webp" alt="Contrôle qualité initial" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation du broyeur</h4>
+              <p>Placer un seau étiqueté sous la sortie du broyeur et mettre le broyeur en marche.</p>
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Broyage et tri</h4>
+              <p>Pendant le remplissage de la trémie, retirer manuellement les composants non-organiques. Quand le seau de réception est plein, le remplacer par un nouveau seau étiqueté vide.</p>
+              <img src="/images/IV_operations/2_activites/a_steps/4.2a_step3.webp" alt="Broyage et tri" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Pesée et documentation</h4>
+              <p>Peser et documenter chaque seau plein de déchets broyés à l'aide d'une balance.</p>
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Nettoyage</h4>
+              <p>Après le broyage, nettoyer l'intérieur, l'extérieur et les alentours du broyeur avec un nettoyeur haute pression. Les eaux usées doivent être évacuées pour traitement.</p>
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Ajustement - Substrat trop humide</h4>
+              <p>Si le substrat est trop humide (>80%), ajouter un matériau sec pour équilibrer la teneur en eau. Vous pouvez mélanger les matériaux avec le substrat avant de le mettre dans les unités de conversion.</p>
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Ajustement - Substrat trop sec</h4>
+              <p>Si le substrat est trop sec (<70%), le mélanger avec un substrat humide ou ajouter de l'eau. Toujours placer le matériau sec en bas et le matériau humide au-dessus si non mélangé.</p>
+              <img src="/images/IV_operations/2_activites/a_steps/4.2a_step6+7.webp" alt="Contrôle qualité initial" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 8 -->
+          <div class="step-card">
+            <div class="step-number">8</div>
+            <div class="step-content">
+              <h4 class="step-title">Analyse de l'humidité</h4>
+              <p>Pour déterminer la teneur en eau, préparer un échantillon de Solides Totaux (TS) dans un four spécial appelé 'four à matière sèche' ou 'four TS'.</p>
+            </div>
+          </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Poids des déchets reçus</li>
+            <li>Poids des fractions séparées</li>
+            <li>Échantillonnage pour déterminer la teneur en humidité</li>
+          </ul>
+        </div>
+
+        <div class="bg-red-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-red-800 mb-2">Mesures de protection :</h4>
+          <ul class="list-disc ml-6 text-red-700">
+            <li>Porter des gants, vêtements de protection, protection des yeux et des oreilles</li>
+            <li>Utiliser les dispositifs de sécurité du broyeur (trémie d'alimentation, volet et autres)</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "treatment",
+    title: "Traitement",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Le traitement commence par la mise en place d'unités d'incubation quotidiennes, avec un ratio précis de substrat et de larves 5-DOL. Chaque unité d'incubation reçoit 1kg de substrat et 10 000 larves 5-DOL, soit une densité de 3,3 larves par cm³.
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation des unités d'incubation</h4>
+              <p>Préparer 36 unités d'incubation vides et remplir chacune avec 1 kg de substrat.</p>
+              <img src="/images/IV_operations/2_activites/b_steps/4.2b_step1.webp" alt="Préparation des unités d'incubation" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Ajout des larves</h4>
+              <p>Ajouter un gobelet contenant 10 000 larves 5-DOL sur le substrat dans chaque unité d'incubation.</p>
+              <img src="/images/IV_operations/2_activites/b_steps/4.2b_step2.webp" alt="Ajout des larves" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Organisation des unités</h4>
+              <p>Placer les 36 unités d'incubation dans des caisses plus grandes et les installer dans le rack d'incubation.</p>
+              <img src="/images/IV_operations/2_activites/b_steps/4.2b_step3.webp" alt="Organisation des unités" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Transfert vers la station d'alimentation</h4>
+              <p>Prendre le groupe le plus ancien de 36 unités d'incubation du rack et les placer près de la station d'alimentation.</p>
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation des unités larvero</h4>
+              <p>Préparer une palette avec 36 unités larvero et 5 cadres de ventilation ouverts.</p>
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Assemblage des unités larvero</h4>
+              <p>Placer 6 unités larvero sur la palette, les alimenter avec 9 kg de substrat chacune et vider une unité d'incubation dans chaque unité larvero. Empiler les couches avec des cadres de ventilation.</p>
+              <img src="/images/IV_operations/2_activites/b_steps/4.2b_step6.webp" alt="Assemblage des unités larvero" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Étiquetage et placement</h4>
+              <p>Étiqueter la palette avec le code de date et la transporter vers sa destination dans le bâtiment.</p>
+            </div>
+          </div>
+
+          <!-- Étape 8 -->
+          <div class="step-card">
+            <div class="step-number">8</div>
+            <div class="step-content">
+              <h4 class="step-title">Nettoyage</h4>
+              <p>Laver les conteneurs de substrat vides avec un nettoyeur haute pression et les laisser sécher.</p>
+            </div>
+          </div>
+
+          <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+            <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+            <ul class="list-disc ml-6 text-yellow-700">
+              <li>Poids du substrat ajouté aux unités d'incubation</li>
+              <li>Poids du substrat ajouté aux unités larvero</li>
+            </ul>
+          </div>
+
+          <div class="bg-red-50 p-4 rounded-lg mt-6">
+            <h4 class="font-semibold text-red-800 mb-2">Mesures de protection :</h4>
+            <ul class="list-disc ml-6 text-red-700">
+              <li>Porter des gants et des vêtements de protection pendant les activités d'alimentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "harvesting",
+    title: "Récolte",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Une fois que les larves ont consommé le substrat et qu'il ne reste que des résidus secs, les unités larvero sont récoltées à l'aide d'un système de tamisage mécanique qui permet de séparer le mélange en trois fractions.
+        </div>
+        
+        <div class="grid gap-6">
+          <!-- Étape 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Préparation de la zone de récolte</h4>
+              <p>Placer des bacs vides sous les sorties de la machine de tamisage et la balance près de la trémie du convoyeur.</p>
+              <img src="/images/IV_operations/2_activites/c_steps/4.2c_step1.webp" alt="Préparation de la zone de récolte" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Sélection des palettes</h4>
+              <p>Vérifier le planning de récolte et déplacer les palettes sélectionnées vers la zone de récolte avec le chariot élévateur.</p>
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Mise en marche des équipements</h4>
+              <p>Allumer la balance, le convoyeur et la machine de tamisage.</p>
+            </div>
+          </div>
+
+          <!-- Étape 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Pesée initiale</h4>
+              <p>Tarer trois bacs de conversion vides, puis peser les trois premières unités larvero et noter leur masse dans la feuille de suivi.</p>
+              <img src="/images/IV_operations/2_activites/c_steps/4.2c_step4.webp" alt="Pesée initiale" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4 class="step-title">Déchargement dans la trémie</h4>
+              <p>Vider les trois unités larvero une par une dans la trémie pour que le matériau soit progressivement transporté vers le tamis par le convoyeur.</p>
+            </div>
+          </div>
+
+          <!-- Étape 6 -->
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4 class="step-title">Traitement complet des palettes</h4>
+              <p>Répéter le processus de pesée, notation et vidage jusqu'à ce qu'une palette soit entièrement traitée, puis passer aux autres palettes prévues.</p>
+            </div>
+          </div>
+
+          <!-- Étape 7 -->
+          <div class="step-card">
+            <div class="step-number">7</div>
+            <div class="step-content">
+              <h4 class="step-title">Gestion des fractions</h4>
+              <p>Maintenir les trois fractions de sortie séparées pour chaque palette pour calculer le rendement. Remplacer les bacs pleins par des vides.</p>
+              <img src="/images/IV_operations/2_activites/c_steps/4.2c_step7.webp" alt="Gestion des fractions" class="w-full rounded-lg shadow-md mt-2">
+            </div>
+          </div>
+
+          <!-- Étape 8 -->
+          <div class="step-card">
+            <div class="step-number">8</div>
+            <div class="step-content">
+              <h4 class="step-title">Traitement des résidus</h4>
+              <p>Peser et noter le contenu du bac de grosses particules (pour compostage) et du bac de résidus fins (pour maturation).</p>
+            </div>
+          </div>
+
+          <!-- Étape 9 -->
+          <div class="step-card">
+            <div class="step-number">9</div>
+            <div class="step-content">
+              <h4 class="step-title">Traitement final des larves</h4>
+              <p>Retirer manuellement les résidus restants en les écrémant du dessus du bac (les larves poussent naturellement les résidus vers le haut). Peser le bac de larves propres et prélever des échantillons pour analyse.</p>
+            </div>
+          </div>
+
+          <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+            <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+            <ul class="list-disc ml-6 text-yellow-700">
+              <li>Poids des unités larvero avant traitement</li>
+              <li>Poids de chaque fraction après séparation</li>
+              <li>Teneur en eau des larves et des résidus (via échantillonnage)</li>
+            </ul>
+          </div>
+
+          <div class="bg-red-50 p-4 rounded-lg mt-6">
+            <h4 class="font-semibold text-red-800 mb-2">Mesures de protection :</h4>
+            <ul class="list-disc ml-6 text-red-700">
+              <li>Porter des gants, une protection oculaire et des vêtements de protection pendant les activités de récolte</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "conditioning",
+    title: "Suivi et contrôle qualité",
+    description: `
+      <div class="space-y-8">
+        <div class="text-gray-700 mb-6">
+          Le conditionnement des larves BSF peut se faire selon deux procédés distincts, en fonction de l'utilisation prévue : la purge pour les larves vivantes et la stérilisation pour les larves destinées à la transformation.
+        </div>
+        
+        <div class="bg-green-50 p-6 rounded-lg mb-8">
+          <h3 class="text-xl font-bold text-green-800 mb-4">1. Procédé de Purge</h3>
+          <p class="text-green-700 mb-4">Recommandé pour la vente de larves vivantes. Ce processus permet aux larves de vider leur contenu intestinal tout en restant vivantes.</p>
+          
+          <div class="grid gap-4">
+            <div class="step-card bg-white">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4 class="step-title">Préparation du bac de lavage</h4>
+                <p>Installer le support en tube plastique dans le bac et fixer le filet de lavage sur le côté.</p>
+                <img src="/images/IV_operations/2_activites/d_steps/4.2d_step1.webp" alt="Préparation du bac de lavage" class="w-full rounded-lg shadow-md mt-2">
+              </div>
+            </div>
+
+            <div class="step-card bg-white">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4 class="step-title">Lavage</h4>
+                <p>Laver 10 kg de larves fraîchement récoltées avec de l'eau propre pendant 5-10 minutes.</p>
+                <img src="/images/IV_operations/2_activites/d_steps/4.2d_step2.webp" alt="Lavage des larves" class="w-full rounded-lg shadow-md mt-2">
+              </div>
+            </div>
+
+            <div class="step-card bg-white">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4 class="step-title">Purge</h4>
+                <p>Placer les larves dans un lit de purge avec du cocopeat (1 kg pour 10 kg de larves) pendant 3-4 heures.</p>
+                <img src="/images/IV_operations/2_activites/d_steps/4.2d_step3.webp" alt="Purge des larves" class="w-full rounded-lg shadow-md mt-2">
+              </div>
+            </div>
+
+            <div class="step-card bg-white">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4 class="step-title">Tamisage</h4>
+                <p>Séparer les larves du cocopeat par tamisage une fois qu'elles sont sèches.</p>
+                <img src="/images/IV_operations/2_activites/d_steps/4.2d_step4.webp" alt="Tamisage des larves" class="w-full rounded-lg shadow-md mt-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">2. Procédé de Stérilisation</h3>
+          <p class="text-blue-700 mb-4">Nécessaire pour les larves destinées à l'alimentation animale, ce processus tue rapidement les larves et réduit la charge bactérienne.</p>
+          
+          <div class="grid gap-4">
+            <div class="step-card bg-white">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4 class="step-title">Préparation</h4>
+                <p>Chauffer l'eau jusqu'à 90°C (apparition de bulles) et préparer le bac de lavage avec support et filet.</p>
+              </div>
+            </div>
+
+            <div class="step-card bg-white">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4 class="step-title">Blanchiment</h4>
+                <p>Plonger les larves dans l'eau chaude pendant 60 secondes (environ 10 kg par lot). Changer l'eau tous les 50 kg.</p>
+              </div>
+            </div>
+
+            <div class="step-card bg-white">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4 class="step-title">Lavage</h4>
+                <p>Nettoyer les larves blanchies à l'eau propre jusqu'à élimination complète des résidus.</p>
+              </div>
+            </div>
+
+            <div class="step-card bg-white">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4 class="step-title">Post-traitement</h4>
+                <p>Procéder immédiatement au post-traitement ou congeler les larves pour éviter la décomposition rapide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-2">Mesures de protection pour les travailleurs :</h4>
+          <ul class="list-disc ml-6 text-yellow-700">
+            <li>Porter des gants</li>
+            <li>Utiliser une protection oculaire</li>
+            <li>Porter des vêtements de protection</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+];
+
+
+
 ---
 
-<ChapterLayout 
+<ChapterLayout
   title={title}
   description={description}
   chapterNumber={3}
@@ -711,7 +1817,7 @@ const stages = [
         <div class="mt-8">
           <h3 class="text-xl font-semibold mb-4">Les 6 étapes de l'unité de reproduction</h3>
           <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {stages.map(stage => (
+            {stages_reproduction.map(stage => (
               <button
                 class="stage-button p-4 bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors duration-200"
                 data-modal-target={stage.id}
@@ -725,59 +1831,10 @@ const stages = [
     <!-- Bouton pour afficher la section sur l'élevage BSF -->
     <div id="more-1_btn" class="flex justify-center mt-6">
       <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
-        Voir plus de détails sur l'élevage
+        Voir plus de détails de l'unité reproduction
       </button>
     </div>
-      <div id="more-1"class="space-y-8 hidden transition-all duration-300">
-        <div class="text-gray-700 mb-6">
-          Pour assurer le traitement d'une quantité définie de déchets de manière régulière, l'unité d'élevage doit fournir un nombre défini de larves de cinq jours (5-DOL) chaque jour. Il est donc important de contrôler toutes les étapes de production pendant l'élevage et de surveiller la performance de chaque étape.
-        </div>
-
-        <div class="grid gap-6">
-          <!-- Indicateurs de performance -->
-          <div class="performance-card">
-            <h3 class="text-xl font-semibold mb-4">Indicateurs de performance d'une unité d'élevage</h3>
-            <img src="/images/III_unite/1_elevage/3.1a.webp" alt="Schéma des indicateurs de performance" class="w-full rounded-lg shadow-md mb-4">
-          </div>
-
-          <!-- Dépôt et récolte des œufs -->
-          <div class="process-card">
-            <h3 class="text-xl font-semibold mb-4">Dépôt et récolte des œufs</h3>
-            <p class="mb-4">Les cages sont équipées d'un support spécial (appelé "eggies") qui satisfait les exigences des mouches pour un emplacement sûr de ponte, ainsi qu'un "attractif" qui imite la matière organique en décomposition.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <img src="/images/III_unite/1_elevage/3.1b.webp" alt="Grattage des œufs" class="w-full rounded-lg shadow-md">
-              <img src="/images/III_unite/1_elevage/3.1c0.webp" alt="Pesée des œufs" class="w-full rounded-lg shadow-md">
-              <img src="/images/III_unite/1_elevage/3.1c1.webp" alt="Support à œufs" class="w-full rounded-lg shadow-md">
-            </div>
-          </div>
-
-          <!-- Éclosion et alimentation des larves -->
-          <div class="process-card">
-            <h3 class="text-xl font-semibold mb-4">Éclosion et alimentation des larves</h3>
-            <p class="mb-4">L'unité qui accueille les supports à œufs et les boîtes de nurserie contenant la nourriture pour les nouveau-nés est appelée "douche à nouveau-nés". Les œufs éclosent sur plusieurs jours et les nouveau-nés tombent constamment dans le conteneur en dessous où ils commencent immédiatement à se nourrir.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <img src="/images/III_unite/1_elevage/3.1c2.webp" alt="Douche à nouveau-nés" class="w-full rounded-lg shadow-md">
-              <img src="/images/III_unite/1_elevage/3.1c3.webp" alt="Conteneurs de nurserie" class="w-full rounded-lg shadow-md">
-            </div>
-          </div>
-
-          <!-- Pupaison -->
-          <div class="process-card">
-            <h3 class="text-xl font-semibold mb-4">Pupaison</h3>
-            <p class="mb-4">Les pré-pupes qui ont rampé dans le conteneur de transfert sont récoltées et transférées dans un conteneur de pupaison. Les conteneurs contiennent un substrat humide de type sol (compost) dans lequel les pré-pupes peuvent s'enfouir.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <img src="/images/III_unite/1_elevage/3.1c4.webp" alt="Ajout de pré-pupes dans le conteneur de pupaison" class="w-full rounded-lg shadow-md">
-              <img src="/images/III_unite/1_elevage/3.1c5.webp" alt="Cage sombre avec conteneurs de pupaison" class="w-full rounded-lg shadow-md">
-            </div>
-          </div>
-
-          <!-- Accouplement -->
-          <div class="process-card">
-            <h3 class="text-xl font-semibold mb-4">Accouplement</h3>
-            <p class="mb-4">Les mouches dans la cage sombre ne s'accouplent pas en raison de l'obscurité et restent immobiles. Ces mouches constituent une source constante d'adultes "frais" qui, dès qu'ils sont relâchés à la lumière, commenceront à se reproduire.</p>
-            <img src="/images/III_unite/1_elevage/3.1d.webp" alt="Cage d'amour avec adultes fraîchement émergés" class="w-full rounded-lg shadow-md">
-          </div>
-        </div>
+      <div id="more-1"class="unit-card space-y-8 hidden transition-all duration-300">
 
         <!-- Navigation badges -->
         <div class="flex flex-wrap gap-2 mb-6">
@@ -802,17 +1859,21 @@ const stages = [
             Accouplement
           </a>
         </div>
+        
+        <div class="text-gray-700 mb-6">
+          Pour assurer le traitement d'une quantité définie de déchets de manière régulière, l'unité d'élevage doit fournir un nombre défini de larves de cinq jours (5-DOL) chaque jour. Il est donc important de contrôler toutes les étapes de production pendant l'élevage et de surveiller la performance de chaque étape.
+        </div>
 
         <div class="grid gap-6">
           <!-- Indicateurs de performance -->
-          <div id="performance" class="performance-card scroll-mt-20">
-            <h3 class="text-xl font-semibold mb-4">Indicateurs de performance d'une unité d'élevage</h3>
+          <div class="performance-card">
+            <h3 class="text-xl font-semibold mb-4"><span class="material-icons text-3xl/1 text-blue-600 dark:text-sky-400">analytics</span> Indicateurs de performance d'une unité d'élevage</h3>
             <img src="/images/III_unite/1_elevage/3.1a.webp" alt="Schéma des indicateurs de performance" class="w-full rounded-lg shadow-md mb-4">
           </div>
 
           <!-- Dépôt et récolte des œufs -->
-          <div id="eggs" class="process-card scroll-mt-20">
-            <h3 class="text-xl font-semibold mb-4">Dépôt et récolte des œufs</h3>
+          <div class="process-card">
+            <h3 class="text-xl font-semibold mb-4"><span class="text-blue-600 dark:text-sky-400 material-icons text-3xl ">egg</span>Dépôt et récolte des œufs</h3>
             <p class="mb-4">Les cages sont équipées d'un support spécial (appelé "eggies") qui satisfait les exigences des mouches pour un emplacement sûr de ponte, ainsi qu'un "attractif" qui imite la matière organique en décomposition.</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               <img src="/images/III_unite/1_elevage/3.1b.webp" alt="Grattage des œufs" class="w-full rounded-lg shadow-md">
@@ -822,8 +1883,8 @@ const stages = [
           </div>
 
           <!-- Éclosion et alimentation des larves -->
-          <div id="hatching" class="process-card scroll-mt-20">
-            <h3 class="text-xl font-semibold mb-4">Éclosion et alimentation des larves</h3>
+          <div class="process-card">
+            <h3 class="text-xl font-semibold mb-4"><span class="text-blue-600 dark:text-sky-400 material-icons text-3xl/1">cruelty_free</span>Éclosion et alimentation des larves</h3>
             <p class="mb-4">L'unité qui accueille les supports à œufs et les boîtes de nurserie contenant la nourriture pour les nouveau-nés est appelée "douche à nouveau-nés". Les œufs éclosent sur plusieurs jours et les nouveau-nés tombent constamment dans le conteneur en dessous où ils commencent immédiatement à se nourrir.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <img src="/images/III_unite/1_elevage/3.1c2.webp" alt="Douche à nouveau-nés" class="w-full rounded-lg shadow-md">
@@ -832,8 +1893,8 @@ const stages = [
           </div>
 
           <!-- Pupaison -->
-          <div id="pupation" class="process-card scroll-mt-20">
-            <h3 class="text-xl font-semibold mb-4">Pupaison</h3>
+          <div class="process-card">
+            <h3 class="text-xl font-semibold mb-4"><span class="text-blue-600 dark:text-sky-400 material-icons text-3xl/1">bug_report</span>Pupaison</h3>
             <p class="mb-4">Les pré-pupes qui ont rampé dans le conteneur de transfert sont récoltées et transférées dans un conteneur de pupaison. Les conteneurs contiennent un substrat humide de type sol (compost) dans lequel les pré-pupes peuvent s'enfouir.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <img src="/images/III_unite/1_elevage/3.1c4.webp" alt="Ajout de pré-pupes dans le conteneur de pupaison" class="w-full rounded-lg shadow-md">
@@ -842,16 +1903,23 @@ const stages = [
           </div>
 
           <!-- Accouplement -->
-          <div id="mating" class="process-card scroll-mt-20">
-            <h3 class="text-xl font-semibold mb-4">Accouplement</h3>
+          <div class="process-card">
+            <h3 class="text-xl font-semibold mb-4"><span class="text-blue-600 dark:text-sky-400 material-icons text-3xl/1">favorite</span>Accouplement</h3>
             <p class="mb-4">Les mouches dans la cage sombre ne s'accouplent pas en raison de l'obscurité et restent immobiles. Ces mouches constituent une source constante d'adultes "frais" qui, dès qu'ils sont relâchés à la lumière, commenceront à se reproduire.</p>
             <img src="/images/III_unite/1_elevage/3.1d.webp" alt="Cage d'amour avec adultes fraîchement émergés" class="w-full rounded-lg shadow-md">
           </div>
         </div>
+
+        <!-- Bouton pour fermer la section sur l'élevage BSF -->
+        <div id="more-1_btn_close" class="flex justify-center mt-6">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
+            Masquer
+          </button>
+        </div>
       </div>
     </section>
 
-    {stages.map(stage => (
+    {stages_reproduction.map(stage => (
       <Modal 
         id={stage.id} 
         title={stage.title}
@@ -902,8 +1970,109 @@ const stages = [
           <li>Contrôle quotidien</li>
           <li>Protection contre les prédateurs</li>
         </ul>
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold mb-4">Les 4 étapes de l'unité de croissance</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {stages_croissance.map(stage => (
+              <button
+                class="stage-button p-4 bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors duration-200"
+                data-modal-target={stage.id}
+              >
+                {stage.title}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
+      
+
+
+
+        <!-- Bouton pour afficher plus de détails -->
+        <div id="more-2_btn" class="flex justify-center mt-6">
+            <button 
+              class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out"
+            >
+              Voir plus de détails de l'unité croissance
+            </button>
+          </div>
+  
+          <div id="more-2" class="unit-card space-y-8 hidden transition-all duration-300">
+            <div class="text-gray-700 mb-6">
+              L'élevage des BSF est une étape cruciale qui nécessite une attention particulière aux conditions environnementales et aux besoins spécifiques des larves.
+            </div>
+            
+            <div class="grid gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-4">Conditions environnementales optimales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Température</h4>
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li>Optimale : 28-30°C</li>
+                      <li>Plage acceptable : 24-35°C</li>
+                      <li>Critique : &lt;24°C ou &gt;36°C</li>
+                    </ul>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Humidité</h4>
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li>Optimale : 60-70%</li>
+                      <li>Plage acceptable : 50-80%</li>
+                      <li>Critique : &lt;45% ou &gt;85%</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-4">Indicateurs de performance</h3>
+                <div class="grid gap-4">
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Croissance</h4>
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li>Taux de survie : >85%</li>
+                      <li>Temps de développement : 12-14 jours</li>
+                      <li>Poids final : 150-200mg/larve</li>
+                    </ul>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Conversion</h4>
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li>Taux de conversion : 15-20%</li>
+                      <li>Réduction des déchets : 50-80%</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+                <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
+                <ul class="list-disc ml-6 text-yellow-700">
+                  <li>Contrôle quotidien de la température et de l'humidité</li>
+                  <li>Surveillance de la mortalité larvaire</li>
+                  <li>Vérification de la qualité du substrat</li>
+                  <li>Suivi de la croissance larvaire</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Bouton pour fermer la section sur l'élevage BSF -->
+            <div id="more-2_btn_close" class="flex justify-center mt-6">
+              <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
+                Masquer
+              </button>
+            </div>
+          </div>
+      
     </section>
+    {stages_croissance.map(stage => (
+      <Modal 
+        id={stage.id} 
+        title={stage.title}
+        description={stage.description}
+      />
+    ))}
 
     <!-- Section 3.3 : Unité de traitement post-récolte -->
     <section id="section-3" class="content-card fade-in">
@@ -952,8 +2121,520 @@ const stages = [
             <li>Traçabilité des lots</li>
           </ul>
         </div>
+
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold mb-4">Les 4 étapes de l'unité de croissance</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {stages_post.map(stage => (
+              <button
+                class="stage-button p-4 bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors duration-200"
+                data-modal-target={stage.id}
+              >
+                {stage.title}
+              </button>
+            ))}
+          </div>
+        </div>
+
       </div>
+
+      <!-- Bouton pour afficher la section sur l'élevage BSF -->
+      <div id="more-3_btn" class="flex justify-center mt-6">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
+          Voir plus de détails de l'unité post traitement
+        </button>
+      </div>
+      <div id="more-3"class="unit-card space-y-8 hidden transition-all duration-300">
+        <ul>
+          <li>https://kimmyfarm.com/en/5-ideal-conditions-for-black-soldier-fly-larvae-farming</li>
+          <li>https://www.globalseafood.org/advocate/black-soldier-fly-larval-production-in-a-stacked-production-system/</li>
+          <li>https://www.youtube.com/playlist?list=PLsE1zBi914P6QPGcsdusnWFyrKzpBAsIU</li>
+        </ul>
+        <div class="text-gray-700 mb-6">
+          Le post-traitement est une étape cruciale qui concerne deux produits distincts issus de la conversion des biodéchets : les larves et les excréments (frass). Chacun nécessite un traitement spécifique pour garantir sa qualité et sa conservation.
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg mb-6">
+          <img src="/images/V_post-traitement/1_produits/5.2_.webp" alt="Larves fraîches" class="rounded-lg mb-3">
+          <p class="text-gray-600 mb-4">
+            Le processus de transformation des larves BSF permet d'obtenir différents produits à haute valeur ajoutée. À partir d'1 kg de larves fraîches (10% protéines, 8% lipides), on peut obtenir :
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded shadow-sm">
+              <h5 class="font-medium text-primary mb-2">Larves séchées</h5>
+              <p class="text-sm text-gray-600">270g de produit avec 30-40% de protéines et 20-40% de lipides, idéal pour l'alimentation animale directe.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow-sm">
+              <h5 class="font-medium text-primary mb-2">Huile BSF raffinée</h5>
+              <p class="text-sm text-gray-600">35g d'huile pure (<1% non-lipides) pour les industries cosmétique et technique.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow-sm">
+              <h5 class="font-medium text-primary mb-2">Farine protéique</h5>
+              <p class="text-sm text-gray-600">190g de farine enrichie (50-63% protéines) pour l'aquaculture et l'alimentation animale.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Produits -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+          <h3 class="text-lg font-semibold mb-4">Produits du post-traitement</h3>
+          <img src="/images/V_post-traitement/1_produits/5.1.webp" alt="Larves fraîches" class="rounded-lg mb-3">
+          <p class="text-gray-600 mb-6">
+            L'élevage BSF permet d'obtenir, au sein de quatre (4) catégories (vivants, transformé, finis, résidus), neuf (9) produits distincts valorisables sur différents marchés :
+            <ol class="list-[upper-roman] ml-6 mb-4 text-gray-600">
+              <li>Les larves fraîches: difficile à transporter, pour l'alimentation directe,</li>
+              <li>Les pupes: à destination d'autres unités de reproduction,</li>
+              <li>Les œufs: plus délicat, à destination d'autres unités de croissance</li>
+              <li>Les larves de 5 jours (5DOLs): plus stables,  à destination d'autres unités de croissance,</li>
+              <li>Les mouches mortes: bonne source de protéines,</li>
+              <li>La farine BSFL: farine de bsfl,</li>
+              <li>Les pellets standardisés: farine enrichie (50-63% protéines),</li>
+              <li>Les pop-larves: à destination animaux domestiques ou élevage d'animaux ornementaux (poisson généralement),</li>
+              <li>L'huile BSF: pour l'industrie alimentaire fermier,</li>
+              <li>Le compost BSF: engrais pour l'agriculture</li>
+              <li>..etc liste non exhaustive, d'autres produits finis peuvent être imaginés et rajoutés !</li>
+            </ol>
+            Cette diversité de produits permet d'optimiser la valorisation de la biomasse et de répondre aux besoins de multiples secteurs.
+          </p>
+
+          <!-- Produits principaux -->
+          <div class="mb-8 products_1">
+            
+            <!-- Produits alimentaires -->
+            <div class="mb-6">
+              <h5 class="mt-5 font-medium text-primary text-gray-800 mb-3 border-b pb-2">Produits vivants</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Larves fraîches</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/fresh_lbsf.jpg" alt="Larves fraîches" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Alimentation directe</li>
+                    <li>10% protéines, 8% lipides</li>
+                    <li>Pour volailles et poissons</li>
+                  </ul>
+                </div>
+                
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Œufs BSF</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/eggs_bsfl.png" alt="Pop larves" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Pour reproduction</li>
+                    <li>Démarrage d'élevage</li>
+                    <li>Haute viabilité</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">5DOLs</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/5DOL_bsfl.png" alt="Pop larves" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Larves de 5 jours</li>
+                    <li>Booster alimentaire de démarrage, tous type élevages (aquaculture, volailles, etc)</li>
+                    <li>Haute digestibilité</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Pupes BSF</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/fresh_pupes_bsfl.jpg" alt="Pop larves" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Riche en chitine</li>
+                    <li>Biotechnologie</li>
+                    <li>Applications spécifiques</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produits transformés -->
+            <div class="mb-6">
+              <h5 class="font-medium text-gray-800 text-primary mb-3 border-b pb-2">Produits transformés valorisables</h5>
+              <div class="transformed_products mb-3">
+                <img src="/images/V_post-traitement/1_produits/products/oven_dried_larvaes.webp" alt="Pop larves" class="rounded-lg mb-3">
+                <img src="/images/V_post-traitement/1_produits/products/roasted_dried_larvaes.webp" alt="Pop larves" class="rounded-lg mb-3">
+                <img src="/images/V_post-traitement/1_produits/products/microwave_dried_larvaes.webp" alt="Pop larves" class="rounded-lg mb-3">
+                <p>Différents type de procédés existent pour sécher les larves, et permettre ultérieurement de créer des produits finis valorisables, comme les pellets ou les pop larves. La farine BSF et l'huile BSF sont des matières premières utilisables pour différents produits finis et peuvent être transformées par granulation ou saponification</p>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Farine BSF</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/meal_bsfl.png" alt="Farine BSF" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Riche en protéines (50-63%)</li>
+                    <li>Base pour aliments composés</li>
+                    <li>Alternative à la farine de poisson</li>
+                    <li>Longue conservation</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Huile BSF</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/oil_bsfl.png" alt="Pop larves" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Usage industriel</li>
+                    <li>99% pureté</li>
+                    <li>Extraction des lipides</li>
+                    <li>Usage industriel</li>
+                    <li>Riche en acides gras</li>
+                    <li>L'huile BSF contient des acides gras précieux et peut constituer une alternative potentielle à l'huile de coco ou de palmiste. La composition en acides gras est influencée par la source de déchets utilisée pour nourrir les larves.</li>
+                  </ul>
+                </div>                
+              </div>
+            </div>
+
+            <!-- Produits transformés -->
+            <div class="mb-6">
+              <h5 class="font-medium text-gray-800 text-primary mb-3 border-b pb-2">Produits finis</h5>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Pellets</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/pellet_meal_bsfl.jpg" alt="Pop larves" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Alimentation standardisée</li>
+                    <li>50-63% protéines</li>
+                    <li>Longue conservation</li>
+                    <li>Facile à doser</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Pop larves</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/pop_bsfl_pets.webp" alt="Pop larves" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Texture croustillante</li>
+                    <li>Pour animaux domestiques et ornementaux</li>
+                    <li>Longue conservation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Autres produits -->
+            <div>
+              <h5 class="font-medium text-gray-800 text-primary mb-3 border-b pb-2">Résidus</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Compost BSF</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/oil_bsfl.png" alt="Pop larves" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Amendement organique</li>
+                    <li>Riche en nutriments</li>
+                    <li>Pour agriculture</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded">
+                  <h6 class="font-medium text-secondary mb-2">Mouches mortes</h6>
+                  <img src="/images/V_post-traitement/1_produits/products/eggs_bsfl.png" alt="Pop larves" class="rounded-lg mb-3">
+                  <ul class="list-disc ml-4 text-gray-600">
+                    <li>Source de protéines</li>
+                    <li>Compostage</li>
+                    <li>Alimentation animale</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="items-center mt-12">
+            <div>page 75:</div>
+            <h3>Frais d'entrée comme revenu supplémentaire</h3>
+            <p>Une source de revenus potentielle pour les installations de traitement des déchets organiques en général, et pour les installations de compostage de déchets solides en particulier, est la perception d'une redevance de « traitement ». Celle-ci est comparable à la redevance de déversement dans une décharge, où une redevance est facturée pour l'acceptation des déchets. Selon son niveau, elle peut avoir un impact important sur la compétitivité et la viabilité financière de l'installation de compostage de déchets solides, car elle peut subventionner les coûts de production. Néanmoins, la qualité des déchets livrés doit être garantie afin d'éviter une contamination importante ou les coûts supplémentaires liés à une étape de tri nécessaire. Les tarifs de ces frais de traitement ou frais d'entrée varient considérablement d'une région à l'autre. Les installations de compostage des pays à revenu faible ou intermédiaire, par exemple, facturent entre 5 et 50 dollars US par tonne de déchets acceptée. L'augmentation de la demande pour un déchet particulier peut également avoir un impact important sur les prix. En Allemagne, les frais d'entrée sont passés de 50 dollars US par tonne à zéro dans les régions où certains sites de gestion des déchets sont en concurrence pour les déchets organiques.</p>
+          </div>
+
+          <!-- Applications -->
+          <div class="p-4 bg-blue-50 rounded-lg">
+            <h4 class="font-medium text-blue-800 mb-3">Applications principales</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h5 class="font-medium text-blue-700 mb-2">Alimentation animale</h5>
+                <ul class="list-disc ml-4 text-blue-600">
+                  <li>Volailles <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factsheet_chicken.pdf" target="_blank" class="text-primary hover:underline">(exemple Fiche technique d'évaluation du marché Indonésie)</a></li>
+                  <li>Poissons d'élevage <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factsheet_catfish.pdf" target="_blank" class="text-primary hover:underline">(exemple Fiche technique d'évaluation du marché Indonésie)</a></li>
+                  <li>Animaux domestiques</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="font-medium text-blue-700 mb-2">Applications agricoles</h5>
+                <ul class="list-disc ml-4 text-blue-600">
+                  <li>Fertilisation des sols</li>
+                  <li>Amélioration des cultures</li>
+                  <li>Production de biogaz</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ressources supplémentaires -->
+          <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+            <h4 class="font-medium text-gray-800 mb-3">Ressources supplémentaires</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/market_assessment_report_bsf.pdf" target="_blank" class="text-primary hover:underline flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Rapport complet d'évaluation du marché
+                </a>
+                <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                  <h6 class="font-medium text-blue-800 mb-2">Points clés de l'évaluation du marché :</h6>
+                  <p class="text-blue-600 mb-3">Si la vente de larves est votre principale source de revenus, une évaluation du marché est recommandée avant de démarrer. Les deux principaux marchés sont :</p>
+                  <ul class="list-disc ml-6 text-blue-600">
+                    <li>L'alimentation des animaux d'élevage</li>
+                    <li>L'alimentation des animaux domestiques</li>
+                  </ul>
+                  <p class="text-blue-600 mt-2 mb-2">Étapes essentielles de l'évaluation :</p>
+                  <ol class="list-decimal ml-6 text-blue-600">
+                    <li>Identifier les produits de substitution potentiels (autres insectes, granulés de soja, farine de poisson)</li>
+                    <li>Quantifier la taille du marché (volume en kg/mois)</li>
+                    <li>Évaluer la valeur du marché (ventes en USD/mois)</li>
+                    <li>Analyser la gamme de prix des produits populaires</li>
+                    <li>Vérifier les réglementations applicables</li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factsheet_marketstudy.pdf" target="_blank" class="text-primary hover:underline flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                  </svg>
+                  Fiche technique : Étude de marché Surabaya
+                </a>
+              </li>
+              <li>
+                <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factsheet_ob_of_tirals.pdf" target="_blank" class="text-primary hover:underline flex items-center">
+                  <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M16,11V18.1L13,15.1L11.5,16.6L10,15.1L13,12.1L16,15.1V11H17V19H8V11H16M10,17.1L11.5,18.6L13,17.1L11.5,15.6L10,17.1Z"/>
+                  </svg>
+                  Tests sur animaux ornementaux (poissons et oiseaux)
+                </a>
+              </li>
+              <li>
+                <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/bsf_factsheet_fractioning.pdf" target="_blank" class="text-primary hover:underline flex items-center">
+                  <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
+                  </svg>
+                  Guide de fractionnement des produits BSF
+                </a>
+                <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                  <h6 class="font-medium text-blue-800 mb-2">Pourquoi fractionner les larves BSF ?</h6>
+                  <p class="text-blue-600 mb-3">Le fractionnement des larves séchées est nécessaire pour plusieurs raisons :</p>
+                  <ul class="list-disc ml-6 text-blue-600">
+                    <li>Les aliments standardisés exigent une teneur en matières grasses < 10%</li>
+                    <li>Une forte teneur en lipides augmente les risques d'oxydation</li>
+                    <li>L'excès de matières grasses peut causer des problèmes lors de la transformation :</li>
+                  </ul>
+                  <ul class="list-[circle] ml-12 text-blue-600 mt-2">
+                    <li>Saveurs indésirables</li>
+                    <li>Textures désagréables</li>
+                    <li>Maculage des machines</li>
+                    <li>Blocage des équipements</li>
+                  </ul>
+                  <p class="text-blue-600 mt-2">Ce processus est appelé fractionnement, car les larves sont séparées en <b>une fraction protéique (farine de BSF)</b> et <b>une fraction grasse (huile de BSF)</b>. Dans <u>une première étape</u>, la presse à vis extrait la graisse des larves et produit un tourteau et un liquide de pressage. <u>Une deuxième étape</u> de raffinage permet d'obtenir de la farine de BSF à partir du tourteau et de l'huile de BSF à partir du liquide de pressage. Grâce à sa teneur élevée en protéines, la farine BSF constitue un substitut potentiel à la farine de poisson ou au tourteau de soja.</p>
+                </div>
+              </li>
+              <li>
+                <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factssheet_soap.pdf" target="_blank" class="text-primary hover:underline flex items-center">
+                  <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M16,11V18.1L13,15.1L11.5,16.6L10,15.1L13,12.1L16,15.1V11H17V19H8V11H16M10,17.1L11.5,18.6L13,17.1L11.5,15.6L10,17.1Z"/>
+                  </svg>
+                  Comment fabriquer un pain de savon artisanal avec de la graisse BSFL
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section Séchage -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold mb-4">Méthodes de séchage</h3>
+          
+          <!-- Séchage solaire -->
+          <div class="mb-6">
+            <p class="text-sm text-gray-600">Remplacer jusqu'à 30 % des aliments commerciaux pour poulets ou jusqu'à 50 % des aliments commerciaux pour poissons-chats permet d'obtenir des performances de croissance similaires, voire supérieures. Compte tenu des prix du BSFL et des aliments commerciaux en 2021, le remplacement des aliments commerciaux par du BSFL permet de réaliser des économies.
+              Pour plus de détails, consultez nos fiches d'information.
+            </p>
+            <img src="/images/V_post-traitement/1_produits/5.1b0.webp" alt="Four de séchage" class="rounded-lg w-full h-48 object-cover mb-2">
+            <h4 class="font-medium text-primary mb-3">Séchage solaire</h4>
+            <div class="mb-4">
+              <div class="p-4 bg-gray-50 rounded">
+                <ul class="list-disc ml-4 text-gray-600">
+                  <li>Durée : 1-2 jours</li>
+                  <li>Température : 35-45°C</li>
+                  <li>Humidité contrôlée</li>
+                  <li>Protection contre les insectes</li>
+                  <li>Ventilation naturelle</li>
+                  <li>Rotation des plateaux toutes les 2-3 heures</li>
+                </ul>
+                <p class="text-sm text-gray-600 mt-2">Avantages : économique, écologique</p>
+                <p class="text-sm text-gray-600">Inconvénients : dépend de la météo, durée variable</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Séchage au four -->
+          <div class="mb-6">
+            <h4 class="font-medium text-primary mb-3">Séchage au four</h4>
+            <div class="">
+              <div class="p-4 bg-gray-50 rounded">
+                <ul class="list-disc ml-4 text-gray-600">
+                  <li>Durée : 24 heures</li>
+                  <li>Température : 65°C</li>
+                  <li>Ventilation forcée continue</li>
+                  <li>Contrôle précis des paramètres</li>
+                  <li>Capacité : 30-50 kg par cycle</li>
+                  <li>Rotation des plateaux toutes les 6 heures</li>
+                </ul>
+                <div class="mt-3 p-3 bg-blue-50 rounded">
+                  <p class="text-sm text-blue-800">Points de surveillance :</p>
+                  <ul class="list-disc ml-4 text-blue-600 text-sm">
+                    <li>Vérifier la température toutes les heures</li>
+                    <li>Maintenir une circulation d'air constante</li>
+                    <li>Contrôler l'humidité résiduelle</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tableau comparatif -->
+          <div class="mt-8">
+            <h4 class="font-medium text-primary mb-3">Comparaison des méthodes de séchage</h4>
+            <div class="overflow-x-auto">
+              <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="px-4 py-2 text-left">Critère</th>
+                    <th class="px-4 py-2 text-left">Séchage solaire</th>
+                    <th class="px-4 py-2 text-left">Séchage au four</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-4 py-2 font-medium">Coût énergétique</td>
+                    <td class="px-4 py-2 text-green-600">Très faible</td>
+                    <td class="px-4 py-2 text-red-600">Modéré à élevé</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 font-medium">Durée du processus</td>
+                    <td class="px-4 py-2">Variable (1-3 jours)</td>
+                    <td class="px-4 py-2">Fixe (24h)</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 font-medium">Contrôle du processus</td>
+                    <td class="px-4 py-2 text-yellow-600">Limité</td>
+                    <td class="px-4 py-2 text-green-600">Précis</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 font-medium">Capacité de traitement</td>
+                    <td class="px-4 py-2">Dépend de la surface</td>
+                    <td class="px-4 py-2">30-50 kg/cycle</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 font-medium">Qualité du produit final</td>
+                    <td class="px-4 py-2">Variable</td>
+                    <td class="px-4 py-2">Constante</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Recommandations pour le séchage -->
+          <div class="mt-6 p-4 bg-green-50 rounded-lg">
+            <h4 class="font-medium text-green-800 mb-3">Recommandations générales pour le séchage</h4>
+            <ul class="list-disc ml-4 text-green-700">
+              <li>Traiter les larves rapidement après la récolte</li>
+              <li>Maintenir une température constante pendant tout le processus</li>
+              <li>Assurer une bonne circulation d'air</li>
+              <li>Vérifier régulièrement l'humidité résiduelle</li>
+              <li>Documenter les paramètres de chaque lot</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section Contrôle Qualité -->
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+          <h3 class="text-lg font-semibold mb-4">Contrôle Qualité</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Tests physiques -->
+            <div class="p-4 bg-gray-50 rounded">
+              <h4 class="font-medium mb-3">Tests physiques</h4>
+              <img src="/images/V_post-traitement/3_suivi/5.3a.webp" alt="Contrôle qualité physique" class="rounded-lg mb-3">
+              <ul class="list-disc ml-4 text-gray-600">
+                <li>Inspection visuelle</li>
+                <li>Test de texture</li>
+                <li>Vérification de l'odeur</li>
+                <li>Contrôle de l'humidité résiduelle</li>
+              </ul>
+            </div>
+
+            <!-- Tests de composition -->
+            <div class="p-4 bg-gray-50 rounded">
+              <h4 class="font-medium mb-3">Tests de composition</h4>
+              <img src="/images/V_post-traitement/3_suivi/5.3c0.webp" alt="Analyse de composition" class="rounded-lg mb-3">
+              <ul class="list-disc ml-4 text-gray-600">
+                <li>Teneur en protéines</li>
+                <li>Teneur en matières grasses</li>
+                <li>Teneur en eau</li>
+                <li>Analyse microbiologique</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Critères de qualité -->
+          <div class="mt-6 p-4 bg-yellow-50 rounded-lg">
+            <h4 class="font-medium text-yellow-800 mb-3">Critères de qualité essentiels</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white p-3 rounded shadow-sm">
+                <p class="font-medium text-yellow-700">Teneur en eau</p>
+                <p class="text-gray-600">&lt; 10%</p>
+              </div>
+              <div class="bg-white p-3 rounded shadow-sm">
+                <p class="font-medium text-yellow-700">Protéines</p>
+                <p class="text-gray-600">&gt; 40%</p>
+              </div>
+              <div class="bg-white p-3 rounded shadow-sm">
+                <p class="font-medium text-yellow-700">Matières grasses</p>
+                <p class="text-gray-600">30-35%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommandations -->
+        <div class="bg-blue-50 p-4 rounded-lg mt-6">
+          <h4 class="font-semibold text-blue-800 mb-2">Recommandations importantes :</h4>
+          <ul class="list-disc ml-6 text-blue-700">
+            <li>Maintenir une traçabilité complète des lots</li>
+            <li>Effectuer des contrôles réguliers pendant le séchage</li>
+            <li>Documenter tous les résultats des tests</li>
+            <li>Stocker dans des conditions appropriées après traitement</li>
+          </ul>
+        </div>
+
+        <!-- Bouton pour fermer la section sur l'élevage BSF -->
+        <div id="more-3_btn_close" class="flex justify-center mt-6">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
+            Masquer
+          </button>
+        </div>
+      </div>
+
     </section>
+    {stages_post.map(stage => (
+      <Modal 
+        id={stage.id} 
+        title={stage.title}
+        description={stage.description}
+      />
+    ))}
 
     <!-- Navigation -->
     <div class="flex justify-between items-center mt-12">
@@ -970,6 +2651,14 @@ const stages = [
 </ChapterLayout>
 
 <style>
+
+  #more-1 h3, #more-2 h3, #more-3 h3 {
+    border-bottom: solid;
+  }
+  
+  
+
+  
   .hidden {
     display: none;
   }
@@ -1024,14 +2713,62 @@ const stages = [
       });
     });
 
-    const moreBtn = document.querySelector('#more-1_btn button');
-    const moreContent = document.querySelector('#more-1');
+    const more1Btn = document.querySelector('#more-1_btn button');
+    const more2Btn = document.querySelector('#more-2_btn button');
+    const more3Btn = document.querySelector('#more-3_btn button');
+    const more1BtnClose = document.querySelector('#more-1_btn_close button');
+    const more2BtnClose = document.querySelector('#more-2_btn_close button');
+    const more3BtnClose = document.querySelector('#more-3_btn_close button');
+    const more1Content = document.querySelector('#more-1');
+    const more2Content = document.querySelector('#more-2');
+    const more3Content = document.querySelector('#more-3');
     
-    moreBtn.addEventListener('click', () => {
-      moreContent.classList.toggle('hidden');
-      moreBtn.textContent = moreContent.classList.contains('hidden') 
-        ? "Voir plus de détails sur l'élevage"
-        : "Masquer les détails";
-    });
+    if (more1Btn && more1BtnClose && more1Content) {
+      more1Btn.addEventListener('click', () => {
+        more1Content.classList.toggle('hidden');
+        more1Btn.textContent = more1Content.classList.contains('hidden') 
+          ? "Voir plus de détails de l'unité reproduction"
+          : "Masquer les détails";
+      });
+      more1BtnClose.addEventListener('click', () => {
+        document?.getElementById("section-1")?.scrollIntoView({ behavior: 'smooth' });
+        more1Content.classList.add('hidden');
+        more1Btn.textContent = more1Content.classList.contains('hidden') 
+          ? "Voir plus de détails de l'unité reproduction"
+          : "Masquer les détails";
+      })
+    }
+
+    if (more2Btn && more2BtnClose && more2Content) {
+      more2Btn.addEventListener('click', () => {
+        more2Content.classList.toggle('hidden');
+        more2Btn.textContent = more2Content.classList.contains('hidden')
+          ? "Voir plus de détails de l'unité croissance"
+          : "Masquer les détails";
+      });
+      more2BtnClose.addEventListener('click', () => {
+        document?.getElementById("section-2")?.scrollIntoView({ behavior: 'smooth' });
+        more2Content.classList.add('hidden');
+        more2Btn.textContent = more2Content.classList.contains('hidden') 
+          ? "Voir plus de détails de l'unité reproduction"
+          : "Masquer les détails";
+      })
+    }
+
+    if (more3Btn && more3BtnClose && more3Content) {
+      more3Btn.addEventListener('click', () => {
+        more3Content.classList.toggle('hidden');
+        more3Btn.textContent = more3Content.classList.contains('hidden')
+          ? "Voir plus de détails de l'unité post traitement"
+          : "Masquer les détails";
+      });
+      more3BtnClose.addEventListener('click', () => {
+        document?.getElementById("section-3")?.scrollIntoView({ behavior: 'smooth' });
+        more3Content.classList.add('hidden');
+        more3Btn.textContent = more3Content.classList.contains('hidden') 
+          ? "Voir plus de détails de l'unité reproduction"
+          : "Masquer les détails";
+      })
+    }
   });
 </script>

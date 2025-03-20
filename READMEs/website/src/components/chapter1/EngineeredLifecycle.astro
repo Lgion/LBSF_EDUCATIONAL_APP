@@ -83,6 +83,18 @@ const units = [
       />
     </div>
 
+    <!-- Navigation entre les unités -->
+    <div class="units-navigation flex justify-center space-x-4 mt-8 mb-8">
+      {units.map((unit) => (
+        <button 
+          class="unit-nav-btn px-4 py-2 rounded-full border-2 border-primary text-primary font-medium hover:bg-primary hover:text-white transition-colors duration-300"
+          data-target={unit.id}
+        >
+          {unit.title}
+        </button>
+      ))}
+    </div>
+
     <div class="units-container">
       {units.map((unit, unitIndex) => (
         <div class={"unit-section mb-16"+(unitIndex===0?" active":"")} data-unit-id={unit.id}>
@@ -105,13 +117,13 @@ const units = [
                         src => <img 
                           src={src} 
                           alt={step.title}
-                          class="w-full h-full object-contain lkomsdf"
+                          class="mx-auto bject-contain"
                         />
                       )
                       : <img 
                           src={step.image} 
                           alt={step.title}
-                          class="w-full h-full object-contain lkomsdf"
+                          class="mx-auto object-contain"
                         />
                     }
                   </div>
@@ -126,24 +138,13 @@ const units = [
         </div>
       ))}
     </div>
-
-    <!-- Navigation entre les unités -->
-    <div class="units-navigation flex justify-center space-x-4 mt-8">
-      {units.map((unit) => (
-        <button 
-          class="unit-nav-btn px-4 py-2 rounded-full border-2 border-primary text-primary font-medium hover:bg-primary hover:text-white transition-colors duration-300"
-          data-target={unit.id}
-        >
-          {unit.title}
-        </button>
-      ))}
-    </div>
   </div>
 </div>
 
 <style>
   .engineered-lifecycle-section {
     background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    backround-color: red !important;
     padding: 2rem 0;
     overflow: hidden;
   }
@@ -158,7 +159,7 @@ const units = [
   }
   .unit-section:not(.active) {
     width: 0%;
-    overflow: hidden;
+    display: none;
   }
   
   .unit-header {
@@ -199,6 +200,7 @@ const units = [
       max-width: 300px;
     }
   }
+
 </style>
 
 <script>

@@ -1,0 +1,55 @@
+4.2.3 Harvesting
+After the larvae have fed on the substrate and only dry residue remains, the Larvero units are
+harvested using a mechanical sieving system which allows for the mixture of residue and larvae
+to be separated into three fractions. The larvae can then be removed and further processed. The
+residue streams undergo further treatment before being applied to soils.
+ Materials and equipment needed:
+Conveyor (custom made) and separation system (Guan-Yu, GY-1000-2S). Sieve with dimensions of
+100 x 100 x 106 cm, 2HP dynamo with voltage of 380 (3-phase) and 1440 rpm
+Dry matter analysis cupDry matter/TS oven
+Spade Trolley
+Bulk scale
+(max 150 kg, acc 50 g)
+52 Black Soldier Fly Biowaste Processing
+ Tasks:
+Step 1: Prepare the harvesting area by placing empty material bins under the outlets of the sieving machine and placing the bulk balance near the hopper of the conveyor belt.
+Step 1: Harvesting station with sieving system, collection bins and residue bags
+Step 4: Weighing crates from the biowaste conversion
+unit on a scale
+Step 2: Select the pallet or pallets that will be harvested on this day, by checking the set-up/harvesting
+schedule, and move it/them to the harvesting area using the pallet trolley
+Step 3: Turn on the bulk balance, conveyor belt and sieving machine
+Step 4: Take three empty conversion crates and tare their weight on the bulk balance. Then take the first
+three larvero units with a mixture of residue and larvae from the pallet and place them on the bulk
+balance. Note down the mass in the log sheet.
+Step 5: Empty the three larvero units one-by-one into the hopper so that the material gradually is transported into the top of the sieve by the conveyor.
+Step 6: Repeat the processes of weighing, noting down the weight and emptying the units until one pallet
+is harvested. Then repeat the process for the other pallets that are scheduled to be harvested
+today
+Step 7: While harvesting the pallets: ensure you keep each of the three output fractions separate for each
+pallet to obtain harvesting yield per pallet. Switch bins with empty ones when full.
+Black Soldier Fly Biowaste Processing 53
+Step 7: Larvae and residue on transport belt before being
+separated into the different fractions
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing during harvesting activities.
+Step 8: One output fraction will have larger particles,
+the content of this bin is weighed and noted
+down and the material is composted. Another
+output stream is the fine residue, the content
+of this bin is weighed and noted down and the
+material is bagged for maturing.
+Step 9: The third fraction are the larvae which are still
+mixed with some residue with a particle size
+similar to the size of the larvae. The residue is
+removed by skimming it off (by hand) from the
+top of the bin as larvae are pushing up the residue to get away from the light. After no clusters
+of residue can be observed, the bin with larvae
+can be weighed and the weight noted down. 
+Once you take out all the larvae, put the residue into a sampling tray. Take 20 of the larvae and
+dry them with a tissue before putting them onto a sampling tray. Repeat this three times for the
+three samples. Put the rest of the larvae back to the harvested crates or directly on the harvesting
+screen. Weigh the samples (larvae and residue) and dry them in an oven at 105 °C for 24 hours
+before weighing each tray again. By doing this, you will obtain the water content of the larvae and
+the residue. Calculate the water content of the sample by: Water content [%] = (Wet weight-Dry
+weight)/Wet weight*100

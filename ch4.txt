@@ -1,0 +1,536 @@
+Chapter 4:
+BSFL conversion operations
+4.1 Sourcing biowaste
+Larvae are generally very tolerant when it comes to feeding substrates. Yet, it is important that
+the biowaste received at the facility is suitable as larva feed. With a water content between 60%
+to 90% and a specific particle size, most organic materials will be treated in one way or the other.
+A list of biowastes known to result in satisfactory growth and biomass conversion is shown in
+Table 4–1. The larvae strongly rely on symbiotic microorganisms which degrade cell structures
+and make nutrients available for the larvae to take up. With suboptimal feed, development time
+will be extended and the final larval weight will be lower. It is important to keep this in mind when
+looking at the BSF facility from an economic perspective.
+Table 4–1: Different types of biowaste found suitable for BSF treatment
+· Municipal organic waste
+· Food and restaurant waste
+· Market waste
+· Food processing waste
+· Spent grains
+· Slaughterhouse waste
+· Poultry manure
+· Pig manure
+· Human faeces
+Municipal waste Agro-industrial waste Manure and faeces
+This guide assumes that “waste sourcing” for the facility has been arranged and secured. The biowaste should be purely organic and biodegradable, and meet the criteria of appropriate biowaste
+types as mentioned above.
+Waste sourcing
+In order to guarantee a reliable operation of the BSF facility, a constant waste source of consistent quality is of utmost importance. It is therefore advisable to negotiate long-term contracts with local waste producers once an appropriate waste source has been identified. Criteria to identify a suitable waste source are:
+1. Substrate availability and costs: Is the material available in regular sufficient quantity
+and quality and what are the costs (purchase, transport, separation)?
+2. BSFL process performance: Is the material suitable as a food source for the larvae and to
+what extent does this affect the time spent in the larveros until harvesting?
+3. Product safety: Does the waste contain substances (pathogens, heavy metals, pesticides,
+etc.) that could have a negative impact on the health of personnel and/or larvae or ultimately affect the quality of the final product?
+4. Waste recovery hierarchy: Does access to a specific waste source affect an existing waste
+system? How has this waste been disposed of or used in the past and who benefited from
+it (animal feed, biodigester)?
+4.1.1 Biowaste pre-processing
+A first step upon arrival of the waste involves a waste quality control to ensure that it contains no
+hazardous materials and no inorganic substances. A few plastic bags in the waste may not pose
+a significant problem and can be sorted and removed manually. However, it is critical to keep 
+40 Black Soldier Fly Biowaste Processing
+hazardous contaminants out of the waste as these may affect all the living organisms: the larvae,
+associated bacteria and, of course, the workers. Acids, solvents, pesticides, detergents and heavy
+metals fall into this category and it is especially critical to keep them out when they are in a liquid
+or dissolved form, as this can easily contaminate the whole batch of waste material. If such contamination is suspected, the waste should be refused.
+Figure 4–1: Hammer mill for waste pre-processing
+Greenhouse gas emissions
+Given the continuing efforts of nations and local governments towards reducing greenhouse
+gas emissions, and the commitments taken by all states that are parties to the United Nations
+Framework Convention on Climate Change, decision-makers increasingly evaluate the Global Warming Potential (GWP) of different treatment options when choosing biowaste management approaches. For the more conventional approaches such as composting or anaerobic
+digestion this information is well established and simplified methodologies are available
+under the Clean Development Mechanism (CDM) framework. However for more recent technologies, such as BSF waste treatment, to-date such information is scarce. However first results indicate that gaseous emissions from the degradation process, such as carbon dioxide
+(CO2
+), methane (CH4
+) and nitrous oxide (N2O), are not a concern in BSF treatment. The studies
+show lower emissions compared to the other treatment methods2,3
+.
+Shredded waste with a water content above 80% (Figure 4–2) will need to be mixed together with
+another, dryer waste source to obtain a resulting moisture content of the mixture below 80%. At
+80% water content the shredded waste will have a consistency of a fruit mix (smoothie) from your
+kitchen blender.
+If the water content is below 70% (Figure 4–4), then water needs to be added. Suitable water content can be determined by squeezing a handful of substrate in your closed fist. If less than a few
+drops of water emerge between your fingers, then the substrate is too dry. When moistening the
+substrate with water, make sure the water is clean and not contaminated with pathogens, heavy
+metals or other anti-nutritional elements. A substrate with a moisture content between 70 and
+80% usually has a moist look but will firmly stay as a pile when added into the larvero unit (Figure
+4–3)
+2 Ermolaev E, Lalander C and Vinnerås B. (2019) Greenhouse gas emissions from small-scale fly larvae composting
+with Hermetia illucens. Waste Management 96: 65-74.
+3 Mertenat A, Diener S and Zurbrügg C. (2019) Black Soldier Fly biowaste treatment – Assessment of global warming potential. Waste Management 84: 173-181.
+With the waste quality ensured, the next required step
+then involves a reduction of the waste particle size.
+This can be achieved by using a shredder or hammer
+mill (Figure 4–1). Whatever type of technology is used,
+the equipment should shred the waste to particles of
+smaller than 1-2 cm in diameter. This helps speed-up
+BSF processing as BSF larvae do not have appropriate
+mouthparts to break apart large chunks of waste, and
+increasing the surface area fosters the growth of the
+associated bacteria. Efficient shredding of the waste
+also increases the homogeneity of the residue, which
+improves its quality and then later simplifies the separation of larvae and residual material.
+Black Soldier Fly Biowaste Processing 41
+Figure 4–2: Biowaste with water
+content >80%
+Figure 4–3: Biowaste with water
+content 70-80%
+Figure 4–4: Biowaste with water
+content <70%
+4.1.2 BSF treatment unit
+Waste treatment using larvae of the Black Soldier Fly can be conducted in many different ways.
+Here we describe a batch wise treatment with manual harvesting. Using this approach, a defined
+number of same-aged young larvae (5-DOL) are put in a container (incubator unit) with a defined
+amount of substrate. While the 5-DOL feed and grow, the incubator unit becomes too small to
+allow further growth and the larvae are then moved into a larger container (larvero unit) and more
+substrate is added.
+We propose to use the combination of incubator units and larvero units as this has shown to
+increase the amount of substrate that can be converted per unit of space available and also contributes to reducing the number of handlings. This approach involves starting with a larger number of smaller incubator units which are operated for 3 days and each receive small amounts of
+substrate. These smaller units allow easier handling without negatively affecting the growth of
+the young 5-DOL. We observed that using this “incubator” approach reduces overall labour time
+requirements and when harvesting at the end of the treatment process, the mixture of larvae and
+residue is dry enough so that it can be easily sieved.
+When the organic waste is accepted at the facility, the weight should be measured. This allows to keep record of the daily waste intake of the facility. The best moment to measure
+the weight of the total incoming waste is after it has been shredded as then it is likely to be
+temporarily stored in containers. If dewatering of waste is practiced, then weigh the waste
+before and after the dewatering process.
+As a rule of thumb, we work with the following numbers: 10,000 larvae are fed with a total
+of 12 kg of substrate (75% water content) and harvested after a total of 12 days. Initially the
+10’000 5-DOL are kept in an incubator unit (30x20x10 cm) and left to feed on a single load of
+1kg for 3 days, thereafter the larvae are transferred to a larvero unit (40x60x15cm) and left to
+feed on a single load of 11 kg for 9 days.
+42 Black Soldier Fly Biowaste Processing
+For the second feeding, when the larger amount of substrate is added to the larvero units, two
+approaches are possible. Either bring the substrate to the larvero units or else move the larvero
+units to a central substrate feeding station. Installing a central substrate feeding station has the
+advantage of keeping the large bulk of waste concentrated in one location therefore keep the
+potentially filthy area in one spot (which can then be cleaned regularly) and avoiding movement of
+loose bulk waste around the facility. An additional advantage is that when moving the larvero units
+to the substrate feeding station each unit can be inspected and checked for irregularities. This
+book describes the feeding system when using a central feeding station.
+The origin of BSF waste treatment
+BSF research started in the mid-20th century in chicken barns. It was observed that the presence of BSF larvae in the manure underneath the chicken cages reduced housefly breeding
+and manure accumulation. Researchers, thus, started to put this new insight into practice
+by planning BSF friendly manure pits (ramps for prepupa self-harvesting, access for cleaning
+machinery and attached greenhouses for adults). Most of the attempts of taking BSF treatment to a professional level have been established around a continuously fed system based
+on prepupa self-harvesting. However, experience has shown that harvest losses and hygienic
+challenges are very high in a continuous system, making it difficult to operate it in an economically viable way.
+As the larvae feed on the biowaste in the incubator and larvero unit, they will break down the
+organic matter and metabolize the nutrients into larval biomass. If too much biowaste is fed to the
+larvae, an unprocessed waste layer will build up and start to generate heat through its bacterial
+activity. This heat build-up is unfavourable for the larvae. The unprocessed waste layer will also
+attract vermin. On the other hand, if not enough waste is provided the larvae will starve and slow
+their growth. As a result the facility will have a lower waste treatment capacity and also lower
+yield of grown larvae. The amount of waste that can be fed per larvero unit is also limited by the
+resulting layer thickness of waste in the larvero. If the layer thickness of the waste in the larvero
+unit is thicker than 5cm, larvae will have difficulties to feed through this whole layer and the waste
+at the lower part of the layer will remain unprocessed.
+Black Soldier Fly Biowaste Processing 43
+The table manners of the larvae
+The morphology of the mouthparts suggest that the larvae of Hermetia illucens specialize
+in liquid and small-grained foods. However, the larva also has a mechanism reminiscent of
+modern tunnel boring machines with which it can reduce coarse material with moving discs
+grinders going up and down four times per second and thus make larger particles accessible
+for digestion4,5
+.
+Following ingestion, the food passes through the food pipe into the midgut, the longest and
+most important part of the larva digestive tract. Along the midgut, through the combined
+action of the gut environment, enzymes, and microbes, the diet is broken down into smaller
+molecules for absorption through the gut cells into the haemolymph, the “blood” of insects6
+.
+Microbes in the biowaste and larval gut have multiple functions that are important for the
+process performance. In the biowaste, microbes are important for the hydrolysis of biowaste
+macronutrients, especially fibres that typically cannot be decomposed by BSF larvae. After
+ingestion, some of these microbes are used by the larvae as food providing additional nutrients to those found in the diet.
+Incubator and larvero units can be stacked upon each other to further reduce surface area requirements (Figure 4–5 and Figure 4–6). However, if stacked, it is suggested to keep enough open
+space between the stacked treatment units to allow for aeration. The gap between the units is
+necessary to secure air ventilation and to allow the moisture-saturated air above the units to be
+replaced. Ventilation also provides oxygen, which is crucial for the well-being of the larvae.
+For the incubator units, the single unit biowaste processing footprint is 33.3 kg/m2
+/d when stacking six units on top of each other (Figure 4–5). For the larvero units, the single unit biowaste
+processing footprint is 30.6 kg/m2
+/d when stacking six units on top of each other (Figure 4–6).
+When combining the system which uses incubator units for the first 3 days of feeding biowaste
+and stacking the units while the larvae are feeding, the combined biowaste conversion footprint
+of this system is 31.25 kg of biowaste treated per m2
+ per day.
+Figure 4–5: Rack with incubator containers
+(4 containers per crate)
+Figure 4–6: Stack of larveros with ventilation
+frames in-between levels
+4 Shishkov O, Hu M, Johnson C, et al. (2019) Black soldier fly larvae feed by forming a fountain around food. Journal
+of The Royal Society Interface 16.
+5 Bruno D, Bonacci T, Reguzzoni M, et al. (2020) An in-depth description of head morphology and mouthparts in
+larvae of the black soldier fly Hermetia illucens. Arthropod Structure & Development 58.
+6 Gold M, Egger J, Scheidegger A, et al. (2020) Estimating black soldier fly larvae biowaste conversion performance
+by simulation of midgut digestion. Waste Management 112.
+44 Black Soldier Fly Biowaste Processing
+4.1.3 Product harvesting
+After 12 days of waste treatment by BSF larvae, each larvero unit is harvested. At this stage, the
+larvae have reached an age of 17 days and their maximum weight, but have not yet transformed
+into pre-pupae. Their nutritional value is, therefore, at its maximum. If this ideal moment is after
+12 days of treatment, or a few days less or more, depends strongly on external influences such
+as the ambient temperature or the quality of the feed. Operators of a facility therefore need to
+remain vigilant and observe the larvae and their growth and change to identify the ideal moment
+of harvest specific to their local context and situation.
+In the harvesting step, the two products larvae and residue need to be separated from each
+other. Depending on the water content of the input material, the residue will show as a crumbly
+dry mass or as a wet slurry. We do not recommend the wet slurry residue as the harvesting
+process becomes quite cumbersome. Therefore we recommend to take measures during the
+treatment step to ensure that the resulting residue will be a crumbly dry mass. When receiving
+waste substrates that are high in water content that would likely result in a wet slurry residue, we
+recommend adding a dry material such as cocopeat, palm kernel meal or milk powder during the
+treatment stage so that the residue has dried out by the time the larvero units are harvested. Dry
+crumbly residue can be harvested using a shaking sieve with two sieve layers, one with a mesh
+size of 3 mm and one with a mesh size of 7 mm. Shaking sieves can be manual or automated.
+Automated shaking sieves can achieve higher shaking frequencies than manual sieves and are,
+therefore, favoured (Figure 4–7). Sieving the larvae residue mixture with two sieve layers will
+result in a total of three fractions, one fraction of larvae and two fractions of residue (Figure 4–7).
+The first fraction of residue which has a dark soil-like colour can be bagged and stored until the
+material has matured and can then be used as a compost or soil amendment. The second fraction
+of residue, which is typically made up of leaves, seeds and other residual material, should be
+composted for a longer time, ideally using a windrow composting system.
+To learn more about how to compost the BSF residue or in
+general organic matter, a composting guide can be found
+through this link
+During the shaking of the sieve, the coarse parts of the
+residue will remain on top of this first sieve layer with
+a mesh size of 7 mm. The larvae and the fine parts of
+the residue will fall through this first sieve layer onto
+the second layer with a mesh size of 3 mm. The larvae
+will remain on this sieve without falling through while
+the fine residue will fall through the second sieve layer. Given the inclination and the shaking of this type of
+sieve, all fractions move down the slope to the end of
+the sieve. Here, at each sieve layer level a funnel connects to a bucket where the fractions are collected for
+further processing. Other horizontal sieve systems use
+a vibrator engine to guide the material towards a funnel
+where it is collected in a bucket.
+Figure 4–7: Shaking sieve to separate larvae from dry residue 
+Black Soldier Fly Biowaste Processing 45
+Figure 4–8: Three fractions of materials after sieving: 1 fraction of larvae and two fractions of residue
+4.1.4 Conditioning of the harvested products
+Harvesting separates the residue from the larvae. However, after completing the process some
+residue particles will remain stuck to the larvae and the gut of the larvae will still contain material
+which has not been excreted yet. Typically, the harvested BSF larvae are sold as animal feed
+products either alive or in a post-processed form. For both cases conditioning of the larvae is
+a requirement to increase the product purity and quality. Two ways of larvae conditioning are
+suggested here, which both aim to clean the larvae from remaining residue particles and partly
+reduce the larval gut content: purging and sanitising. While the purging operation cleans the live
+larvae, the sanitising operation kills the larvae in a blanching step prior to cleaning. Nevertheless,
+both described procedures do not necessarily fully free the larvae from microorganisms or any
+contamination which was in the waste source and might be transmitted to the larvae during their
+growth or contact with the waste substrate.
+4.2 Activities in the BSFL conversion unit
+In this subchapter, the process steps and the materials to use during these steps are presented.
+As with the BSF rearing operations, most materials can be found in hardware stores but some
+materials and equipment have been custom-made for the operation. The dimensions of these
+items are provided in the description under the item.
+The technical drawings for the custom-made materials and
+equipment used in the operational steps of the BSFL conversion unit can be found through this link
+46 Black Soldier Fly Biowaste Processing
+4.2.1 Pre-processing
+The goal of the pre-processing step is to reduce particle size and homogenise the input material.
+The waste can then easily be distributed and fed to the larvae and the nutrients are made easily
+accessible to the larvae and the associated bacteria.
+ Materials and equipment needed:
+Hammer-mill shredder
+(Cap 1 ton/h)
+Dry matter analysis cupDry matter/TS oven
+Bin
+(80 L)
+Bulk scale
+(max 150 kg, acc 50 g)
+Mixer
+(max cap 300 kg)
+ Tasks:
+Step 1: After a quality check and acceptance,
+remove the organic waste from the
+collection vehicle and place the waste
+near the shredder. While emptying
+the vehicle, remove non-organics contained in the waste (rough sorting).
+Step 2 : Place a labelled bucket under the shredder outlet and turn on the shredder.
+Step 3: While filling the hopper to shred the
+waste, manually remove non-organic
+components in the waste. When the
+waste receiving bucket is full, exchange
+it with a labelled empty new bucket.
+Step 4: Weigh and document each full bucket
+of shredded waste using a bulk scale.
+Step 1: Removing baskets with waste from the market.
+Baskets are checked one by one on content
+Step 5: After all waste is shredded, use the high-pressure washer to clean the inside, outside and around
+the shredder. All the wastewater needs to be discharged for treatment.
+Black Soldier Fly Biowaste Processing 47
+Step 6: If the waste substrate is still too moist (water content >80%) a dry bulk material has to be added
+to balance the water content and allow for the residue to be dry by the end of the process. You can
+mix the materials in with the substrate before feeding it into the conversion units using a mixer or
+simply add the dry material to the crates first and then add the wet substrate on top.
+Step 7: If the substrate is too dry (water content <70), you can mix it in with a wet substrate or simply add
+water. Ensure that the dry material is always on the bottom and the wet material on top in case
+the material is not mixed before adding it into the larvero units.
+Step 8: To find out what the water content of a waste material is, a Total Solids (TS) sample has to be
+prepared in a specifically designed oven. Normally these ovens are called ‘’dry matter ovens’’ or
+‘’TS ovens’’.
+Step 3: Reducing particle size of biowaste by shredding
+the material
+Step 6 + 7: Conditioning of substrate by adding dry material if water
+content is too high and adding water if water content is too low
+POINTS OF MONITORING AND DATA COLLECTION:
+· Weight of waste received
+· Weight of separated fractions of waste for various destinations
+· Before adding substrate to the larvero units, it is important to obtain substrate samples to
+determine the moisture content. For this purpose, thoroughly mix the substrate in each
+substrate holding container and place one large scoop from each substrate container into
+a bucket. Mix the content in the sampling container thoroughly and remove one sample of
+about 50g and place it onto a sample tray. The tray with the sample is weighed and then
+dried in an oven at 105 °C for 24 hours before weighing the tray again. Calculate the water
+content of the sample by: Water content [%] = (Wet weight-Dry weight)/Wet weight*100
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, protective clothing, eye and ear protection when using the shredder.
+· Make use of the protective measures available for the shredder/hammer mill, i.e
+feeding hopper, flap and other safety features, to avoid any risk of direct contact
+between workers’ hands and moving parts.
+48 Black Soldier Fly Biowaste Processing
+Bin
+(80 L)
+The pre-processing stage module from the e-learning
+video series on BSF Biowaste Processing is available through
+this link.
+4.2.2 Treatment
+A new batch of biowaste for processing each day is initiated by setting up incubator units, feeding
+a defined amount of shredded (and conditioned) biowaste substrate into each of these incubator
+units, and then preparing and adding a defined number of 5-DOL on top of the substrate. Each
+incubator unit will receive 1kg of substrate and 10,000 5-DOL which results in a density of 3.3
+larvae per cm3
+. Setting up larvero units involves preparing the empty larvero units by adding 11kg
+of fresh substrate and the content of a 3-day old incubator unit. This results in a density of 0.8 larvae per cm3
+. Layers of 6 larvero units are stacked on a palette alternating with ventilation frames.
+ Materials and equipment needed:
+Incubator unit rack
+(150 x 180 x 65 cm)
+Biowaste conversion unit
+(129 x 122 x 170 cm)
+Ventilation Frame
+(129 x 122 x 12 cm)
+Incubator unit
+(30 x 20 x 10 cm)
+Larvero unit
+(60 x 40 x 15)
+Larvero unit pallet
+(129x122x20 cm)
+Pallet trolley
+(cap. 2 ton)
+Spade Trolley
+Bulk scale
+(max 150 kg, acc 50 g)
+Black Soldier Fly Biowaste Processing 49
+ Tasks:
+Step 1: Prepare 36 empty incubator units and fill each with 1 kg of substrate
+Step 2: Add one cup containing 10,000 5-DOL onto the substrate in each incubator unit
+Step 1: Add 1 kg substrate to each
+incubator unit
+Step 2: Add the portioned 5-DOL
+on top of the substrate
+Step 3: Incubator units in crates
+Step 3: Add the 36 incubator units into larger crates and add these crates into the incubator rack
+Step 4: Take the oldest group of 36 incubator units from the incubator rack and place them near the feeding station
+Step 5: Get a pallet and a pallet trolley. Prepare 36 larvero units and 5 open ventilation frames. Place these
+close to the feeding station.
+Step 6: Place 6 larvero units on the pallet, feed them
+with 9 kg of substrate each and empty one incubator unit into one Larvero unit on top of the
+fresh substrate. Place an open ventilation frame
+over the six crates. Now stack the next layer of
+six larvero units on the ventilation frame and repeat this process until a stack of six layers with
+a total of 36 crates is complete.
+Step 7: Label the pallet with the pallet date code. Then,
+use the pallet trolley to bring the pallet to its destination in the building.
+Step 8: Wash the substrate holding containers which
+have been emptied using a high-pressure washer and leave to dry. Step 6: Stacking of the larvero units on the pallets
+50 Black Soldier Fly Biowaste Processing
+The treatment stage module from the e-learning video
+series on BSF Biowaste Processing is available through this
+link.
+POINTS OF MONITORING AND DATA COLLECTION:
+· Weight of substrate added to incubator units
+· Weight of substrate added to larvero units
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves and protective clothing during feeding activities
+Black Soldier Fly Biowaste Processing 51
+Bin
+(80 L)
+4.2.3 Harvesting
+After the larvae have fed on the substrate and only dry residue remains, the Larvero units are
+harvested using a mechanical sieving system which allows for the mixture of residue and larvae
+to be separated into three fractions. The larvae can then be removed and further processed. The
+residue streams undergo further treatment before being applied to soils.
+ Materials and equipment needed:
+Conveyor (custom made) and separation system (Guan-Yu, GY-1000-2S). Sieve with dimensions of
+100 x 100 x 106 cm, 2HP dynamo with voltage of 380 (3-phase) and 1440 rpm
+Dry matter analysis cupDry matter/TS oven
+Spade Trolley
+Bulk scale
+(max 150 kg, acc 50 g)
+52 Black Soldier Fly Biowaste Processing
+ Tasks:
+Step 1: Prepare the harvesting area by placing empty material bins under the outlets of the sieving machine and placing the bulk balance near the hopper of the conveyor belt.
+Step 1: Harvesting station with sieving system, collection bins and residue bags
+Step 4: Weighing crates from the biowaste conversion
+unit on a scale
+Step 2: Select the pallet or pallets that will be harvested on this day, by checking the set-up/harvesting
+schedule, and move it/them to the harvesting area using the pallet trolley
+Step 3: Turn on the bulk balance, conveyor belt and sieving machine
+Step 4: Take three empty conversion crates and tare their weight on the bulk balance. Then take the first
+three larvero units with a mixture of residue and larvae from the pallet and place them on the bulk
+balance. Note down the mass in the log sheet.
+Step 5: Empty the three larvero units one-by-one into the hopper so that the material gradually is transported into the top of the sieve by the conveyor.
+Step 6: Repeat the processes of weighing, noting down the weight and emptying the units until one pallet
+is harvested. Then repeat the process for the other pallets that are scheduled to be harvested
+today
+Step 7: While harvesting the pallets: ensure you keep each of the three output fractions separate for each
+pallet to obtain harvesting yield per pallet. Switch bins with empty ones when full.
+Black Soldier Fly Biowaste Processing 53
+Step 7: Larvae and residue on transport belt before being
+separated into the different fractions
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing during harvesting activities.
+Step 8: One output fraction will have larger particles,
+the content of this bin is weighed and noted
+down and the material is composted. Another
+output stream is the fine residue, the content
+of this bin is weighed and noted down and the
+material is bagged for maturing.
+Step 9: The third fraction are the larvae which are still
+mixed with some residue with a particle size
+similar to the size of the larvae. The residue is
+removed by skimming it off (by hand) from the
+top of the bin as larvae are pushing up the residue to get away from the light. After no clusters
+of residue can be observed, the bin with larvae
+can be weighed and the weight noted down.
+POINTS OF MONITORING AND DATA COLLECTION:
+· It is critical to measure the weight of the “harvest” of the residue and the larvae. These
+data are used to calculate performance indicators that allow the operator to monitor the
+performance of the treatment facility, namely waste reduction, bioconversion ratio and
+larval yield. For this purpose, we measure the net weight of the larvero content as well
+as the larvae harvest. The difference between net larvero content and larvae harvest is
+the weight of the residue. Furthermore, we analyse the residue with regard to its water
+content.
+· Document the weight of each larvero before emptying. Subtracting the weight of
+the empty larvero container will result in the net weight of the larvero content.
+· Document the total weight of harvested larvae.
+· After harvesting the larvero units, it is important to obtain samples from the residue and
+the larvae to determine the mass and moisture content. For this purpose, remove batches from three random Larvero units and place the samples in cups. Put the sampling
+bowl onto a plate and pick out all the larvae. Make sure to not spill the liquid as this is part
+of the wet weight measurement. 
+54 Black Soldier Fly Biowaste Processing
+Once you take out all the larvae, put the residue into a sampling tray. Take 20 of the larvae and
+dry them with a tissue before putting them onto a sampling tray. Repeat this three times for the
+three samples. Put the rest of the larvae back to the harvested crates or directly on the harvesting
+screen. Weigh the samples (larvae and residue) and dry them in an oven at 105 °C for 24 hours
+before weighing each tray again. By doing this, you will obtain the water content of the larvae and
+the residue. Calculate the water content of the sample by: Water content [%] = (Wet weight-Dry
+weight)/Wet weight*100
+Separating residue from larvae and taking random
+larvae for triples samples
+Triplet samples of substrate in, residue out and larvae
+out are placed in the TS oven
+The harvesting stage module from the e-learning video
+series on BSF Biowaste Processing is available through this
+link.
+Black Soldier Fly Biowaste Processing 55
+4.2.4 Conditioning
+Harvested BSF larvae should either be purged or sanitised, depending on the intended use of the
+larvae.
+Purging:
+Purging starts with a washing step to remove the remaining residue attached to the larvae. Then
+the washed larvae are left in a purging bed containing a dry material for a period of three to four
+hours. During this time, larvae will start emptying their gut content. After purging, larvae are still
+alive and therefore this process is good practice when selling live larvae.
+ Materials and equipment needed:
+Washing net Plastic tube rack
+Bulk scale
+(max 150 kg, acc 50 g)
+Bin for washing Water
+Dry cocopeat Purging bed
+Sieve
+(mesh size: 3 mm)
+ Tasks:
+Step 1: Prepare the washing bin. Place the plastic tube rack inside the waste bin. Place the washing net
+inside the waste bin and fix it on the side.
+Step 2: Washing. Add 10 kg of freshly harvested larvae on the net. Wash the larvae with clean water until
+all remaining dirt and residue is washed of. This may take 5 to 10 minutes.
+Step 3: Purging. Place the wet larvae on the purging bed. Add for every 10 kg of wet larvae 1 kg of dry
+material, e.g cocopeat. Mix the cocopeat with the larvae and leave the larvae for three to four
+hours.
+Step 4: After few hours you will see that the larvae have dried off and started to separate from the cocopeat. Remove the remaining cocopeat by sieving the larvae. 
+56 Black Soldier Fly Biowaste Processing
+Step 1: Preparation of washing bin. Step 2: Washing of larvae
+Step 3: Larvae in a purging bed. Step 4: Larvae separated from cocopeat.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing during grinding activities.
+On sanitising larvae
+It is obvious that insect larvae fed with organic waste may pose a health risk when fed to livestock if they are left untreated. Thermal treatments such as boiling, roasting, (deep-)frying,
+blanching and microwave treatment, even for short times, have proven to be very effective
+to reduce the amount of vegetative bacteria and fungi. The application of heat to whole insects after harvesting allows most microbial counts to be reduced to below detection limit.
+However, it was also found that at least some of the bacterial endospores can survive a heat
+treatment and thus it can lead to recontamination in the further process 7
+. The traditional
+processing techniques of solar drying seem to have little effect on the reduction of bacteria,
+yeast and mould 8
+. Therefore, regardless of the treatment method, care must be taken to minimise the risk of recontamination by maintaining a hygienic working environment during
+further processing.
+7 Vandeweyer D. (2018) Microbiological quality of raw edible insects and impact of processing and preservation. 197.
+8 Nyangena D, Mutungi C, Imathiu S, et al. (2020) Effects of Traditional Processing Techniques on the Nutritional and
+Microbiological Quality of Four Edible Insect Species Used for Food and Feed in East Africa. Foods 9: 574.
+Black Soldier Fly Biowaste Processing 57
+Sanitising:
+For the sanitising step the larvae are dipped in boiling water (blanching) for 60 seconds. Blanching
+kills the larvae quickly and as a reaction to the sudden increase in temperature – due to the dipping
+in the boiling water - larvae empty part of their gut content. Thereafter the following washing step,
+washes off remaining residue and gut content from the larvae. After this step, we recommend to
+further process the larvae as fast as possible, as the dead larvae spoil quickly. Sanitising facilitates
+subsequent drying, as larvae have thus already been killed and do not move around anymore during the drying step. Moreover, the quicker the killing, the better for the animal and also for the end
+product, as stress can negatively influence the product quality.
+ Materials and equipment needed:
+Pot for hot water Stove setup Dipping spoon
+ Tasks:
+Step 1: Preparations. Heat up the water until you see bubbles rising or until it reaches a temperature of
+90°C. In the meantime prepare the washing bin, by placing the plastic tube rack inside the bin and
+fixing the washing net on top.
+Step 2: Sanitising. Fill the dipping spoon with freshly harvested larvae and dip them into the hot water for
+around 60 seconds. Then transfer the larvae on to the prepared washing net. Repeat this step
+until the washing net is full of larvae (approximately 10 kg). Exchange the dirty water with clean
+water every 50 kg of larvae.
+Step 3: Washing. Clean the blanched larvae with clean water until the remaining residue is washed off.
+Step 4: Directly start post-processing the larvae, as in this state the larvae will decompose very fast. If
+post-processing is not possible, store the sanitised larvae in the freezer.
+Bin for washing Washing net Plastic tube rack Water
+58 Black Soldier Fly Biowaste Processing
+Step 1: Preparation of washing bin. Step 2: Dipping of larvae in hot water.
+The conditioning module from the e-learning video series
+on BSF Biowaste Processing is available through this link.
+PROTECTIVE MEASURES FOR WORKERS:
+· Use gloves, eye protection and protective clothing. 
+Black Soldier Fly Biowaste Processing 59
+4.3 Work schedules, monitoring and data collection
+The activities covered in this chapter all relate to the conversion of the biowaste using the Black
+Soldier Fly Larvae. As with the rearing unit, the amount of handlings can make this system complex to operate. A work schedule is available (see Annex C) which structures all the handlings in
+a step-by-step way and thereby creates an organised overview of which steps have to be passed
+through each day.
+In the described operations as well as in the work schedule, there are moments when data needs
+to be collected and recorded in order to create an overview of the rearing cycle performance.
+The rearing operations used one log sheet for all operations in the rearing unit. However, as the
+treatment unit is much larger and the different operations are quite far spread out over the site,
+separate log sheets are prepared and placed at the different locations so that the operator can fill
+out the data log sheets close to where the tasks are being conducted. The log sheets are available
+in Annexes E and F. The log sheets allow recording of data on waste in, waste to treatment, waste
+in units, larvae out and residue out of units and dry matter sample results. The way to collect this
+data is explained in the respective stages in the chapters above.
