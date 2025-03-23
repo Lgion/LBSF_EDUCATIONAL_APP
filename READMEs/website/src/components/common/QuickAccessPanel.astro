@@ -1,0 +1,197 @@
+---
+// QuickAccessPanel.astro
+// Un panneau d'accès rapide au glossaire et aux ressources
+
+// Importation des données du glossaire depuis le fichier commun
+import { getRandomTerms, glossaryTerms } from '../../../src/data/glossary.js';
+
+// Importation des données des ressources
+import { resources, getRandomVideos, getRandomDocuments } from '../../../src/data/resources.js';
+
+// Sélection aléatoire de 3 termes pour l'aperçu du glossaire
+const glossaryPreviewItems = getRandomTerms(3);
+
+// Sélection aléatoire de ressources pour l'aperçu
+const randomVideos = getRandomVideos(3);
+const randomDocuments = getRandomDocuments(2);
+---
+
+<div id="quick-access-button" class="fixed bottom-6 right-6 z-50">
+  <button 
+    class="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-primary-dark transition-colors"
+    aria-label="Ouvrir l'accès rapide"
+  >
+    <span class="material-icons">menu_book</span>
+  </button>
+</div>
+
+<div id="quick-access-panel" class="fixed bottom-0 right-0 z-40 w-full md:w-96 bg-white shadow-xl rounded-t-xl transform translate-y-full transition-transform duration-300 ease-in-out">
+  <div class="p-4 border-b border-gray-200">
+    <div class="flex justify-between items-center">
+      <h2 class="text-lg font-semibold text-primary">Ressources rapides</h2>
+      <button id="close-panel" class="text-gray-500 hover:text-gray-700">
+        <span class="material-icons">close</span>
+      </button>
+    </div>
+  </div>
+  
+  <div class="p-4 max-h-[70vh] overflow-y-auto">
+    <div class="tabs">
+      <div class="tab-buttons flex border-b mb-4">
+        <button class="tab-button active py-2 px-4 border-b-2 border-primary font-medium" data-tab="glossary">Glossaire</button>
+        <button class="tab-button py-2 px-4 border-b-2 border-transparent text-gray-500" data-tab="resources">Ressources</button>
+      </div>
+      
+      <div class="tab-content" data-tab="glossary">
+        <div class="search-box mb-4">
+          <div class="relative">
+            <input 
+              type="text" 
+              id="glossary-search" 
+              placeholder="Rechercher un terme..."
+              class="w-full border border-gray-300 rounded-lg py-2 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-primary/50"
+            >
+            <span class="material-icons absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">search</span>
+          </div>
+        </div>
+        
+        <div class="glossary-preview">
+          <!-- {glossaryPreviewItems.map(item => ( -->
+          <!-- {glossaryTerms.length} -->
+          {glossaryTerms.map(item => (
+            <div class="glossary-item p-3 border-b border-gray-100">
+              <div class="flex justify-between items-start">
+                <h3 class="font-medium">{item.term}</h3>
+                <span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded text-gray-600">{item.category}</span>
+              </div>
+              <p class="text-sm text-gray-600 mt-1">{item.definition}</p>
+            </div>
+          ))}
+          
+        </div>
+      </div>
+      
+      <div class="tab-content hidden" data-tab="resources">
+        <div class="resource-categories space-y-4">
+          <div class="category">
+            <h3 class="font-medium mb-2 text-primary">Vidéos explicatives</h3>
+            <ul class="space-y-2">
+              <!-- {randomVideos.map(video => ( -->
+              {resources.videos.map(video => (
+                <li>
+                  <a 
+                    href={video.url} 
+                    target="_blank"
+                    class="flex items-center text-sm text-gray-700 hover:text-primary"
+                  >
+                    <span class="material-icons text-sm mr-2">videocam</span>
+                    {video.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          <div class="category">
+            <h3 class="font-medium mb-2 text-primary">Documents techniques</h3>
+            <ul class="space-y-2">
+              {resources.documents.map(doc => (
+                <li>
+                  <a 
+                    href={doc.url} 
+                    target="_blank"
+                    class="flex items-center text-sm text-gray-700 hover:text-primary"
+                  >
+                    <span class="material-icons text-sm mr-2">download</span>
+                    {doc.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Type safety: utiliser les types HTML spécifiques pour référencer correctement les propriétés
+    const quickAccessButton = document.getElementById('quick-access-button') as HTMLDivElement;
+    const quickAccessPanel = document.getElementById('quick-access-panel') as HTMLDivElement;
+    const closePanel = document.getElementById('close-panel') as HTMLButtonElement;
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const glossarySearch = document.getElementById('glossary-search') as HTMLInputElement;
+    const glossaryItems = document.querySelectorAll('.glossary-item');
+    
+    // Toggle panel
+    quickAccessButton?.addEventListener('click', () => {
+      quickAccessPanel?.classList.toggle('translate-y-full');
+      quickAccessPanel?.classList.toggle('translate-y-0');
+    });
+    
+    // Close panel
+    closePanel?.addEventListener('click', () => {
+      quickAccessPanel?.classList.add('translate-y-full');
+      quickAccessPanel?.classList.remove('translate-y-0');
+    });
+    
+    // Tab switching
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Update active state for buttons
+        tabButtons.forEach(btn => {
+          btn.classList.remove('active', 'border-primary', 'font-medium');
+          btn.classList.add('border-transparent', 'text-gray-500');
+        });
+        
+        button.classList.add('active', 'border-primary', 'font-medium');
+        button.classList.remove('border-transparent', 'text-gray-500');
+        
+        // Show corresponding content
+        const tabName = button.getAttribute('data-tab');
+        tabContents.forEach(content => {
+          if (content.getAttribute('data-tab') === tabName) {
+            content.classList.remove('hidden');
+          } else {
+            content.classList.add('hidden');
+          }
+        });
+      });
+    });
+    
+    // Simple search functionality
+    if (glossarySearch) {
+      glossarySearch.addEventListener('input', (e: Event) => {
+        // Utiliser directement glossarySearch qui est déjà typé en tant que HTMLInputElement
+        const searchTerm = glossarySearch.value.toLowerCase();
+        
+        glossaryItems.forEach((item) => {
+          // Convertir item en HTMLElement pour accéder à ses propriétés
+          const htmlItem = item as HTMLElement;
+          const term = htmlItem.querySelector('h3')?.textContent?.toLowerCase() || '';
+          const definition = htmlItem.querySelector('p')?.textContent?.toLowerCase() || '';
+          
+          if (term.includes(searchTerm) || definition.includes(searchTerm)) {
+            htmlItem.style.display = 'block';
+          } else {
+            htmlItem.style.display = 'none';
+          }
+        });
+      });
+    }
+  });
+</script>
+
+<style>
+  #quick-access-panel {
+    max-height: 80vh;
+  }
+  
+  .tab-button.active {
+    color: var(--color-primary);
+  }
+</style>

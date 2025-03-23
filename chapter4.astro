@@ -1,0 +1,150 @@
+---
+import ChapterLayout from '../layouts/ChapterLayout.astro';
+import '../styles/componentschapter4.scss';
+
+const title = "Scénarios et méthodes de production";
+const description = "Analyse détaillée des différents scénarios de production BSF, des conditions requises et des aspects économiques.";
+---
+
+<ChapterLayout 
+  title={title}
+  description={description}
+  chapterNumber={4}
+>
+  <div class="chapter4-container">
+    <!-- Introduction -->
+    <section class="content-card fade-in">
+      <div class="highlight-box">
+        <p class="font-medium">La réussite d'un projet BSF dépend de la bonne adéquation entre l'échelle de production choisie et les ressources disponibles.</p>
+      </div>
+    </section>
+
+    <!-- Section 4.1 : Conditions requises -->
+    <section id="section-1" class="content-card fade-in">
+      <h2 class="section-title">Conditions requises à une installation rentable</h2>
+      
+      <div class="requirement-box">
+        <h3 class="text-lg font-semibold mb-2">Prérequis essentiels</h3>
+        <ul class="info-list">
+          <li>Approvisionnement régulier en déchets organiques</li>
+          <li>Main d'œuvre qualifiée</li>
+          <li>Infrastructure adaptée</li>
+          <li>Marché identifié pour les produits</li>
+        </ul>
+      </div>
+
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-value">500kg+</div>
+          <div class="metric-label">Déchets hebdomadaires minimum</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">100m²</div>
+          <div class="metric-label">Surface minimale</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">2-3</div>
+          <div class="metric-label">Personnel minimum</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4.2 : Scénarios de production -->
+    <section id="section-2" class="content-card fade-in">
+      <h2 class="section-title">Scénarios de production</h2>
+
+      <div class="scenario-card small">
+        <h3 class="subsection-title">Petite échelle (≤ 1 tonne/semaine)</h3>
+        <ul class="info-list">
+          <li>Production : 100-200 kg de larves/mois</li>
+          <li>Surface requise : 100-200m²</li>
+          <li>Personnel : 2-3 personnes</li>
+          <li>Investissement initial : 15-30k€</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card medium">
+        <h3 class="subsection-title">Moyenne échelle (1-5 tonnes/semaine)</h3>
+        <ul class="info-list">
+          <li>Production : 200-1000 kg de larves/mois</li>
+          <li>Surface requise : 200-500m²</li>
+          <li>Personnel : 4-8 personnes</li>
+          <li>Investissement initial : 30-100k€</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card large">
+        <h3 class="subsection-title">Grande échelle (> 5 tonnes/semaine)</h3>
+        <ul class="info-list">
+          <li>Production : > 1000 kg de larves/mois</li>
+          <li>Surface requise : > 500m²</li>
+          <li>Personnel : > 8 personnes</li>
+          <li>Investissement initial : > 100k€</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 4.3 : Analyse économique -->
+    <section id="section-3" class="content-card fade-in">
+      <h2 class="section-title">Analyse économique</h2>
+
+      <div class="cost-benefit-grid">
+        <div class="cost-card">
+          <h3 class="subsection-title">Coûts principaux</h3>
+          <ul class="info-list">
+            <li>Infrastructure et équipement</li>
+            <li>Main d'œuvre</li>
+            <li>Logistique</li>
+            <li>Énergie et maintenance</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <h3 class="subsection-title">Revenus potentiels</h3>
+          <ul class="info-list">
+            <li>Vente de larves (15-30€/kg sec)</li>
+            <li>Vente de compost (50-100€/tonne)</li>
+            <li>Service de traitement des déchets</li>
+            <li>Conseil et formation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <h3 class="subsection-title">Calendrier de rentabilité</h3>
+        <div class="timeline-item">
+          <div class="timeline-marker">1</div>
+          <div class="timeline-content">
+            <p class="font-medium">0-6 mois</p>
+            <p>Installation et mise en route</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <div class="timeline-content">
+            <p class="font-medium">6-12 mois</p>
+            <p>Optimisation de la production</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">3</div>
+          <div class="timeline-content">
+            <p class="font-medium">12-24 mois</p>
+            <p>Atteinte du seuil de rentabilité</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center mt-12">
+      <a href="/chapter3" class="navigation-button">
+        <span class="material-icons mr-2">arrow_back</span>
+        Chapitre 3 : Unités de production
+      </a>
+      <a href="/chapter5" class="navigation-button">
+        Chapitre 5 : Conclusion
+        <span class="material-icons ml-2">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</ChapterLayout>

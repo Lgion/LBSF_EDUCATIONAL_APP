@@ -75,14 +75,15 @@ export default function LifecycleViewer() {
 
 
           {/* Étapes détaillées avec images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="cycleAgain grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {stages.map((stage, index) => (
-              <div key={index} className="space-y-4 tmplfiecycletmp">
+              <div key={index} className="space-y-4 flex justify-between flex-col">
                 <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
                   <img
                     src={stage.image}
                     alt={stage.name}
                     className="object-cover w-full h-full"
+                    height="100"
                   />
                 </div>
                 <LifecycleStage

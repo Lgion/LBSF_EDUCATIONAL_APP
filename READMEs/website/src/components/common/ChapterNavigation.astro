@@ -19,12 +19,169 @@ const chapters = [
   {
     number: 3,
     title: 'Les trois unités de production',
-    sections: ['Unité de reproduction', 'Unité de croissance larvaire', 'Unité de traitement post-récolte']
+    sections: [{'Unité de reproduction': [
+        {
+          title: "1) Stade mouche",
+          url: "https://www.youtube.com/embed/HcfFoinWcs4"
+        },
+        {
+          title: "2) Stade œuf",
+          url: "https://www.youtube.com/embed/UR8mIbQtRak"
+        },
+        {
+          title: "3) Stade éclosion",
+          url: "https://www.youtube.com/embed/aQPfbSP0jx8"
+        },
+        {
+          title: "4) Stade nurserie",
+          url: "https://www.youtube.com/embed/TXTTnEwsdgQ"
+        },
+        {
+          title: "5) Stade pré-pupe",
+          url: "https://www.youtube.com/embed/oAk9TNGgsSU"
+        },
+        {
+          title: "6) Stade pupaison",
+          url: "https://www.youtube.com/embed/YYGlTbRpxpY"
+        }
+      ]
+    }, {'Unité de croissance larvaire': [
+        {
+          title: "1) Pré-traitement",
+          url: "https://www.youtube.com/embed/JQPfbGSUFWk"
+        },
+        {
+          title: "2) Traitement",
+          url: "https://www.youtube.com/embed/9xG_MXkjhWM"
+        },
+        {
+          title: "3) Récolte",
+          url: "https://www.youtube.com/embed/TwbBENbPs18"
+        },
+        {
+          title: "4) Suivi et contrôle qualité",
+          url: "https://www.youtube.com/embed/RwGQzUkSbdQ"
+        },
+        {
+          title: "Manuel de compostage décentralisé pour les villes de pays à faible revenus",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWM/Decentralized_Composting/Rothenberger_2006_en.pdf"
+        }
+      ]
+    }, {'Unité de traitement post-récolte': [
+        {
+          title: "1) Séchage par micro-ondes",
+          url: "https://www.youtube.com/embed/jP2gzmN1Xnc"
+        },
+        {
+          title: "2) Torréfaction (1) - Torréfacteur à café",
+          url: "https://www.youtube.com/embed/6ZiKKKYLABg"
+        },
+        {
+          title: "3) Torréfaction (2) - Four à gaz",
+          url: "https://www.youtube.com/embed/8E-mPJiaf-E"
+        },
+        {
+          title: "4) Séchage au four",
+          url: "https://www.youtube.com/embed/9vxd1e-SGrQ"
+        },
+        {
+          title: "5) Broyage",
+          url: "https://www.youtube.com/embed/R1hFCHkFGq4"
+        },
+        {
+          title: "6) Fractionnement",
+          url: "https://www.youtube.com/embed/7ZNdlDLsZhY"
+        },
+        {
+          title: "7) Raffinage (1) - Filtration sous vide",
+          url: "https://www.youtube.com/embed/q3_a4GrCcxI"
+        },
+        {
+          title: "8) Raffinage (2) - Décantation",
+          url: "https://www.youtube.com/embed/nxqUvAz2B5M"
+        },
+        {
+          title: "Fiche technique : Alimentation des poissons-chats",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factsheet_catfish.pdf"
+        },
+        {
+          title: "Fiche technique : Alimentation des poulets",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factsheet_chicken.pdf"
+        },
+        {
+          title: "Rapport d'évaluation du marché BSF",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/market_assessment_report_bsf.pdf"
+        },
+        {
+          title: "Fiche technique : Étude de marché",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factsheet_marketstudy.pdf"
+        },
+        {
+          title: "Fiche technique : Objectifs des essais",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factsheet_ob_of_tirals.pdf"
+        },
+        {
+          title: "Fiche technique : Fractionnement des larves",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/bsf_factsheet_fractioning.pdf"
+        },
+        {
+          title: "Fiche technique : Fabrication de savon",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/factssheet_soap.pdf"
+        }
+         
+      ]
+    }],
+    general_links: {
+      title: "Technical Drawings",
+      url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWM/BSF/Technical_Drawings.zip"
+    }
   },
   {
     number: 4,
-    title: 'Scénarios de production',
-    sections: ['Conditions requises', 'Scénarios de production', 'Analyse économique']
+    title: 'Développement d\'entreprise BSF',
+    sections: [{'Analyse coûts-revenus et viabilité financière': []}, 
+      {'Scénarios de production et modèles d\'affaires': [
+        {
+          title: "Connaissances pratiques sur la BSF",
+          url: "https://www.eawag.ch/en/department/sandec/projects/mswm/practical-knowhow-on-black-soldier-fly-bsf-biowaste-processing/"
+        }
+      ]}, 
+      {'Planification et organisation opérationnelle': []},
+      {'Annexes et ressources complémentaires': [
+        {
+          title: "Manuel complet et annexes",
+          url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/Manual_and_Annexes.pdf"
+        },
+        {
+          title: "Annexe A - Présentation générale de la BSF",
+          url: "/images/annexes/files/masterfile_a.docx"
+        },
+        {
+          title: "Annexe B - Manuel d'élevage BSF",
+          url: "/images/annexes/files/masterfile_b.docx"
+        },
+        {
+          title: "Annexe C - Manuel de transformation des déchets",
+          url: "/images/annexes/files/masterfile_c.docx"
+        },
+        {
+          title: "Annexe D - Suivi unité d'élevage BSF",
+          url: "/images/annexes/files/masterfile_d.docx"
+        },
+        {
+          title: "Annexe E - Suivi traitement BSFL",
+          url: "/images/annexes/files/masterfile_e.docx"
+        },
+        {
+          title: "Annexe F - Suivi pré-traitement et récolte",
+          url: "/images/annexes/files/masterfile_f.docx"
+        },
+        {
+          title: "Annexe G - Suivi post-traitement BSFL",
+          url: "/images/annexes/files/masterfile_g.docx"
+        }
+      ]}
+    ]
   },
   {
     number: 5,
@@ -65,18 +222,75 @@ const chapters = [
     <div>
       <h3 class="font-medium mb-2">Dans ce chapitre :</h3>
       <ul class="space-y-2">
-        {chapters[currentChapter - 1].sections.map((section, index) => (
-          <li>
-            <a
-              href={`#section-${index + 1}`}
-              class="block text-sm py-1 px-2 rounded hover:bg-primary/10 transition-colors duration-200"
-            >
-              {section}
-            </a>
-          </li>
-        ))}
+        {(typeof chapters[currentChapter - 1].sections[0] != "string") ? (
+          // Format spécial pour le chapitre 3 avec ses liens
+          chapters[currentChapter - 1].sections.map((section, index) => {
+            const sectionTitle = Object.keys(section)[0];
+            const sectionLinks = section[sectionTitle];
+            
+            return (
+              <li>
+                <a
+                  href={`#section-${index + 1}`}
+                  class="block text-sm py-1 px-2 rounded hover:bg-primary/10 transition-colors duration-200 font-semibold bg-primary/5 text-primary-800"
+                >
+                  {sectionTitle}
+                </a>
+                
+                {/* Liens pour cette section */}
+                <ul class="pl-3 space-y-1 mt-1 border-l-2 border-primary/20">
+                  {sectionLinks.map((link) => (
+                    <li>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center text-xs py-1 px-2 rounded hover:bg-primary/10 transition-colors duration-200 text-gray-700"
+                      >
+                        <span class="material-icons text-xs mr-1 text-primary/50">
+                          {link.url.includes('youtube') ? 'videocam' : 'description'}
+                        </span>
+                        {link.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            );
+          })
+        ) : (
+          // Format standard pour les autres chapitres
+          chapters[currentChapter - 1].sections.map((section, index) => (
+            <li>
+              <a
+                href={`#section-${index + 1}`}
+                class="block text-sm py-1 px-2 rounded hover:bg-primary/10 transition-colors duration-200"
+              >
+                {section}
+              </a>
+            </li>
+          ))
+        )}
       </ul>
+      
+      {/* Affichage du lien général pour le chapitre 3 */}
+      {currentChapter === 3 && chapters[currentChapter - 1].general_links && (
+        <div class="mt-4">
+          <h4 class="text-sm font-medium mb-1 text-green-700">Ressources générales :</h4>
+          <a
+            href={chapters?.[currentChapter - 1]?.general_links?.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center text-xs py-1 px-2 rounded hover:bg-green-100 bg-green-50 text-green-800 transition-colors duration-200"
+          >
+            <span class="material-icons text-xs mr-1 text-green-600">download</span>
+            {chapters?.[currentChapter - 1]?.general_links?.title}
+          </a>
+        </div>
+      )}
     </div>
+
+
   </div>
 </nav>
 

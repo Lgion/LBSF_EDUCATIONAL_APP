@@ -1,9 +1,94 @@
 ---
 import ChapterLayout from '../layouts/ChapterLayout.astro';
+import Modal from '../components/common/Modal.astro';
 import '../styles/componentschapter4.scss';
 
-const title = "Scénarios et méthodes de production";
-const description = "Analyse détaillée des différents scénarios de production BSF, des conditions requises et des aspects économiques.";
+const title = "Développement d'entreprise BSF";
+const description = "Analyse des modèles d'affaires, outils d'évaluation économique et scénarios de production pour les installations BSF.";
+
+const stages = [
+  {
+    id: 1,
+    title: "Analyse coûts-revenus et viabilité financière",
+    description: "Outils et méthodes pour évaluer la rentabilité d'une installation BSF",
+    content: [
+      {
+        subtitle: "Outils d'analyse financière",
+        text: "Deux outils complémentaires sont disponibles pour évaluer la viabilité financière d'une installation BSF : le 'scenario based business model tool' (analyse détaillée) et le 'web-based cost model tool' (approche simplifiée). Ces outils permettent d'estimer les coûts d'investissement et d'exploitation, puis de les comparer aux revenus potentiels."
+      },
+      {
+        subtitle: "Facteurs économiques clés",
+        text: "La viabilité financière d'une installation BSF dépend de plusieurs facteurs variables selon le contexte local : CAPEX (coûts de construction), OPEX (coûts opérationnels), climat et impacts environnementaux, frais de traitement des déchets, vente de produits dérivés (larves entières, BSF séchées, farine et huile de BSF), vente de jeunes larves de 5 jours (5-DOL) et valorisation des résidus comme amendement du sol."
+      },
+      {
+        subtitle: "Exemples chiffrés de calcul de VAN",
+        text: "La Valeur Actualisée Nette (VAN) d'une installation BSF de taille moyenne traitant 20 tonnes/semaine sur 10 ans se calcule ainsi : Investissement initial : 320 000€, Flux de trésorerie annuel moyen : 85 000€, Taux d'actualisation : 8%, VAN calculée : 258 000€. Cette VAN positive indique une excellente rentabilité avec un délai de récupération (payback period) d'environ 3,8 ans. Un autre exemple pour une petite installation (5 tonnes/semaine) montre un investissement de 120 000€, un flux annuel de 32 000€ et une VAN de 98 000€ sur 10 ans, avec un délai de récupération de 3,9 ans."
+      },
+      {
+        subtitle: "Tableau de conversion des déchets en produits",
+        text: "Pour 1000 kg de déchets organiques traités (alimentation optimale) : || Larves fraîches produites : 180-200 kg (18-20%) || Larves séchées : 60-70 kg (6-7%) || Compost (résidu organique) : 650-700 kg (65-70%) || Réduction volumique : 70-80% || Huile extractible : 2-3% du poids des larves séchées || Protéines dans les larves séchées : 40-44% || Pour maximiser le rendement, la composition du substrat, la température (optimale 27-30°C) et l'humidité (60-70%) sont les facteurs clés."
+      },
+      {
+        subtitle: "Comparaison des coûts d'investissement par région",
+        text: "Coûts d'investissement moyens pour une installation de 10 tonnes/semaine (en euros) : || Asie du Sud-Est : 150 000€ (bâtiment : 60 000€, équipement : 70 000€, formation : 20 000€) || Afrique subsaharienne : 170 000€ (bâtiment : 65 000€, équipement : 80 000€, formation : 25 000€) || Europe : 320 000€ (bâtiment : 140 000€, équipement : 120 000€, réglementation : 60 000€) || Ces différences s'expliquent par les coûts de main-d'œuvre, les exigences réglementaires et les prix des matériaux. Les économies d'échelle permettent de réduire le coût par tonne traitée de 20-30% pour une installation de 30 tonnes/semaine par rapport à une installation de 10 tonnes/semaine."
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "L'outil de modèle d'entreprise basé sur des scénarios",
+    description: "Présentation des différents modèles d'affaires pour installations BSF",
+    content: [
+      {
+        subtitle: "Trois scénarios de mise en œuvre",
+        text: "L'outil d'analyse permet de comparer trois scénarios distincts : une installation centralisée complète (toutes les unités sur un seul site), des installations décentralisées (unités réparties sur différents sites), et un modèle hybride. Chaque scénario présente des avantages et inconvénients en termes de logistique, de management et d'économies d'échelle."
+      },
+      {
+        subtitle: "Capacités selon le calendrier de travail",
+        text: "La production d'une installation BSF varie considérablement selon le calendrier de travail adopté. Un fonctionnement quotidien permet de traiter jusqu'à 35 tonnes de déchets par semaine avec 23 employés sur 900m², tandis qu'un fonctionnement 3 jours par semaine (lundi-mercredi-vendredi) traite environ 7 tonnes avec 9 employés sur 250m². Le choix dépend des contraintes locales et de la stabilité recherchée dans la production."
+      },
+      {
+        subtitle: "Étude de cas : Installation de Sidoarjo, Indonésie",
+        text: "L'installation BSF de Sidoarjo (Java Est) illustre un modèle centralisé réussi. Opérationnelle depuis 2019, elle traite 25 tonnes de déchets organiques par semaine avec 18 employés. Investissement initial : 200 000€ || Surface totale : 850m² (unité d'élevage : 150m², unité de conversion : 400m², post-traitement : 200m², stockage/administration : 100m²) || Production mensuelle : 1,2 tonne de larves séchées, 40 tonnes de compost || Rentabilité atteinte après 2,5 ans d'exploitation || Chiffre d'affaires annuel : 380 000€ (traitement des déchets : 40%, vente de larves : 45%, vente de compost : 15%) || Consommation énergétique : 320 kWh/tonne de déchets traités."
+      },
+      {
+        subtitle: "Analyse SWOT des différents modèles",
+        text: "1. Modèle centralisé : || Forces : Économies d'échelle importantes, contrôle qualité optimal, optimisation du personnel (15-20% moins de personnel/tonne) || Faiblesses : Coûts logistiques élevés (transport des déchets), investissement initial important, complexité réglementaire || Opportunités : Diversification des sources de déchets, élargissement de la gamme de produits || Menaces : Vulnérabilité aux maladies/contaminations, dépendance à des grands fournisseurs || 2. Modèle décentralisé : || Forces : Proximité des sources de déchets, flexibilité opérationnelle, risques sanitaires réduits || Faiblesses : Coûts unitaires plus élevés, difficultés de standardisation, qualité variable || Opportunités : Intégration communautaire, adaptation aux contraintes locales || Menaces : Difficultés de coordination, fragmentation du marché"
+      },
+      {
+        subtitle: "Organigramme opérationnel - modèle centralisé (20-30 tonnes/semaine)",
+        text: "Direction (1) : Responsable général des opérations || Responsables d'unité (3) : Élevage, Conversion, Post-traitement || Personnel technique (12-15) : || - Unité d'élevage (4-5) : Spécialiste reproduction (1), Techniciens d'élevage (2-3), Contrôle qualité (1) || - Unité de conversion (5-6) : Spécialiste substrats (1), Opérateurs larveros (3-4), Contrôle environnemental (1) || - Post-traitement (3-4) : Opérateurs séchage/tri (2-3), Contrôle qualité produits (1) || Support (4-6) : Logistique/transport (1-2), Maintenance (1-2), Administration/ventes (2) || Cette structure assure une spécialisation du personnel tout en maintenant une communication efficace entre les unités, essentielle à la coordination du cycle BSF."
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Planification et organisation opérationnelle",
+    description: "Systèmes de planification pour la gestion quotidienne d'une installation BSF",
+    content: [
+      {
+        subtitle: "Système de codification des dates",
+        text: "Un système simplifié de codification des dates (XX.Y) est utilisé pour faciliter l'organisation du travail. XX représente la semaine calendaire (1-53) et Y le jour de la semaine (1-7). Ce système permet un étiquetage efficace des cages, conteneurs et suivi des cycles."
+      },
+      {
+        subtitle: "Calendriers et procédures de travail",
+        text: "Des calendriers de travail spécifiques sont disponibles pour les unités d'élevage et de conversion, couvrant des périodes de 4 semaines. L'unité de post-traitement fonctionne selon des procédures opérationnelles standardisées (SOP) adaptées à chaque station de travail. Ces outils de planification sont essentiels pour maintenir une production stable et efficace."
+      },
+      {
+        subtitle: "Planning hebdomadaire - Unité d'élevage (modèle 6 jours)",
+        text: "Lundi (8h) : || Matin : Collecte d'œufs (1,5h), Nettoyage des cages d'élevage (1,5h) || Après-midi : Préparation des substrats nutritifs (2h), Contrôle température/humidité (1h), Désinfection (2h) || Mardi (8h) : || Matin : Transfert d'œufs vers nurserie (2h), Alimentation des adultes (1h) || Après-midi : Maintenance des cages (3h), Classification des cages par âge (2h) || Mercredi (8h) : || Matin : Collecte d'œufs (1,5h), Préparation de nouvelles cages (2,5h) || Après-midi : Alimentation des adultes (1h), Vérification paramètres d'élevage (3h) || Jeudi (8h) : || Matin : Transfert des jeunes larveros vers unité de conversion (3h) || Après-midi : Maintenance générale (3h), Réunion de coordination (2h) || Vendredi (8h) : || Matin : Collecte d'œufs (1,5h), Nettoyage approfondi (3,5h) || Après-midi : Alimentation des adultes (1h), Contrôle qualité (2h) || Samedi (4h) : Maintenance essentielle (2h), Vérification des paramètres (2h)"
+      },
+      {
+        subtitle: "Procédures de gestion de la qualité",
+        text: "1. Paramètres critiques et fréquence de contrôle : || Unité d'élevage : Température (27-30°C, 3x/jour), Humidité relative (60-70%, 3x/jour), Luminosité (12h cycle jour/nuit), Qualité de l'air (CO2 <2000ppm, 1x/jour) || Unité de conversion : Température des larveros (27-32°C, 2x/jour), Humidité du substrat (65-75%, 1x/jour), pH du substrat (6,0-7,5, 1x/semaine), Composition nutritionnelle (protides/lipides/glucides, 1x/lot) || 2. Normes de performance : || Taux d'éclosion des œufs : >80% || Densité de ponte : >20 000 œufs/cage/jour || Mortalité des larves : <5% || Homogénéité de taille des larves : coefficient de variation <15% || Temps de développement larvaire : 12-14 jours (optimum)"
+      },
+      {
+        subtitle: "Calculs de productivité et indicateurs de performance",
+        text: "1. Métriques de performance par unité : || Unité d'élevage : Nombre d'œufs/cage/jour (objectif : >20 000), Indice de productivité des adultes (œufs/mouche/vie : >600), Taux de survie adultes (>80% à 4 semaines) || Unité de conversion : Taux de conversion (kg larves fraîches/kg déchets : >15%), Vitesse de transformation (% réduction masse/jour : >10%), Indice d'efficacité alimentaire (>4,0) || Post-traitement : Taux de récupération après séchage (>95%), Pureté du tri (>99%), Teneur en protéines du produit final (>42%) || 2. Calcul d'efficacité globale : || Efficacité (%) = [Masse larves produites (kg) x 100] / [Masse déchets traités (kg) x Personnel (ETP) x Temps (jours)] || Pour une installation optimale : >1,2%"
+      }
+    ]
+  }
+];
 ---
 
 <ChapterLayout 
@@ -14,124 +99,244 @@ const description = "Analyse détaillée des différents scénarios de productio
   <div class="chapter4-container">
     <!-- Introduction -->
     <section class="content-card fade-in">
-      <div class="highlight-box">
-        <p class="font-medium">La réussite d'un projet BSF dépend de la bonne adéquation entre l'échelle de production choisie et les ressources disponibles.</p>
+      <div class="highlight-box mb-8">
+        <p class="font-medium">Un modèle d'affaires solide doit être établi avant de lancer votre installation BSF, surtout si l'objectif est de créer une entreprise viable. Ce chapitre fournit des outils pour analyser économiquement votre projet et identifier les prérequis essentiels.</p>
       </div>
-    </section>
-
-    <!-- Section 4.1 : Conditions requises -->
-    <section id="section-1" class="content-card fade-in">
-      <h2 class="section-title">Conditions requises à une installation rentable</h2>
       
-      <div class="requirement-box">
-        <h3 class="text-lg font-semibold mb-2">Prérequis essentiels</h3>
-        <ul class="info-list">
-          <li>Approvisionnement régulier en déchets organiques</li>
-          <li>Main d'œuvre qualifiée</li>
-          <li>Infrastructure adaptée</li>
-          <li>Marché identifié pour les produits</li>
-        </ul>
-      </div>
-
-      <div class="metric-grid">
-        <div class="metric-card">
-          <div class="metric-value">500kg+</div>
-          <div class="metric-label">Déchets hebdomadaires minimum</div>
+      <div class="qr-resource-box">
+        <div class="qr-flex-container">
+          <div class="qr-item">
+            <img src="/assets/qr-bsf-knowhow.png" alt="QR Code - Connaissances pratiques BSF" width="120" height="120" class="qr-code">
+            <p class="text-center text-sm">Connaissances pratiques BSF</p>
+          </div>
+          <div class="qr-item">
+            <img src="/assets/qr-manual-annexes.png" alt="QR Code - Manuel et annexes" width="120" height="120" class="qr-code">
+            <p class="text-center text-sm">Manuel et annexes</p>
+          </div>
         </div>
-        <div class="metric-card">
-          <div class="metric-value">100m²</div>
-          <div class="metric-label">Surface minimale</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-value">2-3</div>
-          <div class="metric-label">Personnel minimum</div>
+        <div class="mt-4">
+          <p class="text-sm">Scannez ces codes pour accéder aux ressources complètes sur le développement d'entreprises BSF.</p>
+          <div class="text-xs mt-2">
+            <a href="https://www.eawag.ch/en/department/sandec/projects/mswm/practical-knowhow-on-black-soldier-fly-bsf-biowaste-processing/" target="_blank" class="text-primary hover:underline">Connaissances pratiques BSF</a>
+            <span class="mx-2">|</span>
+            <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/schwerpunkte/swm/Practical_knowhow_on_BSF/Manual_and_Annexes.pdf" target="_blank" class="text-primary hover:underline">Manuel et annexes (PDF)</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 4.2 : Scénarios de production -->
+    <!-- Section 1 : Analyse coûts-revenus -->
+    <section id="section-1" class="content-card fade-in">
+      <h2 class="section-title">Analyse coûts-revenus et viabilité financière</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="tool-card p-6 rounded-lg shadow-md bg-white">
+          <h3 class="text-lg font-semibold mb-4">Outil de modèle d'entreprise basé sur des scénarios</h3>
+          <p class="mb-4">Analyse détaillée qui dissocie chaque unité de traitement en termes de coûts d'investissement et d'exploitation.</p>
+          <ul class="text-sm space-y-2">
+            <li><span class="font-medium">Avantages :</span> Analyse approfondie, adapté aux projets complexes</li>
+            <li><span class="font-medium">Utilisation :</span> Comparaison de différents modèles d'affaires</li>
+            <li><span class="font-medium">Résultats :</span> Calcul de paramètres financiers clés comme la VAN</li>
+          </ul>
+        </div>
+        
+        <div class="tool-card p-6 rounded-lg shadow-md bg-white">
+          <h3 class="text-lg font-semibold mb-4">Outil de modèle de coûts en ligne</h3>
+          <p class="mb-4">Aperçu simplifié des coûts impliqués dans le développement d'une installation BSF, basé sur la quantité et le type de déchets. Disponible via une interface web.</p>
+          <ul class="text-sm space-y-2">
+            <li><span class="font-medium">Avantages :</span> Simple à utiliser, résultats rapides</li>
+            <li><span class="font-medium">Utilisation :</span> Estimation initiale pour évaluer la faisabilité</li>
+            <li><span class="font-medium">Résultats :</span> Coûts d'investissement et coûts de production unitaires</li>
+          </ul>
+          <div class="mt-4 text-xs">
+            <p>Basé sur les données de référence collectées via les formulaires de suivi (annexes D à G)</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="subsection-title mb-4">Facteurs de variabilité économique</h3>
+          <ul class="info-list">
+            <li><span class="font-semibold">CAPEX :</span> Coûts de construction, équipements, terrain</li>
+            <li><span class="font-semibold">OPEX :</span> Salaires, consommables, énergie, maintenance</li>
+            <li><span class="font-semibold">Impact environnemental :</span> Climat, gestion des odeurs, traitement des eaux</li>
+            <li><span class="font-semibold">Revenus potentiels :</span> Traitement des déchets, vente de produits BSF</li>
+          </ul>
+        </div>
+        
+        <div class="flex justify-center items-center">
+          <img src="/images/VI_developpement_forCascade/2_outil_commercial/6.2a.webp" alt="Outil d'analyse économique BSF" class="rounded-lg shadow-md max-w-full h-auto">
+        </div>
+      </div>
+      
+      <div class="mt-6 text-center">
+        <button id="openModal1" class="modal-button">En savoir plus sur l'analyse financière</button>
+      </div>
+    </section>
+
+    <!-- Section 2 : Scénarios de production -->
     <section id="section-2" class="content-card fade-in">
-      <h2 class="section-title">Scénarios de production</h2>
+      <h2 class="section-title">Scénarios de production et modèles d'affaires</h2>
 
-      <div class="scenario-card small">
-        <h3 class="subsection-title">Petite échelle (≤ 1 tonne/semaine)</h3>
-        <ul class="info-list">
-          <li>Production : 100-200 kg de larves/mois</li>
-          <li>Surface requise : 100-200m²</li>
-          <li>Personnel : 2-3 personnes</li>
-          <li>Investissement initial : 15-30k€</li>
-        </ul>
+      <div class="mb-8">
+        <div class="flex flex-col md:flex-row gap-6 mb-8">
+          <div class="md:w-1/2">
+            <img src="/images/VI_developpement_forCascade/6_scenarios/6.6a.webp" alt="Scénario 1: Installation centralisée" class="rounded-lg shadow-md w-full h-auto">
+            <p class="text-sm text-center mt-2">Scénario 1: Installation centralisée complète</p>
+          </div>
+          <div class="md:w-1/2">
+            <img src="/images/VI_developpement_forCascade/6_scenarios/6.6b.webp" alt="Scénario 2: Installation décentralisée" class="rounded-lg shadow-md w-full h-auto">
+            <p class="text-sm text-center mt-2">Scénario 2: Installations décentralisées</p>
+          </div>
+        </div>
+        
+        <h3 class="subsection-title mb-4">Capacité selon le calendrier de travail</h3>
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white rounded-lg shadow-md">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="py-3 px-4 text-left">Calendrier de travail</th>
+                <th class="py-3 px-4 text-left">Capacité de déchets</th>
+                <th class="py-3 px-4 text-left">Production de 5-DOL</th>
+                <th class="py-3 px-4 text-left">Personnel requis</th>
+                <th class="py-3 px-4 text-left">Surface</th>
+                <th class="py-3 px-4 text-left">Fluctuation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-3 px-4 border-t">Tous les jours</td>
+                <td class="py-3 px-4 border-t">35 tonnes/sem.</td>
+                <td class="py-3 px-4 border-t">±50 millions/sem.</td>
+                <td class="py-3 px-4 border-t">23 personnes</td>
+                <td class="py-3 px-4 border-t">900 m²</td>
+                <td class="py-3 px-4 border-t">Stable</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 border-t">Jours alternés</td>
+                <td class="py-3 px-4 border-t">14 tonnes/sem.</td>
+                <td class="py-3 px-4 border-t">±20 millions/sem.</td>
+                <td class="py-3 px-4 border-t">12 personnes</td>
+                <td class="py-3 px-4 border-t">400 m²</td>
+                <td class="py-3 px-4 border-t">Petite fluctuation</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 border-t">Lun-Mer-Ven</td>
+                <td class="py-3 px-4 border-t">7 tonnes/sem.</td>
+                <td class="py-3 px-4 border-t">±8 millions/sem.</td>
+                <td class="py-3 px-4 border-t">9 personnes</td>
+                <td class="py-3 px-4 border-t">250 m²</td>
+                <td class="py-3 px-4 border-t">Grande fluctuation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm mt-2">Comparaison des différentes capacités de production selon le calendrier de travail adopté</p>
       </div>
-
-      <div class="scenario-card medium">
-        <h3 class="subsection-title">Moyenne échelle (1-5 tonnes/semaine)</h3>
-        <ul class="info-list">
-          <li>Production : 200-1000 kg de larves/mois</li>
-          <li>Surface requise : 200-500m²</li>
-          <li>Personnel : 4-8 personnes</li>
-          <li>Investissement initial : 30-100k€</li>
-        </ul>
-      </div>
-
-      <div class="scenario-card large">
-        <h3 class="subsection-title">Grande échelle (> 5 tonnes/semaine)</h3>
-        <ul class="info-list">
-          <li>Production : > 1000 kg de larves/mois</li>
-          <li>Surface requise : > 500m²</li>
-          <li>Personnel : > 8 personnes</li>
-          <li>Investissement initial : > 100k€</li>
-        </ul>
+      
+      <div class="mt-6 text-center">
+        <button id="openModal2" class="modal-button">Explorer les modèles d'affaires</button>
       </div>
     </section>
 
-    <!-- Section 4.3 : Analyse économique -->
+    <!-- Section 3 : Planification opérationnelle -->
     <section id="section-3" class="content-card fade-in">
-      <h2 class="section-title">Analyse économique</h2>
+      <h2 class="section-title">Planification et organisation opérationnelle</h2>
 
-      <div class="cost-benefit-grid">
-        <div class="cost-card">
-          <h3 class="subsection-title">Coûts principaux</h3>
-          <ul class="info-list">
-            <li>Infrastructure et équipement</li>
-            <li>Main d'œuvre</li>
-            <li>Logistique</li>
-            <li>Énergie et maintenance</li>
-          </ul>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div>
+          <h3 class="subsection-title mb-4">Système de codification des dates</h3>
+          <div class="bg-white p-5 rounded-lg shadow-md">
+            <div class="flex justify-between items-center mb-4">
+              <div class="text-center">
+                <p class="font-bold">Date :</p>
+                <p>Mardi 21 février</p>
+              </div>
+              <div class="text-center">
+                <p class="font-bold">Code :</p>
+                <p class="text-xl font-mono">8.2</p>
+              </div>
+            </div>
+            <div class="border-t pt-4">
+              <p class="text-sm"><span class="font-semibold">8</span> = Semaine 8 de l'année</p>
+              <p class="text-sm"><span class="font-semibold">2</span> = 2ème jour de la semaine (mardi)</p>
+            </div>
+          </div>
         </div>
-        <div class="benefit-card">
-          <h3 class="subsection-title">Revenus potentiels</h3>
+        
+        <div>
+          <h3 class="subsection-title mb-4">Types de calendriers de travail</h3>
           <ul class="info-list">
-            <li>Vente de larves (15-30€/kg sec)</li>
-            <li>Vente de compost (50-100€/tonne)</li>
-            <li>Service de traitement des déchets</li>
-            <li>Conseil et formation</li>
+            <li><span class="font-semibold">Unité d'élevage :</span> Calendrier détaillé des tâches (Annexe A)</li>
+            <li><span class="font-semibold">Alimentation des larveros :</span> Planning d'alimentation spécifique (Annexe B)</li>
+            <li><span class="font-semibold">Unité de conversion :</span> Organisation des activités de traitement (Annexe C)</li>
+            <li><span class="font-semibold">Unité de post-traitement :</span> Procédures opérationnelles standardisées (SOP)</li>
           </ul>
+          <div class="mt-4">
+            <img src="/images/VI_developpement_forCascade/6_scenarios/6.6c.webp" alt="Exemple de calendrier de travail BSF" class="rounded-lg shadow-md max-w-full h-auto">
+            <p class="text-sm text-center mt-2">Exemple de calendrier de travail pour une installation BSF</p>
+          </div>
         </div>
       </div>
-
-      <div class="timeline">
-        <h3 class="subsection-title">Calendrier de rentabilité</h3>
-        <div class="timeline-item">
-          <div class="timeline-marker">1</div>
-          <div class="timeline-content">
-            <p class="font-medium">0-6 mois</p>
-            <p>Installation et mise en route</p>
+      
+      <!-- Ajout de la section des annexes téléchargeables -->
+      <div class="mt-8 bg-gray-50 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4">Documents annexes téléchargeables</h3>
+        <p class="mb-4">Ces documents, utilisés dans les installations BSF existantes, vous permettent de planifier et suivre efficacement votre production :</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="annexe-downloads">
+            <h4 class="text-lg font-medium mb-3">Calendriers de travail</h4>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <span class="material-icons text-primary mr-2">description</span>
+                <a href="/images/annexes/files/masterfile_a.docx" download class="text-primary hover:underline">Annexe A - Calendrier unité d'élevage</a>
+              </li>
+              <li class="flex items-center">
+                <span class="material-icons text-primary mr-2">table_chart</span>
+                <a href="/images/annexes/files/masterfile_b.xlsx" download class="text-primary hover:underline">Annexe B - Planning alimentation larveros</a>
+              </li>
+              <li class="flex items-center">
+                <span class="material-icons text-primary mr-2">description</span>
+                <a href="/images/annexes/files/masterfile_c.docx" download class="text-primary hover:underline">Annexe C - Calendrier unité de conversion</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="annexe-downloads">
+            <h4 class="text-lg font-medium mb-3">Formulaires de suivi</h4>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <span class="material-icons text-primary mr-2">analytics</span>
+                <a href="/images/annexes/files/masterfile_d.docx" download class="text-primary hover:underline">Annexe D - Suivi unité d'élevage BSF</a>
+              </li>
+              <li class="flex items-center">
+                <span class="material-icons text-primary mr-2">analytics</span>
+                <a href="/images/annexes/files/masterfile_e.docx" download class="text-primary hover:underline">Annexe E - Suivi traitement BSFL</a>
+              </li>
+              <li class="flex items-center">
+                <span class="material-icons text-primary mr-2">analytics</span>
+                <a href="/images/annexes/files/masterfile_f.docx" download class="text-primary hover:underline">Annexe F - Suivi pré-traitement et récolte</a>
+              </li>
+              <li class="flex items-center">
+                <span class="material-icons text-primary mr-2">analytics</span>
+                <a href="/images/annexes/files/masterfile_g.docx" download class="text-primary hover:underline">Annexe G - Suivi post-traitement BSFL</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">2</div>
-          <div class="timeline-content">
-            <p class="font-medium">6-12 mois</p>
-            <p>Optimisation de la production</p>
-          </div>
+        
+        <div class="mt-4 text-sm bg-blue-50 p-4 rounded-lg">
+          <p class="flex items-start">
+            <span class="material-icons text-blue-500 mr-2 mt-0.5">info</span>
+            <span>Ces documents sont directement liés aux outils d'analyse financière présentés plus haut. Les données collectées via ces formulaires alimentent le modèle d'analyse pour déterminer la viabilité et suivre les performances de votre installation BSF.</span>
+          </p>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">3</div>
-          <div class="timeline-content">
-            <p class="font-medium">12-24 mois</p>
-            <p>Atteinte du seuil de rentabilité</p>
-          </div>
-        </div>
+      </div>
+      
+      <div class="mt-6 text-center">
+        <button id="openModal3" class="modal-button">Détails sur la planification opérationnelle</button>
       </div>
     </section>
 
@@ -147,4 +352,89 @@ const description = "Analyse détaillée des différents scénarios de productio
       </a>
     </div>
   </div>
+
+  <!-- Modales pour chaque section -->
+  {stages.map((stage) => (
+    <Modal id={`modal${stage.id}`} title={stage.title} description={stage.description}>
+      {stage.content.map((item) => (
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold mb-2">{item.subtitle}</h3>
+          {
+            // Transforme les || en sauts de ligne avec formatage
+            item.text.includes('||') ? (
+              <div class="text-gray-700 modal-structured-content">
+                {item.text.split('||').map((textSegment) => (
+                  <p class="mb-2">{textSegment.trim()}</p>
+                ))}
+              </div>
+            ) : (
+              <p class="text-gray-700">{item.text}</p>
+            )
+          }
+        </div>
+      ))}
+      
+      {stage.id === 1 && (
+        <div class="flex justify-center mt-4">
+          <img src="/images/VI_developpement_forCascade/2_outil_commercial/6.2b.webp" alt="Graphique d'analyse financière" class="rounded-lg shadow-md max-w-full">
+        </div>
+      )}
+      
+      {stage.id === 2 && (
+        <div class="flex justify-center mt-4">
+          <img src="/images/VI_developpement_forCascade/6_scenarios/6.6d.webp" alt="Comparaison de scénarios" class="rounded-lg shadow-md max-w-full">
+        </div>
+      )}
+      
+      {stage.id === 3 && (
+        <div>
+          <div class="flex justify-center mt-4 mb-6">
+            <img src="/images/VI_developpement_forCascade/5_creation/6.5a.webp" alt="Planning opérationnel" class="rounded-lg shadow-md max-w-full">
+          </div>
+          
+          <div class="bg-gray-50 p-4 rounded-lg mt-6">
+            <h4 class="text-lg font-semibold mb-2">Ressources de planification disponibles</h4>
+            <p class="mb-3">Pour faciliter votre planification, vous pouvez télécharger les modèles de documents suivants :</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+              <a href="/images/annexes/files/masterfile_a.docx" download class="flex items-center p-2 bg-white rounded-md hover:bg-gray-100 transition-colors">
+                <span class="material-icons text-primary mr-2">download</span>
+                <span>Calendrier unité d'élevage</span>
+              </a>
+              <a href="/images/annexes/files/masterfile_b.xlsx" download class="flex items-center p-2 bg-white rounded-md hover:bg-gray-100 transition-colors">
+                <span class="material-icons text-primary mr-2">download</span>
+                <span>Planning alimentation</span>
+              </a>
+              <a href="/images/annexes/files/masterfile_c.docx" download class="flex items-center p-2 bg-white rounded-md hover:bg-gray-100 transition-colors">
+                <span class="material-icons text-primary mr-2">download</span>
+                <span>Calendrier conversion</span>
+              </a>
+              <a href="/images/annexes/files/masterfile_d.docx" download class="flex items-center p-2 bg-white rounded-md hover:bg-gray-100 transition-colors">
+                <span class="material-icons text-primary mr-2">download</span>
+                <span>Formulaire de suivi</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </Modal>
+  ))}
 </ChapterLayout>
+
+<script>
+  // Script pour gérer l'ouverture des modales
+  document.addEventListener('DOMContentLoaded', () => {
+    const modalButtons = document.querySelectorAll('.modal-button');
+    
+    modalButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        const modalId = `modal${index + 1}`;
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+      });
+    });
+  });
+</script>

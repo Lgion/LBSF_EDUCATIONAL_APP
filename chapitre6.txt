@@ -1,0 +1,550 @@
+Chapter 6:
+
+Business development
+A business model for your BSF facility should be in place before starting your venture especially if
+the intention is to run it as a business. This chapter provides some tools to support your business
+model with numbers and to help identify what preconditions must be met before opening a BSF
+facility.
+
+6.1
+
+Cost-revenue analysis and financial viability
+Understanding and assessing the cost of BSF waste processing is an important aspect before
+starting or while operating a BSF facility. This involves not only estimating the capital costs required for construction but also appraising the expected operational costs for a specific local
+context and monitoring cost units during operations. Here we present two tools to help with
+cost-revenue assessments and allow judgement on the financial viability of a BSF biowaste processing facility.
+The “scenario based business model tool” is for those that want to look at a BSF facility in detail.
+It dissects each processing unit individually in terms of capital and operational cost. It provides
+material lists required but also allows for individual adjustments if the user has experience and is
+familiar with the specific local conditions at the location of interest. Analysis of each processing
+unit separately allows to appraise different business models, for instance different degrees of decentralization and management of supply chains. After choosing a desired scenario, and entering
+other input variables, the tool then calculates key financial parameters such as Net Present Value
+(NPV), to determine the value of such a potential investment project.
+Another tool is the “web-based cost model tool”, that provides a much more simple overview of
+the costs involved in developing a BSF facility, based on the amount and type of waste conceived.
+The tool utilizes data from the existing site and design in Indonesia, and provides default processing conversions values, to calculate costs of capital expenditure and cost of production per unit.
+The user then can assess the local market and potential sales prices of BSF products to judge if
+a profit margin is possible.
+Assessing potential revenue flows derived from BSF waste processing and comparing these to
+cost items of a BSF facility, depending on scale of operation, gives a good indication if financial
+viability might be achieved. Although experience and data from existing facilities can give a good
+indication of space, equipment and labour requirements there are nevertheless variables that will
+affect this data which depend very much on the local specific context and conditions:
+· CAPEX or capital costs of the facility (e.g. local cost for constructing custom-made materials,
+local availability of equipment, etc.
+· OPEX or operational cost of the facility (e.g. local utilities cost, local labour wages, etc.)
+· Climate and other environmental impacts (e.g. temperature, humidity, odour prevention, waste
+water management, etc.)
+· Potential revenues from waste processing (gate fees)
+· Potential sales revenue from larvae derived products (e.g. whole larvae, dried BSFL, BSF meal
+and BSF oil)
+· Sales revenue from BSF rearing products such as 5-DOL sold for the use of converting waste
+at other locations
+· Sales of the waste residue as soil amendment or sales of related products such as biogas from
+treating residue.
+
+Black Soldier Fly Biowaste Processing 87
+
+6.2
+
+The scenario-based business model tool
+The scenario-based business model tool was developed to differentiate each processing unit of
+the facility based on “Activity Based Costing”. This allows the user to compare different scenarios
+of business models and implementation. Three distinct scenarios are made available in the tool
+which are described by the following figures below:
+
+· Scenario 1: This scenario assumes one full-fledged centralised plant which includes all processing units at one location. This central BSF facility, receives organic waste, processes this
+waste with BSF to obtain grown larvae and then converts (post-processing) these larvae into
+BSFL products such as fresh larvae, dried larvae and/or larvae meal and oil. This same facility
+also runs a rearing unit that closes the lifecycle to ensure pupae, flies and eggs and continuously provides 5-DOL for the treatment unit (Figure 6–1).
+
+Scenario 1
+
+Centralised integrated plant
+
+Products to
+market
+
+Figure 6–1: Scenario 1: Centralised integrated plant
+
+· Scenario 2: This scenario consists of two separate business units not located at the same
+premises. First, a centralised rearing facility that focuses exclusively on closing the life cycle to
+continuously produce 5-DOL for use at different treatment facilities. Then, individual treatment
+facilities located at different locations throughout the city, ideally close to the source of waste
+generation. These decentralised treatment facilities process organic waste using the 5-DOL
+from the rearing facility to obtain grown larvae and also convert these grown larvae into BSFL
+products such as fresh larvae, dried larvae and/or larvae meal and oil (Figure 6–2)
+
+Centralised nursery
+
+Decentralised waste treatment and post-processing
+
+Scenario 2
+
+5-DOL
+Products to
+market
+
+Figure 6–2: Scenario 2: Centralised nursery, decentralised treatment and post-processing
+
+· Scenario 3: This scenario is similar to scenario 2 with decentralised treatment facilities. In this
+case however the treatment facilities also obtain 5-DOL to conduct waste treatment but then
+do not process the grown larvae into products but instead sell the fresh grown larvae back to
+the central facility. This central facility therefore does not only rear 5-DOL for the treatment
+facilities but also receives grown larvae from them to convert these larvae into BSFL products
+such as fresh larvae, dried larvae and/or larvae meal and oil (Figure 6–3).
+
+88 Black Soldier Fly Biowaste Processing
+
+5-DOL
+
+Decentralised waste treatment
+
+Scenario 3
+
+Centralised nursery and post-processing
+
+Products to
+market
+
+Figure 6–3: Scenario 3: Centralised nursery and post-processing, decentralised treatment
+
+As described in the scenarios 2 and 3, these models require a supply chain and an exchange of
+crucial goods between the centralised and decentralised facilities. For both scenarios 2 and 3 the
+regular supply of 5-DOL is vital. This is a source of income for the rearing facility and is a raw material for the treatment facility besides the waste they receive. For scenarios 3, the exchange of
+goods goes in both directions. 5-DOL are transferred from the rearing/post-processing facility to
+the treatment facility and then grown larvae are transferred back from the treatment facility back
+to the rearing/post-processing facility. In this exchange, it is important to find a pricing scheme
+for these products that is beneficial for all parties. If the rearing facility charges too high prices
+for their 5-DOL, then the decentralised treatment facility might run into a deficit and go out of
+business. Similarly, if the decentralised treatment facility charges a too high price for the grown
+larvae, then nursery/post-processing facility may go out of business.
+The scenario-based business model tool helps identify pricing schemes for such product exchanges while also considering the scale of operation of each facility given the impact of economies of
+scale.
+Furthermore, the tool gives insights into the cost structure of each processing unit and provides
+financial performance indicators as well as key capital budgeting indicators such as net present
+value (NPV), payback period (PB) and internal rate of return (IRR) based on a period of 5 years with
+a discount rate of 11%.
+
+The scenario-based business model tool is an excel based tool.
+Each scenario has its own excel file where the user can fill in
+the required data. All the excel models as well as a manual can
+be downloaded for free through this link.
+
+Black Soldier Fly Biowaste Processing 89
+
+6.3
+
+The web-based cost model tool
+The web-based cost model is a more simplified version of the “scenario-based business model
+tool”. It assumes a central plant with all units integrated in one facility. It estimates operational
+cost to provide the user with the production cost per unit of BSF product (i.e. costs incurred from
+manufacturing a BSF product). This can then be compared with current sales prices of similar
+competing products on the market. The user selects a scale of operation based on the amount
+of waste that shall be treated, what BSF products shall be sold, and enters some additional unit
+costs given the local context (labour costs, utility costs, etc.). Default conversion values based on
+the experience from Indonesia are provided, but these can be individually adjusted by the user if
+other information is available. The benefit of using this web-based cost model tool is that you do
+not need to be a BSF expert. It is enough to be a BSF enthusiast that wants to explore what it
+means to operate a BSF facility, how much product and what production cost you might expect.
+The tool output is shown as a flowchart including mass flows through the different processing
+units besides the costs.
+
+The web-based cost model is an online tool which focusses
+on calculating the operational cost per unit of a selected BSF
+product.
+
+6.4
+
+Siting a BSF waste processing facility
+Understanding the natural life-cycle is the basis for setting up an efficient and reliable BSF waste
+processing facility. At the facility, with its infrastructure, equipment and workers with their skill
+sets, the operator takes control over the natural life cycle of BSF to thus, create and operate an
+engineered biosystem.
+The facility location with its components and activities strives to best mimic the natural habitat
+and the needs of the BSF, while steering them towards increased efficiency and stability so that
+a continuous waste treatment can be ensured. The following aspects should be taken into consideration when selecting an appropriate site for a BSF processing facility:
+· Nearby sources of good quality biowaste in regular and/or predictable amounts. The closer the
+facility is to the waste, the lesser is the need for transport and logistics of waste sourcing.
+· Nearby customers for larvae and their conversion products. The closer the distance to your
+customers the easier it is to maintain suitable market channels and enhance customer relationships while also reducing transport costs.
+· Appropriate location in the city or neighbourhood that does not incur conflicts with or obstruction by residents or adjacent land users.
+· Adequate green zones that can buffer the facility from the surrounding area (e.g. open areas,
+trees, fences, etc.)
+· Availability of water, a wastewater system and connection to a power grid
+· Adequate building infrastructure and quality. The treatment area should have a roof and a concrete base to provide shelter and provide a clean workspace. An office, toilet facilities and lab
+space should also be available.
+When the location has been selected and construction plans are being developed the following
+specific aspects need to be considered:
+
+90 Black Soldier Fly Biowaste Processing
+
+· The site should be protected from infestation of pests and vermin. Ant traps are required for
+
+·
+·
+·
+·
+·
+
+6.5
+
+contact points between the equipment and the floor. Ensure that there is no contact between
+equipment and the walls. Mesh wire protection may be required for all essential components
+of the rearing operation to avoid birds, rats and lizards from accessing the larvae.
+Treatment units need to be placed away from direct sunlight, maintained at temperatures of
+around 25 degrees and without impact of rain and ideally kept at low humidity.
+Rearing stages of egg, pre-pupae and pupae need high humidity and temperatures of around
+28 degrees with full shading from the sun.
+Rearing stage of the larvae need to kept at a low humidity, temperatures of around 25 degrees
+and with full shading from the sun.
+Rearing of the fly and mating stages need high humidity a temperature of around 28 degrees
+and abundance of indirect sunlight.
+Post-processing unit needs to have sufficient ventilation, comfortable temperature for manual
+labour and very low humidity levels.
+
+Creating a floorplan and planning the unit locations for a BSF site
+One of the outputs of both cost model tools, as described above, is the space requirements for
+each of the three units (rearing, conversion/treatment and post-processing) at a BSF facility depending of the scale of waste input. Figure 6–4 shows an example of a floorplan for the selected
+facility of 5 tons of biowaste per day.
+
+Employee
+facilities
+
+Storage
+
+Office
+
+Waste preprocessing
+
+Laboratory
+
+Waste treatment
+Postprocessing
+
+678 m2
+Rearing unit
+Harvesting
+121 m2
+
+105 m2
+
+Figure 6–4: Floorplan for BSF biowaste processing plant with a capacity of 5 tons biowaste input per day
+
+When comparing different scales (see Table 6–1) and the respective space requirements at
+these scales, it becomes clear that this does not increase or decrease linearly with the increase
+or decrease in waste input. Especially the rearing unit shows the least dependency between
+scale and space requirement. Here the equipment, for instance the racks, come with a fixed
+
+Black Soldier Fly Biowaste Processing 91
+
+scale of design. In that sense smaller scale does not affect space requirements but indicates that
+the equipment is not used at full capacity. In contrast, the waste treatment unit shows a strong
+dependency between scale and space. This is the result of a small unit size of equipment. For every
+small change of scale the total number of these small pieces of equipment increases immediately
+requiring more space to accommodate. Lastly, the post-processing unit, show a similar pattern as
+the rearing unit. The capacity of most installed equipment is often not the limiting factor and therefore a decrease or even increase of scale can be accommodated with the same piece of equipment. This is shown in Table 6–1 when comparing scale of 1 ton and 2 tons of waste processed per
+day. Although the scale has doubled there is almost no effect on the floorspace required.
+
+Table 6–1: Overview of site scale and effect on size of the different operational units
+
+Amount of waste
+processed per day
+
+Area Rearing
+
+Area Conversion
+
+Area Processing
+
+Total Area
+
+5 ton/d
+
+121 m2
+
+678 m2
+
+105 m2
+
+±900 m2
+
+2 ton/d
+
+71 m2
+
+286 m2
+
+47 m2
+
+±400 m2
+
+1 ton/d
+
+47 m2
+
+160 m2
+
+44 m2
+
+±250 m2
+
+6.6
+
+Operational scenarios and work scheduling
+The operational guidance as provided in this book is based on a BSF treatment facility that has the
+capacity to produce enough 5-DOL to treat around 35 tons of biowaste per week. This requires a
+daily presence and work schedule, seven days a week.
+Depending on waste, space and labour availability, one could however also choose a reduced
+work schedule that can be managed working only half of the days in a week or even less with an
+alternate Monday-Wednesday-Friday work schedule (see Table 6–3).
+
+Table 6–2: Capacity of the described BSF facility depending on work schedule
+
+Work schedule
+
+Waste
+capacity
+
+Output of
+5-DOL
+
+workers
+required
+
+Area
+
+Daily 5-DOL output
+fluctuation
+
+1
+
+Every day
+
+35 ton / wk
+
+±50 million / wk
+
+23
+
+900 m2
+
+Stable
+
+2
+
+Every other day
+
+14 ton / wk
+
+±20 million / wk
+
+12
+
+400 m
+
+2
+
+Small fluctuation
+
+3
+
+Mon-Wed-Fri
+
+7 ton / wk
+
+±8 million / wk
+
+9
+
+250 m
+
+2
+
+Large fluctuation
+
+The work schedules and log sheets presented in the annexes are developed for an every day work
+schedule. This setup has shown to be the most stable in the production of young larvae and is the
+most reliable for converting a daily continuous flow of biowaste arriving at the site. For all three
+work schedules, different task lists and feeding schedules have been designed and are available
+for download.
+
+92 Black Soldier Fly Biowaste Processing
+
+Besides the “every day” work schedule as provided in the
+Annex, this link provides access to two different operational
+scenarios with respective work schedules. The manual explains the impact of these different work scenarios and how to
+prepare these schedules.
+
+The work schedules use a date code
+format: XX.Y. This allows for easy date
+calculations and tagging of cages and
+containers. The XX-value indicates the
+calendar week of the year (week 01-52/53).
+The Y-value indicates the day of the
+week (Monday-Sunday = 1-7).
+
+Date:
+
+Code:
+
+Tuesday, February 21
+
+8.2
+
+Week 8 of the year
+Day 2 of the week
+
+Work schedules are only available for the rearing (Annex A) and conversion (Annex C) units, as the
+post-processing unit uses “Standard Operating Procedures” (SOP) files related to the operational
+steps at each operational station. In the work schedules, a short explanation is provided for each
+task and the columns to the right are left white when the task has to be performed on that day or
+shaded black when this task does not need to be performed. Work schedules should be placed
+clearly visible and accessible somewhere close to where the staff is working so that the personnel
+following the checklist can check off each task when completed. Each work schedule covers a
+period of four weeks which is then replaced with new schedules by the facility manager for the
+next period.
+The rearing unit requires one additional schedule for the feeding of the nursery larveros (Annex
+B). In the nursery larveros, 5-DOL are fed about 2-3 weeks until they transform into pre-pupae.
+The pre-pupae are then put into pupation containers to eventually become flies. Nursery larveros
+are fed a nutrient rich feed. The harvesting of pre-pupae relies on crawl-off. Towards the end of
+the feeding phase, the water content of the feed is increased, which allows pre-pupae to increase
+traction to then be able to crawl out of the nursery container. The feeding schedule for the nursery
+container informs the operator which feed mixture has to be applied to which nursery container.
+
+Black Soldier Fly Biowaste Processing 93
+
+Date
+
+Set-up
+
+1 KG
+
+2 KG
+
+2 KG
+
+2 KG
+
+2 KG
+
+2 KG
+
+2 KG
+
+1 KG
+
+1 KG
+
+Dism.
+
+8.1
+
+8.1
+
+7.6
+
+7.5
+
+7.3
+
+7.2
+
+6.7
+
+6.6
+
+6.5
+
+6.3
+
+6.1
+
+5.5
+
+8.2
+
+8.2
+
+7.7
+
+7.6
+
+7.4
+
+7.3
+
+7.1
+
+6.7
+
+6.6
+
+6.4
+
+6.2
+
+5.6
+
+8.3
+
+8.3
+
+8.1
+
+7.7
+
+7.5
+
+7.4
+
+7.2
+
+7.1
+
+6.7
+
+6.5
+
+6.3
+
+5.7
+
+Indicate the IDs of the
+nursery containers to be
+fed today
+
+Today’s code
+
+Number and colour
+indicate the amount and
+type of feed to be fed
+
+ID of the nursery
+container to be
+dismantled today
+
+The left white column indicates the current date. The second column indicates the date code for
+the nursery larvero that will be set-up on that day. The other cells along the row indicate the ID of
+the nursery larveros to be fed at the date as shown in column 1. The colour indicates the amount
+and type of feed they receive. The feed differs in terms of the amount of water added to the chicken feed (CF) and ranges from 70 - 100% water.
+
+1kg / 30% CF / 70% H 2 O
+
+2kg / 30% CF / 70% H 2 O
+
+2kg / 15% CF / 85% H 2 O
+
+1kg / 100% H 2 O
+
+The table presented in the Annex is meant to serve as a template for an Excel-sheet; an operator
+can easily update a schedule in Excel according to formulas.
+Annexes D, E, F, and G present the respected log sheets which were prepared as a template for a
+recording file to enter all the data that will be collected on each day of operation. All the monitoring
+data to assess productivity of the unit can be entered on this sheet.
+
+94 Black Soldier Fly Biowaste Processing
+
+Black Soldier Fly Biowaste Processing 95
+
+

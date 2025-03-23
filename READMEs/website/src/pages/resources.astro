@@ -1,0 +1,174 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+// import Breadcrumb from "../components/common/Breadcrumb.astro";
+
+// Importation des données des ressources depuis le fichier commun
+import { resources, getAllResourceCategories } from '../data/resources.js';
+---
+
+<MainLayout title="Ressources | Élevage de Mouches Soldats Noires">
+  <div class="container mx-auto px-4 py-8">
+    <!-- 
+    <Breadcrumb 
+      items={[
+        { label: "Accueil", href: "/" },
+        { label: "Ressources", href: "/resources", active: true }
+      ]} 
+    />
+     -->
+    
+    <div class="mt-8">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">Ressources BSF</h1>
+      
+      <div class="mb-6">
+        <p class="text-gray-600">
+          Cette page regroupe des ressources complémentaires pour vous aider dans la mise en place et la gestion de votre élevage de mouches soldats noires. Vidéos, documents techniques, et sites web de référence sont organisés par catégorie.
+        </p>
+      </div>
+      
+      <div class="filter-tabs mb-8 flex flex-wrap gap-2">
+        <button class="filter-tab active py-2 px-4 rounded-lg bg-primary text-white" data-type="all">
+          Tout afficher
+        </button>
+        <button class="filter-tab py-2 px-4 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700" data-type="videos">
+          <span class="material-icons text-sm mr-1 align-text-top">videocam</span> Vidéos
+        </button>
+        <button class="filter-tab py-2 px-4 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700" data-type="documents">
+          <span class="material-icons text-sm mr-1 align-text-top">description</span> Documents
+        </button>
+        <button class="filter-tab py-2 px-4 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700" data-type="websites">
+          <span class="material-icons text-sm mr-1 align-text-top">language</span> Sites web
+        </button>
+      </div>
+      
+      <!-- Vidéos -->
+      <div class="resource-section mb-12" data-type="videos">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+          <span class="material-icons text-primary mr-2">videocam</span> Vidéos
+        </h2>
+        
+        <div class="resource-categories space-y-8">
+          {Object.entries(resources.videos.reduce((acc, video) => {
+            if (!acc[video.category]) acc[video.category] = [];
+            acc[video.category].push(video);
+            return acc;
+          }, {})).map(([category, categoryVideos]) => (
+            <div class="category">
+              <h3 class="text-lg font-medium text-primary mb-4">{category}</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {categoryVideos.map(video => (
+                  <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="aspect-video bg-gray-100 relative">
+                      <iframe 
+                        src={video.url} 
+                        title={video.title}
+                        class="absolute inset-0 w-full h-full"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="p-4">
+                      <h4 class="font-medium text-gray-800">{video.title}</h4>
+                      <p class="text-sm text-gray-600 mt-1">{video.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Documents -->
+      <div class="resource-section mb-12" data-type="documents">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+          <span class="material-icons text-primary mr-2">description</span> Documents
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {resources.documents.map(doc => (
+            <a 
+              href={doc.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 hover:shadow-md transition-shadow flex flex-col h-full"
+            >
+              <div class="category-tag inline-block px-2 py-0.5 bg-gray-100 text-xs text-gray-600 rounded mb-2 self-start">
+                {doc.category}
+              </div>
+              <h3 class="font-medium text-primary mb-2 flex items-center">
+                <span class="material-icons text-sm mr-2">insert_drive_file</span>
+                {doc.title}
+              </h3>
+              <p class="text-sm text-gray-600 mb-4 flex-grow">{doc.description}</p>
+              <div class="text-xs text-primary font-medium flex items-center mt-auto">
+                <span class="material-icons text-xs mr-1">download</span> Télécharger
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Sites web -->
+      <div class="resource-section mb-8" data-type="websites">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+          <span class="material-icons text-primary mr-2">language</span> Sites web de référence
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {resources.websites.map(site => (
+            <a 
+              href={site.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 hover:shadow-md transition-shadow"
+            >
+              <div class="category-tag inline-block px-2 py-0.5 bg-gray-100 text-xs text-gray-600 rounded mb-2">
+                {site.category}
+              </div>
+              <h3 class="font-medium text-primary mb-2 flex items-center">
+                <span class="material-icons text-sm mr-2">language</span>
+                {site.title}
+              </h3>
+              <p class="text-sm text-gray-600">{site.description}</p>
+              <div class="text-xs text-primary font-medium flex items-center mt-2">
+                <span class="material-icons text-xs mr-1">open_in_new</span> Visiter le site
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const resourceSections = document.querySelectorAll('.resource-section');
+    
+    // Category filter
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update active state
+        filterTabs.forEach(t => t.classList.remove('active', 'bg-primary', 'text-white'));
+        filterTabs.forEach(t => t.classList.add('bg-gray-200', 'text-gray-700'));
+        
+        tab.classList.add('active', 'bg-primary', 'text-white');
+        tab.classList.remove('bg-gray-200', 'text-gray-700');
+        
+        // Filter content
+        const selectedType = tab.getAttribute('data-type');
+        
+        resourceSections.forEach(section => {
+          if (selectedType === 'all' || section.getAttribute('data-type') === selectedType) {
+            section.style.display = 'block';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>

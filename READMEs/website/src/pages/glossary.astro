@@ -1,0 +1,129 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+// import Breadcrumb from "../components/common/Breadcrumb.astro";
+
+// Importation des données du glossaire depuis le fichier commun
+import { glossaryTerms, getTermsByCategory } from '../data/glossary.js';
+
+// Obtenir les termes organisés par catégorie
+const categorizedGlossary = getTermsByCategory();
+
+// Tri alphabétique des termes dans chaque catégorie
+Object.keys(categorizedGlossary).forEach(category => {
+  categorizedGlossary[category].sort((a, b) => a.term.localeCompare(b.term));
+});
+---
+
+<MainLayout title="Glossaire | Élevage de Mouches Soldats Noires">
+  <div class="container mx-auto px-4 py-8">
+    <!-- 
+    <Breadcrumb  
+      items={[
+        { label: "Accueil", href: "/" },
+        { label: "Glossaire", href: "/glossary", active: true }
+      ]} 
+    />
+    -->
+    
+    <div class="mt-8">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">Glossaire BSF</h1>
+      
+      <div class="mb-6">
+        <p class="text-gray-600">
+          Ce glossaire regroupe les termes techniques liés à l'élevage de mouches soldats noires (BSF) et au biotraitement des déchets organiques. Les définitions sont basées sur les informations du manuel "Élevage de Mouches Soldats Noires (BSF) pour le Biotraitement des Déchets".
+        </p>
+      </div>
+      
+      <div class="search-container mb-8">
+        <div class="relative">
+          <input 
+            type="text" 
+            id="glossary-search-page" 
+            placeholder="Rechercher dans le glossaire..." 
+            class="w-full md:w-1/2 border border-gray-300 rounded-lg py-3 px-4 pl-12 focus:outline-none focus:ring-2 focus:ring-primary/50"
+          >
+          <span class="material-icons absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">search</span>
+        </div>
+      </div>
+      
+      <div class="filter-tabs mb-6 flex flex-wrap gap-2">
+        <button class="filter-tab active py-1 px-4 rounded-full bg-primary text-white" data-category="all">
+          Tous les termes
+        </button>
+        
+        {Object.keys(categorizedGlossary).map(category => (
+          <button class="filter-tab py-1 px-4 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700" data-category={category}>
+            {category}
+          </button>
+        ))}
+      </div>
+      
+      <div class="glossary-content">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {glossaryTerms.map(item => (
+            <div class="glossary-item bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-category={item.category}>
+              <div class="category-tag inline-block px-2 py-0.5 bg-gray-100 text-xs text-gray-600 rounded mb-2">
+                {item.category}
+              </div>
+              <h3 class="font-semibold text-gray-800 mb-2">{item.term}</h3>
+              <p class="text-gray-600 text-sm">{item.definition}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('glossary-search-page') as HTMLInputElement;
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const glossaryItems = document.querySelectorAll('.glossary-item');
+    
+    // Search functionality
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        updateDisplay();
+      });
+    }
+    
+    // Category filter
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update active state
+        filterTabs.forEach(t => t.classList.remove('active', 'bg-primary', 'text-white'));
+        filterTabs.forEach(t => t.classList.add('bg-gray-200', 'text-gray-700'));
+        
+        tab.classList.add('active', 'bg-primary', 'text-white');
+        tab.classList.remove('bg-gray-200', 'text-gray-700');
+        
+        updateDisplay();
+      });
+    });
+    
+    function updateDisplay() {
+      const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+      const activeTab = document.querySelector('.filter-tab.active');
+      const activeCategory = activeTab ? activeTab.getAttribute('data-category') : 'all';
+      
+      glossaryItems.forEach(item => {
+        const termElement = item.querySelector('h3');
+        const definitionElement = item.querySelector('p');
+        const category = item.getAttribute('data-category');
+        
+        const term = termElement ? termElement.textContent?.toLowerCase() || '' : '';
+        const definition = definitionElement ? definitionElement.textContent?.toLowerCase() || '' : '';
+        
+        const matchesSearch = term.includes(searchTerm) || definition.includes(searchTerm);
+        const matchesCategory = activeCategory === 'all' || category === activeCategory;
+        
+        if (matchesSearch && matchesCategory) {
+          (item as HTMLElement).style.display = 'block';
+        } else {
+          (item as HTMLElement).style.display = 'none';
+        }
+      });
+    }
+  });
+</script>

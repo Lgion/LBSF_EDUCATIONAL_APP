@@ -23,7 +23,10 @@ const { id, title, description } = Astro.props;
 
       <!-- Content -->
       <div class="modal-body">
-        <div set:html={description} />
+        <div class="description mb-4" set:html={description} />
+        <div class="modal-content-slot">
+          <slot />
+        </div>
       </div>
     </div>
   </div>

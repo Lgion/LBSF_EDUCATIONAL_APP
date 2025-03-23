@@ -3,6 +3,7 @@ import ChapterLayout from '../layouts/ChapterLayout.astro';
 import Modal from '../components/common/Modal.astro';
 import '../styles/componentschapter3.scss';
 
+
 const title = "Les trois unités de production";
 const description = "Description détaillée des trois unités essentielles de production BSF : reproduction, croissance larvaire et traitement post-récolte.";
 
@@ -14,6 +15,36 @@ const stages_reproduction = [
       <div class="space-y-8">
         <div class="text-gray-700 mb-6">
           La gestion des mouches adultes est une étape cruciale qui nécessite une attention particulière et un suivi précis de 9 étapes clés.
+        </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/HcfFoinWcs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <img src="/images/III_unite/2_activites/3.2a.webp" alt="Matériel pour le stade mouche" class="rounded-lg shadow-md">
+            <img src="/images/III_unite/2_activites/3.2a1.webp" alt="Matériel pour le stade mouche" class="rounded-lg shadow-md">
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Cages d'élevage :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Cage d'amour (10 000 mouches)</li>
+                <li>Cage sombre d'émergence</li>
+                <li>Support de cage</li>
+                <li>Cadre mobile</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Matériel de ponte :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>"Eggies" (supports de ponte)</li>
+                <li>Conteneur d'attractif</li>
+                <li>Système d'hydratation</li>
+                <li>Balance de précision</li>
+              </ul>
+            </div>
+          </div>
         </div>
         
         <div class="grid gap-6">
@@ -130,6 +161,33 @@ const stages_reproduction = [
       <div class="space-y-8">
         <div class="text-gray-700 mb-6">
           La collecte et la gestion des œufs est une étape délicate qui s'effectue après 4 jours d'incubation. Une cage contenant 10 000 mouches peut produire environ 75 grammes d'œufs.
+        </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/UR8mIbQtRak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/III_unite/2_activites/3.2b.webp" alt="Matériel pour le stade œuf" class="w-full rounded-lg shadow-md mt-2 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Matériel de récolte :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Pinces pour gratter les œufs</li>
+                <li>Bol de récupération</li>
+                <li>Désinfectant (alcool 95%)</li>
+                <li>Brosse pour nettoyage</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Matériel de stockage :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Conteneurs de stockage</li>
+                <li>Système de codage couleur</li>
+                <li>Balance de précision</li>
+                <li>Fournitures de nettoyage</li>
+              </ul>
+            </div>
+          </div>
         </div>
         
         <div class="grid gap-6">
@@ -254,6 +312,33 @@ const stages_reproduction = [
         <div class="text-gray-700 mb-6">
           À l'âge de 5 jours (5-DOL), les larves sont récoltées des conteneurs d'éclosion. À ce stade, un bac peut contenir environ 700 000 larves, soit 73 larves par cm³.
         </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/aQPfbSP0jx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/III_unite/2_activites/3.2c.webp" alt="Matériel pour le stade éclosion" class="w-full rounded-lg shadow-md mt-2 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Matériel de récolte :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Tamis de 0,8 mm</li>
+                <li>Bacs de collecte</li>
+                <li>Gobelets pour échantillonnage</li>
+                <li>Balance de précision</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Matériel de manipulation :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Pinces pour comptage</li>
+                <li>Compteur manuel</li>
+                <li>Assiette blanche</li>
+                <li>Équipements de protection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         
         <div class="grid gap-6">
           <!-- Étape 1 -->
@@ -355,6 +440,32 @@ const stages_reproduction = [
         <div class="text-gray-700 mb-6">
           Les conteneurs de nurserie permettent d'élever les larves jusqu'au stade pré-pupal, nécessaire pour maintenir la population adulte. Pendant environ deux semaines et demie, 10 000 larves sont élevées dans un Larvero de nurserie, soit une densité de 5 larves par cm².
         </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TXTTnEwsdgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/III_unite/2_activites/3.2d.webp" alt="Matériel pour le stade nurserie" class="w-full rounded-lg shadow-md mt-2 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Conteneurs :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Larvero de nurserie (35x55cm)</li>
+                <li>Conteneur de transfert (40x60cm)</li>
+                <li>Étiquettes de suivi</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Alimentation :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Aliment sec pour poulet</li>
+                <li>Cocopeat ou son de blé</li>
+                <li>Balance de précision</li>
+                <li>Matériel de nettoyage</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         
         <div class="grid gap-6">
           <!-- Étape 1 -->
@@ -442,6 +553,32 @@ const stages_reproduction = [
       <div class="space-y-8">
         <div class="text-gray-700 mb-6">
           Les pré-pupes qui ont quitté les conteneurs de nurserie sont placées dans des conteneurs de pupation qui seront ensuite mis dans la cage sombre. Sur une durée de 5 jours, les pré-pupes sont ajoutées dans un substrat de pupation d'environ 5 cm d'épaisseur. Un conteneur de pupation peut accueillir jusqu'à 10 000 pré-pupes, soit environ 1 pré-pupe par cm³.
+        </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oAk9TNGgsSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/III_unite/2_activites/3.2e.webp" alt="Matériel pour le stade pré-pupe" class="w-full rounded-lg shadow-md mt-2 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Matériel de substrat :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Compost mature</li>
+                <li>Mélangeur à béton</li>
+                <li>Balance industrielle</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Conteneurs :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Conteneurs de pupation (16 unités)</li>
+                <li>Rack de pupation</li>
+                <li>Tamis de 3 mm</li>
+                <li>Étiquettes de suivi</li>
+              </ul>
+            </div>
+          </div>
         </div>
         
         <div class="grid gap-6">
@@ -531,6 +668,32 @@ const stages_reproduction = [
       <div class="space-y-8">
         <div class="text-gray-700 mb-6">
           La phase de pupaison est l'étape finale du développement où les pré-pupes se transforment en pupes puis en mouches adultes. Cette période dure environ 2 à 3 semaines dans des conditions optimales.
+        </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YYGlTbRpxpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/III_unite/2_activites/3.2f.webp" alt="Matériel pour le stade pupaison" class="w-full rounded-lg shadow-md mt-2 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Cages et supports :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Cages d'émergence</li>
+                <li>Tissu noir occultant</li>
+                <li>Tunnels de connexion</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Matériel de contrôle :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Thermomètre (27-30°C)</li>
+                <li>Hygromètre (60-70%)</li>
+                <li>Feuilles de suivi</li>
+                <li>Matériel de désinfection</li>
+              </ul>
+            </div>
+          </div>
         </div>
         
         <div class="grid gap-6">
@@ -1318,6 +1481,32 @@ const stages_croissance = [
         <div class="text-gray-700 mb-6">
           Le pré-traitement des déchets vise à réduire la taille des particules et homogénéiser le matériau d'entrée. Les déchets peuvent alors être facilement distribués aux larves et les nutriments sont rendus plus accessibles aux larves et aux bactéries associées.
         </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PhrvCMfThjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/IV_operations/2_activites/4.2a0.webp" alt="Matériel pour le pré-traitement" class="w-full rounded-lg shadow-md mt-2 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Équipement principal :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Broyeur de déchets</li>
+                <li>Seaux étiquetés</li>
+                <li>Balance pour la pesée</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Équipement de sécurité :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Gants de protection</li>
+                <li>Protection oculaire</li>
+                <li>Protection auditive</li>
+                <li>Vêtements de protection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         
         <div class="grid gap-6">
           <!-- Étape 1 -->
@@ -1423,6 +1612,32 @@ const stages_croissance = [
         <div class="text-gray-700 mb-6">
           Le traitement commence par la mise en place d'unités d'incubation quotidiennes, avec un ratio précis de substrat et de larves 5-DOL. Chaque unité d'incubation reçoit 1kg de substrat et 10 000 larves 5-DOL, soit une densité de 3,3 larves par cm³.
         </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8RTmzBjthVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/IV_operations/2_activites/4.2b0.webp" alt="Matériel pour le traitement" class="w-full rounded-lg shadow-md mt-2 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Unités d'incubation :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Conteneurs à incubation (36 unités)</li>
+                <li>Racks de stockage</li>
+                <li>Étiquettes pour marquage</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Unités de traitement :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Unités larvero (36 unités)</li>
+                <li>Cadres de ventilation (5 unités)</li>
+                <li>Palettes pour transport</li>
+                <li>Balance de précision</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         
         <div class="grid gap-6">
           <!-- Étape 1 -->
@@ -1526,6 +1741,32 @@ const stages_croissance = [
       <div class="space-y-8">
         <div class="text-gray-700 mb-6">
           Une fois que les larves ont consommé le substrat et qu'il ne reste que des résidus secs, les unités larvero sont récoltées à l'aide d'un système de tamisage mécanique qui permet de séparer le mélange en trois fractions.
+        </div>
+
+        <!-- Matériel nécessaire -->
+        <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xAraUUpaQPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="font-semibold mb-2">Matériel requis :</h4>
+          <img src="/images/IV_operations/2_activites/4.2c0.webp" alt="Matériel pour la récolte" class="w-full rounded-lg shadow-md mt-2 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h5 class="font-medium">Équipement de tamisage :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Tamis vibrant mécanique</li>
+                <li>Convoyeur d'alimentation</li>
+                <li>Balance industrielle</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-medium">Équipement de collecte :</h5>
+              <ul class="list-disc ml-6 text-gray-700">
+                <li>Bacs de récupération (3 types)</li>
+                <li>Chariot élévateur</li>
+                <li>Équipement de pesée</li>
+                <li>Feuilles de suivi</li>
+              </ul>
+            </div>
+          </div>
         </div>
         
         <div class="grid gap-6">
@@ -1644,9 +1885,36 @@ const stages_croissance = [
         <div class="bg-green-50 p-6 rounded-lg mb-8">
           <h3 class="text-xl font-bold text-green-800 mb-4">1. Procédé de Purge</h3>
           <p class="text-green-700 mb-4">Recommandé pour la vente de larves vivantes. Ce processus permet aux larves de vider leur contenu intestinal tout en restant vivantes.</p>
+
+          <!-- Matériel nécessaire -->
+          <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JQrakBeCsT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h4 class="font-semibold mb-2">Matériel requis :</h4>
+            <img src="/images/IV_operations/2_activites/4.2d0.webp" alt="Matériel pour le conditionnement" class="w-full rounded-lg shadow-md mt-2 mb-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h5 class="font-medium">Équipement pour la purge :</h5>
+                <ul class="list-disc ml-6 text-gray-700">
+                  <li>Bac de lavage</li>
+                  <li>Support en tube plastique</li>
+                  <li>Filet de lavage</li>
+                  <li>Bacs de récupération</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="font-medium">Équipement pour la stérilisation :</h5>
+                <ul class="list-disc ml-6 text-gray-700">
+                  <li>Cuiseur à vapeur</li>
+                  <li>Thermomètre</li>
+                  <li>Chronomètre</li>
+                  <li>Plateaux perforés</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           
           <div class="grid gap-4">
-            <div class="step-card bg-white">
+            <div class="step-card">
               <div class="step-number">1</div>
               <div class="step-content">
                 <h4 class="step-title">Préparation du bac de lavage</h4>
@@ -1655,7 +1923,7 @@ const stages_croissance = [
               </div>
             </div>
 
-            <div class="step-card bg-white">
+            <div class="step-card">
               <div class="step-number">2</div>
               <div class="step-content">
                 <h4 class="step-title">Lavage</h4>
@@ -1664,7 +1932,7 @@ const stages_croissance = [
               </div>
             </div>
 
-            <div class="step-card bg-white">
+            <div class="step-card">
               <div class="step-number">3</div>
               <div class="step-content">
                 <h4 class="step-title">Purge</h4>
@@ -1673,7 +1941,7 @@ const stages_croissance = [
               </div>
             </div>
 
-            <div class="step-card bg-white">
+            <div class="step-card">
               <div class="step-number">4</div>
               <div class="step-content">
                 <h4 class="step-title">Tamisage</h4>
@@ -1688,24 +1956,53 @@ const stages_croissance = [
           <h3 class="text-xl font-bold text-blue-800 mb-4">2. Procédé de Stérilisation</h3>
           <p class="text-blue-700 mb-4">Nécessaire pour les larves destinées à l'alimentation animale, ce processus tue rapidement les larves et réduit la charge bactérienne.</p>
           
+          <!-- Matériel nécessaire -->
+          <div class="equipment-card bg-gray-50 p-4 rounded-lg">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JQrakBeCsT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h4 class="font-semibold mb-2">Matériel requis :</h4>
+            <img src="/images/IV_operations/2_activites/4.2e0.webp" alt="Matériel pour le conditionnement" class="w-full rounded-lg shadow-md mt-2 mb-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h5 class="font-medium">Équipement pour la purge :</h5>
+                <ul class="list-disc ml-6 text-gray-700">
+                  <li>Bac de lavage</li>
+                  <li>Support en tube plastique</li>
+                  <li>Filet de lavage</li>
+                  <li>Bacs de récupération</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="font-medium">Équipement pour la stérilisation :</h5>
+                <ul class="list-disc ml-6 text-gray-700">
+                  <li>Cuiseur à vapeur</li>
+                  <li>Thermomètre</li>
+                  <li>Chronomètre</li>
+                  <li>Plateaux perforés</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
           <div class="grid gap-4">
-            <div class="step-card bg-white">
+            <div class="step-card">
               <div class="step-number">1</div>
               <div class="step-content">
                 <h4 class="step-title">Préparation</h4>
                 <p>Chauffer l'eau jusqu'à 90°C (apparition de bulles) et préparer le bac de lavage avec support et filet.</p>
+                <img src="/images/IV_operations/2_activites/e_steps/4.2e_step1.webp" alt="Tamisage des larves" class="w-full rounded-lg shadow-md mt-2">
               </div>
             </div>
 
-            <div class="step-card bg-white">
+            <div class="step-card">
               <div class="step-number">2</div>
               <div class="step-content">
                 <h4 class="step-title">Blanchiment</h4>
                 <p>Plonger les larves dans l'eau chaude pendant 60 secondes (environ 10 kg par lot). Changer l'eau tous les 50 kg.</p>
+                <img src="/images/IV_operations/2_activites/e_steps/4.2e_step2.webp" alt="Tamisage des larves" class="w-full rounded-lg shadow-md mt-2">
               </div>
             </div>
 
-            <div class="step-card bg-white">
+            <div class="step-card">
               <div class="step-number">3</div>
               <div class="step-content">
                 <h4 class="step-title">Lavage</h4>
@@ -1713,7 +2010,7 @@ const stages_croissance = [
               </div>
             </div>
 
-            <div class="step-card bg-white">
+            <div class="step-card">
               <div class="step-number">4</div>
               <div class="step-content">
                 <h4 class="step-title">Post-traitement</h4>
@@ -1751,6 +2048,10 @@ const stages_croissance = [
       <div class="highlight-box">
         <p class="font-medium">Un système de production BSF efficace repose sur trois unités distinctes mais interconnectées, chacune ayant son rôle spécifique dans le processus global.</p>
       </div>
+      <p>
+        <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWM/BSF/Technical_Drawings.zip
+        ">Lien: technical drawings for the custom-made materials</a>
+      </p>
     </section>
 
     <!-- Section 3.1 : Unité de reproduction -->
@@ -1999,70 +2300,268 @@ const stages_croissance = [
   
           <div id="more-2" class="unit-card space-y-8 hidden transition-all duration-300">
             <div class="text-gray-700 mb-6">
-              L'élevage des BSF est une étape cruciale qui nécessite une attention particulière aux conditions environnementales et aux besoins spécifiques des larves.
+              L'unité de conversion des biodéchets repose sur une compréhension approfondie des besoins nutritionnels des larves BSF et de leur capacité à traiter différents types de déchets organiques.
             </div>
             
             <div class="grid gap-6">
+              <!-- Critères de sélection des déchets -->
               <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold mb-4">Conditions environnementales optimales</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <h3 class="text-lg font-semibold mb-4">Sélection des déchets</h3>
+                <div class="space-y-4">
                   <div class="p-4 bg-gray-50 rounded">
-                    <h4 class="font-medium mb-2">Température</h4>
+                    <h4 class="font-medium mb-2">Critères d'évaluation</h4>
                     <ul class="list-disc ml-4 text-gray-600">
-                      <li>Optimale : 28-30°C</li>
-                      <li>Plage acceptable : 24-35°C</li>
-                      <li>Critique : &lt;24°C ou &gt;36°C</li>
+                      <li><span class="font-medium">Disponibilité et coûts :</span> Quantité régulière, qualité constante, coûts d'acquisition et de transport</li>
+                      <li><span class="font-medium">Performance BSFL :</span> Adéquation nutritionnelle, temps de traitement</li>
+                      <li><span class="font-medium">Sécurité sanitaire :</span> Absence de pathogènes, métaux lourds, pesticides</li>
+                      <li><span class="font-medium">Impact environnemental :</span> Intégration dans la hiérarchie existante de gestion des déchets</li>
                     </ul>
                   </div>
-                  <div class="p-4 bg-gray-50 rounded">
-                    <h4 class="font-medium mb-2">Humidité</h4>
-                    <ul class="list-disc ml-4 text-gray-600">
-                      <li>Optimale : 60-70%</li>
-                      <li>Plage acceptable : 50-80%</li>
-                      <li>Critique : &lt;45% ou &gt;85%</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold mb-4">Indicateurs de performance</h3>
-                <div class="grid gap-4">
-                  <div class="p-4 bg-gray-50 rounded">
-                    <h4 class="font-medium mb-2">Croissance</h4>
-                    <ul class="list-disc ml-4 text-gray-600">
-                      <li>Taux de survie : >85%</li>
-                      <li>Temps de développement : 12-14 jours</li>
-                      <li>Poids final : 150-200mg/larve</li>
-                    </ul>
-                  </div>
-                  <div class="p-4 bg-gray-50 rounded">
-                    <h4 class="font-medium mb-2">Conversion</h4>
-                    <ul class="list-disc ml-4 text-gray-600">
-                      <li>Taux de conversion : 15-20%</li>
-                      <li>Réduction des déchets : 50-80%</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="bg-yellow-50 p-4 rounded-lg mt-6">
-                <h4 class="font-semibold text-yellow-800 mb-2">Points de surveillance importants :</h4>
-                <ul class="list-disc ml-6 text-yellow-700">
-                  <li>Contrôle quotidien de la température et de l'humidité</li>
-                  <li>Surveillance de la mortalité larvaire</li>
-                  <li>Vérification de la qualité du substrat</li>
-                  <li>Suivi de la croissance larvaire</li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- Bouton pour fermer la section sur l'élevage BSF -->
-            <div id="more-2_btn_close" class="flex justify-center mt-6">
-              <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
-                Masquer
-              </button>
-            </div>
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Types de déchets adaptés</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div>
+                        <h5 class="text-sm font-medium text-gray-700 mb-2">Déchets municipaux</h5>
+                        <ul class="list-disc ml-4 text-gray-600 text-sm">
+                          <li>Déchets organiques</li>
+                          <li>Déchets alimentaires</li>
+                          <li>Déchets de marché</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 class="text-sm font-medium text-gray-700 mb-2">Déchets agro-industriels</h5>
+                        <ul class="list-disc ml-4 text-gray-600 text-sm">
+                          <li>Déchets alimentaires</li>
+                          <li>Drêches de brasserie</li>
+                          <li>Déchets d'abattoir</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 class="text-sm font-medium text-gray-700 mb-2">Fumiers</h5>
+                        <ul class="list-disc ml-4 text-gray-600 text-sm">
+                          <li>Fumier de volaille</li>
+                          <li>Fumier porcin</li>
+                          <li>Matières fécales</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Prétraitement des déchets -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-4">Prétraitement des déchets</h3>
+                <div class="space-y-4">
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Contrôle qualité</h4>
+                    <img src="/images/IV_operations/1_approvisionnement/4.1a0.webp" alt="Larves fraîches" class="rounded-lg mb-3">
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li>Vérification de l'absence de matières dangereuses</li>
+                      <li>Retrait manuel des contaminants (ex: sacs plastiques)</li>
+                      <li>Refus des déchets suspectés contenir :</li>
+                      <ul class="list-[circle] ml-8 text-gray-600">
+                        <li>Acides et solvants</li>
+                        <li>Pesticides</li>
+                        <li>Détergents</li>
+                        <li>Métaux lourds</li>
+                      </ul>
+                    </ul>
+                  </div>
+
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Préparation physique</h4>
+                    <img src="/images/IV_operations/1_approvisionnement/4.1a1.webp" alt="Larves fraîches" class="rounded-lg mb-3">
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li><span class="font-medium">Réduction de taille :</span> Particules &lt; 1-2 cm de diamètre</li>
+                      <li><span class="font-medium">Avantages :</span></li>
+                      <ul class="list-[circle] ml-8 text-gray-600">
+                        <li>Accélère le traitement BSF</li>
+                        <li>Facilite l'alimentation des larves</li>
+                        <li>Favorise la croissance bactérienne</li>
+                        <li>Améliore l'homogénéité du résidu</li>
+                      </ul>
+                    </ul>
+                  </div>
+
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Gestion de l'humidité</h4>
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li>Teneur idéale : 70-80%</li>
+                      <li>Test manuel : quelques gouttes entre les doigts à la pression</li>
+                      <li>Si > 80% : mélanger avec un substrat plus sec</li>
+                      <li>Si < 70% : ajouter de l'eau propre</li>
+                      <li>Texture cible : maintien en tas sans écoulement</li>
+                    </ul>
+                  </div>
+
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Suivi des déchets</h4>
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li>Pesage systématique des déchets entrants</li>
+                      <li>Moment optimal : après broyage</li>
+                      <li>Double pesage si déshydratation :</li>
+                      <ul class="list-[circle] ml-8 text-gray-600">
+                        <li>Avant le processus</li>
+                        <li>Après le processus</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Impact environnemental -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-4">Avantages environnementaux</h3>
+                <div class="p-4 bg-green-50 rounded">
+                  <h4 class="font-medium text-green-800 mb-2">Réduction des gaz à effet de serre</h4>
+                  <ul class="list-disc ml-4 text-green-700">
+                    <li>Emissions plus faibles comparées aux méthodes traditionnelles</li>
+                    <li>Impact réduit sur le potentiel de réchauffement global (GWP)</li>
+                    <li>Emissions non significatives de :</li>
+                    <ul class="list-[circle] ml-8 text-green-600">
+                      <li>Dioxyde de carbone (CO₂)</li>
+                      <li>Méthane (CH₄)</li>
+                      <li>Protoxyde d'azote (N₂O)</li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Processus manuel de conversion -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-4">Processus manuel de conversion</h3>
+                <div class="space-y-6">
+                  <div class="p-4 bg-blue-50 rounded">
+                    <h4 class="font-medium text-blue-800 mb-2">Définition des unités</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div class="bg-white p-3 rounded shadow-sm">
+                        <h5 class="font-medium text-gray-800 mb-1">Unité d'incubation</h5>
+                        <p class="text-gray-600">Zone de démarrage où les jeunes larves (5DOLs) sont introduites dans un petit volume de déchets pour s'adapter progressivement.</p>
+                      </div>
+                      <div class="bg-white p-3 rounded shadow-sm">
+                        <h5 class="font-medium text-gray-800 mb-1">Unité larvaire</h5>
+                        <p class="text-gray-600">Zone principale où les larves en développement transforment la majeure partie des déchets jusqu'à leur récolte.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-3">Processus détaillé</h4>
+                    <div class="border-l-4 border-blue-500 pl-4 my-4">
+                      <h5 class="font-medium text-gray-800">Phase 1 : Unité d'incubation</h5>
+                      <ul class="list-disc ml-4 text-gray-600 mt-2">ase 1 : Unité d'incu
+                        <li><span class="font-medium">Dosage :</span> 10 000 jeunes larves (5DOLs) pour 1 kg de déchets</li>
+                        <li><span class="font-medium">Durée :</span> 3 jours d'adaptation</li>
+                        <li><span class="font-medium">Objectif :</span> Acclimatation des larves au substrat</li>
+                      </ul>
+                      <img src="/images/IV_operations/1_approvisionnement/4.1b0.webp" alt="Larves fraîches" class="rounded-lg mb-3">
+                    </div>
+                    
+                    <div class="border-l-4 border-green-500 pl-4 my-4">
+                      <h5 class="font-medium text-gray-800">Phase 2 : Unité larvaire</h5>
+                      <ul class="list-disc ml-4 text-gray-600 mt-2">
+                        <li><span class="font-medium">Transfert :</span> Les larves adaptées sont transférées avec leur substrat</li>
+                        <li><span class="font-medium">Alimentation :</span> Ajout de 11 kg supplémentaires de déchets</li>
+                        <li><span class="font-medium">Durée :</span> 9 jours de croissance active</li>
+                        <li><span class="font-medium">Total :</span> 12 jours de traitement pour 12 kg de déchets</li>
+                      </ul>
+                      <img src="/images/IV_operations/1_approvisionnement/4.1b1.webp" alt="Larves fraîches" class="rounded-lg mb-3">
+                    </div>
+                    
+                    <div class="border-l-4 border-purple-500 pl-4 my-4">
+                      <h5 class="font-medium text-gray-800">Récolte</h5>
+                      <ul class="list-disc ml-4 text-gray-600 mt-2">
+                        <li><span class="font-medium">Moment optimal :</span> Vers le 17e jour de vie des larves</li>
+                        <li><span class="font-medium">Indicateurs :</span> Coloration foncée, taille maximale, pré-pupation</li>
+                        <li><span class="font-medium">Méthode recommandée :</span> Utilisation de tamis adaptés pour séparer efficacement les larves du substrat</li>
+                        <li><span class="font-medium">Guide détaillé :</span> <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWM/Decentralized_Composting/Rothenberger_2006_en.pdf" target="_blank" class="text-blue-600 hover:underline">Consulter le manuel technique <span class="material-icons align-text-bottom text-sm">open_in_new</span></a></li>
+                      </ul>
+                      <img src="/images/IV_operations/1_approvisionnement/4.1c1.webp" alt="Larves fraîches" class="rounded-lg mb-3">
+                      <img src="/images/IV_operations/1_approvisionnement/4.1c2.webp" alt="Larves fraîches" class="rounded-lg mb-3">
+                    </div>
+                  </div>
+
+                  <div class="p-4 bg-yellow-50 rounded">
+                    <h4 class="font-medium text-yellow-800 mb-2">Avantages du processus manuel</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <ul class="list-disc ml-4 text-yellow-700">
+                        <li>Meilleur contrôle hygiénique comparé aux systèmes continus</li>
+                        <li>Réduction des pertes à la récolte</li>
+                      </ul>
+                      <ul class="list-disc ml-4 text-yellow-700">
+                        <li>Viabilité économique améliorée</li>
+                        <li>Gestion plus précise des cycles de production</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="p-4 bg-red-50 rounded">
+                    <h4 class="font-medium text-red-800 mb-2">Points de vigilance critiques</h4>
+                    <div class="border-l-4 border-red-400 pl-4 my-3">
+                      <h5 class="font-medium text-gray-800">Risques liés à la quantité de déchets</h5>
+                      <ul class="list-disc ml-4 text-red-700 mt-2">
+                        <li><span class="font-medium">Quantité insuffisante :</span> Compétition entre larves, cannibalisme et mortalité élevée</li>
+                        <li><span class="font-medium">Quantité excessive :</span> Décomposition anaérobie, chaleur excessive et toxicité pour les larves</li>
+                        <li><span class="font-medium">Conséquence :</span> Dans les deux cas, la mortalité des larves peut être massive</li>
+                      </ul>
+                    </div>
+                    <div class="mt-3 text-red-700">
+                      <p><span class="material-icons align-middle text-red-600 mr-1">warning</span> Un suivi quotidien des unités est essentiel pour prévenir ces problèmes.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Matériel et équipement -->
+                <div class="p-4 bg-green-50 rounded mt-4">
+                  <h4 class="font-medium text-green-800 mb-2">Matériel et équipement</h4>
+                  <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                      <p class="text-gray-700 mb-2">La plupart des équipements nécessaires sont généralement faciles à trouver dans le commerce local. Toutefois, certains matériels spécifiques peuvent nécessiter une fabrication sur mesure.</p>
+                      <p class="text-gray-700">Pour les équipements spécifiques, des plans techniques détaillés sont disponibles pour une fabrication sur place.</p>
+                    </div>
+                    <div class="md:w-1/3 bg-white p-3 rounded shadow-sm border border-green-200">
+                      <h5 class="font-medium text-gray-800 mb-2">Plans et schémas techniques</h5>
+                      <a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWM/BSF/Technical_Drawings.zip" target="_blank" class="flex items-center text-primary hover:underline py-2 px-3 bg-green-100 rounded">
+                        <span class="material-icons mr-2">download</span> 
+                        Télécharger les plans techniques
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Processus de digestion -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-4">Processus de digestion des BSFL</h3>
+                <div class="space-y-4">
+                  <div class="p-4 bg-blue-50 rounded">
+                    <h4 class="font-medium text-blue-800 mb-2">Mécanisme d'alimentation</h4>
+                    <p class="text-blue-600">Les larves BSF possèdent un système d'alimentation sophistiqué similaire à une foreuse, avec des disques broyeurs oscillant 4 fois par seconde pour réduire les particules grossières.</p>
+                  </div>
+
+                  <div class="p-4 bg-gray-50 rounded">
+                    <h4 class="font-medium mb-2">Processus digestif</h4>
+                    <ul class="list-disc ml-4 text-gray-600">
+                      <li>Passage dans l'intestin moyen (partie principale)</li>
+                      <li>Action combinée de :</li>
+                      <ul class="list-[circle] ml-8 text-gray-600">
+                        <li>Environnement intestinal</li>
+                        <li>Enzymes digestives</li>
+                        <li>Microbes symbiotiques</li>
+                      </ul>
+                      <li>Absorption des nutriments vers l'hémolymphe</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bouton pour fermer la section -->
+              <div id="more-2_btn_close" class="flex justify-center mt-6">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
+                  Masquer
+                </button>
+              </div>
           </div>
       
     </section>
@@ -2075,50 +2574,65 @@ const stages_croissance = [
     ))}
 
     <!-- Section 3.3 : Unité de traitement post-récolte -->
-    <section id="section-3" class="content-card fade-in">
-      <h2 class="section-title">Unité de traitement post-récolte</h2>
+    <section id="section-3" class="content-card fade-in bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="section-title text-2xl font-bold text-gray-800 mb-6">Unité de traitement post-récolte</h2>
       
-      <div class="unit-card processing">
-        <h3 class="subsection-title">Processus de récolte et transformation</h3>
+      <div class="unit-card processing space-y-6">
+        <h3 class="subsection-title text-xl font-semibold text-gray-700 mb-4">Processus de récolte et transformation</h3>
         
-        <div class="process-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div>
-              <p class="font-medium">Tamisage</p>
-              <p>Séparation des larves et du substrat</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-2">
+              <div class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+              <h4 class="ml-3 font-medium text-gray-800">Tamisage</h4>
             </div>
+            <p class="text-gray-600">Séparation des larves et du substrat</p>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div>
-              <p class="font-medium">Nettoyage</p>
-              <p>Rinçage à l'eau claire</p>
+
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-2">
+              <div class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+              <h4 class="ml-3 font-medium text-gray-800">Nettoyage</h4>
             </div>
+            <p class="text-gray-600">Rinçage à l'eau claire</p>
           </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div>
-              <p class="font-medium">Transformation</p>
-              <p>Séchage, broyage ou congélation selon l'usage</p>
+
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-2">
+              <div class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+              <h4 class="ml-3 font-medium text-gray-800">Transformation</h4>
             </div>
+            <p class="text-gray-600">Séchage, broyage ou congélation selon l'usage</p>
           </div>
-          <div class="step">
-            <div class="step-number">4</div>
-            <div>
-              <p class="font-medium">Conditionnement</p>
-              <p>Emballage et stockage adapté</p>
+
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-2">
+              <div class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+              <h4 class="ml-3 font-medium text-gray-800">Conditionnement</h4>
             </div>
+            <p class="text-gray-600">Emballage et stockage adapté</p>
           </div>
         </div>
 
-        <div class="highlight-box mt-6">
-          <h4 class="font-medium mb-2">Points de contrôle critiques</h4>
-          <ul class="info-list">
-            <li>Température de séchage ≤ 70°C</li>
-            <li>Humidité finale ≤ 10%</li>
-            <li>Stockage hermétique</li>
-            <li>Traçabilité des lots</li>
+        <div class="bg-yellow-50 p-6 rounded-lg mt-6">
+          <h4 class="font-semibold text-yellow-800 mb-4">Points de contrôle critiques</h4>
+          <ul class="space-y-2 text-yellow-700">
+            <li class="flex items-center">
+              <span class="material-icons mr-2 text-yellow-600">thermostat</span>
+              Température de séchage ≤ 70°C
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons mr-2 text-yellow-600">water_drop</span>
+              Humidité finale ≤ 10%
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons mr-2 text-yellow-600">inventory_2</span>
+              Stockage hermétique
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons mr-2 text-yellow-600">qr_code_scanner</span>
+              Traçabilité des lots
+            </li>
           </ul>
         </div>
 
@@ -2425,7 +2939,7 @@ const stages_croissance = [
                   <h6 class="font-medium text-blue-800 mb-2">Pourquoi fractionner les larves BSF ?</h6>
                   <p class="text-blue-600 mb-3">Le fractionnement des larves séchées est nécessaire pour plusieurs raisons :</p>
                   <ul class="list-disc ml-6 text-blue-600">
-                    <li>Les aliments standardisés exigent une teneur en matières grasses < 10%</li>
+                    <li>Les aliments standardisés exigent une teneur en matières grasses &lt;10%</li>
                     <li>Une forte teneur en lipides augmente les risques d'oxydation</li>
                     <li>L'excès de matières grasses peut causer des problèmes lors de la transformation :</li>
                   </ul>

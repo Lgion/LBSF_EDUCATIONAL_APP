@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramme de Conversion des Déchets BSFL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .flowchart {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 20px auto;
+        }
+
+        .node {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #8B4513;
+            z-index: 2;
+        }
+
+        .node-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .conversion {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        /* Nodes */
+        #organic-waste {
+            top: 0;
+            left: 340px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: 0 0;
+        }
+
+        #bsf-larvae {
+            top: 180px;
+            left: 200px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -200px -180px;
+        }
+
+        #bsf-residue {
+            top: 180px;
+            left: 480px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -480px -180px;
+        }
+
+        #sanitized-larvae {
+            top: 360px;
+            left: 340px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -340px -360px;
+        }
+
+        #fresh-larvae {
+            top: 520px;
+            left: 60px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -60px -520px;
+        }
+
+        #pop-larvae {
+            top: 520px;
+            left: 200px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -200px -520px;
+        }
+
+        #bsf-oil {
+            top: 520px;
+            left: 340px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -340px -520px;
+        }
+
+        #bsf-meal {
+            top: 520px;
+            left: 480px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -480px -520px;
+        }
+
+        #pellet {
+            top: 520px;
+            left: 620px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -620px -520px;
+        }
+
+        #bsf-compost {
+            top: 520px;
+            left: 760px;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.1-U2QK7YmUH4RgBmO7MIetAUN6b8Kshf.webp');
+            background-position: -760px -520px;
+        }
+
+        /* Connections */
+        .connection {
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Organic Waste to BSF Larvae */
+        .connection-1 {
+            top: 70px;
+            left: 400px;
+            width: 140px;
+            height: 140px;
+            border-left: 4px solid #8B4513;
+            border-bottom: 4px solid #8B4513;
+            transform: rotate(-45deg);
+        }
+
+        /* Organic Waste to BSF Residue */
+        .connection-2 {
+            top: 70px;
+            left: 400px;
+            width: 140px;
+            height: 140px;
+            border-right: 4px solid #8B4513;
+            border-bottom: 4px solid #8B4513;
+            transform: rotate(45deg);
+        }
+
+        /* BSF Larvae to Sanitized Larvae */
+        .connection-3 {
+            top: 250px;
+            left: 260px;
+            width: 140px;
+            height: 140px;
+            border-right: 4px solid #8B4513;
+            border-bottom: 4px solid #8B4513;
+            transform: rotate(45deg);
+        }
+
+        /* Sanitized Larvae to Fresh Larvae */
+        .connection-4 {
+            top: 430px;
+            left: 120px;
+            width: 280px;
+            height: 120px;
+            border-left: 4px solid #8B4513;
+            border-bottom: 4px solid #8B4513;
+            transform: rotate(-45deg);
+        }
+
+        /* Sanitized Larvae to Pop Larvae */
+        .connection-5 {
+            top: 430px;
+            left: 260px;
+            width: 140px;
+            height: 120px;
+            border-left: 4px solid #8B4513;
+            border-bottom: 4px solid #8B4513;
+            transform: rotate(-45deg);
+        }
+
+        /* Sanitized Larvae to BSF Oil */
+        .connection-6 {
+            top: 480px;
+            left: 400px;
+            width: 0;
+            height: 40px;
+            border-left: 4px solid #8B4513;
+        }
+
+        /* Sanitized Larvae to BSF Meal */
+        .connection-7 {
+            top: 430px;
+            left: 400px;
+            width: 140px;
+            height: 120px;
+            border-right: 4px solid #8B4513;
+            border-bottom: 4px solid #8B4513;
+            transform: rotate(45deg);
+        }
+
+        /* Sanitized Larvae to Pellet */
+        .connection-8 {
+            top: 430px;
+            left: 400px;
+            width: 280px;
+            height: 120px;
+            border-right: 4px solid #8B4513;
+            border-bottom: 4px solid #8B4513;
+            transform: rotate(45deg);
+        }
+
+        /* BSF Residue to BSF Compost */
+        .connection-9 {
+            top: 250px;
+            left: 540px;
+            width: 280px;
+            height: 300px;
+            border-right: 4px solid #8B4513;
+            border-bottom: 4px solid #8B4513;
+            transform: rotate(45deg);
+        }
+
+        .caption {
+            margin-top: 30px;
+            text-align: center;
+            max-width: 800px;
+            color: #5a3921;
+            font-size: 14px;
+        }
+
+        /* Arrow heads */
+        .connection::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .connection-1::after {
+            bottom: -12px;
+            left: -12px;
+            border-width: 12px;
+            border-color: transparent transparent #8B4513 #8B4513;
+            transform: rotate(-45deg);
+        }
+
+        .connection-2::after {
+            bottom: -12px;
+            right: -12px;
+            border-width: 12px;
+            border-color: transparent #8B4513 #8B4513 transparent;
+            transform: rotate(45deg);
+        }
+
+        .connection-3::after {
+            bottom: -12px;
+            right: -12px;
+            border-width: 12px;
+            border-color: transparent #8B4513 #8B4513 transparent;
+            transform: rotate(45deg);
+        }
+
+        .connection-4::after {
+            bottom: -12px;
+            left: -12px;
+            border-width: 12px;
+            border-color: transparent transparent #8B4513 #8B4513;
+            transform: rotate(-45deg);
+        }
+
+        .connection-5::after {
+            bottom: -12px;
+            left: -12px;
+            border-width: 12px;
+            border-color: transparent transparent #8B4513 #8B4513;
+            transform: rotate(-45deg);
+        }
+
+        .connection-6::after {
+            bottom: -12px;
+            left: -6px;
+            border-width: 12px 6px 0 6px;
+            border-color: #8B4513 transparent transparent transparent;
+        }
+
+        .connection-7::after {
+            bottom: -12px;
+            right: -12px;
+            border-width: 12px;
+            border-color: transparent #8B4513 #8B4513 transparent;
+            transform: rotate(45deg);
+        }
+
+        .connection-8::after {
+            bottom: -12px;
+            right: -12px;
+            border-width: 12px;
+            border-color: transparent #8B4513 #8B4513 transparent;
+            transform: rotate(45deg);
+        }
+
+        .connection-9::after {
+            bottom: -12px;
+            right: -12px;
+            border-width: 12px;
+            border-color: transparent #8B4513 #8B4513 transparent;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="flowchart">
+        <!-- Nodes -->
+        <div id="organic-waste" class="node">
+            <div class="node-content">
+                <div>Organic Waste</div>
+            </div>
+        </div>
+
+        <div id="bsf-larvae" class="node">
+            <div class="node-content">
+                <div>BSF Larvae</div>
+                <div class="conversion">10-30% Conversion</div>
+            </div>
+        </div>
+
+        <div id="bsf-residue" class="node">
+            <div class="node-content">
+                <div>BSF Residue</div>
+                <div class="conversion">35-40% Conversion</div>
+            </div>
+        </div>
+
+        <div id="sanitized-larvae" class="node">
+            <div class="node-content">
+                <div>Sanitized Larvae</div>
+                <div class="conversion">100% Conversion</div>
+            </div>
+        </div>
+
+        <div id="fresh-larvae" class="node">
+            <div class="node-content">
+                <div>Fresh Larvae</div>
+                <div class="conversion">100% Conversion</div>
+            </div>
+        </div>
+
+        <div id="pop-larvae" class="node">
+            <div class="node-content">
+                <div>Pop Larvae</div>
+                <div class="conversion">95-97% Conversion</div>
+            </div>
+        </div>
+
+        <div id="bsf-oil" class="node">
+            <div class="node-content">
+                <div>BSF Oil</div>
+                <div class="conversion">3-5% Conversion</div>
+            </div>
+        </div>
+
+        <div id="bsf-meal" class="node">
+            <div class="node-content">
+                <div>BSF Meal</div>
+                <div class="conversion">12-22% Conversion</div>
+            </div>
+        </div>
+
+        <div id="pellet" class="node">
+            <div class="node-content">
+                <div>Pellet 60-40</div>
+                <div class="conversion">40% Conversion</div>
+            </div>
+        </div>
+
+        <div id="bsf-compost" class="node">
+            <div class="node-content">
+                <div>BSF Compost</div>
+                <div class="conversion">50% Conversion</div>
+            </div>
+        </div>
+
+        <!-- Connections -->
+        <div class="connection connection-1"></div>
+        <div class="connection connection-2"></div>
+        <div class="connection connection-3"></div>
+        <div class="connection connection-4"></div>
+        <div class="connection connection-5"></div>
+        <div class="connection connection-6"></div>
+        <div class="connection connection-7"></div>
+        <div class="connection connection-8"></div>
+        <div class="connection connection-9"></div>
+    </div>
+
+    <div class="caption">
+        <strong>Figure 5-1:</strong> BSFL waste conversion products. Conversion percentages describe the estimated yield from the previous product. Values are based on wet weight.
+    </div>
+</body>
+</html>
