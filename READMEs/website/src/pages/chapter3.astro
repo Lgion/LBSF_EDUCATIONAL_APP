@@ -2,6 +2,7 @@
 import ChapterLayout from '../layouts/ChapterLayout.astro';
 import Modal from '../components/common/Modal.astro';
 import '../styles/componentschapter3.scss';
+import FormationCTA from '../components/common/FormationCTA.astro';
 
 
 const title = "Les trois unités de production";
@@ -3149,6 +3150,9 @@ const stages_croissance = [
         description={stage.description}
       />
     ))}
+
+    <!-- Appel à l'action pour la formation -->
+    <FormationCTA />
 
     <!-- Navigation -->
     <div class="flex justify-between items-center mt-12">

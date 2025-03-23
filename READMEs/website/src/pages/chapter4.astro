@@ -2,6 +2,7 @@
 import ChapterLayout from '../layouts/ChapterLayout.astro';
 import Modal from '../components/common/Modal.astro';
 import '../styles/componentschapter4.scss';
+import FormationCTA from '../components/common/FormationCTA.astro';
 
 const title = "Développement d'entreprise BSF";
 const description = "Analyse des modèles d'affaires, outils d'évaluation économique et scénarios de production pour les installations BSF.";
@@ -339,6 +340,9 @@ const stages = [
         <button id="openModal3" class="modal-button">Détails sur la planification opérationnelle</button>
       </div>
     </section>
+
+    <!-- Appel à l'action pour la formation -->
+    <FormationCTA />
 
     <!-- Navigation -->
     <div class="flex justify-between items-center mt-12">
