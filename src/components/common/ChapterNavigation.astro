@@ -1,0 +1,227 @@
+---
+import { resources } from '../../data/resources.js';
+
+interface Props {
+  currentChapter: number;
+}
+
+const { currentChapter } = Astro.props;
+
+// Récupération des vidéos par catégorie
+const reproductionVideos = resources.videos.filter(video => video.category === "Unité de reproduction")
+  .map((video, index) => ({
+    title: `${index + 1}) ${video.title}`,
+    url: video.url
+  }));
+
+const croissanceVideos = resources.videos.filter(video => video.category === "Unité de croissance larvaire")
+  .map((video, index) => ({
+    title: `${index + 1}) ${video.title}`,
+    url: video.url
+  }));
+
+const postRecolteVideos = resources.videos.filter(video => video.category === "Unité de traitement post-récolte")
+  .map((video, index) => ({
+    title: `${index + 1}) ${video.title}`,
+    url: video.url
+  }));
+
+// Récupération des documents pour les sections pertinentes
+const croissanceDocs = resources.documents.filter(doc => 
+  doc.category === "Unité de croissance larvaire" || 
+  doc.title.includes("compostage"));
+
+const postRecolteDocs = resources.documents.filter(doc => 
+  doc.category === "Unité de traitement post-récolte" || 
+  doc.title.includes("Fiche technique"));
+
+const developpementDocs = resources.documents.filter(doc => 
+  doc.category === "Développement d'entreprise" || 
+  doc.title.includes("Manuel"));
+
+const chapters = [
+  {
+    number: 1,
+    title: 'BSF : Pourquoi et comment l\'utiliser',
+    sections: ['Introduction générale', 'La Mouche Soldat Noire', 'Conditions Optimales', 'BSF: Cycle de Vie Naturel', 'BSF: Cycle de Vie Ingéniérisé', 'Process Industriel', 'Atouts de l\'industrie BSFL', 'Public cible', 'Aspects techniques fondamentaux']
+  },
+  {
+    number: 2,
+    title: 'Déchets et collecte',
+    sections: ['Types de déchets appropriés', 'Sources de collecte', 'Préparation des déchets']
+  },
+  {
+    number: 3,
+    title: 'Les trois unités de production',
+    sections: [
+      {'Unité de reproduction': reproductionVideos},
+      {'Unité de croissance larvaire': [...croissanceVideos, ...croissanceDocs]},
+      {'Unité de traitement post-récolte': [...postRecolteVideos, ...postRecolteDocs]}
+    ],
+    general_links: {
+      title: "Technical Drawings",
+      url: "https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWM/BSF/Technical_Drawings.zip"
+    }
+  },
+  {
+    number: 4,
+    title: 'Développement d\'entreprise BSF',
+    sections: [
+      {'Analyse coûts-revenus et viabilité financière': []}, 
+      {'Scénarios de production et modèles d\'affaires': [
+        ...resources.websites.filter(site => site.title.includes('BSF')).map(site => ({
+          title: site.title,
+          url: site.url
+        }))
+      ]}, 
+      {'Planification et organisation opérationnelle': []},
+      {'Annexes et ressources complémentaires': [
+        ...developpementDocs,
+        {
+          title: "Annexe A - Présentation générale de la BSF",
+          url: "/images/annexes/files/masterfile_a.docx"
+        },
+        {
+          title: "Annexe B - Manuel d'élevage BSF",
+          url: "/images/annexes/files/masterfile_b.docx"
+        },
+        {
+          title: "Annexe C - Manuel de transformation des déchets",
+          url: "/images/annexes/files/masterfile_c.docx"
+        },
+        {
+          title: "Annexe D - Suivi unité d'élevage BSF",
+          url: "/images/annexes/files/masterfile_d.docx"
+        },
+        {
+          title: "Annexe E - Suivi traitement BSFL",
+          url: "/images/annexes/files/masterfile_e.docx"
+        },
+        {
+          title: "Annexe F - Suivi pré-traitement et récolte",
+          url: "/images/annexes/files/masterfile_f.docx"
+        },
+        {
+          title: "Annexe G - Suivi post-traitement BSFL",
+          url: "/images/annexes/files/masterfile_g.docx"
+        }
+      ]}
+    ]
+  },
+  {
+    number: 5,
+    title: 'Conclusion',
+    sections: ['Synthèse', 'Recommandations', 'Perspectives']
+  }
+];
+---
+
+<nav class="sticky top-24 bg-white rounded-card shadow-card p-4">
+  <h2 class="text-lg font-heading font-semibold mb-4">Navigation du chapitre</h2>
+  
+  <div class="space-y-4">
+    <!-- Navigation entre chapitres -->
+    <div class="flex justify-between mb-6">
+      {currentChapter > 1 && (
+        <a
+          href={`/chapter${currentChapter - 1}`}
+          class="flex items-center text-sm text-primary hover:text-primary/80"
+        >
+          <span class="material-icons mr-1">arrow_back</span>
+          Précédent
+        </a>
+      )}
+      
+      {currentChapter < 5 && (
+        <a
+          href={`/chapter${currentChapter + 1}`}
+          class="flex items-center text-sm text-primary hover:text-primary/80"
+        >
+          Suivant
+          <span class="material-icons ml-1">arrow_forward</span>
+        </a>
+      )}
+    </div>
+
+    <!-- Sections du chapitre actuel -->
+    <div>
+      <h3 class="font-medium mb-2">Dans ce chapitre :</h3>
+      <ul class="space-y-2">
+        {(typeof chapters[currentChapter - 1].sections[0] != "string") ? (
+          // Format spécial pour le chapitre 3 avec ses liens
+          chapters[currentChapter - 1].sections.map((section, index) => {
+            const sectionTitle = Object.keys(section)[0];
+            const sectionLinks = section[sectionTitle];
+            
+            return (
+              <li>
+                <a
+                  href={`#section-${index + 1}`}
+                  class="block text-sm py-1 px-2 rounded hover:bg-primary/10 transition-colors duration-200 font-semibold bg-primary/5 text-primary-800"
+                >
+                  {sectionTitle}
+                </a>
+                
+                {/* Liens pour cette section */}
+                <ul class="pl-3 space-y-1 mt-1 border-l-2 border-primary/20">
+                  {sectionLinks.map((link) => (
+                    <li>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center text-xs py-1 px-2 rounded hover:bg-primary/10 transition-colors duration-200 text-gray-700"
+                      >
+                        <span class="material-icons text-xs mr-1 text-primary/50">
+                          {link.url.includes('youtube') ? 'videocam' : 'description'}
+                        </span>
+                        {link.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            );
+          })
+        ) : (
+          // Format standard pour les autres chapitres
+          chapters[currentChapter - 1].sections.map((section, index) => (
+            <li>
+              <a
+                href={`#section-${index + 1}`}
+                class="block text-sm py-1 px-2 rounded hover:bg-primary/10 transition-colors duration-200"
+              >
+                {section}
+              </a>
+            </li>
+          ))
+        )}
+      </ul>
+      
+      {/* Affichage du lien général pour le chapitre 3 */}
+      {currentChapter === 3 && chapters[currentChapter - 1].general_links && (
+        <div class="mt-4">
+          <h4 class="text-sm font-medium mb-1 text-green-700">Ressources générales :</h4>
+          <a
+            href={chapters?.[currentChapter - 1]?.general_links?.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center text-xs py-1 px-2 rounded hover:bg-green-100 bg-green-50 text-green-800 transition-colors duration-200"
+          >
+            <span class="material-icons text-xs mr-1 text-green-600">download</span>
+            {chapters?.[currentChapter - 1]?.general_links?.title}
+          </a>
+        </div>
+      )}
+    </div>
+
+
+  </div>
+</nav>
+
+<style lang="scss">
+  nav {
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+  }
+</style>

@@ -1,0 +1,83 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-secondary text-white">
+  <div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Informations de contact -->
+      <div>
+        <h4 class="font-heading font-semibold mb-4">Contact</h4>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <span class="material-icons mr-2">email</span>
+            <a href="mailto:hi.cyril@gmail.com" class="hover:text-success">
+              hi.cyril@gmail.com
+            </a>
+          </li>
+          <li class="flex items-center">
+            <span class="material-icons mr-2">phone</span>
+            <a href="tel:+2250704763132" class="hover:text-success">
+              +225 07 04 76 31 32
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navigation rapide -->
+      <div>
+        <h4 class="font-heading font-semibold mb-4">Navigation rapide</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="/chapter1" class="hover:text-success">1) BSF : Pourquoi et comment l'utiliser
+            </a>
+          </li>
+          <li>
+            <a href="/chapter2" class="hover:text-success">2) Déchets et collecte</a>
+          </li>
+          <li>
+            <a href="/chapter3" class="hover:text-success">3) Les trois unités de production</a>
+          </li>
+          <li>
+            <a href="/chapter4" class="hover:text-success">4) Scénarios de production</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ressources -->
+      <div>
+        <h4 class="font-heading font-semibold mb-4">Ressources</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="https://wiki.lowtechlab.org/images/3/36/Elevage_de_Mouches_Soldats_Noires_BSF_Biowaste_Processing_2nd_Edition_LR.pdf" class="hover:text-success">
+              Guide complet (PDF) (anglais)
+            </a>
+          </li>
+          <li>
+            <a href="/glossary" class="hover:text-success">
+              Glossaire complet
+            </a>
+          </li>
+          <li>
+            <a href="/resources" class="hover:text-success">
+              Toutes les ressources
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-8 pt-8 border-t border-white/20 text-center">
+      <p>&copy; {currentYear} BSF Formation. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<style lang="scss">
+  footer {
+    a {
+      @apply transition-colors duration-200;
+    }
+  }
+</style>

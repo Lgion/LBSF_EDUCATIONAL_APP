@@ -1,0 +1,268 @@
+---
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// Définition des unités de production avec leurs étapes
+const units = [
+  {
+    id: 'breeding',
+    title: 'Unité d\'Élevage des Mouches',
+    description: 'Reproduction et élevage des mouches BSF pour la production de larves.',
+    image: '/images/love_cages.png',
+    number: '1',
+    steps: [
+      {
+        title: 'Élevage des Mouches',
+        description: 'Reproduction, ponte et éclosion des œufs pour produire des larves BSF.',
+        image: '/images/love_cages.png',
+      }
+    ]
+  },
+  {
+    id: 'conversion',
+    title: 'Unité de Conversion des Larves',
+    description: 'Traitement des biodéchets par les larves MSN en trois étapes distinctes.',
+    image: '/images/IV_operations/1_approvisionnement/4.1a0.webp',
+    number: '2',
+    steps: [
+      {
+        title: 'Récolte et Traitement des Biodéchets',
+        description: 'Collecte, tri et préparation des biodéchets pour l\'alimentation des larves.',
+        image: ['/images/IV_operations/1_approvisionnement/4.1a0.webp', "/images/IV_operations/1_approvisionnement/4.1a1.webp"],
+      },
+      {
+        title: 'Traitement des Déchets avec les Larves MSN',
+        description: 'Les larves consomment les biodéchets et les transforment en biomasse et en résidu.',
+        image: '/images/conversion_0.jpg',
+      },
+      {
+        title: 'Récolte des Larves',
+        description: 'Séparation des larves matures du résidu de biodéchets pour le post-traitement.',
+        image:  '/images/conversion_1.jpg'
+      }
+    ]
+  },
+  {
+    id: 'postprocessing',
+    title: 'Unité de Post-Traitement',
+    description: 'Raffinage des produits issus du processus de bioconversion.',
+    image: '/images/II_introduction/3_ingenierie/PostUnit.webp',
+    number: '3',
+    steps: [
+      {
+        title: 'Raffinage du Résidu des Biodéchets',
+        description: 'Transformation du résidu en compost ou amendement organique de qualité.',
+        image: '/images/II_introduction/3_ingenierie/PostUnit.webp',
+      },
+      {
+        title: 'Raffinage des Larves',
+        description: 'Transformation des larves en produits à valeur ajoutée (protéines, huiles, chitine).',
+        image: ['/images/traitment_schema_0.png', '/images/traitment_schema_1.png'],
+      }
+    ]
+  }
+];
+---
+
+<div class="engineered-lifecycle-section py-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-primary mb-8">Cycle de Vie Ingéniérisé de la BSF</h2>
+    
+    <div class="mb-10">
+      <img 
+        src="/images/II_introduction/3_ingenierie/3units.webp"
+        alt="Vue d'ensemble du cycle de vie ingéniérisé"
+        class="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+      />
+      <img 
+        src="/images/schema_process_industrialisation.png"
+        alt="Vue d'ensemble du cycle de vie ingéniérisé"
+        class="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+      />
+    </div>
+
+    <!-- Navigation entre les unités -->
+    <div class="units-navigation flex justify-center space-x-4 mt-8 mb-8">
+      {units.map((unit) => (
+        <button 
+          class="unit-nav-btn px-4 py-2 rounded-full border-2 border-primary text-primary font-medium hover:bg-primary hover:text-white transition-colors duration-300"
+          data-target={unit.id}
+        >
+          {unit.title}
+        </button>
+      ))}
+    </div>
+
+    <div class="units-container">
+      {units.map((unit, unitIndex) => (
+        <div class={"unit-section mb-16"+(unitIndex===0?" active":"")} data-unit-id={unit.id}>
+          <div class="unit-header bg-primary text-white p-4 rounded-t-lg flex items-center">
+            <div class="unit-number bg-white text-primary rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl mr-4">
+              {unit.number}
+            </div>
+            <h3 class="text-2xl font-bold">{unit.title}</h3>
+          </div>
+          
+          <div class="unit-content bg-white p-6 rounded-b-lg shadow-md">
+            <p class="text-gray-700 mb-6">{unit.description}</p>
+            
+            <div class="steps-grid grid grid-cols-1 md:grid-cols-{unit.steps.length} gap-6">
+              {unit.steps.map((step, stepIndex) => (
+                <div class="step-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+                  <div class="step-image-container overflow-hidden">
+                    {Array.isArray(step.image) ?
+                      step.image.map(
+                        src => <img 
+                          src={src} 
+                          alt={step.title}
+                          class="mx-auto bject-contain"
+                        />
+                      )
+                      : <img 
+                          src={step.image} 
+                          alt={step.title}
+                          class="mx-auto object-contain"
+                        />
+                    }
+                  </div>
+                  <div class="step-content p-4">
+                    <h4 class="text-lg font-semibold text-primary mb-2">{step.title}</h4>
+                    <p class="text-sm text-gray-600">{step.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  .engineered-lifecycle-section {
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    backround-color: red !important;
+    padding: 2rem 0;
+    overflow: hidden;
+  }
+  .units-container{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+  }
+  
+  .unit-section {
+    transition: all 0.5s ease;
+  }
+  .unit-section:not(.active) {
+    width: 0%;
+    display: none;
+  }
+  
+  .unit-header {
+    background-color: #2563eb;
+  }
+  
+  .text-primary {
+    color: #2563eb;
+  }
+  
+  .border-primary {
+    border-color: #2563eb;
+  }
+  
+  .bg-primary {
+    background-color: #2563eb;
+  }
+  
+  .step-card:hover {
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+  }
+  
+  /* Responsive grid adjustments */
+  @media (max-width: 768px) {
+    .steps-grid {
+      grid-template-columns: 1fr !important;
+    }
+    
+    .units-navigation {
+      flex-direction: column;
+      align-items: center;
+      space-x: 0 !important;
+    }
+    
+    .units-navigation button {
+      margin: 0.5rem 0;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Navigation entre les unités
+    const unitNavButtons = document.querySelectorAll('.unit-nav-btn');
+    const unitSections = document.querySelectorAll('.unit-section');
+    
+    unitNavButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        
+        // Mise à jour des boutons actifs
+        unitNavButtons.forEach(btn => {
+          btn.classList.remove('bg-primary', 'text-white');
+          btn.classList.add('text-primary');
+        });
+        
+        button.classList.remove('text-primary');
+        button.classList.add('bg-primary', 'text-white');
+        
+        // Scroll vers l'unité sélectionnée
+        const targetUnit = document.querySelector(`.unit-section[data-unit-id="${targetId}"]`)
+        , targetUnitActive = document.querySelector(`.unit-section.active`);
+        
+        if (targetUnit) {
+          // targetUnit.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          
+          // Animation de mise en évidence
+          targetUnitActive?.classList.remove('active');
+          targetUnit.classList.add('scale-105');
+          targetUnit.classList.add('active');
+          setTimeout(() => {
+            targetUnit.classList.remove('scale-105');
+          }, 500);
+        }
+      });
+    });
+    
+    // Activer le premier bouton par défaut
+    if (unitNavButtons.length > 0) {
+      unitNavButtons[0].click();
+    }
+    
+    // Animation au défilement
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, observerOptions);
+    
+    unitSections.forEach(section => {
+      section.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+      observer.observe(section);
+    });
+  });
+</script>

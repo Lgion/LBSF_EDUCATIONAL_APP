@@ -1,0 +1,12 @@
+{
+  "name": "bsf_website_from_pdf_and_notebooklm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "this is the dev version \n to launch the website, go to: READMEs/website \n then: npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
