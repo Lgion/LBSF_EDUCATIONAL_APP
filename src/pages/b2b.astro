@@ -1,0 +1,26 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import B2BPortalApp from '../components/b2b/B2BPortalApp';
+---
+
+<MainLayout 
+  title="Portail B2B & Municipal — Valorisation Biodéchets, Gate Fees & Crédits Carbone"
+  description="Espace dédié aux supermarchés, industries agroalimentaires et collectivités pour le traitement de biodéchets et le suivi des Gate Fees."
+>
+  <div class="container mx-auto px-4 py-10 max-w-7xl">
+    <div class="mb-8">
+      <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/70 px-3 py-1 rounded-full mb-3">
+        <span class="material-icons text-sm">corporate_fare</span>
+        Pilier E — Gate Fees & RSE
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight font-heading">
+        Portail B2B Municipal & Agro-Industriel
+      </h1>
+      <p class="text-gray-600 mt-2 max-w-3xl text-sm md:text-base">
+        Solution industrielle d'économie circulaire en Côte d'Ivoire : valorisation garantie de vos flux organiques, traçabilité des tonnages et certificats d'évitement carbone.
+      </p>
+    </div>
+
+    <B2BPortalApp client:load />
+  </div>
+</MainLayout>

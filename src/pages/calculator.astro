@@ -1,0 +1,26 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import BsfCalculator from '../components/calculator/BsfCalculator';
+---
+
+<MainLayout 
+  title="BSF Calculator — Simulateur de Dimensionnement Élevage BSF"
+  description="Calculez la surface nécessaire, les besoins en jeunes larves 5-DOL et la production de protéines et de frass selon votre gisement de déchets."
+>
+  <div class="container mx-auto px-4 py-10 max-w-7xl">
+    <div class="mb-8">
+      <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/70 px-3 py-1 rounded-full mb-3">
+        <span class="material-icons text-sm">calculate</span>
+        Outil Interactif Gratuit
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight font-heading">
+        Simulateur BSF : Gisement & Emprise au Sol
+      </h1>
+      <p class="text-gray-600 mt-2 max-w-3xl text-sm md:text-base">
+        Basé sur les données empiriques du manuel EAWAG/FiBL et le modèle hybride d'Unité Centrale en Côte d'Ivoire.
+      </p>
+    </div>
+
+    <BsfCalculator client:load />
+  </div>
+</MainLayout>

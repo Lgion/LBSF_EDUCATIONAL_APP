@@ -1,0 +1,26 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import DiagnosticWizard from '../components/wizard/DiagnosticWizard';
+---
+
+<MainLayout 
+  title="Wizard de Diagnostic d'Élevage BSF — Résolution d'Anomalies"
+  description="Guide interactif d'aide à la décision pour diagnostiquer et corriger les problèmes d'élevage de larves de mouches soldats noires."
+>
+  <div class="container mx-auto px-4 py-10 max-w-7xl">
+    <div class="mb-8">
+      <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100/70 px-3 py-1 rounded-full mb-3">
+        <span class="material-icons text-sm">troubleshoot</span>
+        Assistance Technique Décentralisée
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight font-heading">
+        Diagnostic & Résolution d'Anomalies BSF
+      </h1>
+      <p class="text-gray-600 mt-2 max-w-3xl text-sm md:text-base">
+        Identifiez rapidement la cause biologique d'une baisse de productivité, d'une odeur anormale ou d'une invasion de nuisibles grâce à notre arbre décisionnel.
+      </p>
+    </div>
+
+    <DiagnosticWizard client:load />
+  </div>
+</MainLayout>

@@ -1,4 +1,8 @@
 tmp_datas
 node_modules
 dist
+.astro
+.env
+.env.*
+.netlify
 

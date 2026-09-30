@@ -1,0 +1,26 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ShopApp from '../components/shop/ShopApp';
+---
+
+<MainLayout 
+  title="Boutique BSF — Intrants 5-DOL, Matériel & Bioproduits en Côte d'Ivoire"
+  description="Commandez vos jeunes larves de 5 jours (5-DOL), vos kits d'élevage Larveros et nos bioproduits transformés avec règlement Wave."
+>
+  <div class="container mx-auto px-4 py-10 max-w-7xl">
+    <div class="mb-8">
+      <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/70 px-3 py-1 rounded-full mb-3">
+        <span class="material-icons text-sm">storefront</span>
+        Approvisionnement Réseau Satellite
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight font-heading">
+        Boutique Officielle & Intrants 5-DOL
+      </h1>
+      <p class="text-gray-600 mt-2 max-w-3xl text-sm md:text-base">
+        Fourniture garantie par l'Unité Centrale : doses de larves de 5 jours calibrées, matériel technique standardisé et bioproduits transformés à haute valeur ajoutée.
+      </p>
+    </div>
+
+    <ShopApp client:load />
+  </div>
+</MainLayout>
