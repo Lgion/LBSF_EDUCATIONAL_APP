@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import type { ICurrencyConfig } from '../../types/bsf';
+import { DEFAULT_CURRENCY, DEFAULT_CALCULATOR, formatCurrency } from '../../lib/settings';
 
 export default function BsfCalculator() {
   const [calcMode, setCalcMode] = useState<'waste' | 'eggs'>('waste');
+  const [currency, setCurrency] = useState<ICurrencyConfig>(DEFAULT_CURRENCY);
+  const [constants, setConstants] = useState(DEFAULT_CALCULATOR);
   
   // Paramètres déchets
   const [wastePerDayKg, setWastePerDayKg] = useState<number>(500);
@@ -10,26 +14,26 @@ export default function BsfCalculator() {
   // Paramètres œufs
   const [eggsGrams, setEggsGrams] = useState<number>(1);
 
-  // Constantes scientifiques EAWAG / FiBL
-  // 1g d'oeufs = ~17 500 larves de 5 jours (5-DOL)
-  // 1 tonne de biodéchets requiert ~1,5 à 2 millions de larves sur un cycle de 12 jours
-  // Ratio d'emprise au sol : 31.25 kg de déchets / m² / jour
-  // Rendement larves fraîches : ~19% du poids de déchet humide
-  // Rendement frass (résidu organique) : ~65%
-  // Réduction de biomasse : ~80%
-  // Prix de marché indicatifs Côte d'Ivoire (FCFA) :
-  // - Larves fraîches : 400 FCFA / kg
-  // - Frass certifié : 250 FCFA / kg
-  // - 5-DOL (prix unité centrale) : 550 FCFA les 1000 larves
+  useEffect(() => {
+    fetch('/api/config')
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.success) {
+          if (data.devise) setCurrency(data.devise);
+          if (data.calculator) setConstants(data.calculator);
+        }
+      })
+      .catch((err) => console.warn('Config fallback calculateur:', err));
+  }, []);
 
   // Calculs Mode Déchets
   const surfaceReqM2 = Math.round((wastePerDayKg / 31.25) * 10) / 10;
   const cycleDays = 12;
   const wastePerCycleKg = wastePerDayKg * cycleDays;
-  const freshLarvaeProducedKg = Math.round(wastePerDayKg * 0.19);
-  const frassProducedKg = Math.round(wastePerDayKg * 0.65);
-  const weekly5DolNeeded = Math.round((wastePerDayKg * 7) * 2000); // ~2000 larves / kg de déchet
-  const dailyRevenueFcfa = (freshLarvaeProducedKg * 400) + (frassProducedKg * 250);
+  const freshLarvaeProducedKg = Math.round(wastePerDayKg * (constants.rendementLarvesHumidesRatio || 0.19));
+  const frassProducedKg = Math.round(wastePerDayKg * (constants.rendementFrassRatio || 0.65));
+  const weekly5DolNeeded = Math.round((wastePerDayKg * 7) * 2000);
+  const dailyRevenueFcfa = (freshLarvaeProducedKg * constants.prixLarvesFraichesParKg) + (frassProducedKg * constants.prixFrassParKg);
   const monthlyRevenueFcfa = dailyRevenueFcfa * 30;
 
   // Calculs Mode Œufs
@@ -257,7 +261,7 @@ export default function BsfCalculator() {
                     Projection Financière Mensuelle Indicative
                   </span>
                   <span className="text-xs bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-500/30">
-                    Devise : FCFA (Côte d'Ivoire)
+                    Devise : {currency.nom} ({currency.symbole})
                   </span>
                 </div>
                 
@@ -265,10 +269,10 @@ export default function BsfCalculator() {
                   <div>
                     <div className="text-xs text-gray-400">Chiffre d'Affaires Brut Estimé / Mois</div>
                     <div className="text-2xl font-black text-emerald-400 mt-0.5">
-                      {monthlyRevenueFcfa.toLocaleString('fr-FR')} FCFA
+                      {formatCurrency(monthlyRevenueFcfa, currency)}
                     </div>
                     <div className="text-xs text-gray-400 mt-1">
-                      (Vente larves fraîches + Frass fertilisant)
+                      (Vente larves fraîches @ {constants.prixLarvesFraichesParKg} + Frass @ {constants.prixFrassParKg})
                     </div>
                   </div>
 

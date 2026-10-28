@@ -1,0 +1,8 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import ShopManager from '../../components/admin/ShopManager';
+---
+
+<AdminLayout title="Boutique & Stocks" currentPath="/admin/shop">
+  <ShopManager client:load />
+</AdminLayout>

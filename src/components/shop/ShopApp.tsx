@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getWavePaymentUrl } from '../../lib/wave';
-import type { IProduct } from '../../types/bsf';
+import type { IProduct, ICurrencyConfig, IPaymentMethodConfig } from '../../types/bsf';
+import { DEFAULT_CURRENCY, formatCurrency } from '../../lib/settings';
 
 const PRODUCTS: IProduct[] = [
   // Intrants
@@ -124,6 +125,13 @@ const PRODUCTS: IProduct[] = [
 ];
 
 export default function ShopApp() {
+  const [products, setProducts] = useState<IProduct[]>(PRODUCTS);
+  const [currency, setCurrency] = useState<ICurrencyConfig>(DEFAULT_CURRENCY);
+  const [activePayments, setActivePayments] = useState<IPaymentMethodConfig[]>([
+    { id: 'WAVE', nomAffiche: 'Wave Côte d\'Ivoire', actif: true, badge: 'Recommandé' }
+  ]);
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<string>('WAVE');
+
   const [selectedCategory, setSelectedCategory] = useState<string>('ALL');
   const [cart, setCart] = useState<{ [productId: string]: number }>({});
   const [clientName, setClientName] = useState<string>('');
@@ -131,9 +139,35 @@ export default function ShopApp() {
   const [clientAddress, setClientAddress] = useState<string>('Abidjan');
   const [orderSubmitted, setOrderSubmitted] = useState<boolean>(false);
 
+  useEffect(() => {
+    // 1. Charger la configuration publique (devise, passerelles actives)
+    fetch('/api/config')
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.success) {
+          if (data.devise) setCurrency(data.devise);
+          if (data.payments && data.payments.length > 0) {
+            setActivePayments(data.payments);
+            setSelectedPaymentMethod(data.payments[0].id);
+          }
+        }
+      })
+      .catch((err) => console.warn('Fallback config locale:', err));
+
+    // 2. Charger les produits de la boutique depuis MongoDB
+    fetch('/api/admin/shop')
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.success && data.products && data.products.length > 0) {
+          setProducts(data.products);
+        }
+      })
+      .catch((err) => console.warn('Fallback catalogue local:', err));
+  }, []);
+
   const filteredProducts = selectedCategory === 'ALL'
-    ? PRODUCTS
-    : PRODUCTS.filter(p => p.categorie === selectedCategory);
+    ? products
+    : products.filter(p => p.categorie === selectedCategory);
 
   const addToCart = (productId: string) => {
     setCart(prev => ({
@@ -155,7 +189,7 @@ export default function ShopApp() {
   };
 
   const cartItems = Object.entries(cart).map(([pId, qty]) => {
-    const product = PRODUCTS.find(p => p._id === pId);
+    const product = products.find(p => p._id === pId);
     return { product, qty };
   }).filter(item => item.product !== undefined);
 
@@ -166,14 +200,19 @@ export default function ShopApp() {
   const totalItemsCount = cartItems.reduce((sum, item) => sum + item.qty, 0);
 
   const orderId = `CMD-${Date.now().toString().slice(-6)}`;
-  const waveUrl = getWavePaymentUrl(totalAmountFcfa, orderId, clientName);
+  const waveMethod = activePayments.find(p => p.id === 'WAVE');
+  const baseWaveUrl = waveMethod?.urlPaiementBase || 'https://pay.wave.com/m/M_ci_hsvjN_ywTw2K/c/ci/';
+  const cleanWaveUrl = baseWaveUrl.includes('?')
+    ? `${baseWaveUrl}&amount=${Math.round(totalAmountFcfa)}&memo=REWASTE_${orderId}`
+    : `${baseWaveUrl}?amount=${Math.round(totalAmountFcfa)}&memo=REWASTE_${orderId}`;
 
   const handleCheckout = (e: React.FormEvent) => {
     e.preventDefault();
     if (totalAmountFcfa === 0) return;
     setOrderSubmitted(true);
-    // Redirection directe vers Wave Côte d'Ivoire
-    window.open(waveUrl, '_blank');
+    if (selectedPaymentMethod === 'WAVE') {
+      window.open(cleanWaveUrl, '_blank');
+    }
   };
 
   return (
@@ -323,7 +362,7 @@ export default function ShopApp() {
               <div className="flex justify-between items-baseline mb-4">
                 <span className="text-sm font-bold text-gray-600">Montant Total</span>
                 <span className="text-2xl font-black text-emerald-800">
-                  {totalAmountFcfa.toLocaleString('fr-FR')} FCFA
+                  {formatCurrency(totalAmountFcfa, currency)}
                 </span>
               </div>
 
@@ -342,7 +381,7 @@ export default function ShopApp() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-gray-600 uppercase mb-1">Téléphone Wave / WhatsApp *</label>
+                    <label className="block text-xs font-bold text-gray-600 uppercase mb-1">Téléphone (WhatsApp / Wave) *</label>
                     <input
                       type="tel"
                       required
@@ -365,16 +404,60 @@ export default function ShopApp() {
                     />
                   </div>
 
+                  {/* Modes de paiement actifs uniquement */}
+                  <div>
+                    <label className="block text-xs font-bold text-gray-600 uppercase mb-1">Mode de règlement *</label>
+                    <div className="space-y-2">
+                      {activePayments.map((method) => (
+                        <label
+                          key={method.id}
+                          className={`flex items-center p-2.5 rounded-xl border cursor-pointer transition-colors ${
+                            selectedPaymentMethod === method.id
+                              ? 'border-emerald-600 bg-emerald-50/60'
+                              : 'border-gray-200 hover:bg-gray-50'
+                          }`}
+                        >
+                          <input
+                            type="radio"
+                            name="payment_method"
+                            value={method.id}
+                            checked={selectedPaymentMethod === method.id}
+                            onChange={(e) => setSelectedPaymentMethod(e.target.value)}
+                            className="text-emerald-600 focus:ring-emerald-500 mr-2.5"
+                          />
+                          <div className="flex-1">
+                            <div className="flex items-center justify-between">
+                              <span className="font-bold text-xs text-gray-900">{method.nomAffiche}</span>
+                              {method.badge && (
+                                <span className="text-[10px] font-semibold px-2 py-0.2 rounded-full bg-emerald-100 text-emerald-800">
+                                  {method.badge}
+                                </span>
+                              )}
+                            </div>
+                            {method.instructions && (
+                              <p className="text-[10px] text-gray-500 mt-0.5">{method.instructions}</p>
+                            )}
+                          </div>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Bouton de confirmation selon la méthode sélectionnée */}
                   <button
                     type="submit"
-                    className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2"
+                    className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2"
                   >
                     <span className="material-icons text-base">payments</span>
-                    <span>Payer avec Wave CI ({totalAmountFcfa.toLocaleString('fr-FR')} FCFA)</span>
+                    <span>
+                      Valider ma commande ({formatCurrency(totalAmountFcfa, currency)})
+                    </span>
                   </button>
 
                   <p className="text-[11px] text-gray-500 text-center leading-tight">
-                    Paiement 100% sécurisé via Wave Côte d'Ivoire. Vous recevrez une confirmation instantanée sur WhatsApp.
+                    {selectedPaymentMethod === 'WAVE'
+                      ? 'Paiement direct sécurisé via Wave Côte d\'Ivoire.'
+                      : 'Notre équipe logistique vous contactera immédiatement pour la validation du paiement.'}
                   </p>
                 </form>
               )}

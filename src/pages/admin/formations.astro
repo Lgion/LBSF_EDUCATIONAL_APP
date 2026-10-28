@@ -1,0 +1,8 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import FormationsManager from '../../components/admin/FormationsManager';
+---
+
+<AdminLayout title="Formations & Témoignages" currentPath="/admin/formations">
+  <FormationsManager client:load />
+</AdminLayout>

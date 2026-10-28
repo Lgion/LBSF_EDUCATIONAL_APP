@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface DiagnosticIssue {
   id: string;
@@ -108,11 +108,38 @@ const DIAGNOSTIC_ISSUES: DiagnosticIssue[] = [
 ];
 
 export default function DiagnosticWizard() {
+  const [issues, setIssues] = useState<DiagnosticIssue[]>(DIAGNOSTIC_ISSUES);
   const [selectedIssueId, setSelectedIssueId] = useState<string>(DIAGNOSTIC_ISSUES[0].id);
   const [filterCategory, setFilterCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
-  const filteredIssues = DIAGNOSTIC_ISSUES.filter(issue => {
+  useEffect(() => {
+    fetch('/api/admin/diagnostic')
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.success && data.rules && data.rules.length > 0) {
+          const activeRules = data.rules
+            .filter((r: any) => r.actif)
+            .map((r: any) => ({
+              id: r.idRegle || r._id,
+              icon: r.icon,
+              title: r.title,
+              category: r.category,
+              symptoms: r.symptoms || [],
+              diagnosis: r.diagnosis,
+              actions: r.actions || [],
+              scientificRef: r.scientificRef
+            }));
+          if (activeRules.length > 0) {
+            setIssues(activeRules);
+            setSelectedIssueId(activeRules[0].id);
+          }
+        }
+      })
+      .catch((err) => console.warn('Fallback diagnostic local:', err));
+  }, []);
+
+  const filteredIssues = issues.filter(issue => {
     const matchCat = filterCategory === 'all' || issue.category === filterCategory;
     const matchSearch = issue.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                         issue.diagnosis.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -120,7 +147,7 @@ export default function DiagnosticWizard() {
     return matchCat && matchSearch;
   });
 
-  const currentIssue = DIAGNOSTIC_ISSUES.find(i => i.id === selectedIssueId) || DIAGNOSTIC_ISSUES[0];
+  const currentIssue = issues.find(i => i.id === selectedIssueId) || issues[0];
 
   return (
     <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">

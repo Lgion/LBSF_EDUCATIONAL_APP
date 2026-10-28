@@ -151,3 +151,86 @@ export interface IEnvCertificate {
   dateEmission: string;
   pdfUrlCloudinary?: string;
 }
+
+// Configuration des passerelles de paiement
+export interface IPaymentMethodConfig {
+  id: 'WAVE' | 'ORANGE_MONEY' | 'DJAMO' | 'TOUCH_PAY' | 'STRIPE' | 'PAYPAL' | 'GOOGLE_WALLET';
+  nomAffiche: string;
+  actif: boolean;
+  badge?: string;
+  instructions?: string;
+  numeroOuCompte?: string;
+  urlPaiementBase?: string;
+  apiKeyPublic?: string;
+}
+
+// Configuration de la devise
+export interface ICurrencyConfig {
+  code: string;       // ex: 'XOF', 'EUR', 'USD'
+  nom: string;        // ex: 'Franc CFA', 'Euro', 'Dollar'
+  symbole: string;    // ex: 'FCFA', '€', '$'
+  position: 'AFTER' | 'BEFORE'; // 'AFTER' -> 15 000 FCFA, 'BEFORE' -> $15,000
+}
+
+// Paramètres globaux de la plateforme
+export interface IPlatformSettings {
+  _id?: string;
+  devise: ICurrencyConfig;
+  payments: IPaymentMethodConfig[];
+  calculator: {
+    prixLarvesFraichesParKg: number;
+    prixFrassParKg: number;
+    prix5DolPour1000: number;
+    rendementLarvesHumidesRatio: number;
+    rendementFrassRatio: number;
+    tauxReductionDechetsRatio: number;
+  };
+  contact: {
+    telephoneSupport: string;
+    whatsappSupport: string;
+    emailContact: string;
+    adresseFermeCentrale: string;
+  };
+  updatedAt?: string | Date;
+}
+
+// Témoignages
+export interface ITestimonial {
+  _id?: string;
+  nom: string;
+  titreOuMetier: string;
+  localisation: string;
+  message: string;
+  noteEtoiles: number;
+  avatarUrl?: string;
+  actif: boolean;
+  ordreAffichage: number;
+  createdAt?: string | Date;
+}
+
+// FAQ
+export interface IFaqItem {
+  _id?: string;
+  question: string;
+  reponse: string;
+  categorie: 'GENERAL' | 'FORMATIONS' | 'BOUTIQUE' | 'SATELLITE' | 'B2B';
+  ordreAffichage: number;
+  actif: boolean;
+  createdAt?: string | Date;
+}
+
+// Fiche Diagnostic personnalisable
+export interface IDiagnosticEntry {
+  _id?: string;
+  idRegle: string;
+  icon: string;
+  title: string;
+  category: 'Comportement' | 'Parasites' | 'Environnement & Odeurs' | 'Reproduction';
+  symptoms: string[];
+  diagnosis: string;
+  actions: string[];
+  scientificRef: string;
+  actif: boolean;
+  createdAt?: string | Date;
+}
+

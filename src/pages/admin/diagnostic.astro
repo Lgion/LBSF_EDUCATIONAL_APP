@@ -1,0 +1,8 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import DiagnosticManager from '../../components/admin/DiagnosticManager';
+---
+
+<AdminLayout title="Assistant Diagnostic SOP" currentPath="/admin/diagnostic">
+  <DiagnosticManager client:load />
+</AdminLayout>

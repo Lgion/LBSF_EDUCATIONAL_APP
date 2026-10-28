@@ -1,0 +1,8 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import UsersTable from '../../components/admin/UsersTable';
+---
+
+<AdminLayout title="Utilisateurs & Permissions" currentPath="/admin/users">
+  <UsersTable client:load />
+</AdminLayout>

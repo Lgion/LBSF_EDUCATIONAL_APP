@@ -15,9 +15,14 @@ function UserStatus() {
   return (
     <div className="flex items-center gap-3">
       {isSuperAdmin && (
-        <span className="hidden sm:inline-block px-2 py-0.5 text-xs font-semibold bg-amber-100 text-amber-800 rounded-full border border-amber-300">
-          Admin
-        </span>
+        <a
+          href="/admin"
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-amber-500/20 text-amber-300 hover:bg-amber-500/30 rounded-lg border border-amber-500/40 transition-colors shadow-sm"
+          title="Accéder au tableau de bord d'administration"
+        >
+          <span className="material-icons text-xs">admin_panel_settings</span>
+          <span className="hidden sm:inline">Admin</span>
+        </a>
       )}
       <UserButton 
         afterSignOutUrl="/"

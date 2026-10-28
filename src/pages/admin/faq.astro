@@ -1,0 +1,8 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import FaqManager from '../../components/admin/FaqManager';
+---
+
+<AdminLayout title="Foire Aux Questions" currentPath="/admin/faq">
+  <FaqManager client:load />
+</AdminLayout>

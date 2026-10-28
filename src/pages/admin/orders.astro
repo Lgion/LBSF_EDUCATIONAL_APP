@@ -1,0 +1,8 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import OrdersTable from '../../components/admin/OrdersTable';
+---
+
+<AdminLayout title="Commandes Shop" currentPath="/admin/orders">
+  <OrdersTable client:load />
+</AdminLayout>

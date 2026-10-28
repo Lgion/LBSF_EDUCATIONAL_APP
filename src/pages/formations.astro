@@ -1,383 +1,346 @@
 ---
 import Layout from '../layouts/MainLayout.astro';
-// import '../styles/main.scss';
+import { getPlatformSettings, formatCurrency } from '../lib/settings';
+import { getDb } from '../lib/mongodb';
+import type { IFormation, ITestimonial, IFaqItem } from '../types/bsf';
 
+export const prerender = false;
+
+// 1. Récupération des paramètres globaux (devise, paiements actifs)
+const settings = await getPlatformSettings();
+const currency = settings.devise;
+const activePayments = settings.payments.filter((p) => p.actif);
+
+// 2. Récupération des formations
+let formations: IFormation[] = [];
+let testimonials: ITestimonial[] = [];
+let faqs: IFaqItem[] = [];
+
+try {
+  const db = await getDb();
+  formations = (await db.collection('formations').find({}).toArray()) as any;
+  testimonials = (await db.collection('testimonials').find({ actif: true }).sort({ ordreAffichage: 1 }).toArray()) as any;
+  faqs = (await db.collection('faq').find({ actif: true }).sort({ ordreAffichage: 1 }).toArray()) as any;
+} catch (e) {
+  console.warn('Erreur chargement SSR MongoDB formations:', e);
+}
+
+// Fallback formations si vide
+if (!formations || formations.length === 0) {
+  formations = [
+    {
+      code: 'DEBUTANT',
+      titre: 'Initiation à l\'Élevage BSF & Bioconversion',
+      description: 'Une journée intensive pour comprendre les bases de l\'élevage BSF, la biologie d\'Hermetia illucens et le modèle hybride d\'Unité Centrale.',
+      dureeJours: 1,
+      prixFcfa: 25000,
+      sessionsAvenir: []
+    },
+    {
+      code: 'INTERMEDIAIRE',
+      titre: 'Formation Pratique Élevage, Inoculation & Récolte',
+      description: 'Formation hands-on au cœur de la ferme : manipulation des 5-DOL, gestion du substrat humide, récolte et blanchiment 90°C.',
+      dureeJours: 3,
+      prixFcfa: 150000,
+      sessionsAvenir: []
+    },
+    {
+      code: 'AVANCE',
+      titre: 'Intégration au Réseau de Fermes Satellites',
+      description: 'Programme complet de partenariat : approvisionnement hebdomadaire en 5-DOL, monitoring BCR et rachat des récoltes.',
+      dureeJours: 5,
+      prixFcfa: 450000,
+      sessionsAvenir: []
+    }
+  ];
+}
+
+// URL Wave active
+const waveConfig = settings.payments.find((p) => p.id === 'WAVE');
+const waveBaseUrl = waveConfig?.urlPaiementBase || 'https://pay.wave.com/m/M_ci_hsvjN_ywTw2K/c/ci/';
 ---
 
 <Layout title="Formations BSF - Développez vos compétences en élevage BSF" description="Découvrez nos formations pratiques et théoriques pour maîtriser l'élevage de Mouches Soldats Noires et la valorisation des déchets organiques.">
   <main class="container mx-auto px-4 py-8 min-h-screen">
-    <section class="text-center py-12 bg-gradient-to-r from-primary-light to-primary-dark text-white rounded-lg shadow-lg mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Formations BSF</h1>
-      <p class="text-xl max-w-3xl mx-auto">Développez vos compétences et lancez votre projet d'élevage de Mouches Soldats Noires</p>
+    <!-- Hero Banner -->
+    <section class="text-center py-12 bg-gradient-to-r from-emerald-800 via-emerald-700 to-green-700 text-white rounded-3xl shadow-xl mb-12 relative overflow-hidden">
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-white/5 blur-2xl pointer-events-none"></div>
+      <h1 class="text-3xl md:text-5xl font-heading font-extrabold mb-4">Formations BSF</h1>
+      <p class="text-base md:text-xl max-w-3xl mx-auto text-emerald-100">
+        Développez vos compétences et rejoignez le réseau de production de Mouches Soldats Noires en Côte d'Ivoire.
+      </p>
     </section>
 
     <!-- Pourquoi se former -->
     <section class="mb-16">
-      <h2 class="text-3xl font-bold mb-8 text-center">Pourquoi se former à l'élevage BSF ?</h2>
+      <h2 class="text-2xl md:text-3xl font-heading font-bold mb-8 text-center text-slate-800">
+        Pourquoi se former à l'élevage BSF ?
+      </h2>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary">
-          <div class="flex justify-center mb-4">
-            <span class="material-icons text-4xl text-primary">schedule</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+            <span class="material-icons text-2xl">schedule</span>
           </div>
-          <h3 class="text-xl font-semibold mb-3 text-center">Gain de temps</h3>
-          <p>Évitez les erreurs coûteuses et gagnez un temps précieux grâce à l'expertise de nos formateurs.</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Gain de temps</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Évitez les erreurs coûteuses et maîtrisez les protocoles d'engraissement dès la première semaine.</p>
         </div>
         
-        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary">
-          <div class="flex justify-center mb-4">
-            <span class="material-icons text-4xl text-primary">school</span>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+            <span class="material-icons text-2xl">school</span>
           </div>
-          <h3 class="text-xl font-semibold mb-3 text-center">Formation pratique</h3>
-          <p>Apprenez par la pratique sur des installations opérationnelles et maîtrisez les techniques d'élevage.</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Formation pratique</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Pratique directe sur notre pépinière centrale de Songon avec Love Cages et bacs Larveros.</p>
         </div>
         
-        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary">
-          <div class="flex justify-center mb-4">
-            <span class="material-icons text-4xl text-primary">engineering</span>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+            <span class="material-icons text-2xl">engineering</span>
           </div>
-          <h3 class="text-xl font-semibold mb-3 text-center">Accompagnement</h3>
-          <p>Bénéficiez d'un suivi personnalisé adapté à votre projet et à vos objectifs spécifiques.</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Accompagnement</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Suivi agronomique continu, audit de votre installation et calibrage de votre ration de substrat.</p>
         </div>
         
-        <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary">
-          <div class="flex justify-center mb-4">
-            <span class="material-icons text-4xl text-primary">hub</span>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+            <span class="material-icons text-2xl">hub</span>
           </div>
-          <h3 class="text-xl font-semibold mb-3 text-center">Réseau</h3>
-          <p>Rejoignez une communauté d'entrepreneurs et d'experts de la BSF pour échanger et collaborer.</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Réseau Satellite</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Accès prioritaire aux livraisons hebdomadaires de 5-DOL calibrées et débouchés garantis.</p>
         </div>
       </div>
     </section>
     
-    <!-- Programmes de formation -->
-    <section class="mb-16 bg-gray-50 p-8 rounded-lg">
-      <h2 class="text-3xl font-bold mb-8 text-center">Nos programmes de formation</h2>
+    <!-- Programmes de formation (DYNAMIQUES) -->
+    <section class="mb-16 bg-slate-50 p-6 md:p-10 rounded-3xl border border-slate-200/80">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-2xl md:text-3xl font-heading font-bold text-slate-900">
+          Nos programmes de formation
+        </h2>
+        <p class="text-sm text-slate-500 mt-2">
+          Tarifs officiels en {currency.nom} ({currency.symbole}) avec durées configurées par l'Unité Centrale.
+        </p>
+      </div>
       
-      <div class="space-y-6">
-        <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:scale-[1.01]">
-          <div class="flex flex-col md:flex-row gap-6">
-            <div class="md:w-1/4">
-              <div class="bg-primary text-white p-4 rounded-lg text-center">
-                <h3 class="text-xl font-bold">Initiation</h3>
-                <p class="text-lg mt-1">1 jour</p>
-                <p class="text-xs text-emerald-200 mt-1">En ligne : 100% Gratuit</p>
-                <p class="text-lg font-bold mt-1">25 000 FCFA</p>
-                <span class="text-[11px] text-emerald-100">(Présentiel Songon)</span>
+      <div class="space-y-6 max-w-4xl mx-auto">
+        {formations.map((f) => (
+          <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200/60 hover:shadow-md transition-all flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+            <div class="md:w-1/4 w-full">
+              <div class="bg-gradient-to-br from-emerald-800 to-green-700 text-white p-5 rounded-2xl text-center shadow-md">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-200 block mb-1">
+                  Niveau {f.code}
+                </span>
+                <p class="text-2xl font-extrabold mt-1">
+                  {f.prixFcfa > 0 ? formatCurrency(f.prixFcfa, currency) : 'Gratuit'}
+                </p>
+                <div class="mt-2 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/20 text-xs font-semibold">
+                  <span class="material-icons text-xs">schedule</span>
+                  <span>{f.dureeJours} {f.dureeJours > 1 ? 'jours' : 'jour'}</span>
+                </div>
               </div>
             </div>
-            <div class="md:w-3/4">
-              <h4 class="text-lg font-semibold mb-2">Vue d'ensemble de l'élevage BSF</h4>
-              <p class="mb-4">Une journée intensive pour comprendre les bases de l'élevage BSF, la biologie d'Hermetia illucens et le modèle hybride d'Unité Centrale.</p>
-              <ul class="list-disc pl-5 mb-4 space-y-1">
-                <li>Biologie et cycle de vie de la mouche soldat noire</li>
-                <li>Gisement de déchets admissibles en Côte d'Ivoire</li>
-                <li>Visite de la pépinière et de l'insectarium de Songon</li>
-                <li>Échanges avec les ingénieurs agronomes du centre</li>
-              </ul>
-              <p class="text-sm text-gray-600">Lieu : Centre BSF Abidjan - Songon • Idéal pour : Découverte, porteurs de projets agricoles</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:scale-[1.01]">
-          <div class="flex flex-col md:flex-row gap-6">
-            <div class="md:w-1/4">
-              <div class="bg-primary-dark text-white p-4 rounded-lg text-center">
-                <h3 class="text-xl font-bold">Formation pratique</h3>
-                <p class="text-lg mt-1">3 jours</p>
-                <p class="text-xl font-bold mt-2">150 000 FCFA</p>
-                <span class="text-[11px] text-emerald-100">(Règlement Wave accepté)</span>
+
+            <div class="md:w-3/4 w-full space-y-3">
+              <h3 class="text-xl font-heading font-bold text-slate-900">{f.titre}</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">{f.description}</p>
+              
+              <div class="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-500">
+                <span class="flex items-center gap-1 font-semibold text-emerald-700">
+                  <span class="material-icons text-sm">location_on</span>
+                  Pépinière Songon / Abidjan
+                </span>
+                <span class="flex items-center gap-1">
+                  <span class="material-icons text-sm">verified</span>
+                  Attestation ReWaste BSF
+                </span>
               </div>
             </div>
-            <div class="md:w-3/4">
-              <h4 class="text-lg font-semibold mb-2">Maîtrisez l'élevage, l'inoculation et la récolte</h4>
-              <p class="mb-4">Formation hands-on au cœur de la ferme : manipulation des 5-DOL, gestion du substrat humide, récolte et blanchiment 90°C.</p>
-              <ul class="list-disc pl-5 mb-4 space-y-1">
-                <li>Réception et acclimatation des jeunes larves de 5 jours (5-DOL)</li>
-                <li>Préparation des substrats de bioconversion (test du poing serré)</li>
-                <li>Gestion des Larveros, aération et contrôle thermique (27-32°C)</li>
-                <li>Protocole de blanchiment à 90°C pendant 60 secondes et séchage</li>
-                <li>Prise en main de l'application SaaS My Colony Manager</li>
-              </ul>
-              <p class="text-sm text-gray-600">Lieu : Pépinière Centrale Songon / Abidjan • Idéal pour : Éleveurs, agriculteurs, futurs partenaires satellites</p>
-            </div>
           </div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:scale-[1.01]">
-          <div class="flex flex-col md:flex-row gap-6">
-            <div class="md:w-1/4">
-              <div class="bg-secondary text-white p-4 rounded-lg text-center">
-                <h3 class="text-xl font-bold">Formation business</h3>
-                <p class="text-lg mt-1">5 jours</p>
-                <p class="text-xl font-bold mt-2">350 000 FCFA</p>
-                <span class="text-[11px] text-amber-100">(Accompagnement Business Plan)</span>
-              </div>
-            </div>
-            <div class="md:w-3/4">
-              <h4 class="text-lg font-semibold mb-2">Créez votre unité industrielle & modèle hybride</h4>
-              <p class="mb-4">Maîtrise technico-économique complète : dimensionnement d'installation, calcul de VAN/payback, contrats de Gate Fees et commercialisation.</p>
-              <ul class="list-disc pl-5 mb-4 space-y-1">
-                <li>Modélisation financière selon le Scénario 2 (Modèle Hybride BSF)</li>
-                <li>Négociation des contrats d'apports et Gate Fees municipaux / agro-industriels</li>
-                <li>Dimensionnement d'usines de 5 à 20 tonnes/jour (ratio 31,25 kg/m²/j)</li>
-                <li>Valorisation industrielle : farine dégraissée, Pop-larvae et acide laurique</li>
-                <li>Réglementation sanitaire, biosécurité et audits de conformité</li>
-              </ul>
-              <p class="text-sm text-gray-600">Lieu : Abidjan & Visites de sites • Idéal pour : Dirigeants, investisseurs, cadres de gestion des déchets</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:scale-[1.01]">
-          <div class="flex flex-col md:flex-row gap-6">
-            <div class="md:w-1/4">
-              <div class="bg-gray-800 text-white p-4 rounded-lg text-center">
-                <h3 class="text-xl font-bold">Accompagnement</h3>
-                <p class="text-lg mt-1">Réseau Satellite</p>
-                <p class="text-lg font-bold mt-2">Sur devis</p>
-                <span class="text-[11px] text-gray-300">(Contrat d'approvisionnement)</span>
-              </div>
-            </div>
-            <div class="md:w-3/4">
-              <h4 class="text-lg font-semibold mb-2">Intégration au Réseau de Fermes Satellites</h4>
-              <p class="mb-4">L'Unité Centrale vous fournit chaque semaine vos doses de 5-DOL calibrées et rachète ou transforme vos récoltes de larves matures.</p>
-              <ul class="list-disc pl-5 mb-4 space-y-1">
-                <li>Fourniture du kit technique de démarrage (Larveros, ant traps inox, tamis)</li>
-                <li>Livraison hebdomadaire garantie de 5-DOL calibrées à votre ferme</li>
-                <li>Suivi à distance de vos rendements et alertes BCR via le Colony Manager</li>
-                <li>Débouché commercial garanti pour vos surplus de larves</li>
-              </ul>
-              <p class="text-sm text-gray-600">Zones couvertes : Région des Lagunes, Azaguié, Dabou, Aboisso, Songon</p>
-            </div>
-          </div>
-        </div>
-                <li>Assistance technique pour la mise en place</li>
-                <li>Suivi des performances et optimisation</li>
-                <li>Mise en relation avec des fournisseurs et partenaires</li>
-              </ul>
-              <p class="text-sm text-gray-600">Idéal pour : Projets commerciaux ambitieux, installations industrielles</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
     
-    <!-- Témoignages -->
-    <section class="mb-16">
-      <h2 class="text-3xl font-bold mb-8 text-center">Témoignages de réussite</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="flex items-center mb-4">
-            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden">
-              <!-- <img src="/images/testimonials/lucas.webp" alt="Photo de Lucas" class="w-full h-full object-cover" onerror="this.src='/images/testimonials/profile-placeholder.webp'"> -->
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold">Lucas D.</h3>
-              <p class="text-gray-600">Agriculteur, France</p>
-            </div>
-          </div>
-          <p class="italic">"Après avoir suivi la formation pratique, j'ai pu mettre en place une unité BSF sur mon exploitation qui valorise mes déchets agricoles. La formation m'a fait gagner un temps précieux en évitant les erreurs de débutant. Aujourd'hui, mes animaux bénéficient d'une alimentation de qualité à moindre coût."</p>
+    <!-- Témoignages (DYNAMIQUES) -->
+    {testimonials.length > 0 && (
+      <section class="mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-2xl md:text-3xl font-heading font-bold text-slate-900">
+            Témoignages de nos apprenants & partenaires
+          </h2>
+          <p class="text-sm text-slate-500 mt-2">
+            Découvrez comment ils ont transformé leurs exploitations grâce à la bioconversion BSF.
+          </p>
         </div>
         
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="flex items-center mb-4">
-            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden">
-              <!-- <img src="/images/testimonials/maria.webp" alt="Photo de Maria" class="w-full h-full object-cover" onerror="this.src='/images/testimonials/profile-placeholder.webp'"> -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {testimonials.map((t) => (
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    {t.avatarUrl ? (
+                      <img src={t.avatarUrl} alt={t.nom} class="w-12 h-12 rounded-full object-cover border border-emerald-200" />
+                    ) : (
+                      <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center">
+                        {t.nom.slice(0, 2)}
+                      </div>
+                    )}
+                    <div>
+                      <h4 class="font-bold text-slate-900 text-sm">{t.nom}</h4>
+                      <p class="text-xs text-slate-500">{t.titreOuMetier} • {t.localisation}</p>
+                    </div>
+                  </div>
+
+                  <div class="flex text-amber-400">
+                    {Array.from({ length: t.noteEtoiles || 5 }).map(() => (
+                      <span class="material-icons text-sm">star</span>
+                    ))}
+                  </div>
+                </div>
+
+                <p class="text-xs text-slate-700 italic leading-relaxed">
+                  "{t.message}"
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 class="text-xl font-semibold">Maria S.</h3>
-              <p class="text-gray-600">Entrepreneure, Belgique</p>
-            </div>
-          </div>
-          <p class="italic">"J'ai suivi la formation business complète avant de me lancer dans mon projet d'entreprise. Les outils d'analyse financière et le suivi personnalisé m'ont permis de sécuriser des financements et de démarrer sereinement. Mon installation traite aujourd'hui 5 tonnes de déchets par semaine avec succès."</p>
+          ))}
         </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="flex items-center mb-4">
-            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden">
-              <!-- <img src="/images/testimonials/hamid.webp" alt="Photo de Hamid" class="w-full h-full object-cover" onerror="this.src='/images/testimonials/profile-placeholder.webp'"> -->
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold">Hamid T.</h3>
-              <p class="text-gray-600">Gérant de restaurant, Maroc</p>
-            </div>
-          </div>
-          <p class="italic">"La journée d'initiation m'a ouvert les yeux sur le potentiel de valorisation des déchets de mon restaurant. J'ai ensuite suivi la formation pratique et aujourd'hui, je traite tous mes déchets organiques sur place. Une solution écologique qui m'a permis de réduire mes coûts de gestion des déchets de 70%."</p>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="flex items-center mb-4">
-            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden">
-              <!-- <img src="/images/testimonials/jacinthe.webp" alt="Photo de Jacinthe" class="w-full h-full object-cover" onerror="this.src='/images/testimonials/profile-placeholder.webp'"> -->
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold">Jacinthe M.</h3>
-              <p class="text-gray-600">Directrice de coopérative, Sénégal</p>
-            </div>
-          </div>
-          <p class="italic">"Notre coopérative agricole a bénéficié de l'accompagnement personnalisé pour mettre en place une installation BSF communautaire. Aujourd'hui, nous transformons les déchets de 15 villages en protéines pour l'alimentation de nos élevages, créant 8 emplois locaux. Un vrai succès économique et écologique !"</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    )}
     
-    <!-- Formulaire d'inscription -->
-    <section id="inscription" class="mb-16 bg-primary-light text-white p-8 rounded-lg">
-      <h2 class="text-3xl font-bold mb-8 text-center">Inscrivez-vous à nos formations</h2>
+    <!-- Formulaire d'inscription avec Modes de Paiement Conditionnels -->
+    <section id="inscription" class="mb-16 bg-gradient-to-r from-emerald-800 to-green-700 text-white p-8 md:p-12 rounded-3xl shadow-xl">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold mb-2 text-center">
+        Réservez votre place en session
+      </h2>
+      <p class="text-emerald-100 text-sm text-center mb-8 max-w-xl mx-auto">
+        Remplissez ce formulaire pour bloquer votre place. Règlement instantané ou validation par notre équipe.
+      </p>
       
-      <form class="max-w-3xl mx-auto bg-white text-gray-800 p-8 rounded-lg shadow-lg">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <form class="max-w-2xl mx-auto bg-white text-slate-800 p-6 md:p-8 rounded-2xl shadow-lg space-y-4 text-xs">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label for="nom" class="block text-sm font-medium text-gray-700 mb-1">Nom *</label>
-            <input type="text" id="nom" name="nom" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+            <label for="nom" class="block font-semibold text-slate-700 mb-1">Nom *</label>
+            <input type="text" id="nom" name="nom" required class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
           </div>
           
           <div>
-            <label for="prenom" class="block text-sm font-medium text-gray-700 mb-1">Prénom *</label>
-            <input type="text" id="prenom" name="prenom" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+            <label for="prenom" class="block font-semibold text-slate-700 mb-1">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" required class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
           </div>
-          
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-          </div>
-          
-          <div>
-            <label for="telephone" class="block text-sm font-medium text-gray-700 mb-1">Téléphone (WhatsApp / Wave) *</label>
-            <input type="tel" id="telephone" name="telephone" required placeholder="+225 07..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-          </div>
-        </div>
-        
-        <div class="mb-6">
-          <label for="profil" class="block text-sm font-medium text-gray-700 mb-1">Votre profil *</label>
-          <select id="profil" name="profil" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-            <option value="" disabled selected>Sélectionnez votre profil</option>
-            <option value="entrepreneur">Entrepreneur</option>
-            <option value="agriculteur">Agriculteur / Éleveur</option>
-            <option value="restaurateur">Restaurateur / Agro-alimentaire</option>
-            <option value="collectivite">Collectivité territoriale / Municipalité</option>
-            <option value="satellite">Candidat Ferme Satellite BSF</option>
-            <option value="autre">Autre</option>
-          </select>
-        </div>
-        
-        <div class="mb-6">
-          <label for="formation" class="block text-sm font-medium text-gray-700 mb-1">Formation souhaitée *</label>
-          <select id="formation" name="formation" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-            <option value="" disabled selected>Sélectionnez une formation</option>
-            <option value="initiation" data-price="25000">Initiation Songon (1 jour) — 25 000 FCFA</option>
-            <option value="pratique" data-price="150000">Formation pratique Abidjan (3 jours) — 150 000 FCFA</option>
-            <option value="business" data-price="350000">Formation business & unité (5 jours) — 350 000 FCFA</option>
-            <option value="accompagnement" data-price="0">Accompagnement Réseau Satellite — Sur devis</option>
-          </select>
         </div>
 
-        <div class="mb-6">
-          <label class="block text-sm font-medium text-gray-700 mb-2">Mode de règlement préféré *</label>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <label class="flex items-center p-3 border border-emerald-300 bg-emerald-50/50 rounded-lg cursor-pointer hover:bg-emerald-50">
-              <input type="radio" name="payment_mode" value="WAVE" checked class="text-primary focus:ring-primary mr-2">
-              <div>
-                <span class="font-bold text-emerald-900 text-sm block">Paiement Mobile Wave CI</span>
-                <span class="text-xs text-emerald-700">Lien direct instantané</span>
-              </div>
-            </label>
-            <label class="flex items-center p-3 border border-gray-200 bg-white rounded-lg cursor-pointer hover:bg-gray-50">
-              <input type="radio" name="payment_mode" value="ESPECES" class="text-primary focus:ring-primary mr-2">
-              <div>
-                <span class="font-bold text-gray-900 text-sm block">Règlement sur place</span>
-                <span class="text-xs text-gray-500">Espèces au centre de Songon</span>
-              </div>
-            </label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="email" class="block font-semibold text-slate-700 mb-1">Email *</label>
+            <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
           </div>
-        </div>
-        
-        <div class="mb-6">
-          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Votre projet ou questions éventuelles</label>
-          <textarea id="message" name="message" rows="3" placeholder="Localisation de votre terrain, gisement de déchets disponible..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
-        </div>
-        
-        <div class="mb-6">
-          <label class="flex items-start">
-            <input type="checkbox" required class="mt-1 mr-2">
-            <span class="text-sm text-gray-700">J'accepte que mes coordonnées soient utilisées pour la confirmation de réservation par l'Unité Centrale *</span>
-          </label>
+          
+          <div>
+            <label for="telephone" class="block font-semibold text-slate-700 mb-1">Téléphone (WhatsApp / Wave) *</label>
+            <input type="tel" id="telephone" name="telephone" required placeholder="+225 07..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+          </div>
         </div>
         
         <div>
-          <button type="submit" id="submit-btn" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
-            <span class="material-icons">send</span>
-            <span id="btn-text">Confirmer ma pré-inscription</span>
+          <label for="formation" class="block font-semibold text-slate-700 mb-1">Programme souhaité *</label>
+          <select id="formation" name="formation" required class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <option value="" disabled selected>Sélectionnez une formation</option>
+            {formations.map((f) => (
+              <option value={f.code} data-price={f.prixFcfa}>
+                {f.titre} ({f.dureeJours} {f.dureeJours > 1 ? 'jours' : 'jour'}) — {formatCurrency(f.prixFcfa, currency)}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Moyens de Paiement DYNAMIQUES (Affichés UNIQUEMENT si activés en admin) */}
+        <div>
+          <label class="block font-semibold text-slate-700 mb-2">Mode de règlement *</label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {activePayments.map((method, idx) => (
+              <label class="flex items-center p-3 border border-emerald-300 bg-emerald-50/50 rounded-xl cursor-pointer hover:bg-emerald-50 transition-colors">
+                <input
+                  type="radio"
+                  name="payment_mode"
+                  value={method.id}
+                  checked={idx === 0}
+                  class="text-emerald-600 focus:ring-emerald-500 mr-2.5"
+                />
+                <div>
+                  <span class="font-bold text-emerald-950 text-xs block">{method.nomAffiche}</span>
+                  <span class="text-[10px] text-emerald-700">{method.badge || method.instructions}</span>
+                </div>
+              </label>
+            ))}
+
+            <label class="flex items-center p-3 border border-slate-200 bg-white rounded-xl cursor-pointer hover:bg-slate-50 transition-colors">
+              <input type="radio" name="payment_mode" value="ESPECES" class="text-emerald-600 focus:ring-emerald-500 mr-2.5" />
+              <div>
+                <span class="font-bold text-slate-900 text-xs block">Règlement sur place</span>
+                <span class="text-[10px] text-slate-500">Espèces au centre de Songon</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <button
+            type="submit"
+            id="submit-btn"
+            class="w-full bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 text-sm mt-4"
+          >
+            <span class="material-icons text-base">send</span>
+            <span>Confirmer ma réservation</span>
           </button>
         </div>
       </form>
     </section>
     
-    <!-- FAQ -->
-    <section class="mb-16">
-      <h2 class="text-3xl font-bold mb-8 text-center">Questions fréquentes</h2>
-      
-      <div class="space-y-4 max-w-3xl mx-auto">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Faut-il des connaissances préalables pour suivre vos formations ?</h3>
-          <p>Non, nos formations sont conçues pour être accessibles à tous les niveaux. Que vous soyez éleveur, agriculteur ou sans formation biologique, nos agronomes vous transmettent les protocoles pas-à-pas.</p>
-        </div>
+    <!-- FAQ (DYNAMIQUE) -->
+    {faqs.length > 0 && (
+      <section class="mb-16">
+        <h2 class="text-2xl md:text-3xl font-heading font-bold mb-8 text-center text-slate-900">
+          Questions fréquentes
+        </h2>
         
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Où se déroulent les formations pratiques ?</h3>
-          <p>Nos formations pratiques ont lieu au Centre BSF de Songon (banlieue ouest d'Abidjan) où vous manipulez directement les Love Cages, les hatchling showers de la nurserie et les Larveros de grossissement.</p>
+        <div class="space-y-4 max-w-3xl mx-auto">
+          {faqs.map((item) => (
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80">
+              <h3 class="text-base font-bold text-slate-900 mb-2">{item.question}</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">{item.reponse}</p>
+            </div>
+          ))}
         </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Puis-je devenir ferme satellite après la formation ?</h3>
-          <p>Absolument ! Les participants aux formations 3 jours et 5 jours peuvent candidater prioritairement pour rejoindre le réseau satellite et recevoir leurs doses hebdomadaires de 5-DOL calibrées.</p>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Call-to-action final -->
-    <section class="text-center py-12 bg-primary text-white rounded-lg shadow-lg">
-      <h2 class="text-3xl font-bold mb-4">Prêt à vous lancer dans la bioconversion BSF ?</h2>
-      <p class="text-xl mb-8 max-w-3xl mx-auto">Rejoignez nos sessions à Abidjan et transformez les biodéchets en opportunité économique durable.</p>
-      <a href="#inscription" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg transition-colors inline-block">
-        Je m'inscris maintenant
-      </a>
-    </section>
+      </section>
+    )}
   </main>
 </Layout>
 
-<script>
-  // Smooth scroll
-  document.querySelectorAll('a[href="#inscription"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href'))?.scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-  
+<script define:vars={{ waveBaseUrl }}>
   const form = document.querySelector('form');
-  const formationSelect = document.getElementById('formation') as HTMLSelectElement;
+  const formationSelect = document.getElementById('formation');
 
   form?.addEventListener('submit', function(e) {
     e.preventDefault();
     const formData = new FormData(form);
-    const nom = formData.get('nom') as string;
-    const telephone = formData.get('telephone') as string;
+    const nom = formData.get('nom');
+    const telephone = formData.get('telephone');
     const selectedOption = formationSelect.options[formationSelect.selectedIndex];
     const price = Number(selectedOption.getAttribute('data-price') || 0);
-    const paymentMode = formData.get('payment_mode') as string;
+    const paymentMode = formData.get('payment_mode');
 
     if (paymentMode === 'WAVE' && price > 0) {
       const orderRef = `FORM_${Date.now().toString().slice(-6)}`;
-      const waveUrl = `https://pay.wave.com/m/M_ci_hsvjN_ywTw2K/c/ci/?amount=${price}&memo=${encodeURIComponent('REWASTE_' + orderRef + '_' + nom.replace(/\s+/g, ''))}`;
-      alert(`Merci ${nom} ! Vous allez être redirigé vers Wave Côte d'Ivoire pour régler votre acompte de ${price.toLocaleString('fr-FR')} FCFA.`);
-      window.open(waveUrl, '_blank');
+      const cleanUrl = waveBaseUrl.includes('?') 
+        ? `${waveBaseUrl}&amount=${price}&memo=${encodeURIComponent('REWASTE_' + orderRef + '_' + String(nom).replace(/\s+/g, ''))}`
+        : `${waveBaseUrl}?amount=${price}&memo=${encodeURIComponent('REWASTE_' + orderRef + '_' + String(nom).replace(/\s+/g, ''))}`;
+      
+      alert(`Merci ${nom} ! Vous allez être redirigé vers Wave Côte d'Ivoire pour régler votre inscription de ${price.toLocaleString('fr-FR')} FCFA.`);
+      window.open(cleanUrl, '_blank');
     } else {
-      alert(`Merci ${nom} ! Votre demande d'inscription a été enregistrée. Notre équipe à Abidjan vous contactera sur WhatsApp au ${telephone}.`);
+      alert(`Merci ${nom} ! Votre demande d'inscription a été enregistrée. Notre équipe à Songon vous contactera sur WhatsApp au ${telephone}.`);
     }
   });
 </script>
